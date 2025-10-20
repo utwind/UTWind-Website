@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://cdn.tailwindcss.com"></script>
-<html>
-    <nav class="bg-white shadow p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-blue-600">UTWind</h1>
-            <div class="space-x-6">
-                <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTWind | Sustainable Wind Energy Team</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto flex justify-start items-center p-4 space-x-8">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2">
+          <img src="https://lh3.googleusercontent.com/sitesv/AICyYdb8u_hkNkpwWeuA7kPpQniYHAUQKWKMtklNVG0d_eAJ9VEZsw8gfG4k8Ojshjux4s4xgZ1h-tqRkWkYOh6IY_I5pXRhgEcrhaMkcWMMKKwtrZEv5wiVeube5cQxAJtdjk_jQXlq4jw2wvglQcHV-_plOxwyN_4fxfLdkh6B-USSXRZDYrVb3F2OO3E=w16383" alt="UTWind Logo" class="h-10 w-auto" />
+          <span class="text-2xl font-bold text-blue-600">UTWind</span>
+        </a>
+
+        <!-- Nav Links -->
+        <div class="hidden md:flex space-x-6 ml-auto">
+          <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+          <a href="projects.html" class="hover:text-blue-600 transition">Projects</a>
+          <a href="team.html" class="hover:text-blue-600 transition">Team</a>
+          <a href="sponsors.html" class="hover:text-blue-600 transition">Sponsors</a>
+          <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
         </div>
+      </div>
     </nav>
-    <head>
-        <title>Hello World Page</title>
-    </head>
-    <body>
-        <h1 class="text-blue-500 text-center">Hello, World!</h1>
-        <p>Welcome to the UTWind Website!</p>
-        <section class="bg-blue-600 text-white py-20">
-            <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-4">Welcome to UTWind</h2>
-            <p class="mb-6">University of Toronto's Wind Turbine Team</p>
-                <button class="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-gray-200">
-                    Learn More
-                </button>
-            </div>
-        </section>
-    </body>
+
+    <!-- HeroSection full screen -->
+    <section class="h-screen flex flex-col justify-start pt-60 items-right text-right px-10 bg-cover bg-left"
+             style="background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/rN0W64K4ipau8gxv/videoblocks-three-wind-turbines-with-rotating-blades-animation-with-wind-turbines-on-white-background-green-alternative-energy-and-clean-electricity-production-symbol-seamless-animation_hdwfpdgsi_thumbnail-1080_09.png');">
+        <h1 class="text-9xl font-bold mb-6">UTWind</h1>
+      <p class="text-5xl font-bold mb-6">University of Toronto Wind Turbine Team</p>
+    </section>
+
+    <!-- About Section-->
+    <section class="about section">
+          <h1 class="text-5xl font-bold mb-6">About Us </h1>
+  <p>UTWind is a student team dedicated to building sustainable small scale wind turbines. 
+    Formed in 2021, our team has grown to more than 80 talented students designing, building, 
+    and testing small-scale turbines for international competitions and research.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 text-center py-6">
+      <p>&copy; 2025 UTWind | University of Toronto</p>
+    </footer>
+  </body>
 </html>

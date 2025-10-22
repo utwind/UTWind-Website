@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTWind | Sustainable Wind Energy Team</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-250">
+      <div class="max-w-7xl mx-auto flex justify-start items-center p-4 space-x-8">
+        <!-- Logo -->
+        <a href="main.html" class="flex items-center space-x-2">
+          <img src="images/UTWIND Logo_Circular_without_LogoType_1 color.jpg" alt="UTWind Logo" class="h-10 w-auto" />
+          <span class="text-2xl font-bold text-blue-600">UTWind</span>
+        </a>
+
+        
+        <!-- Nav Links -->
+        <div class="hidden md:flex space-x-6 ml-auto">
+          <a href="main.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</a>
+          <a href="competition.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</a>
+          <a href="team.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</a>
+          <a href="projects.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</a>
+          <a href="joinus.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</a>
+          <a href="sponsors.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</a>
+          <a href="main.html#contact" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="meetings" class="bg-indigo-50 py-20">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold text-gray-800 mb-10">Meetings</h2>
+    <p class="text-lg font-bold text-gray-800 mb-10">Below are the listed
+      times and location that we have our work sessions!<p>
+
+
+    <!-- Meeting Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+      <!-- Aerodynamics -->
+      <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">Aerodynamics</h3>
+        <p class="text-gray-700">Mondays @ 6:00 PM</p>
+        <p class="text-gray-500 italic">@ MY763</p>
+      </div>
+
+      <!-- Mechanical & Manufacturing -->
+      <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">Mechanical & Manufacturing</h3>
+        <p class="text-gray-700">Wednesdays @ 6:00 PM</p>
+        <p class="text-gray-500 italic">@ Myhal Arena</p>
+      </div>
+
+      <!-- Control Systems -->
+      <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">Control Systems</h3>
+        <p class="text-gray-700">Fridays @ 6:00 PM</p>
+        <p class="text-gray-500 italic">@ Myhal Arena</p>
+      </div>
+
+      <!-- Power Systems -->
+      <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">Power Systems</h3>
+        <p class="text-gray-700">Tuesdays @ 7:30 PM</p>
+        <p class="text-gray-500 italic">@ Myhal Arena</p>
+      </div>
+
+      <!-- Sustainability -->
+      <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">Sustainability</h3>
+        <p class="text-gray-700">Thursdays @ 6:30 PM</p>
+        <p class="text-gray-500 italic">@ Myhal Arena</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+<footer class="bg-blue-100 text-gray-300 py-6 mt-20">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6">
+    <!-- Left: Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="images/Utwind footer logo.png" alt="UTWind Logo" class="h-10 w-auto">
+      <span class="text-lg font-semibold text-black">UTWind</span>
+    </div>
+
+    <!-- Right: Text -->
+    <p class="text-sm text-black">© 2025 UTWind | University of Toronto</p>
+  </div>
+</footer>
+  <script>
+  AOS.init({
+    duration: 1000,  // animation lasts 1 second
+    once: true       // animates only once
+  });
+  </script>
+  <!--navbar scroll-->
+  <script>
+  let lastScrollY = window.scrollY;
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+      // Scrolling down → fade up & out
+      navbar.classList.add('opacity-0', '-translate-y-10');
+      navbar.classList.remove('opacity-100', 'translate-y-0');
+    } else {
+      // Scrolling up → fade back in
+      navbar.classList.remove('opacity-0', '-translate-y-10');
+      navbar.classList.add('opacity-100', 'translate-y-0');
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+  </body>
+</html>

@@ -8,71 +8,56 @@
     <title>UTWind | Sustainable Wind Energy Team</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body class="bg-gray-50 text-gray-800">
     <!-- Navbar -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto flex justify-start items-center p-4 space-x-8">
+      <nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-250">      
+        <div class="max-w-7xl mx-auto flex justify-start items-center p-4 space-x-8">
         <!-- Logo -->
         <a href="main.html" class="flex items-center space-x-2">
           <img src="images/UTWIND Logo_Circular_without_LogoType_1 color.jpg" alt="UTWind Logo" class="h-10 w-auto" />
           <span class="text-2xl font-bold text-blue-600">UTWind</span>
         </a>
 
+       
         <!-- Nav Links -->
         <div class="hidden md:flex space-x-6 ml-auto">
           <a href="main.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</a>
-          <a href="projects.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</a>
+          <a href="competition.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</a>
           <a href="team.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</a>
+          <a href="projects.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</a>
+          <a href="joinus.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</a>
           <a href="sponsors.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</a>
-          <a href="contact.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</a>
+          <a href="main.html#contact" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</a>
+
         </div>
       </div>
     </nav>
 
-  <!-- HeroSection full screen -->
-<section class="h-screen flex bg-blue-900 text-white">
-  <!-- Left: Text -->
-  <div class="flex-1 flex flex-col justify-center items-start pl-16">
-    <h1 class="text-9xl font-bold mb-4">UTWind</h1>
-    <p class="text-6xl font-bold mb-4">Meet the Team</p>
-  </div>
+  <section id="team" class="bg-gray-50 py-20">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 px-6">
+    
+    <!-- Left Sidebar -->
+    <div class="w-full md:w-1/4 flex flex-col space-y-4">
+      <button class="team-btn bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-md hover:bg-gray-300 transition" data-team="executives">Executives</button>
+      <button class="team-btn bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-md hover:bg-gray-300 transition" data-team="mechanical">Mechanical & Manufacturing Leads</button>
+      <button class="team-btn bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-md hover:bg-gray-300 transition" data-team="control">Control Systems Leads</button>
+      <button class="team-btn bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-md hover:bg-gray-300 transition" data-team="power">Power Systems Leads</button>
+      <button class="team-btn bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-md hover:bg-gray-300 transition" data-team="aero">Aerodynamics Leads</button>
+      <button class="team-btn bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-md hover:bg-gray-300 transition" data-team="sustainability">Sustainability Lead</button>
+      <button class="team-btn bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-md hover:bg-gray-300 transition" data-team="web">Webmaster</button>  
+    </div>
 
-  <!-- Right: Shape background -->
-  <div class="w-1/2 h-full relative flex justify-center items-center">
-  <img 
-    src="images/wind-turbine-clipart-lg.png"
-    alt="Wind Turbine"
-    class="max-h-[80%] object-contain z-10"
-  />
+    <!-- Right Grid -->
+    <div class="w-full md:w-3/4">
+      <div id="team-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Members load here -->
+      </div>
+    </div>
   </div>
 </section>
 
-    <!-- About Section-->
-<section id="about" class="bg-blue-100 text-gray-800 py-20" data-aos="fade-up">
-  <div class="max-w-2xl mx-auto text-center">
-    <h2 class="text-6xl font-bold mb-6">About Us</h2>
-    <p class="text-xl">
-    UTWind is a student team dedicated to building sustainable small scale wind turbines. 
-    Formed in 2021, our team has grown to more than 80 talented students designing, building, 
-    and testing small-scale turbines for international competitions and research.</p>
-    <a href="team.html" 
-    class="inline-block mt-8 bg-indigo-700 hover:bg-indigo-800 text-white font-semibold py-4 px-10 rounded-lg shadow-md text-lg transition duration-300">
-    Meet the Team
-    </a>
-  </section>
- <!--Vision Section-->   
-<section id="vision" class="bg-white text-gray-800 py-20" data-aos="fade-up">
-  <div class="max-w-2xl mx-auto text-center">
-    <h2 class="text-6xl font-bold mb-6">Vision</h2>
-    <p class="text-xl italic leading-relaxed">
-    "Our vision is to bring wind energy to light for students at the University of Toronto, 
-    so they will be prepared and inspired to light up the world in a sustainable way. 
-    In other words, our direct focus is each other! By working together, we hope to develop 
-    our skills in the context of a project we are passionate about. The team is a place where 
-    knowledge is shared and passed on. But the project is designed to focus not just on what we 
-    learn today, but what we can achieve in designing a more sustainable future!".</p>
-<section>
-  
+
   <!-- Footer -->
 <footer class="bg-blue-100 text-gray-300 py-6 mt-20">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-6">
@@ -92,5 +77,79 @@
     once: true       // animates only once
   });
   </script>
-  </body>
+  <!--navbar scroll-->
+  <script>
+  let lastScrollY = window.scrollY;
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+      // Scrolling down → fade up & out
+      navbar.classList.add('opacity-0', '-translate-y-10');
+      navbar.classList.remove('opacity-100', 'translate-y-0');
+    } else {
+      // Scrolling up → fade back in
+      navbar.classList.remove('opacity-0', '-translate-y-10');
+      navbar.classList.add('opacity-100', 'translate-y-0');
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+<script>
+  const teamData = {
+    executives: [
+      { name: "Matthew Ting", year: "2nd Year", position: "Team Captain", img: "images/matthew.jpg" },
+      { name: "Emily Zhang", year: "3rd Year", position: "Finance Executive", img: "images/emily.jpg" },
+      { name: "Ryan Chen", year: "3rd Year", position: "Outreach Executive", img: "images/ryan.jpg" },
+    ],
+    mechanical: [
+      { name: "Alice Wong", year: "3rd Year", position: "Mechanical Lead", img: "images/alice.jpg" },
+      { name: "David Li", year: "4th Year", position: "Manufacturing Lead", img: "images/david.jpg" },
+    ],
+    control: [
+      { name: "Jason Park", year: "3rd Year", position: "Control Systems Lead", img: "images/jason.jpg" },
+      { name: "Samantha Liu", year: "2nd Year", position: "Software Integration Lead", img: "images/samantha.jpg" },
+    ],
+    power: [
+      { name: "Daniel Reyes", year: "4th Year", position: "Power Systems Lead", img: "images/daniel.jpg" },
+      { name: "Hannah Patel", year: "3rd Year", position: "Electrical Integration Lead", img: "images/hannah.jpg" },
+    ],
+    aero: [
+      { name: "Sophia Patel", year: "4th Year", position: "Aerodynamics Lead", img: "images/sophia.jpg" },
+      { name: "Marcus Li", year: "3rd Year", position: "Testing & Validation Lead", img: "images/marcus.jpg" },
+    ],
+    sustainability: [
+      { name: "Olivia Green", year: "3rd Year", position: "Sustainability Lead", img: "images/olivia.jpg" },
+    ],
+    web: [
+      { name: "Matthew Ting", year: "3rd Year", position: "Webmaster", img: "images/matthew.jpg" },
+    ],
+  };
+
+  const buttons = document.querySelectorAll('.team-btn');
+  const teamGrid = document.getElementById('team-grid');
+
+  function renderTeam(team) {
+    teamGrid.innerHTML = team.map(member => `
+      <div class="bg-white rounded-xl shadow-md p-4 text-center hover:shadow-lg transition">
+        <img src="${member.img}" alt="${member.name}" class="w-32 h-32 mx-auto rounded-full object-cover mb-4">
+        <h3 class="font-bold text-lg">${member.name}</h3>
+        <p class="text-gray-600">${member.year}</p>
+        <p class="text-gray-500 italic">${member.position}</p>
+      </div>
+    `).join('');
+  }
+
+  // Default view
+  renderTeam(teamData.executives);
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('bg-indigo-700', 'text-white'));
+      btn.classList.add('bg-indigo-700', 'text-white');
+      renderTeam(teamData[btn.dataset.team]);
+    });
+  });
+</script>
+</body>
 </html>

@@ -17,48 +17,72 @@
 
   <body class="bg-gray-50 text-gray-800">
     <!-- Navbar -->
-    <nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-250">
-      <div class="max-w-7xl mx-auto flex justify-start items-center p-4 space-x-8">
-        <!-- Logo -->
-        <a href="main.html" class="flex items-center space-x-2">
-          <img src="images/UTWIND Logo_Circular_without_LogoType_1 color.jpg" alt="UTWind Logo" class="h-10 w-auto" />
-          <span class="text-2xl font-bold text-blue-600">UTWind</span>
-        </a>
+<nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-250">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4 space-x-8">
+    <!-- Logo -->
+    <a href="main.html" class="flex items-center space-x-2">
+      <img src="images/UTWIND Logo_Circular_without_LogoType_1 color.jpg" alt="UTWind Logo" class="h-10 w-auto" />
+      <span class="text-2xl font-bold text-blue-600">UTWind</span>
+    </a>
 
-        <!-- Nav Links -->
-        <div class="hidden md:flex space-x-6 ml-auto">
-          <a href="main.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</a>
-          <a href="competition.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</a>
-          <a href="team.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</a>
-          <a href="projects.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</a>
-          <a href="joinus.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</a>
-          <a href="sponsors.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</a>
-          <a href="#contact" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</a>
-        </div>
-      </div>
-    </nav>
+    <!-- Desktop Nav Links -->
+    <div class="hidden md:flex space-x-6 ml-auto">
+      <a href="main.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</a>
+      <a href="competition.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</a>
+      <a href="team.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</a>
+      <a href="projects.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</a>
+      <a href="joinus.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</a>
+      <a href="sponsors.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</a>
+      <a href="main.html#contact" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</a>
+    </div>
 
-  <!-- HeroSection full screen -->
-<section class="h-screen flex bg-blue-900 text-white">
-  <!-- Left: Text -->
-  <div class="flex-1 flex flex-col justify-center items-start pl-16">
-    <h1 class="text-9xl font-bold mb-4">UTWind</h1>
-    <p class="text-6xl font-bold mb-4">Face the Wind</p>
-    <p class="text-xl font-bold mb-4">University of Toronto Wind Turbine Team</p>
+    <!-- Mobile Hamburger -->
+    <button id="menu-btn" class="block md:hidden focus:outline-none">
+      <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
   </div>
 
-  <!-- Right: Shape background -->
-  <div class="w-1/2 h-full relative flex justify-center items-center">
-  <img 
-    src="images/wind-turbine-clipart-lg.png"
-    alt="Wind Turbine"
-    class="max-h-[80%] object-contain z-10"
-  />
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden flex-col items-center bg-white shadow-md space-y-4 py-4">
+    <a href="main.html" class="hover:text-blue-600 transition">Home</a>
+    <a href="competition.html" class="hover:text-blue-600 transition">Competition</a>
+    <a href="team.html" class="hover:text-blue-600 transition">Team</a>
+    <a href="projects.html" class="hover:text-blue-600 transition">Projects</a>
+    <a href="joinus.html" class="hover:text-blue-600 transition">Join Us</a>
+    <a href="sponsors.html" class="hover:text-blue-600 transition">Sponsors</a>
+    <a href="main.html#contact" class="hover:text-blue-600 transition">Contact</a>
+  </div>
+</nav>
+
+
+<section 
+  class="relative h-screen bg-cover bg-left bg-no-repeat flex items-center text-white"
+  style="background-image: url('images/ISWTC turbine.JPG');">
+  
+  <!-- Overlay (optional dark tint) -->
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+  <!-- Text content -->
+  <div class="relative z-10 max-w-3xl pl-16 pr-6">
+    <h1 class="text-9xl font-bold mb-6">UTWind</h1>
+    <h2 class="text-6xl font-light mb-4"> Face the Wind </h2>
+    <p class="text-3xl leading-relaxed">
+      University of Toronto Wind Turbine Team
+    </p>
   </div>
 </section>
 
+
+
     <!-- About Section-->
-<section id="about" class="bg-blue-700 text-white py-20" data-aos="fade-up">
+<section id="about" class="bg-blue-500 text-white py-20" data-aos="fade-up">
   <div class="max-w-2xl mx-auto text-center">
     <h2 class="text-6xl font-bold mb-6">About Us</h2>
     <p class="text-xl">
@@ -136,7 +160,7 @@
     <!-- Left: Logo -->
     <div class="flex items-center space-x-3">
       <img src="images/Utwind footer logo.png" alt="UTWind Logo" class="h-10 w-auto">
-      <span class="text-lg font-semibold text-black">UTWind</span>
+      <span class="text-lg font-semibold text-black">contact@utwind.com</span>
     </div>
 
     <!-- Right: Text -->
@@ -167,5 +191,19 @@
     lastScrollY = window.scrollY;
   });
 </script>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+    hamburgerIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  });
+</script>
+
   </body>
 </html>

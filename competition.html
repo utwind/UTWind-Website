@@ -11,28 +11,50 @@
 
   <body class="bg-gray-50 text-gray-800">
     <!-- Navbar -->
-      <nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-250">      
-        <div class="max-w-7xl mx-auto flex justify-start items-center p-4 space-x-8">
-        <!-- Logo -->
-        <a href="main.html" class="flex items-center space-x-2">
-          <img src="images/UTWIND Logo_Circular_without_LogoType_1 color.jpg" alt="UTWind Logo" class="h-10 w-auto" />
-          <span class="text-2xl font-bold text-blue-600">UTWind</span>
-        </a>
+      <nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-250">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4 space-x-8">
+    <!-- Logo -->
+    <a href="main.html" class="flex items-center space-x-2">
+      <img src="images/UTWIND Logo_Circular_without_LogoType_1 color.jpg" alt="UTWind Logo" class="h-10 w-auto" />
+      <span class="text-2xl font-bold text-blue-600">UTWind</span>
+    </a>
 
-       
-        <!-- Nav Links -->
-        <div class="hidden md:flex space-x-6 ml-auto">
-          <a href="main.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</a>
-          <a href="competition.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</a>
-          <a href="team.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</a>
-          <a href="projects.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</a>
-          <a href="joinus.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</a>
-          <a href="sponsors.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</a>
-          <a href="main.html#contact" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</a>
+    <!-- Desktop Nav Links -->
+    <div class="hidden md:flex space-x-6 ml-auto">
+      <a href="main.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</a>
+      <a href="competition.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</a>
+      <a href="team.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</a>
+      <a href="projects.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</a>
+      <a href="joinus.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</a>
+      <a href="sponsors.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</a>
+      <a href="main.html#contact" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</a>
+    </div>
 
-        </div>
-      </div>
-    </nav>
+    <!-- Mobile Hamburger -->
+    <button id="menu-btn" class="block md:hidden focus:outline-none">
+      <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden flex-col items-center bg-white shadow-md space-y-4 py-4">
+    <a href="main.html" class="hover:text-blue-600 transition">Home</a>
+    <a href="competition.html" class="hover:text-blue-600 transition">Competition</a>
+    <a href="team.html" class="hover:text-blue-600 transition">Team</a>
+    <a href="projects.html" class="hover:text-blue-600 transition">Projects</a>
+    <a href="joinus.html" class="hover:text-blue-600 transition">Join Us</a>
+    <a href="sponsors.html" class="hover:text-blue-600 transition">Sponsors</a>
+    <a href="main.html#contact" class="hover:text-blue-600 transition">Contact</a>
+  </div>
+</nav>
+
 <section id="competitions" class="bg-blue-200 py-20">
   <div class="max-w-5xl mx-auto text-center px-6">
     <h2 class="text-4xl font-bold text-gray-800 mb-8">
@@ -65,18 +87,22 @@
       <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white shadow-md z-10 hidden lg:block"></div>
 
       <!-- Text -->
-      <div class="lg:w-1/2 lg:pr-10 text-center lg:text-right mb-8 lg:mb-0">
+      <div class="lg:w-1/2 lg:pr-10 text-center lg:text-center mb-8 lg:mb-0">
         <h3 class="text-6xl font-semibold text-indigo-700 mb-4">2025</h3>
-        <p class="text-gray-700 leading-relaxed">
-          In 2025, UTWind competed once again at the International Small Wind Turbine Contest in the Netherlands,
-          showcasing our most efficient turbine design yet. Our innovations in control systems and sustainability
-          earned high praise from judges and fellow teams alike.
+        <p class="text-gray-700 text-lg leading-relaxed">
+          UTWind’s most ambitious turbine yet was our first-ever Vertical Axis Wind Turbine (VAWT). 
+          Despite the tight timeline and unfamiliarity, we built an H-Rotor VAWT in just four months 
+          and were thrilled to see it spin, generate power, and run with a working control system. 
+          Although we didn’t bring home a trophy, we learned a lot and can’t wait to improve in our next iteration.
         </p>
       </div>
 
       <!-- Image -->
-      <div class="lg:w-1/2 lg:pl-10">
-        <img src="images/ISWTC 2025.png" alt="ISWTC 2025" class="rounded-xl shadow-md w-full object-cover">
+      <div class="lg:w-1/2 lg:pl-10 text-center">
+        <img src="images/ISWTC 2025.png" alt="ISWTC 2025" class="rounded-xl shadow-md w-full object-cover mb-3">
+        <p class="text-gray-600 italic text-lg">
+          UTWind's 1st Iteration of VAWT - 2025 
+        </p>
       </div>
     </div>
 
@@ -84,17 +110,21 @@
     <div class="relative flex flex-col lg:flex-row-reverse items-center mb-24" data-aos="fade-up">
       <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white shadow-md z-10 hidden lg:block"></div>
 
-      <div class="lg:w-1/2 lg:pl-10 text-center lg:text-left mb-8 lg:mb-0">
+      <div class="lg:w-1/2 lg:pl-10 text-center lg:text-center mb-8 lg:mb-0">
         <h3 class="text-6xl font-semibold text-indigo-700 mb-4">2024</h3>
-        <p class="text-gray-700 leading-relaxed">
-          The 2024 ISWTC marked a milestone as UTWind refined our blade geometry and improved power output efficiency.
-          Competing against over a dozen teams from around the world, UTWind proudly represented the University of Toronto,
-          earning recognition for our mechanical design and testing.
+        <p class="text-gray-700 text-lg leading-relaxed">
+          The third year competing tested several firsts: recycling PET bottles into filament, 
+          using one motor for pitch control, and making flax-fiber blades. With many new teams, 
+          it was a huge surprise when the Jury awarded Best Overall Design <strong>(1st place)</strong> to 
+          “The Team from Toronto.”
         </p>
       </div>
 
-      <div class="lg:w-1/2 lg:pr-10">
-        <img src="images/ISWTC 2024.jpg" alt="ISWTC 2024" class="rounded-xl shadow-md w-full object-cover">
+      <div class="lg:w-1/2 lg:pr-10 text-center">
+        <img src="images/ISWTC 2024.jpg" alt="ISWTC 2024" class="rounded-xl shadow-md w-full object-cover mb-3">
+        <p class="text-gray-600 italic text-lg">
+          UTWind's 1st Place Award Winning Turbine - 2024 
+        </p>
       </div>
     </div>
 
@@ -102,17 +132,19 @@
     <div class="relative flex flex-col lg:flex-row items-center mb-24" data-aos="fade-up">
       <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white shadow-md z-10 hidden lg:block"></div>
 
-      <div class="lg:w-1/2 lg:pr-10 text-center lg:text-right mb-8 lg:mb-0">
+      <div class="lg:w-1/2 lg:pr-10 text-center lg:text-center mb-8 lg:mb-0">
         <h3 class="text-6xl font-semibold text-indigo-700 mb-4">2023</h3>
-        <p class="text-gray-700 leading-relaxed">
-          In 2023, UTWind made strides in power electronics and control algorithms,
-          developing a more reliable small-scale turbine that performed exceptionally during on-site testing.
-          The team’s collaborative effort strengthened both engineering and design aspects.
+        <p class="text-gray-700 text-lg leading-relaxed">
+          The second year of UTWind's participation at the ISWTC was no less challenging 
+          because we won the previous competition, however UTWind brought home the <strong>Award for Most Sustainable Turbine. </strong> 
         </p>
       </div>
 
-      <div class="lg:w-1/2 lg:pl-10">
-        <img src="images/ISWTC 2023.jpg" alt="ISWTC 2023" class="rounded-xl shadow-md w-full object-cover">
+      <div class="lg:w-1/2 lg:pl-10 text-center">
+        <img src="images/ISWTC 2023.jpg" alt="ISWTC 2023" class="rounded-xl shadow-md w-full object-cover mb-3">
+        <p class="text-gray-600 italic text-lg">
+          UTWind's Most Sustainable Award Wining Turbine - 2023
+        </p>
       </div>
     </div>
 
@@ -120,17 +152,20 @@
     <div class="relative flex flex-col lg:flex-row-reverse items-center" data-aos="fade-up">
       <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white shadow-md z-10 hidden lg:block"></div>
 
-      <div class="lg:w-1/2 lg:pl-10 text-center lg:text-left mb-8 lg:mb-0">
+      <div class="lg:w-1/2 lg:pl-10 text-center lg:text-center mb-8 lg:mb-0">
         <h3 class="text-6xl font-semibold text-indigo-700 mb-4">2022</h3>
-        <p class="text-gray-700 leading-relaxed">
-          2022 marked UTWind’s debut at ISWTC, where our team presented its first fully functional prototype turbine.
-          Competing internationally for the first time, UTWind impressed judges with innovative student-led engineering
-          and came home with our very first trophy.
+        <p class="text-gray-700 text-lg leading-relaxed">
+          This was the first ISWTC that UTWind competed in after almost two years of preparation
+          work during the pandemic. UTWind won Best Overall Design 
+          <strong>(1st place)</strong> in its debut at the ISWTC.
         </p>
       </div>
 
-      <div class="lg:w-1/2 lg:pr-10">
-        <img src="images/ISWTC 2022.jpg" alt="ISWTC 2022" class="rounded-xl shadow-md w-full object-cover">
+      <div class="lg:w-1/2 lg:pr-10 text-center">
+        <img src="images/ISWTC 2022.jpg" alt="ISWTC 2022" class="rounded-xl shadow-md w-full object-cover mb-3">
+        <p class="text-gray-600 italic text-lg">
+          UTWind's 1st Place Award Winning Turbine - 2022
+        </p>
       </div>
     </div>
   </div>
@@ -144,7 +179,7 @@
     <!-- Left: Logo -->
     <div class="flex items-center space-x-3">
       <img src="images/Utwind footer logo.png" alt="UTWind Logo" class="h-10 w-auto">
-      <span class="text-lg font-semibold text-black">UTWind</span>
+      <span class="text-lg font-semibold text-black">contact@utwind.com</span>
     </div>
 
     <!-- Right: Text -->
@@ -229,6 +264,19 @@
       btn.classList.add('bg-indigo-700', 'text-white');
       renderTeam(teamData[btn.dataset.team]);
     });
+  });
+</script>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+    hamburgerIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
   });
 </script>
 </body>

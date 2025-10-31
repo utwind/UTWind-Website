@@ -11,28 +11,49 @@
 
   <body class="bg-gray-50 text-gray-800">
     <!-- Navbar -->
-      <nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-250">      
-        <div class="max-w-7xl mx-auto flex justify-start items-center p-4 space-x-8">
-        <!-- Logo -->
-        <a href="main.html" class="flex items-center space-x-2">
-          <img src="images/UTWIND Logo_Circular_without_LogoType_1 color.jpg" alt="UTWind Logo" class="h-10 w-auto" />
-          <span class="text-2xl font-bold text-blue-600">UTWind</span>
-        </a>
+      <nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-250">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4 space-x-8">
+    <!-- Logo -->
+    <a href="main.html" class="flex items-center space-x-2">
+      <img src="images/UTWIND Logo_Circular_without_LogoType_1 color.jpg" alt="UTWind Logo" class="h-10 w-auto" />
+      <span class="text-2xl font-bold text-blue-600">UTWind</span>
+    </a>
 
-       
-        <!-- Nav Links -->
-        <div class="hidden md:flex space-x-6 ml-auto">
-          <a href="main.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</a>
-          <a href="competition.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</a>
-          <a href="team.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</a>
-          <a href="projects.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</a>
-          <a href="joinus.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</a>
-          <a href="sponsors.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</a>
-          <a href="main.html#contact" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</a>
+    <!-- Desktop Nav Links -->
+    <div class="hidden md:flex space-x-6 ml-auto">
+      <a href="main.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</a>
+      <a href="competition.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</a>
+      <a href="team.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</a>
+      <a href="projects.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</a>
+      <a href="joinus.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</a>
+      <a href="sponsors.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</a>
+      <a href="main.html#contact" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</a>
+    </div>
 
-        </div>
-      </div>
-    </nav>
+    <!-- Mobile Hamburger -->
+    <button id="menu-btn" class="block md:hidden focus:outline-none">
+      <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden flex-col items-center bg-white shadow-md space-y-4 py-4">
+    <a href="main.html" class="hover:text-blue-600 transition">Home</a>
+    <a href="competition.html" class="hover:text-blue-600 transition">Competition</a>
+    <a href="team.html" class="hover:text-blue-600 transition">Team</a>
+    <a href="projects.html" class="hover:text-blue-600 transition">Projects</a>
+    <a href="joinus.html" class="hover:text-blue-600 transition">Join Us</a>
+    <a href="sponsors.html" class="hover:text-blue-600 transition">Sponsors</a>
+    <a href="main.html#contact" class="hover:text-blue-600 transition">Contact</a>
+  </div>
+</nav>
 
   <section id="team" class="bg-gray-50 py-20">
   <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 px-6">
@@ -64,7 +85,7 @@
     <!-- Left: Logo -->
     <div class="flex items-center space-x-3">
       <img src="images/Utwind footer logo.png" alt="UTWind Logo" class="h-10 w-auto">
-      <span class="text-lg font-semibold text-black">UTWind</span>
+      <span class="text-lg font-semibold text-black">contact@utwind.com</span>
     </div>
 
     <!-- Right: Text -->
@@ -122,7 +143,7 @@
       { name: "Olivia Green", year: "3rd Year", position: "Sustainability Lead", img: "images/olivia.jpg" },
     ],
     web: [
-      { name: "Matthew Ting", year: "3rd Year", position: "Webmaster", img: "images/matthew.jpg" },
+      { name: "Matthew Ting", year: "MSE 2T7 + PEY", position: "Webmaster", img: "images/Matthew Ting.png" },
     ],
   };
 
@@ -151,5 +172,19 @@
     });
   });
 </script>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+    hamburgerIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  });
+</script>
+
 </body>
 </html>

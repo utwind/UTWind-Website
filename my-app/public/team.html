@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTWind | Sustainable Wind Energy Team</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+      <nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-250">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4 space-x-8">
+    <!-- Logo -->
+    <a href="/main.html" class="flex items-center space-x-2">
+      <img src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg" alt="UTWind Logo" class="h-10 w-auto" />
+      <span class="text-2xl font-bold text-blue-600">UTWind</span>
+    </a>
+
+    <!-- Desktop Nav Links -->
+    <div class="hidden md:flex space-x-6 ml-auto">
+      <a href="/main.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</a>
+      <a href="/competition.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</a>
+      <a href="/team.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</a>
+      <a href="/projects.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</a>
+      <a href="/joinus.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</a>
+      <a href="/sponsors.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</a>
+      <a href="/main.html#contact" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</a>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button id="menu-btn" class="block md:hidden focus:outline-none">
+      <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden flex-col items-center bg-white shadow-md space-y-4 py-4">
+    <a href="/main.html" class="hover:text-blue-600 transition">Home</a>
+    <a href="/competition.html" class="hover:text-blue-600 transition">Competition</a>
+    <a href="/team.html" class="hover:text-blue-600 transition">Team</a>
+    <a href="/projects.html" class="hover:text-blue-600 transition">Projects</a>
+    <a href="/joinus.html" class="hover:text-blue-600 transition">Join Us</a>
+    <a href="/sponsors.html" class="hover:text-blue-600 transition">Sponsors</a>
+    <a href="/main.html#contact" class="hover:text-blue-600 transition">Contact</a>
+  </div>
+</nav>
+
+  <section id="team" class="bg-gray-50 py-20">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 px-6">
+    
+    <!-- Left Sidebar -->
+    <div class="w-full md:w-1/4 flex flex-col space-y-4">
+      <button class="team-btn bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-md hover:bg-gray-300 transition" data-team="executives">Executives</button>
+      <button class="team-btn bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-md hover:bg-gray-300 transition" data-team="mechanical">Mechanical & Manufacturing Leads</button>
+      <button class="team-btn bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-md hover:bg-gray-300 transition" data-team="control">Control Systems Leads</button>
+      <button class="team-btn bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-md hover:bg-gray-300 transition" data-team="power">Power Systems Leads</button>
+      <button class="team-btn bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-md hover:bg-gray-300 transition" data-team="aero">Aerodynamics Leads</button>
+      <button class="team-btn bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-md hover:bg-gray-300 transition" data-team="sustainability">Sustainability Lead</button>
+      <button class="team-btn bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-md hover:bg-gray-300 transition" data-team="web">Webmaster</button>  
+    </div>
+
+    <!-- Right Grid -->
+    <div class="w-full md:w-3/4">
+      <div id="team-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Members load here -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+<footer class="bg-blue-100 text-gray-300 py-6 mt-20">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6">
+    <!-- Left: Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="/images/Utwind footer logo.png" alt="UTWind Logo" class="h-10 w-auto">
+      <span class="text-lg font-semibold text-black">contact@utwind.com</span>
+    </div>
+
+    <!-- Right: Text -->
+    <p class="text-sm text-black">© 2025 UTWind | University of Toronto</p>
+  </div>
+</footer>
+  <script>
+  AOS.init({
+    duration: 1000,  // animation lasts 1 second
+    once: true       // animates only once
+  });
+  </script>
+  <!--navbar scroll-->
+  <script>
+  let lastScrollY = window.scrollY;
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+      // Scrolling down → fade up & out
+      navbar.classList.add('opacity-0', '-translate-y-10');
+      navbar.classList.remove('opacity-100', 'translate-y-0');
+    } else {
+      // Scrolling up → fade back in
+      navbar.classList.remove('opacity-0', '-translate-y-10');
+      navbar.classList.add('opacity-100', 'translate-y-0');
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+<script>
+  const teamData = {
+    executives: [
+      { name: "Avani Yadav", year: "ECE2T6 + PEY", position: "President", img: "images/Avani webpic.jpg" },
+      { name: "Kristen Ho", year: "MECH2T6 + PEY", position: "President", img: "images/IMG_5860 - Kristen Ho.jpeg" },
+      { name: "Calvert Zhu", year: "MSE2T7 + PEY", position: "VP Communications", img: "images/IMG_1901 - Calvert Zhu.jpeg" },
+      { name: "Dhara Patel", year: "ECE2T7 + PEY", position: "VP Communications", img: "images/IMG_1437_Original - Dhara Patel.jpeg" },
+      { name: "Aaron Gu", year: "Rotman Commerce", position: "VP Finance", img: "images/unnamed (1) - Aaron Gu.jpg" },
+    ],
+    mechanical: [
+      { name: "Elena Sloan", year: "MECH2T5 + PEY", position: "Mechanical & Manufacturing Lead", img: "images/wind_25 - Elena Sloan.jpg" },
+      { name: "Justin (\"Justine\") Ding", year: "MECH 2T6 +1", position: "Mechanical & Manufacturing Lead", img: "images/PXL_20250524_154408480 - 渡辺フウキ.jpg" },
+    ],
+    control: [
+      { name: "Wanning He", year: "ECE", position: "Control Systems Lead", img: "images/EB048E2E-10A1-4331-A315-78C3A287A657 - Wanning He.jpeg" },
+      { name: "Jacob Duplessis", year: "ECE", position: "Contol Systems Lead", img: "images/image - Jacob Duplessis.jpg" },
+    ],
+    power: [
+      { name: "Alexis Terefenko", year: "ECE2T6 + PEY", position: "Power Systems Lead", img: "images/IMG_7490 - Alexis Terefenko.jpeg" },
+      { name: "Alec MacGregor", year: "EngSci Energy Systems 2T6 + PEY", position: "Power Systems Lead", img: "images/IMG_0262~2 - Alec MacGregor.jpg" },
+    ],
+    aero: [
+      { name: "Sogand Okhovatian", year: "Aerospace - UTIAS -MSc", position: "Aerodynamics Lead", img: "images/linked in profile picture (2) - Sogand Okhovatian.JPG" },
+      { name: "Angela Deng", year: "EngSci Physics 2T5 + PEY", position: "Aerodynamics Lead", img: "images/IMG_4446 - Angela Deng.jpeg" },
+    ],
+    sustainability: [
+      { name: "Mai Shimozato", year: "ECE 2T6 + PEY", position: "Sustainability Lead", img: "images/IMG_5983 - Mai Shimozato.jpg" },
+    ],
+    web: [
+      { name: "Matthew Ting", year: "MSE 2T7 + PEY", position: "Webmaster", img: "images/Matthew Ting.png" },
+    ],
+  };
+
+  const buttons = document.querySelectorAll('.team-btn');
+  const teamGrid = document.getElementById('team-grid');
+
+  function renderTeam(team) {
+    teamGrid.innerHTML = team.map(member => `
+      <div class="bg-white rounded-xl shadow-md p-4 text-center hover:shadow-lg transition">
+        <img src="${member.img}" alt="${member.name}" class="w-32 h-32 mx-auto rounded-full object-cover mb-4">
+        <h3 class="font-bold text-lg">${member.name}</h3>
+        <p class="text-gray-600">${member.year}</p>
+        <p class="text-gray-500 italic">${member.position}</p>
+      </div>
+    `).join('');
+  }
+
+  // Default view
+  renderTeam(teamData.executives);
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('bg-indigo-700', 'text-white'));
+      btn.classList.add('bg-indigo-700', 'text-white');
+      renderTeam(teamData[btn.dataset.team]);
+    });
+  });
+</script>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+    hamburgerIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>

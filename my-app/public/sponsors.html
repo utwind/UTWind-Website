@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTWind | Sustainable Wind Energy Team</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+<nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-250">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4 space-x-8">
+    <!-- Logo -->
+    <a href="/main.html" class="flex items-center space-x-2">
+      <img src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg" alt="UTWind Logo" class="h-10 w-auto" />
+      <span class="text-2xl font-bold text-blue-600">UTWind</span>
+    </a>
+
+    <!-- Desktop Nav Links -->
+    <div class="hidden md:flex space-x-6 ml-auto">
+      <a href="/main.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</a>
+      <a href="/competition.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</a>
+      <a href="/team.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</a>
+      <a href="/projects.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</a>
+      <a href="/joinus.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</a>
+      <a href="/sponsors.html" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</a>
+      <a href="/main.html#contact" class="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</a>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button id="menu-btn" class="block md:hidden focus:outline-none">
+      <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden flex-col items-center bg-white shadow-md space-y-4 py-4">
+    <a href="/main.html" class="hover:text-blue-600 transition">Home</a>
+    <a href="/competition.html" class="hover:text-blue-600 transition">Competition</a>
+    <a href="/team.html" class="hover:text-blue-600 transition">Team</a>
+    <a href="/projects.html" class="hover:text-blue-600 transition">Projects</a>
+    <a href="/joinus.html" class="hover:text-blue-600 transition">Join Us</a>
+    <a href="/sponsors.html" class="hover:text-blue-600 transition">Sponsors</a>
+    <a href="/main.html#contact" class="hover:text-blue-600 transition">Contact</a>
+  </div>
+</nav>
+
+<section id="sponsors" class="bg-white py-20" data-aos="fade-up">
+  <div class="max-w-7xl mx-auto text-center px-6">
+    <h2 class="text-6xl font-bold mb-10 text-blue-800">Our Sponsors</h2>
+    <p class="text-lg mb-12">Huge thanks to our sponsors that play a vital role in turn theory into real-world engineering. With their support, 
+      UTWind is able to prototype new turbine designs, test renewable technologies, and represent the University of Toronto
+      at international competitions. We thank you for empowering the next generation of engineers shaping the future of sustainable energy!</p>
+
+    <!-- Sponsor Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10">
+      <!-- Sponsor 1 -->
+      <a href="https://skule.ca/" target="_blank" class="block transform hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="100">
+        <img src="/images/SKULE.png" alt="Sponsor 1" class="w-full h-32 object-contain mx-auto">
+      </a>
+
+      <!-- Sponsor 2 -->
+      <a href="https://www.utoronto.ca/" target="_blank" class="block transform hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="200">
+        <img src="/images/Uoft.png" alt="Sponsor 2" class="w-full h-32 object-contain mx-auto">
+      </a>
+
+      <!-- Sponsor 3 -->
+      <a href="https://www.engineering.utoronto.ca/current-students/centralized-process-for-student-initiative-funding-cpsif/" target="_blank" class="block transform hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="300">
+        <img src="/images/CPSIF.png" alt="Sponsor 3" class="w-full h-32 object-contain mx-auto">
+      </a>
+
+      <!-- Sponsor 4 -->
+      <a href="https://www.utern.ca/" target="_blank" class="block transform hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="400">
+        <img src="/images/UTERN.png" alt="Sponsor 4" class="w-full h-32 object-contain mx-auto">
+      </a>
+
+      <!-- Sponsor 5 -->
+      <a href="https://rlxsolutions.com/" target="_blank" class="block transform hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="100">
+        <img src="/images/RLXsol.png" alt="Sponsor 5" class="w-full h-32 object-contain mx-auto">
+      </a>
+
+      <!-- Sponsor 6 -->
+      <a href="https://www.hakko.com/english/products/" target="_blank" class="block transform hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="200">
+        <img src="/images/Hakko.png" alt="Sponsor 6" class="w-full h-32 object-contain mx-auto">
+      </a>
+
+      <!-- Sponsor 7 -->
+      <a href="https://www.solidworks.com/" target="_blank" class="block transform hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="300">
+        <img src="/images/Solidworks.png" alt="Sponsor 7" class="w-full h-32 object-contain mx-auto">
+      </a>
+
+      <!-- Sponsor 8 -->
+      <a href="https://www.altium.com/" target="_blank" class="block transform hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="400">
+        <img src="/images/Altium.png" alt="Sponsor 8" class="w-full h-32 object-contain mx-auto">
+      </a>
+
+      <!-- Sponsor 9 -->
+      <a href="https://www.molex.com/en-us/home" target="_blank" class="block transform hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="100">
+        <img src="/images/Molex.png" alt="Sponsor 9" class="w-full h-32 object-contain mx-auto">
+      </a>
+
+      <!-- Sponsor 10 -->
+      <a href="https://mgchemicals.com/" target="_blank" class="block transform hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="200">
+        <img src="/images/MGchemicals.png" alt="Sponsor 10" class="w-full h-32 object-contain mx-auto">
+      </a>
+
+      <!-- Sponsor 11 -->
+      <a href="https://gillinstruments.com/" target="_blank" class="block transform hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="300">
+        <img src="/images/GILL.png" alt="Sponsor 11" class="w-full h-32 object-contain mx-auto">
+      </a>
+
+      <!-- Sponsor 12 -->
+      <a href="https://www.ansys.com/" target="_blank" class="block transform hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="400">
+        <img src="/images/ANSYS.png" alt="Sponsor 12" class="w-full h-32 object-contain mx-auto">
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+<footer class="bg-blue-100 text-gray-300 py-6 mt-20">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6">
+    <!-- Left: Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="/images/Utwind footer logo.png" alt="UTWind Logo" class="h-10 w-auto">
+      <span class="text-lg font-semibold text-black">contact@utwind.com</span>
+    </div>
+
+    <!-- Right: Text -->
+    <p class="text-sm text-black">© 2025 UTWind | University of Toronto</p>
+  </div>
+</footer>
+  <script>
+  AOS.init({
+    duration: 1000,  // animation lasts 1 second
+    once: true       // animates only once
+  });
+  </script>
+  <!--navbar scroll-->
+  <script>
+  let lastScrollY = window.scrollY;
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+      // Scrolling down → fade up & out
+      navbar.classList.add('opacity-0', '-translate-y-10');
+      navbar.classList.remove('opacity-100', 'translate-y-0');
+    } else {
+      // Scrolling up → fade back in
+      navbar.classList.remove('opacity-0', '-translate-y-10');
+      navbar.classList.add('opacity-100', 'translate-y-0');
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+    hamburgerIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  });
+</script>
+
+  </body>
+</html>

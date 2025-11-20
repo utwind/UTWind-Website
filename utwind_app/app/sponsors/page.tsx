@@ -44,8 +44,8 @@ export default function SponsorsPage() {
           id="navbar"
           className="bg-white shadow-md sticky top-0 z-50 transition-all duration-200"
         >
-          <div className="max-w-7xl mx-auto flex justify-between items-center p-4 space-x-8">
-            <Link href="/" className="flex items-center space-x-2">
+          <div className="flex justify-between items-center py-4 pl-4 pr-6">
+            <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
               <Image
                 src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
                 alt="UTWind Logo"
@@ -57,7 +57,7 @@ export default function SponsorsPage() {
               <span className="text-2xl font-bold text-blue-600">UTWind</span>
             </Link>
 
-            <div className="hidden md:flex space-x-6 ml-auto">
+            <div className="hidden md:flex space-x-6 items-center">
               <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</Link>
               <Link href="/competition" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</Link>
               <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</Link>
@@ -134,9 +134,11 @@ export default function SponsorsPage() {
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <img
+              <Image
                 src="/images/SKULE.png"
                 alt="Skule"
+                width={200}
+                height={128}
                 className="w-full h-32 object-contain mx-auto"
               />
             </a>
@@ -149,9 +151,11 @@ export default function SponsorsPage() {
               data-aos="zoom-in"
               data-aos-delay="200"
             >
-              <img
+              <Image
                 src="/images/Uoft.png"
                 alt="University of Toronto"
+                width={200}
+                height={128}
                 className="w-full h-32 object-contain mx-auto"
               />
             </a>
@@ -164,9 +168,11 @@ export default function SponsorsPage() {
               data-aos="zoom-in"
               data-aos-delay="300"
             >
-              <img
+              <Image
                 src="/images/CPSIF.png"
                 alt="CPSIF"
+                width={200}
+                height={128}
                 className="w-full h-32 object-contain mx-auto"
               />
             </a>
@@ -179,9 +185,11 @@ export default function SponsorsPage() {
               data-aos="zoom-in"
               data-aos-delay="400"
             >
-              <img
+              <Image
                 src="/images/UTERN.png"
                 alt="UTERN"
+                width={200}
+                height={128}
                 className="w-full h-32 object-contain mx-auto"
               />
             </a>
@@ -194,9 +202,11 @@ export default function SponsorsPage() {
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <img
+              <Image
                 src="/images/RLXsol.png"
                 alt="RLX Solutions"
+                width={200}
+                height={128}
                 className="w-full h-32 object-contain mx-auto"
               />
             </a>
@@ -209,9 +219,11 @@ export default function SponsorsPage() {
               data-aos="zoom-in"
               data-aos-delay="200"
             >
-              <img
+              <Image
                 src="/images/Hakko.png"
                 alt="Hakko"
+                width={200}
+                height={128}
                 className="w-full h-32 object-contain mx-auto"
               />
             </a>
@@ -224,9 +236,11 @@ export default function SponsorsPage() {
               data-aos="zoom-in"
               data-aos-delay="300"
             >
-              <img
+              <Image
                 src="/images/Solidworks.png"
                 alt="SolidWorks"
+                width={200}
+                height={128}
                 className="w-full h-32 object-contain mx-auto"
               />
             </a>
@@ -239,9 +253,11 @@ export default function SponsorsPage() {
               data-aos="zoom-in"
               data-aos-delay="400"
             >
-              <img
+              <Image
                 src="/images/Altium.png"
                 alt="Altium"
+                width={200}
+                height={128}
                 className="w-full h-32 object-contain mx-auto"
               />
             </a>
@@ -254,9 +270,11 @@ export default function SponsorsPage() {
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <img
+              <Image
                 src="/images/Molex.png"
                 alt="Molex"
+                width={200}
+                height={128}
                 className="w-full h-32 object-contain mx-auto"
               />
             </a>
@@ -269,9 +287,11 @@ export default function SponsorsPage() {
               data-aos="zoom-in"
               data-aos-delay="200"
             >
-              <img
+              <Image
                 src="/images/MGchemicals.png"
                 alt="MG Chemicals"
+                width={200}
+                height={128}
                 className="w-full h-32 object-contain mx-auto"
               />
             </a>
@@ -284,9 +304,11 @@ export default function SponsorsPage() {
               data-aos="zoom-in"
               data-aos-delay="300"
             >
-              <img
+              <Image
                 src="/images/GILL.png"
                 alt="Gill Instruments"
+                width={200}
+                height={128}
                 className="w-full h-32 object-contain mx-auto"
               />
             </a>
@@ -299,9 +321,11 @@ export default function SponsorsPage() {
               data-aos="zoom-in"
               data-aos-delay="400"
             >
-              <img
+              <Image
                 src="/images/ANSYS.png"
                 alt="ANSYS"
+                width={200}
+                height={128}
                 className="w-full h-32 object-contain mx-auto"
               />
             </a>

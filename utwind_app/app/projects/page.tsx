@@ -62,8 +62,8 @@ export default function ProjectsPage() {
           id="navbar"
           className="bg-white shadow-md sticky top-0 z-50 transition-all duration-200"
         >
-          <div className="max-w-7xl mx-auto flex justify-between items-center p-4 space-x-8">
-            <Link href="/" className="flex items-center space-x-2">
+          <div className="flex justify-between items-center py-4 pl-4 pr-6">
+            <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
               <Image
                 src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
                 alt="UTWind Logo"
@@ -75,7 +75,7 @@ export default function ProjectsPage() {
               <span className="text-2xl font-bold text-blue-600">UTWind</span>
             </Link>
 
-            <div className="hidden md:flex space-x-6 ml-auto">
+            <div className="hidden md:flex space-x-6 items-center">
               <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</Link>
               <Link href="/competition" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</Link>
               <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</Link>
@@ -203,9 +203,11 @@ export default function ProjectsPage() {
 
                 {/* Right Image */}
                 <div className="lg:w-1/2 flex justify-center">
-                  <img
+                  <Image
                     src="/images/recycling process.png"
                     alt="UTWind PET Bottle Recycling"
+                    width={500}
+                    height={400}
                     className="rounded-2xl shadow-xl w-full max-w-md object-cover"
                   />
                 </div>
@@ -396,9 +398,11 @@ export default function ProjectsPage() {
 
                   {/* Step 3 */}
                   <div className="relative flex flex-col items-center text-center p-6 bg-blue-100 rounded-2xl shadow-lg border-2 border-blue-300">
-                    <img
+                    <Image
                       src="/images/3dprinting.png"
                       alt="Extrude Filament"
+                      width={600}
+                      height={240}
                       className="w-full h-60 object-cover rounded-xl mb-6 border-4 border-white shadow-md"
                     />
                     <h3 className="text-2xl font-semibold text-indigo-700 mb-2">
@@ -461,21 +465,9 @@ export default function ProjectsPage() {
                     </li>
                   </ul>
                   <div className="mt-6 flex flex-wrap justify-center gap-4">
-                    <img
-                      src="/images/petbottle1.jpg"
-                      alt="Example PET bottle"
-                      className="w-40 h-40 object-cover rounded-lg shadow"
-                    />
-                    <img
-                      src="/images/petbottle2.jpg"
-                      alt="Example PET bottle"
-                      className="w-40 h-40 object-cover rounded-lg shadow"
-                    />
-                    <img
-                      src="/images/petbottle3.png"
-                      alt="Example PET bottle"
-                      className="w-40 h-40 object-cover rounded-lg shadow"
-                    />
+                    <p className="text-gray-600 italic">
+                      Example PET bottle images will be added here.
+                    </p>
                   </div>
                 </div>
 

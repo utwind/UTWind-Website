@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import Head from "next/head";
+import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -40,17 +40,7 @@ export default function JoinUsPage() {
   }, []);
 
   return (
-    <>
-      <Head>
-        <title>UTWind | Sustainable Wind Energy Team</title>
-        <meta
-          name="description"
-          content="UTWind - University of Toronto sustainable wind energy design team"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
-
-      <div className="bg-gray-50 text-gray-800 min-h-screen">
+    <div className="bg-gray-50 text-gray-800 min-h-screen">
         {/* Navbar */}
         <nav
           id="navbar"
@@ -61,11 +51,13 @@ export default function JoinUsPage() {
           <div className="max-w-7xl mx-auto flex justify-between items-center p-4 space-x-8">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2">
-              {/* Make sure this image exists in /public/images */}
-              <img
+              <Image
                 src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
                 alt="UTWind Logo"
+                width={40}
+                height={40}
                 className="h-10 w-auto"
+                priority
               />
               <span className="text-2xl font-bold text-blue-600">UTWind</span>
             </Link>
@@ -355,10 +347,11 @@ export default function JoinUsPage() {
           <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
             {/* Left: Logo */}
             <div className="flex items-center space-x-3">
-              {/* Make sure this image exists in /public/images */}
-              <img
+              <Image
                 src="/images/Utwind footer logo.png"
                 alt="UTWind Logo"
+                width={40}
+                height={40}
                 className="h-10 w-auto"
               />
               <span className="text-lg font-semibold text-black">
@@ -373,6 +366,5 @@ export default function JoinUsPage() {
           </div>
         </footer>
       </div>
-    </>
   );
 }

@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function CompetitionPage() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -11,16 +12,7 @@ export default function CompetitionPage() {
   const lastScrollY = useRef(0);
   
   useEffect(() => {
-    let mounted = true;
-    (async () => {
-      try {
-        const AOS = (await import("aos")).default;
-        if (mounted) AOS.init({ duration: 1000, once: true });
-      } catch (e) {}
-    })();
-    return () => {
-      mounted = false;
-    };
+    AOS.init({ duration: 1000, once: true });
   }, []);
 
   useEffect(() => {
@@ -42,14 +34,7 @@ export default function CompetitionPage() {
   }, []);
 
   return (
-    <>
-      <Head>
-        <title>UTWind | Sustainable Wind Energy Team</title>
-        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-
-      <div className="bg-gray-50 text-gray-800 min-h-screen">
+    <div className="bg-gray-50 text-gray-800 min-h-screen">
         {/* Navbar */}
         <nav
           ref={navbarRef}
@@ -200,6 +185,5 @@ export default function CompetitionPage() {
           </div>
         </section>
       </div>
-    </>
   );
 }

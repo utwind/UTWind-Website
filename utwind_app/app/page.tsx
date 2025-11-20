@@ -1,59 +1,55 @@
 'use client';
 
-import Script from 'next/script';
 import { useEffect, useRef, useState } from "react";
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
+  // ref for navbar and mobile menu state
+  const navbarRef = useRef<HTMLElement | null>(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const lastScrollY = useRef(0);
+
   useEffect(() => {
     // aos init
-    if (typeof window !== 'undefined' && (window as any).AOS) {
-      (window as any).AOS.init({ duration: 1000, once: true });
-    }
+    AOS.init({ duration: 1000, once: true });
 
-    // navbar scroll effect (will use navbarRef if set)
-    let lastScrollY = window.scrollY;
-
+    // navbar scroll effect
     const handleScroll = () => {
-      const el = navbarRef.current || document.getElementById('navbar');
+      const el = navbarRef.current;
       if (!el) return;
-      if (window.scrollY > lastScrollY) {
+      const currentY = window.scrollY;
+      if (currentY > lastScrollY.current) {
         el.classList.add('opacity-0', '-translate-y-10');
         el.classList.remove('opacity-100', 'translate-y-0');
       } else {
         el.classList.remove('opacity-0', '-translate-y-10');
         el.classList.add('opacity-100', 'translate-y-0');
       }
-      lastScrollY = window.scrollY;
+      lastScrollY.current = currentY;
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // ref for navbar and mobile menu state
-  const navbarRef = useRef<HTMLElement | null>(null);
-  const [mobileOpen, setMobileOpen] = useState(false);
-
   // simple toggle using state
   const toggleMenu = () => setMobileOpen((v) => !v);
 
   return (
     <main className="bg-gray-50 text-gray-800">
-      {/* aos */}
-      <Script src="https://unpkg.com/aos@2.3.4/dist/aos.js" strategy="beforeInteractive" />
-      <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
       {/* navbar */}
       <nav
+        ref={navbarRef}
         id="navbar"
         className="bg-white shadow-md sticky top-0 z-50 transition-all duration-250"
       >
-      <div className="max-w-7xl mx-auto flex justify-between items-center p-4 space-x-8">
+      <div className="flex justify-between items-center py-4 pl-4 pr-6">
         {/* logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
             <Image
               src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
               alt="UTWind Logo"
@@ -66,7 +62,7 @@ export default function Home() {
           </Link>
 
           {/* desktop links */}
-          <div className="hidden md:flex space-x-6 ml-auto">
+          <div className="hidden md:flex space-x-6 items-center">
             <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</Link>
             <Link href="/competition" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</Link>
             <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</Link>
@@ -114,12 +110,11 @@ export default function Home() {
           <Link href="/#contact" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Contact</Link>
         </div>
     </nav>
-<div className="absolute inset-0 bg-transparent bg-opacity-40"></div>
 
       {/* hero */}
       <section
   className="relative h-screen bg-cover bg-center bg-no-repeat flex items-center text-white"
-  style={{ backgroundImage: "url('/images/ISWTC-turbine.jpg')" }}
+  style={{ backgroundImage: "url('/images/ISWTC turbine.JPG')" }}
 >
   {/* Dark overlay (behind text) */}
   <div className="absolute inset-0 bg-transparent bg-opacity-40"></div>
@@ -212,7 +207,7 @@ export default function Home() {
       <footer className="bg-blue-100 text-gray-300 py-6 mt-20">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
           <div className="flex items-center space-x-3">
-            <img src="/images/Utwind footer logo.png" alt="UTWind Logo" className="h-10 w-auto" />
+            <Image src="/images/Utwind footer logo.png" alt="UTWind Logo" width={40} height={40} className="h-10 w-auto" />
             <span className="text-lg font-semibold text-black">contact@utwind.com</span>
           </div>
           <p className="text-sm text-black">© 2025 UTWind | University of Toronto</p>

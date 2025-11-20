@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -556,10 +555,10 @@ export default function ProjectsPage() {
       <footer className="bg-blue-100 text-gray-200 py-8 w-full mt-auto">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
           <div className="flex items-center space-x-3">
-            <img src="/images/Utwind footer logo.png" alt="UTWind Logo" className="h-10 w-auto" />
+            <Image src="/images/Utwind footer logo.png" alt="UTWind Logo" width={40} height={40} className="h-10 w-auto" />
             <span className="text-lg font-semibold text-black">contact@utwind.com</span>
           </div>
-          <p className="text-sm text-black">© 2025 UT   Wind | University of Toronto</p>
+          <p className="text-sm text-black">© 2025 UTWind | University of Toronto</p>
         </div>
       </footer>
     </div>

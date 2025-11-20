@@ -313,9 +313,11 @@ export default function SponsorsPage() {
       <footer className="bg-blue-100 text-gray-300 py-6 mt-20">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
           <div className="flex items-center space-x-3">
-            <img
+            <Image
               src="/images/Utwind footer logo.png"
               alt="UTWind Logo"
+              width={40}
+              height={40}
               className="h-10 w-auto"
             />
             <span className="text-lg font-semibold text-black">

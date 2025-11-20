@@ -205,9 +205,17 @@ export default function Home() {
 
       {/* footer */}
       <footer className="bg-blue-100 text-gray-300 py-6 mt-20">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
+        <div className="flex items-center justify-between px-6">
           <div className="flex items-center space-x-3">
-            <Image src="/images/Utwind footer logo.png" alt="UTWind Logo" width={40} height={40} className="h-10 w-auto" />
+            <Image 
+              src="/images/Utwind footer logo.png" 
+              alt="UTWind Logo" 
+              width={200} 
+              height={200} 
+              className="h-16 w-auto object-contain"
+              quality={100}
+              unoptimized
+            />
             <span className="text-lg font-semibold text-black">contact@utwind.com</span>
           </div>
           <p className="text-sm text-black">© 2025 UTWind | University of Toronto</p>

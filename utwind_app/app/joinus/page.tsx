@@ -261,6 +261,57 @@ export default function JoinUsPage() {
             </div>
           </div>
         </section>
+        <section className="py-24 bg-gradient-to-b from-blue-100 to-blue-200  flex items-center">
+<div className="max-w-6xl mx-auto px-6 w-full">
+<h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-blue-900 drop-shadow-sm">
+UTWind Team Forms
+</h2>
+
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+<Link
+target="_blank" rel="noopener noreferrer"
+href="https://docs.google.com/forms/d/e/1FAIpQLScY2iR7qBZJUIgsyzM0dSK8P6kQg10vSSDIyVwv_enu-DqESw/viewform"
+className="group block bg-white/80 backdrop-blur shadow-lg rounded-2xl p-10 border border-blue-300 hover:shadow-2xl hover:-translate-y-2 transition-all"
+>
+<h3 className="text-2xl font-bold mb-4 text-blue-800 group-hover:text-blue-600">
+Fall 2025 Member Recruitment Form
+</h3>
+<p className="text-blue-700">
+Join UTWind and get involved in engineering, design, and sustainability.
+</p>
+</Link>
+
+
+<Link
+target="_blank" rel="noopener noreferrer"
+href="https://docs.google.com/forms/d/e/1FAIpQLSdV_Lij_zhdXK3oAO4dK4_fT4j9xYFZz_CbCwj-Qhd1cbmrNQ/viewform"
+className="group block bg-white/80 backdrop-blur shadow-lg rounded-2xl p-10 border border-blue-300 hover:shadow-2xl hover:-translate-y-2 transition-all"
+>
+<h3 className="text-2xl font-bold mb-4 text-blue-800 group-hover:text-blue-600">
+Business Case Lead
+</h3>
+<p className="text-blue-700">
+Apply for our Business Case Lead position!
+</p>
+</Link>
+
+
+<Link
+target="_blank" rel="noopener noreferrer"
+href="https://docs.google.com/forms/d/e/1FAIpQLSc1PIgdVWMF30m6HM2xMk0st6mY-030NuIWdpYo-PdiCQ88Sg/viewform"
+className="group block bg-white/80 backdrop-blur shadow-lg rounded-2xl p-10 border border-blue-300 hover:shadow-2xl hover:-translate-y-2 transition-all"
+>
+<h3 className="text-2xl font-bold mb-4 text-blue-800 group-hover:text-blue-600">
+Team Feedback & Inquiries Form
+</h3>
+<p className="text-blue-700">
+Help improve UTWind with your thoughts and suggestions.
+</p>
+</Link>
+</div>
+</div>
+</section>
 
         {/* Subteams Section */}
         <section
@@ -270,7 +321,7 @@ export default function JoinUsPage() {
         >
           <div className="max-w-6xl mx-auto px-6 text-center">
             <h2 className="text-4xl font-bold text-gray-800 mb-10">
-              Our Subteams
+              A Bit About Our Subteams
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left text-gray-700">

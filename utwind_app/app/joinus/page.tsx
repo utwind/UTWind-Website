@@ -9,7 +9,13 @@ import "aos/dist/aos.css";
 export default function JoinUsPage() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [navHidden, setNavHidden] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const lastScrollY = useRef(0);
+
+  // Set mounted state after hydration
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // AOS init
   useEffect(() => {
@@ -21,6 +27,8 @@ export default function JoinUsPage() {
 
   // Navbar show/hide on scroll
   useEffect(() => {
+    if (!mounted) return;
+    
     const handleScroll = () => {
       const currentY = window.scrollY;
 
@@ -37,7 +45,7 @@ export default function JoinUsPage() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [mounted]);
 
   return (
     <div className="bg-gray-50 text-gray-800 min-h-screen">
@@ -45,12 +53,12 @@ export default function JoinUsPage() {
         <nav
           id="navbar"
           className={`bg-white shadow-md sticky top-0 z-50 transition-all duration-300 ${
-            navHidden ? "opacity-0 -translate-y-10" : "opacity-100 translate-y-0"
+            mounted && navHidden ? "opacity-0 -translate-y-10" : "opacity-100 translate-y-0"
           }`}
         >
-          <div className="max-w-7xl mx-auto flex justify-between items-center p-4 space-x-8">
+          <div className="flex justify-between items-center py-4 pl-4 pr-6">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
               <Image
                 src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
                 alt="UTWind Logo"
@@ -63,7 +71,7 @@ export default function JoinUsPage() {
             </Link>
 
             {/* Desktop Nav Links */}
-            <div className="hidden md:flex space-x-6 ml-auto">
+            <div className="hidden md:flex space-x-6 items-center">
               <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">
                 Home
               </Link>
@@ -395,15 +403,17 @@ Help improve UTWind with your thoughts and suggestions.
 
         {/* Footer */}
         <footer className="bg-blue-100 text-gray-300 py-6 mt-20">
-          <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
+          <div className="flex items-center justify-between px-6">
             {/* Left: Logo */}
             <div className="flex items-center space-x-3">
               <Image
                 src="/images/Utwind footer logo.png"
                 alt="UTWind Logo"
-                width={40}
-                height={40}
-                className="h-10 w-auto"
+                width={200}
+                height={200}
+                className="h-16 w-auto object-contain"
+                quality={100}
+                unoptimized
               />
               <span className="text-lg font-semibold text-black">
                 contact@utwind.com

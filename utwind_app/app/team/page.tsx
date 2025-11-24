@@ -192,9 +192,9 @@ export default function TeamPage() {
         ref={navbarRef}
         className="bg-white shadow-md sticky top-0 z-50 transition-all duration-200 opacity-100 translate-y-0"
       >
-        <div className="max-w-7xl mx-auto flex justify-between items-center p-4 space-x-8">
+        <div className="flex justify-between items-center py-4 pl-4 pr-6">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
             <Image
               src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
               alt="UTWind Logo"
@@ -207,7 +207,7 @@ export default function TeamPage() {
           </Link>
 
           {/* Desktop Nav Links */}
-          <div className="hidden md:flex space-x-6 ml-auto">
+          <div className="hidden md:flex space-x-6 items-center">
             <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">
               Home
             </Link>
@@ -393,15 +393,17 @@ export default function TeamPage() {
 
       {/* Footer */}
       <footer className="bg-blue-100 text-gray-300 py-6 mt-20">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
+        <div className="flex items-center justify-between px-6">
           {/* Left: Logo */}
           <div className="flex items-center space-x-3">
             <Image
               src="/images/Utwind footer logo.png"
               alt="UTWind Logo"
-              width={40}
-              height={40}
-              className="h-10 w-auto"
+              width={200}
+              height={200}
+              className="h-16 w-auto object-contain"
+              quality={100}
+              unoptimized
             />
             <span className="text-lg font-semibold text-black">
               contact@utwind.com

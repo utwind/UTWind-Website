@@ -8,14 +8,8 @@ import "aos/dist/aos.css";
 
 export default function JoinUsPage() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [navHidden, setNavHidden] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const navbarRef = useRef<HTMLElement | null>(null);
   const lastScrollY = useRef(0);
-
-  // Set mounted state after hydration
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   // AOS init
   useEffect(() => {
@@ -27,17 +21,20 @@ export default function JoinUsPage() {
 
   // Navbar show/hide on scroll
   useEffect(() => {
-    if (!mounted) return;
-    
     const handleScroll = () => {
+      const nav = navbarRef.current;
+      if (!nav) return;
+      
       const currentY = window.scrollY;
 
       if (currentY > lastScrollY.current) {
         // scrolling down
-        setNavHidden(true);
+        nav.classList.add("opacity-0", "-translate-y-10");
+        nav.classList.remove("opacity-100", "translate-y-0");
       } else {
         // scrolling up
-        setNavHidden(false);
+        nav.classList.remove("opacity-0", "-translate-y-10");
+        nav.classList.add("opacity-100", "translate-y-0");
       }
 
       lastScrollY.current = currentY;
@@ -45,16 +42,15 @@ export default function JoinUsPage() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [mounted]);
+  }, []);
 
   return (
     <div className="bg-gray-50 text-gray-800 min-h-screen">
         {/* Navbar */}
         <nav
+          ref={navbarRef}
           id="navbar"
-          className={`bg-white shadow-md sticky top-0 z-50 transition-all duration-300 ${
-            mounted && navHidden ? "opacity-0 -translate-y-10" : "opacity-100 translate-y-0"
-          }`}
+          className="bg-white shadow-md sticky top-0 z-50 transition-all duration-300 opacity-100 translate-y-0"
         >
           <div className="flex justify-between items-center py-4 pl-4 pr-6">
             {/* Logo */}

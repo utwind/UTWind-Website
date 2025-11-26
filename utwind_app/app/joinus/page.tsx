@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 
 export default function JoinUsPage() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const navbarRef = useRef<HTMLElement | null>(null);
+  const [navHidden, setNavHidden] = useState(false);
   const lastScrollY = useRef(0);
 
   // AOS init
@@ -22,19 +22,14 @@ export default function JoinUsPage() {
   // Navbar show/hide on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const nav = navbarRef.current;
-      if (!nav) return;
-      
       const currentY = window.scrollY;
 
       if (currentY > lastScrollY.current) {
         // scrolling down
-        nav.classList.add("opacity-0", "-translate-y-10");
-        nav.classList.remove("opacity-100", "translate-y-0");
+        setNavHidden(true);
       } else {
         // scrolling up
-        nav.classList.remove("opacity-0", "-translate-y-10");
-        nav.classList.add("opacity-100", "translate-y-0");
+        setNavHidden(false);
       }
 
       lastScrollY.current = currentY;
@@ -48,13 +43,14 @@ export default function JoinUsPage() {
     <div className="bg-gray-50 text-gray-800 min-h-screen">
         {/* Navbar */}
         <nav
-          ref={navbarRef}
           id="navbar"
-          className="bg-white shadow-md sticky top-0 z-50 transition-all duration-300 opacity-100 translate-y-0"
+          className={`bg-white shadow-md sticky top-0 z-50 transition-all duration-300 ${
+            navHidden ? "opacity-0 -translate-y-10" : "opacity-100 translate-y-0"
+          }`}
         >
-          <div className="flex justify-between items-center py-4 pl-4 pr-6">
+          <div className="max-w-7xl mx-auto flex justify-between items-center p-4 space-x-8">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
+            <Link href="/" className="flex items-center space-x-2">
               <Image
                 src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
                 alt="UTWind Logo"
@@ -67,7 +63,7 @@ export default function JoinUsPage() {
             </Link>
 
             {/* Desktop Nav Links */}
-            <div className="hidden md:flex space-x-6 items-center">
+            <div className="hidden md:flex space-x-6 ml-auto">
               <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">
                 Home
               </Link>
@@ -265,14 +261,15 @@ export default function JoinUsPage() {
             </div>
           </div>
         </section>
-        <section className="py-24 bg-gradient-to-b from-blue-100 to-blue-200  flex items-center">
+    {/* Forms  Section */}
+    <section className="py-24 bg-gradient-to-b from-blue-100 to-blue-200  flex items-center">
 <div className="max-w-6xl mx-auto px-6 w-full">
 <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-blue-900 drop-shadow-sm">
 UTWind Team Forms
 </h2>
 
 
-<div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-5">
 <Link
 target="_blank" rel="noopener noreferrer"
 href="https://docs.google.com/forms/d/e/1FAIpQLScY2iR7qBZJUIgsyzM0dSK8P6kQg10vSSDIyVwv_enu-DqESw/viewform"
@@ -285,21 +282,6 @@ Fall 2025 Member Recruitment Form
 Join UTWind and get involved in engineering, design, and sustainability.
 </p>
 </Link>
-
-
-<Link
-target="_blank" rel="noopener noreferrer"
-href="https://docs.google.com/forms/d/e/1FAIpQLSdV_Lij_zhdXK3oAO4dK4_fT4j9xYFZz_CbCwj-Qhd1cbmrNQ/viewform"
-className="group block bg-white/80 backdrop-blur shadow-lg rounded-2xl p-10 border border-blue-300 hover:shadow-2xl hover:-translate-y-2 transition-all"
->
-<h3 className="text-2xl font-bold mb-4 text-blue-800 group-hover:text-blue-600">
-Business Case Lead
-</h3>
-<p className="text-blue-700">
-Apply for our Business Case Lead position!
-</p>
-</Link>
-
 
 <Link
 target="_blank" rel="noopener noreferrer"
@@ -399,17 +381,15 @@ Help improve UTWind with your thoughts and suggestions.
 
         {/* Footer */}
         <footer className="bg-blue-100 text-gray-300 py-6 mt-20">
-          <div className="flex items-center justify-between px-6">
+          <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
             {/* Left: Logo */}
             <div className="flex items-center space-x-3">
               <Image
                 src="/images/Utwind footer logo.png"
                 alt="UTWind Logo"
-                width={200}
-                height={200}
-                className="h-16 w-auto object-contain"
-                quality={100}
-                unoptimized
+                width={40}
+                height={40}
+                className="h-10 w-auto"
               />
               <span className="text-lg font-semibold text-black">
                 contact@utwind.com

@@ -237,7 +237,7 @@ export default function JoinUsPage() {
                 <h3 className="text-xl font-semibold text-indigo-700 mb-2">
                   Control Systems
                 </h3>
-                <p className="text-gray-700">Fridays @ 6:30 PM</p>
+                <p className="text-gray-700">Mondays @ 6:30 PM</p>
                 <p className="text-gray-500 italic">@ Myhal Arena</p>
               </div>
 

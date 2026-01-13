@@ -37,7 +37,75 @@ export default function Home() {
 
   // simple toggle using state
   const toggleMenu = () => setMobileOpen((v) => !v);
+type TeamUpdate = {
+  date: string;
+  title: string;
+  description: string;
+  image?: string; // optional image URL
+};
 
+const TEAM_UPDATES: TeamUpdate[] = [
+  {
+    date: "Dec 3, 2025",
+    title: "End of Semester Accomplishments Update",
+ description: `🌬️ Aerodynamics 🌀
+• Selected the H-Rotor VAWT configuration after evaluating both H-Rotor and Helical designs and identifying the strongest aerodynamic performance
+• Locked in the full turbine geometry to meet competition swept-area constraints, including aspect ratio (height & radius), solidity, chord length, and strut geometry
+• Determined the optimal operating conditions for maximum power at 9 m/s, including pitch angle, tip speed ratio (TSR), and RPM
+• Finalized the airfoil selection: FFA-W3-241
+
+💻 Control Systems 🧪
+• Co-hosted Arduino workshop with IEEE
+• Launching new web-app for real-time data display
+• Programmed vibration sensors
+• Simulating MPPT for maximum power output
+
+⚙️ Mechanical and Manufacturing 🔧
+• Hosted CAD and 3D printing workshops
+• Modular brake unit design in progress
+• Tested generator starting torque
+• Modifying PET bottle recycling Recreator to prevent overheat
+• Demonstrated modelling process of turbine blades
+
+⚡ Power Systems ✨
+• Completed LTSpice and Altium onboarding
+• Successfully tested the generator and isolator (repaired)
+• Researched and narrowed down converter options for the team’s most comprehensive power system design to date
+• Selected the optimal e-load for upcoming power system testing
+
+🌍 Sustainability ♻️
+• Launched a new wildlife monitoring project to detect bats with ultrasonic sensors, preventing collisions with the turbine
+• Started research on composite blade manufacturing and planning for natural composite blades
+• Planning tensile testing on 3D-printed recycled PET samples to collect data for simulation and allow future use in the turbine
+
+🤝 Exec Team 📈
+• Recruited 130+ new members, making this our largest intake in UTWind history
+• Successfully applied for and received over $4,000 in CPSIF funding (the most the team has ever received through CPSIF)
+• Secured over $6,000 in SEF funding for power systems testing, enabling purchase of critical testing equipment (DC power source, oscilloscope, e-load)
+• Created the new 2025 UTWind Sponsorship Package
+• Represented UTWind at the Dean’s Dinner 2025 as one of only two design teams showcased
+• Engaged 30+ high school students in discussions on wind energy and SDG 11 through the EWB Youth Program
+`,
+    //image: "/images/updates/blade-design.jpg",
+  },
+  {
+    date: "Nov 15, 2025",
+    title: "PET Recycling Drop-Offs Expanded",
+    description:
+      "We added new PET bottle collection bins across campus to increase feedstock for our recycled filament process.",
+    //image: "/images/updates/pet-bins.jpg",
+  },
+  {
+    date: "Oct 28, 2025",
+    title: "New Members Onboarded",
+    description:
+      "We welcomed new members to all sub-teams! Training sessions are underway covering wind energy fundamentals and our turbine architecture.",
+  },
+  // Add more updates here
+];
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const activeUpdate = TEAM_UPDATES[activeIndex];
   return (
     <main className="bg-gray-50 text-gray-800">
 
@@ -128,6 +196,96 @@ export default function Home() {
     </p>
   </div>
 </section>
+
+
+    <section id="team-updates" className="bg-sky-50 py-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+          <div>
+            <p className="text-sm font-semibold tracking-wide text-sky-600 uppercase">
+              Team Updates
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
+              What&apos;s happening at UTWind
+            </h2>
+            <p className="mt-2 text-slate-600 max-w-2xl">
+              Stay up to date with our latest competition progress, PET
+              recycling milestones, and team events.
+            </p>
+          </div>
+          <p className="text-xs text-slate-500">
+            Scroll through recent updates • Click to expand details
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 items-stretch">
+          {/* Left: Scrollable list */}
+          <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-4 sm:p-5">
+            <h3 className="text-sm font-semibold text-slate-700 mb-3">
+              Timeline
+            </h3>
+            <div className="max-h-96 overflow-y-auto pr-2 space-y-4">
+              {TEAM_UPDATES.map((update, index) => (
+                <button
+                  key={update.date + update.title}
+                  onClick={() => setActiveIndex(index)}
+                  className={`w-full text-left rounded-xl border p-3 sm:p-4 transition 
+                  ${
+                    index === activeIndex
+                      ? "border-sky-500 bg-sky-50"
+                      : "border-slate-200 hover:border-sky-300 hover:bg-sky-50/60"
+                  }`}
+                >
+                  <div className="flex items-center justify-between gap-2 mb-1">
+                    <span className="text-xs font-medium uppercase tracking-wide text-sky-700">
+                      {update.date}
+                    </span>
+                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-sky-100 text-sky-700">
+                      {index + 1 < 10 ? `0${index + 1}` : index + 1}
+                    </span>
+                  </div>
+                  <p className="text-sm font-semibold text-slate-900">
+                    {update.title}
+                  </p>
+                  <p className="mt-1 text-xs text-slate-600 line-clamp-2">
+                    {update.description}
+                  </p>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Right: Active update details with image */}
+          <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-4 sm:p-6 flex flex-col overflow-y-auto max-h-[32rem] pr-2">
+            <div className="mb-4">
+              <p className="text-xs font-semibold tracking-wide text-sky-600 uppercase">
+                {activeUpdate.date}
+              </p>
+              <h3 className="mt-1 text-2xl font-bold text-slate-900">
+                {activeUpdate.title}
+              </h3>
+            </div>
+
+            {activeUpdate.image && (
+              <div className="relative w-full h-56 sm:h-64 rounded-2xl overflow-hidden mb-4">
+                <Image
+                  src={activeUpdate.image}
+                  alt={activeUpdate.title}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                />
+              </div>
+            )}
+
+            <p className="whitespace-pre-line text-sm md:text-base text-slate-700 leading-relaxed">
+                {activeUpdate.description}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     {/* about */}
       <section id="about" className="bg-blue-500 text-white py-20" data-aos="fade-up">

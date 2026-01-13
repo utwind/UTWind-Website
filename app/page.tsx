@@ -105,7 +105,7 @@ const TEAM_UPDATES: TeamUpdate[] = [
 ];
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const activeUpdate = TEAM_UPDATES[activeIndex];
+  const activeUpdate = TEAM_UPDATES[activeIndex]
   return (
     <main className="bg-gray-50 text-gray-800">
 

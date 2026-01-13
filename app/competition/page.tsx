@@ -115,7 +115,7 @@ export default function CompetitionPage() {
               >
                 International Small Wind Turbine Contest (ISWTC)
               </a>{' '}
-              in the Netherlands against other international universities. UTWind has been coming home with a trophy since our debut and couldn't be more proud to represent the University of Toronto. Read more below about each competition.
+              in the Netherlands against other international universities. UTWind has been coming home with a trophy since our debut and couldn&apos;t be more proud to represent the University of Toronto. Read more below about each competition.
             </p>
           </div>
         </section>
@@ -137,7 +137,7 @@ export default function CompetitionPage() {
               </div>
               <div className="lg:w-1/2 lg:pl-10 text-center">
                 <Image src="/images/ISWTC 2025.png" alt="ISWTC 2025" width={1200} height={800} className="rounded-xl shadow-md w-full h-auto object-cover mb-3" />
-                <p className="text-gray-600 italic text-lg">UTWind's 1st Iteration of VAWT - 2025</p>
+                <p className="text-gray-600 italic text-lg">UTWind&apos;s 1st Iteration of VAWT - 2025</p>
               </div>
             </div>
 
@@ -151,7 +151,7 @@ export default function CompetitionPage() {
               </div>
               <div className="lg:w-1/2 lg:pr-10 text-center">
                 <Image src="/images/ISWTC 2024.jpg" alt="ISWTC 2024" width={1200} height={800} className="rounded-xl shadow-md w-full h-auto object-cover mb-3" />
-                <p className="text-gray-600 italic text-lg">UTWind's 1st Place Award Winning Turbine - 2024</p>
+                <p className="text-gray-600 italic text-lg">UTWind&apos;s 1st Place Award Winning Turbine - 2024</p>
               </div>
             </div>
 
@@ -160,12 +160,12 @@ export default function CompetitionPage() {
               <div className="lg:w-1/2 lg:pr-10 text-center mb-8 lg:mb-0">
                 <h3 className="text-6xl font-semibold text-indigo-700 mb-4">2023</h3>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  The second year of UTWind's participation at the ISWTC was no less challenging because we won the previous competition, however UTWind brought home the <strong>Award for Most Sustainable Turbine.</strong>
+                  The second year of UTWind&apos;s participation at the ISWTC was no less challenging because we won the previous competition, however UTWind brought home the <strong>Award for Most Sustainable Turbine.</strong>
                 </p>
               </div>
               <div className="lg:w-1/2 lg:pl-10 text-center">
                 <Image src="/images/ISWTC 2023.jpg" alt="ISWTC 2023" width={1200} height={800} className="rounded-xl shadow-md w-full h-auto object-cover mb-3" />
-                <p className="text-gray-600 italic text-lg">UTWind's Most Sustainable Award Winning Turbine - 2023</p>
+                <p className="text-gray-600 italic text-lg">UTWind&apos;s Most Sustainable Award Winning Turbine - 2023</p>
               </div>
             </div>
 
@@ -179,7 +179,7 @@ export default function CompetitionPage() {
               </div>
               <div className="lg:w-1/2 lg:pr-10 text-center">
                 <Image src="/images/ISWTC 2022.jpg" alt="ISWTC 2022" width={1200} height={800} className="rounded-xl shadow-md w-full h-auto object-cover mb-3" />
-                <p className="text-gray-600 italic text-lg">UTWind's 1st Place Award Winning Turbine - 2022</p>
+                <p className="text-gray-600 italic text-lg">UTWind&apos;s 1st Place Award Winning Turbine - 2022</p>
               </div>
             </div>
           </div>

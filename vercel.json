@@ -1,5 +1,0 @@
-{
-  "buildCommand": "cd utwind_app && npm install && npm run build",
-  "outputDirectory": "utwind_app/.next",
-  "installCommand": "cd utwind_app && npm install"
-}

@@ -35,9 +35,6 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // simple toggle using state
-  const toggleMenu = () => setMobileOpen((v) => !v);
-
   return (
     <main className="bg-gray-50 text-gray-800">
 
@@ -152,12 +149,12 @@ export default function Home() {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-6xl font-bold mb-6">Vision</h2>
           <p className="text-xl italic leading-relaxed">
-            "Our vision is to bring wind energy to light for students at the University of Toronto,
+            &quot;Our vision is to bring wind energy to light for students at the University of Toronto,
             so they will be prepared and inspired to light up the world in a sustainable way.
             By working together, we hope to develop our skills in the context of a project we are
             passionate about. The team is a place where knowledge is shared and passed on. The
             project is designed to focus not just on what we learn today, but what we can achieve
-            in designing a more sustainable future!"
+            in designing a more sustainable future!&quot;
           </p>
         </div>
       </section>

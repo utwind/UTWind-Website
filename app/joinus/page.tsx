@@ -276,7 +276,7 @@ href="https://docs.google.com/forms/d/e/1FAIpQLScY2iR7qBZJUIgsyzM0dSK8P6kQg10vSS
 className="group block bg-white/80 backdrop-blur shadow-lg rounded-2xl p-10 border border-blue-300 hover:shadow-2xl hover:-translate-y-2 transition-all"
 >
 <h3 className="text-2xl font-bold mb-4 text-blue-800 group-hover:text-blue-600">
-Fall 2025 Member Recruitment Form
+Member Recruitment Form
 </h3>
 <p className="text-blue-700">
 Join UTWind and get involved in engineering, design, and sustainability.

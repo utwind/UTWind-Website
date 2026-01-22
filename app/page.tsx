@@ -361,24 +361,32 @@ const TEAM_UPDATES: TeamUpdate[] = [
         </div>
       </section>
 
-      {/* footer */}
-      <footer className="bg-blue-100 text-gray-300 py-6 mt-20">
-        <div className="flex items-center justify-between px-6">
-          <div className="flex items-center space-x-3">
-            <Image 
-              src="/images/Utwind footer logo.png" 
-              alt="UTWind Logo" 
-              width={200} 
-              height={200} 
-              className="h-16 w-auto object-contain"
-              quality={100}
-              unoptimized
-            />
-            <span className="text-lg font-semibold text-black">contact@utwind.com</span>
-          </div>
-          <p className="text-sm text-black">© 2025 UTWind | University of Toronto</p>
-        </div>
-      </footer>
+<footer className="bg-blue-100 py-6 mt-20">
+  <div className="mx-auto max-w-7xl px-6 flex flex-wrap items-center justify-between gap-4">
+    {/* left */}
+    <div className="flex items-center gap-3 flex-1 min-w-0">
+      <Image
+        src="/images/Utwind footer logo.png"
+        alt="UTWind Logo"
+        width={200}
+        height={200}
+        className="h-16 w-auto object-contain shrink-0"
+        quality={100}
+        unoptimized
+      />
+      <span className="text-lg font-semibold text-black truncate">
+        contact@utwind.com
+      </span>
+    </div>
+
+    {/* right */}
+    <p className="text-sm text-black shrink-0">
+      © 2025 UTWind | University of Toronto
+    </p>
+  </div>
+</footer>
+
+
       
     </main>
   );

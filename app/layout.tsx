@@ -1,7 +1,7 @@
 // app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/react";
 import { Inter, Montserrat, Geist, Geist_Mono } from "next/font/google";
 
 // Main fonts you want (Inter + Montserrat)
@@ -43,7 +43,9 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${montserrat.variable} ${geistSans.variable} ${geistMono.variable}`}
     >
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">{children}
+        <Analytics />
+      </body>
     </html>
   );
 }

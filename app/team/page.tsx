@@ -64,7 +64,7 @@ const teamData: Record<TeamKey, TeamMember[]> = {
     {
       name: "Juneeta Vangala",
       year: "INDY2T8 + PEY",
-      position: "VP Finance",
+      position: "Operations Lead",
       img: "/images/2026-2027 team picture folder/Juneeta_Vangala_Indy2T8+PEY_OperationsLead .PNG",
     },
   ],
@@ -73,7 +73,7 @@ const teamData: Record<TeamKey, TeamMember[]> = {
       name: "Teagan McKenzie",
       year: "MECH2T7 + PEY",
       position: "Mechanical Co-Lead",
-      img: "/images/2026-2027 team picture folder/Teagan_McKenzie_MECH2T7+PEY_Mechanical_Lead.jpg",
+      img: "/images/2026-2027 team picture folder/Teagan_McKenzie_MECH2T7+PEY_Mechanical_Lead.jpg"
     },
     {
       name: 'Shafwat Khan',
@@ -85,52 +85,59 @@ const teamData: Record<TeamKey, TeamMember[]> = {
   control: [
     {
       name: "Wanning He",
-      year: "ECE",
-      position: "Control Systems Lead",
-      img: "/images/EB048E2E-10A1-4331-A315-78C3A287A657 - Wanning He.jpeg",
+      year: "ECE2T6",
+      position: "Control Systems Co-Lead",
+      img: "/images/2026-2027 team picture folder/Wanning_He_ECE_2T6_ControlsCoLead.jpg",
     },
     {
       name: "Jacob Duplessis",
-      year: "ECE",
-      position: "Contol Systems Lead",
-      img: "/images/image - Jacob Duplessis.jpg",
+      year: "ECE2T7 + PEY",
+      position: "Contol Systems Co-Lead",
+      img: "/images/2026-2027 team picture folder/Jacob_Duplessis_ECE_2T7_ControlsCoLead.jpg",
     },
   ],
   power: [
     {
-      name: "Alexis Terefenko",
-      year: "ECE2T6 + PEY",
-      position: "Power Systems Lead",
-      img: "/images/IMG_7490 - Alexis Terefenko.jpeg",
-    },
-    {
       name: "Alec MacGregor",
       year: "EngSci Energy Systems 2T6 + PEY",
-      position: "Power Systems Lead",
-      img: "/images/IMG_0262~2 - Alec MacGregor.jpg",
+      position: "Power Systems Co-Lead",
+      img: "/images/2026-2027 team picture folder/Alec_MacGregor_ENGSCI2T6+PEY_PowerCoLead.jpg",
+    },
+    {
+      name: "Deniz Kantar",
+      year: "ECE2T8 + PEY",
+      position: "Power Systems Co-Lead",
+      img: "/images/2026-2027 team picture folder/Deniz_Kantar_ECE_2T8+PEY_PowerCoLead.jpg",
     },
   ],
   aero: [
     {
-      name: "Sogand Okhovatian",
-      year: "Aerospace - UTIAS -MSc",
-      position: "Aerodynamics Lead",
-      img: "/images/linked in profile picture (2) - Sogand Okhovatian.JPG",
+      name: "Alex Kim",
+      year: "MSE 2T8 + PEY",
+      position: "Aerodynamics Co-Lead",
+      img: "/images/2026-2027 team picture folder/Alex_Kim_MSE2T8+PEY_AeroCoLead.jpg",
     },
     {
-      name: "Angela Deng",
-      year: "EngSci Physics 2T5 + PEY",
-      position: "Aerodynamics Lead",
-      img: "/images/IMG_4446 - Angela Deng.jpeg",
+      name: "Glenn Yu",
+      year: "EngSci 2T9 + PEY",
+      position: "Aerodynamics Co-Lead",
+      img: "/images/2026-2027 team picture folder/Glenn_Yu_ENGSCI2T9+PEY_AeroColead.jpg",
     },
+    
   ],
   sustainability: [
     {
-      name: "Mai Shimozato",
-      year: "ECE 2T6 + PEY",
-      position: "Sustainability Lead",
-      img: "/images/IMG_5983 - Mai Shimozato.jpg",
+      name: "Stella Cook",
+      year: "CHEM2T7 + PEY",
+      position: "Sustainability Co-Lead",
+      img: "/images/2026-2027 team picture folder/Stella_Cook_CHEM2T7+PEY_SustainabilityLead.jpg",
     },
+    {
+      name: "Pakhi Gupta",
+      year: "CIV2T7 + PEY",
+      position: "Sustainability Co-Lead",
+      img: "/images/2026-2027 team picture folder/Pakhi_Gupta_CIV2T7+PEY_SustainabilityBusinessLead.jpg",
+    }
   ],
   
   web: [
@@ -138,7 +145,7 @@ const teamData: Record<TeamKey, TeamMember[]> = {
       name: "Matthew Ting",
       year: "MSE 2T7 + PEY",
       position: "Webmaster",
-      img: "/images/Matthew Ting.png",
+      img: "/images/2026-2027 team picture folder/Matthew_Ting_MSE2T7+PEY_Webmaster.png",
     },
   ],
 };

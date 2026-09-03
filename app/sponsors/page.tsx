@@ -39,72 +39,80 @@ export default function SponsorsPage() {
   return (
     <div className="bg-gray-50 text-gray-800 min-h-screen">
       {/* Navbar */}
-        <nav
-          ref={navbarRef}
-          id="navbar"
-          className="bg-white shadow-md sticky top-0 z-50 transition-all duration-200"
-        >
-          <div className="flex justify-between items-center py-4 pl-4 pr-6">
-            <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
-              <Image
-                src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
-                alt="UTWind Logo"
-                width={40}
-                height={40}
-                className="h-10 w-auto"
-                priority
-              />
-              <span className="text-2xl font-bold text-blue-600">UTWind</span>
-            </Link>
+      <nav
+        ref={navbarRef}
+        id="navbar"
+        className="bg-white shadow-md sticky top-0 z-50 transition-all duration-250"
+      >
+      <div className="flex justify-between items-center py-4 pl-4 pr-6">
+        {/* logo */}
+          <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
+            <Image
+              src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
+              alt="UTWind Logo"
+              width={40}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
+            <span className="text-2xl font-bold text-blue-600">UTWind</span>
+          </Link>
 
-            <div className="hidden md:flex space-x-6 items-center">
-              <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</Link>
-              <Link href="/competition" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</Link>
-              <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</Link>
-              <Link href="/projects" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</Link>
-              <Link href="/joinus" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</Link>
-              <Link href="/sponsors" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</Link>
-              <Link href="/#contact" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</Link>
-            </div>
+          {/* desktop links */}
+          <div className="hidden md:flex space-x-6 items-center">
+            <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</Link>
+            <Link href="/competition" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</Link>
+            <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</Link>
+            <Link href="/projects" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</Link>
+            <Link href="/joinus" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</Link>
+            <Link href="/sponsors" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</Link>
+            <Link href="/gallery" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Gallery</Link>
+            <Link href="/#contact" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</Link>
+          </div>
 
-            <button
-              aria-label="Toggle Menu"
-              onClick={() => setMobileOpen((v) => !v)}
-              className="block md:hidden focus:outline-none"
+          {/* mobile toggle */}
+          <button
+            aria-label="Toggle Menu"
+            onClick={() => setMobileOpen((v) => !v)}
+            className="block md:hidden focus:outline-none"
+          >
+            <svg
+              className={`h-8 w-8 text-gray-700 ${mobileOpen ? "hidden" : "block"}`}
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <svg
-                className={`h-8 w-8 text-gray-700 ${mobileOpen ? "hidden" : "block"}`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-              <svg
-                className={`h-8 w-8 text-gray-700 ${mobileOpen ? "block" : "hidden"}`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg
+              className={`h-8 w-8 text-gray-700 ${mobileOpen ? "block" : "hidden"}`}
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
 
-          <div className={`md:hidden flex-col items-center bg-white shadow-md space-y-4 py-4 ${mobileOpen ? "flex" : "hidden"}`}>
-            <Link href="/" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Home</Link>
-            <Link href="/competition" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Competition</Link>
-            <Link href="/team" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Team</Link>
-            <Link href="/projects" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Projects</Link>
-            <Link href="/joinus" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Join Us</Link>
-            <Link href="/sponsors" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Sponsors</Link>
-            <Link href="/#contact" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Contact</Link>
-          </div>
-        </nav>
+        {/* mobile dropdown */}
+        <div className={`md:hidden flex-col items-center bg-white shadow-md space-y-4 py-4 ${mobileOpen ? "flex" : "hidden"}`}>
+          <Link href="/" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Home</Link>
+          <Link href="/competition" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Competition</Link>
+          <Link href="/team" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Team</Link>
+          <Link href="/projects" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Projects</Link>
+          <Link href="/joinus" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Join Us</Link>
+          <Link href="/sponsors" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Sponsors</Link>
+          <Link href="/gallery" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Gallery</Link>
+          <Link href="/#contact" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Contact</Link>
+          
+          
+        </div>
+    </nav>
 
-
+      
       {/* Sponsors Section */}
       <section
         id="sponsors"
@@ -123,7 +131,16 @@ export default function SponsorsPage() {
             competitions. We thank you for empowering the next generation of
             engineers shaping the future of sustainable energy!
           </p>
-
+          <div className="flex justify-center mt-8 mb-16">
+            <a
+              href="\files\UTWind Sponsorship Package (2025 - 2026).pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full bg-blue-700 px-8 py-4 text-lg font-semibold text-white shadow-md transition hover:bg-blue-800 hover:shadow-lg"
+            >
+              View Sponsorship Package
+            </a>
+          </div>
           {/* Sponsor Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10">
             <a

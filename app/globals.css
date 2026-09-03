@@ -98,3 +98,7 @@ body {
   clip-path: polygon(45% 0%, 62% 0%, 100% 88%, 56% 100%, 15% 88%);
   border-radius: 999px;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}

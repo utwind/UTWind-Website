@@ -81,7 +81,7 @@ const teamData: Record<TeamKey, TeamMember[]> = {
       name: "Teagan McKenzie",
       year: "MECH2T7 + PEY",
       position: "Mechanical Co-Lead",
-      img: "images/2026-2027 team picture folder/STeagan_McKenzie_MECH2T7+PEY_MechanicalCoLead.jpg",
+      img: "/images/2026-2027 team picture folder/STeagan_McKenzie_MECH2T7+PEY_MechanicalCoLead.jpg",
       linkedin: "https://ca.linkedin.com/in/teagan-mckenzie-16a5401b2"
     },
     {
@@ -130,7 +130,7 @@ const teamData: Record<TeamKey, TeamMember[]> = {
       year: "MSE 2T8 + PEY",
       position: "Aerodynamics Co-Lead",
       img: "/images/2026-2027 team picture folder/Alex_Kim_MSE2T8+PEY_AeroCoLead.jpg",
-      linkedin: "www.linkedin.com/in/alexsehwankim"
+      linkedin: "https://www.linkedin.com/in/alexsehwankim/"
     },
     {
       name: "Glenn Yu",
@@ -274,44 +274,17 @@ export default function TeamPage() {
           </Link>
 
           {/* Desktop Nav Links */}
-          <div className="hidden md:flex space-x-6 items-center">
-            <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">
-              Home
-            </Link>
-            <Link
-              href="/competition"
-              className="px-4 py-2 rounded-lg hover:bg-gray-200 transition"
-            >
-              Competition
-            </Link>
-            <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">
-              Team
-            </Link>
-            <Link
-              href="/projects"
-              className="px-4 py-2 rounded-lg hover:bg-gray-200 transition"
-            >
-              Projects
-            </Link>
-            <Link
-              href="/joinus"
-              className="px-4 py-2 rounded-lg hover:bg-gray-200 transition"
-            >
-              Join Us
-            </Link>
-            <Link
-              href="/sponsors"
-              className="px-4 py-2 rounded-lg hover:bg-gray-200 transition"
-            >
-              Sponsors
-            </Link>
-            <Link
-              href="/#contact"
-              className="px-4 py-2 rounded-lg hover:bg-gray-200 transition"
-            >
-              Contact
-            </Link>
-          </div>
+            <div className="hidden md:flex space-x-6 items-center">
+              <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</Link>
+              <Link href="/competition" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</Link>
+              <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</Link>
+              <Link href="/projects" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</Link>
+              <Link href="/joinus" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</Link>
+              <Link href="/sponsors" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</Link>
+              <Link href="/gallery" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Gallery</Link>
+              <Link href="/#contact" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</Link>
+            </div>
+
 
           {/* Mobile Hamburger */}
           <button

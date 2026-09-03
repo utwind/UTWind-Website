@@ -5,12 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 
 type TeamKey =
-  | "executives"
+  | "president"
   | "mechanical"
   | "control"
   | "power"
   | "aero"
   | "sustainability"
+  | "business"
   | "web";
 
 type TeamMember = {
@@ -21,50 +22,64 @@ type TeamMember = {
 };
 
 const teamData: Record<TeamKey, TeamMember[]> = {
-  executives: [
+  president: [
     {
-      name: "Avani Yadav",
-      year: "ECE2T6 + PEY",
+      name: "Chenyu Li",
+      year: "MECH 2T9 + PEY",
       position: "President",
-      img: "/images/Avani webpic.jpg",
+      img: "/images/2026-2027 team picture folder/Chenyu_Li_MECH2T9+PEY_President.jpg",
+    },
+  ],
+  business: [
+    {
+      name: "Dhara Patel",
+      year: "ECE 2T6 + PEY + 1",
+      position: "Business Director",
+      img: "/images/2026-2027 team picture folder/Dhara_Patel_ECE2T6+PEY+1_Business_Director.png",
     },
     {
-      name: "Kristen Ho",
-      year: "MECH2T6 + PEY",
-      position: "President",
-      img: "/images/IMG_5860 - Kristen Ho.jpeg",
+      name: "Diane Qin",
+      year: "MECH2T9 + PEY",
+      position: "Marketing Lead",
+      img: "/images/2026-2027 team picture folder/Diane_Qin_Mech_2T9+PEY_Marketing.png",
+    },
+    {
+      name: "Thomas Dong",
+      year: "INDY2T9 + PEY",
+      position: "Finance Lead",
+      img: "/images/2026-2027 team picture folder/Thomas_Dong_INDY2T9+PEY_FinanceLead.jpg",
     },
     {
       name: "Calvert Zhu",
       year: "MSE2T7 + PEY",
-      position: "VP Communications",
-      img: "/images/IMG_1901 - Calvert Zhu.jpeg",
+      position: "Sponsorships Co-Lead",
+      img: "/images/2026-2027 team picture folder/Calvert_Zhu_MSE2T7+PEY_SponsorshipCoLead.jpg",
     },
     {
-      name: "Dhara Patel",
-      year: "ECE2T7 + PEY",
-      position: "VP Communications",
-      img: "/images/IMG_1437_Original - Dhara Patel.jpeg",
+      name: "Stefano Ma",
+      year: "ENVS+W&O2T9",
+      position: "Sponsorships Co-Lead",
+      img: "/images/2026-2027 team picture folder/Stefano_Ma_ENVS+W&O2T9_SponsorshipLead.png",
     },
     {
-      name: "Aaron Gu",
-      year: "Rotman Commerce",
+      name: "Juneeta Vangala",
+      year: "INDY2T8 + PEY",
       position: "VP Finance",
-      img: "/images/unnamed (1) - Aaron Gu.jpg",
+      img: "/images/2026-2027 team picture folder/Juneeta_Vangala_Indy2T8+PEY_OperationsLead .PNG",
     },
   ],
   mechanical: [
     {
-      name: "Elena Sloan",
-      year: "MECH2T5 + PEY",
-      position: "Mechanical & Manufacturing Lead",
-      img: "/images/wind_25 - Elena Sloan.jpg",
+      name: "Teagan McKenzie",
+      year: "MECH2T7 + PEY",
+      position: "Mechanical Co-Lead",
+      img: "/images/2026-2027 team picture folder/Teagan_McKenzie_MECH2T7+PEY_Mechanical_Lead.jpg",
     },
     {
-      name: 'Justin ("Justine") Ding',
-      year: "MECH 2T6 +1",
-      position: "Mechanical & Manufacturing Lead",
-      img: "/images/PXL_20250524_154408480 - 渡辺フウキ.jpg",
+      name: 'Shafwat Khan',
+      year: "MECH 2T8 + PEY",
+      position: "Mechanical Co-Lead",
+      img: "/images/2026-2027 team picture folder/Shafwat_Khan_MECH2T8+PEY_MechanicalCoLead.jpg",
     },
   ],
   control: [
@@ -117,6 +132,7 @@ const teamData: Record<TeamKey, TeamMember[]> = {
       img: "/images/IMG_5983 - Mai Shimozato.jpg",
     },
   ],
+  
   web: [
     {
       name: "Matthew Ting",
@@ -129,7 +145,7 @@ const teamData: Record<TeamKey, TeamMember[]> = {
 
 export default function TeamPage() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeTeam, setActiveTeam] = useState<TeamKey>("executives");
+  const [activeTeam, setActiveTeam] = useState<TeamKey>("president");
 
   const navbarRef = useRef<HTMLDivElement | null>(null);
   const lastScrollY = useRef(0);
@@ -323,11 +339,19 @@ export default function TeamPage() {
           <div className="w-full md:w-1/4 flex flex-col space-y-4">
             <button
               className={`${baseBtnClasses} ${
-                activeTeam === "executives" ? activeBtnClasses : inactiveBtnClasses
+                activeTeam === "president" ? activeBtnClasses : inactiveBtnClasses
               }`}
-              onClick={() => setActiveTeam("executives")}
+              onClick={() => setActiveTeam("president")}
             >
-              Executives
+              President
+            </button>
+            <button
+              className={`${baseBtnClasses} ${
+                activeTeam === "business" ? activeBtnClasses : inactiveBtnClasses
+              }`}
+              onClick={() => setActiveTeam("business")}
+            >
+              Business Leads
             </button>
             <button
               className={`${baseBtnClasses} ${
@@ -335,7 +359,7 @@ export default function TeamPage() {
               }`}
               onClick={() => setActiveTeam("mechanical")}
             >
-              Mechanical &amp; Manufacturing Leads
+              Mechanical Leads
             </button>
             <button
               className={`${baseBtnClasses} ${

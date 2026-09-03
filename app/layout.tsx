@@ -2,7 +2,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import { Inter, Montserrat, Geist, Geist_Mono } from "next/font/google";
+import { Inter, Montserrat, Geist, Geist_Mono, Orbitron, Racing_Sans_One } from "next/font/google";
+import PageLoader from "./components/Pageloader";
 
 // Main fonts you want (Inter + Montserrat)
 const inter = Inter({
@@ -26,6 +27,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-geist-mono",
 });
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "900"],
+  variable: "--font-orbitron",
+});
+const racingSansOne = Racing_Sans_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-racing-sans-one",
+});
 
 export const metadata: Metadata = {
   title: "UTWind | Sustainable Wind Energy Team",
@@ -41,11 +52,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${montserrat.variable} ${geistSans.variable} ${geistMono.variable}`}
+      className={`${inter.variable} ${montserrat.variable} ${geistSans.variable} ${geistMono.variable} ${orbitron.variable} ${racingSansOne.variable}`}
+
     >
-      <body className="antialiased">{children}
-        <Analytics />
-      </body>
+      <body className="antialiased">
+      <PageLoader>
+        {children}
+      </PageLoader>
+      <Analytics />
+    </body>
     </html>
   );
 }

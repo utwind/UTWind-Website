@@ -5,12 +5,14 @@ import Link from "next/link";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Inter, Montserrat, Orbitron } from "next/font/google";
 
 export default function Home() {
   // ref for navbar and mobile menu state
   const navbarRef = useRef<HTMLElement | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const lastScrollY = useRef(0);
+
 
   useEffect(() => {
     // aos init
@@ -180,17 +182,46 @@ const TEAM_UPDATES: TeamUpdate[] = [
     </nav>
 
       {/* hero */}
-      <section
-  className="relative h-screen bg-cover bg-center bg-no-repeat flex items-center text-white"
-  style={{ backgroundImage: "url('/images/ISWTC turbine.JPG')" }}
->
-  {/* Dark overlay (behind text) */}
-  <div className="absolute inset-0 bg-transparent bg-opacity-40"></div>
+<section className="relative h-screen overflow-hidden flex items-center text-white bg-gradient-to-br from-sky-900 via-blue-800 to-slate-900">
+  {/* Animated turbine background */}
+  <div className="absolute inset-0 flex items-center justify-center opacity-35">
+    <div className="relative w-[520px] h-[520px] md:w-[780px] md:h-[780px]">
+      {/* Tower */}
+      <div className="absolute left-1/2 top-[52%] w-8 h-[420px] md:h-[560px] bg-gradient-to-b from-white/80 to-white/30 -translate-x-1/2 rounded-t-md clip-tower"></div>
 
-  {/* Text content on top */}
+      {/* Spinning rotor wrapper */}
+      <div className="absolute left-1/2 top-1/2 w-24 h-24 -translate-x-1/2 -translate-y-1/2">
+        <div className="relative w-full h-full animate-spin-slow">
+          {/* Blade 1 */}
+          <div className="turbine-blade absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full origin-bottom"></div>
+
+          {/* Blade 2 */}
+          <div className="turbine-blade absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full origin-bottom rotate-[120deg]"></div>
+
+          {/* Blade 3 */}
+          <div className="turbine-blade absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full origin-bottom rotate-[240deg]"></div>
+
+          {/* Hub */}
+          <div className="absolute left-1/2 top-1/2 w-20 h-20 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 z-10 shadow-xl border border-white/40"></div>
+
+          {/* Center cap */}
+          <div className="absolute left-1/2 top-1/2 w-8 h-8 bg-slate-200 rounded-full -translate-x-1/2 -translate-y-1/2 z-20"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black/45"></div>
+
+  {/* Text content */}
   <div className="relative z-20 max-w-3xl px-8 md:px-16">
-    <h1 className="text-8xl md:text-9xl font-bold mb-6 drop-shadow-lg">UTWind</h1>
-    <h2 className="text-5xl md:text-6xl font-light mb-4 drop-shadow-lg">Face the Wind</h2>
+        <h1 className="font-racing text-8xl md:text-9xl font-bold mb-6 drop-shadow-lg">
+      UTWind
+    </h1>
+    <h2 className="text-5xl md:text-6xl font-light mb-4 drop-shadow-lg">
+      Face the Wind
+    </h2>
     <p className="text-2xl md:text-3xl leading-relaxed drop-shadow-md">
       University of Toronto Wind Turbine Team
     </p>

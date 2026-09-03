@@ -226,14 +226,14 @@ export default function ProjectsPage() {
                   <div className="relative flex flex-col items-center text-center p-6 bg-blue-100 rounded-2xl shadow-lg border-2 border-blue-300">
                     <div className="relative w-full h-60 overflow-hidden rounded-xl mb-6 border-4 border-white shadow-md">
                       <img
-                        src="/images/recycle pic1.png"
+                        src="/images/pet recycling/recycle pic1.png"
                         alt="Collect Bottles 1"
                         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
                           slide1Index === 0 ? "opacity-100" : "opacity-0"
                         }`}
                       />
                       <img
-                        src="/images/recycle pic2.png"
+                        src="/images/pet recycling/recycle pic2.png"
                         alt="Collect Bottles 2"
                         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
                           slide1Index === 1 ? "opacity-100" : "opacity-0"
@@ -322,7 +322,7 @@ export default function ProjectsPage() {
                         }`}
                       >
                         <img
-                          src="/images/printable1.png"
+                          src="/images/pet recycling/printable1.png"
                           alt="Anemometer Mount"
                           className="w-full h-full object-cover rounded-xl"
                         />
@@ -338,7 +338,7 @@ export default function ProjectsPage() {
                         }`}
                       >
                         <img
-                          src="/images/printable2.png"
+                          src="/images/pet recycling/printable2.png"
                           alt="Gear"
                           className="w-full h-full object-cover rounded-xl"
                         />
@@ -354,7 +354,7 @@ export default function ProjectsPage() {
                         }`}
                       >
                         <img
-                          src="/images/printable3.png"
+                          src="/images/pet recycling/printable3.png"
                           alt="Nose Cone"
                           className="w-full h-full object-cover rounded-xl"
                         />
@@ -399,7 +399,7 @@ export default function ProjectsPage() {
                   {/* Step 3 */}
                   <div className="relative flex flex-col items-center text-center p-6 bg-blue-100 rounded-2xl shadow-lg border-2 border-blue-300">
                     <Image
-                      src="/images/3dprinting.png"
+                      src="/images/pet recycling/3dprinting.png"
                       alt="Extrude Filament"
                       width={600}
                       height={240}
@@ -465,9 +465,6 @@ export default function ProjectsPage() {
                     </li>
                   </ul>
                   <div className="mt-6 flex flex-wrap justify-center gap-4">
-                    <p className="text-gray-600 italic">
-                      Example PET bottle images will be added here.
-                    </p>
                   </div>
                 </div>
 

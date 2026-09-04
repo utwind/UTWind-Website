@@ -58,7 +58,7 @@ const teamData: Record<TeamKey, TeamMember[]> = {
       name: "Calvert Zhu",
       year: "MSE2T7 + PEY",
       position: "Sponsorships Co-Lead",
-      img: "/images/2026-2027 team picture folder/Calvert_Zhu_MSE2T7+PEY_SponsorshipCoLead.jpg",
+      img: "/images/2026-2027 team picture folder/Calvert_Zhu_MSE2T7+PEY_Sponsorship.JPG",
       linkedin: "https://www.linkedin.com/in/calvert-zhu/ "
     },
     {

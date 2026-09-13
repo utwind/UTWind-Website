@@ -32,6 +32,12 @@ const galleryYears: GalleryYear[] = [
           
           { src: "/images/2026 Gallery/IMG_0883.png", alt: "UTWind outreach event 2026" },
           { src: "/images/2026 Gallery/IMG_0892.png", alt: "UTWind outreach event 2026" },
+          { src: "/images/2026-2027 Gallery/IMG_0904.jpg", alt: "UTWind outreach event 2026" },
+          { src: "/images/2026-2027 Gallery/IMG_0912.jpg", alt: "UTWind outreach event 2026" },
+          { src: "/images/2026-2027 Gallery/IMG_0616.png", alt: "UTWind outreach event 2026" },
+          { src: "/images/2026-2027 Gallery/IMG_0626.jpg", alt: "UTWind outreach event 2026" },
+          
+
         ],
       },
     ],

@@ -207,7 +207,7 @@ export default function ProjectsPage() {
                 {/* Right Image */}
                 <div className="lg:w-1/2 flex justify-center">
                   <Image
-                    src="/images/recycling process.png"
+                    src="/images/pet recycling/recycling process.png"
                     alt="UTWind PET Bottle Recycling"
                     width={500}
                     height={400}

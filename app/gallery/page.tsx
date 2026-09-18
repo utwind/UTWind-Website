@@ -10,6 +10,7 @@ import { title } from "process";
 type GalleryImage = {
   src: string;
   alt: string;
+  credit?: string;
 };
 
 type GalleryCategory = {
@@ -30,8 +31,8 @@ const galleryYears: GalleryYear[] = [
         title: "School Events",
         images: [
           
-          { src: "/images/2026 Gallery/IMG_0883.png", alt: "UTWind outreach event 2026" },
-          { src: "/images/2026 Gallery/IMG_0892.png", alt: "UTWind outreach event 2026" },
+          { src: "/images/2026-2027 Gallery/IMG_0883.png", alt: "UTWind outreach event 2026" },
+          { src: "/images/2026-2027 Gallery/IMG_0892.png", alt: "UTWind outreach event 2026" },
           { src: "/images/2026-2027 Gallery/IMG_0904.jpg", alt: "UTWind outreach event 2026" },
           { src: "/images/2026-2027 Gallery/IMG_0912.jpg", alt: "UTWind outreach event 2026" },
           { src: "/images/2026-2027 Gallery/IMG_0616.png", alt: "UTWind outreach event 2026" },
@@ -48,21 +49,22 @@ const galleryYears: GalleryYear[] = [
       {
       title: "Competition",
         images: [
-          { src: "/images/2026 Gallery/20260709_143112(0).jpg", alt: "UTWind school event 2026" },
-          { src: "/images/2026 Gallery/PXL_20260707_130908880.jpg", alt: "UTWind outreach event 2026" },
-          { src: "/images/2026 Gallery/PXL_20260709_115113436.MP.jpg", alt: "UTWind campus event 2026" },
-          { src: "/images/2026 Gallery/20260709_133319.jpg", alt: "UTWind school event 2026" },
-          { src: "/images/2026 Gallery/IMG_8148.jpg", alt: "UTWind outreach event 2026" },
-          { src: "/images/2026 Gallery/IMG_7551.jpg", alt: "UTWind outreach event 2026" }
+          { src: "/images/2025-2026 Gallery/20260709_143112(0).jpg", alt: "UTWind school event 2026" },
+          { src: "/images/2025-2026 Gallery/PXL_20260707_130908880.jpg", alt: "UTWind outreach event 2026" },
+          { src: "/images/2025-2026 Gallery/PXL_20260709_115113436.MP.jpg", alt: "UTWind campus event 2026" },
+          { src: "/images/2025-2026 Gallery/20260709_133319.jpg", alt: "UTWind school event 2026" },
+          { src: "/images/2025-2026 Gallery/IMG_8148.jpg", alt: "UTWind outreach event 2026" },
+          { src: "/images/2025-2026 Gallery/IMG_7551.jpg", alt: "UTWind outreach event 2026" }
         ],
       },    
       {    
         title: "School Events",
         images: [
-          { src: "/images/gallery/2026/school-events/event-1.jpg", alt: "UTWind school event 2026" },
-          { src: "/images/gallery/2026/school-events/event-2.jpg", alt: "UTWind outreach event 2026" },
-          { src: "/images/gallery/2026/school-events/event-3.jpg", alt: "UTWind campus event 2026" },
-
+          { src: "/images/2025-2026 Gallery/54899810267_247a875b9f_o.jpg", alt: "UTWind school event 2026", credit: "Photo by Neil Ta"},
+          { src: "/images/2025-2026 Gallery/54900916478_e617340791_o.jpg", alt: "UTWind outreach event 2026", credit: "Photo by Neil Ta"},
+          { src: "/images/2025-2026 Gallery/54900991435_98524c5ac7_o.jpg", alt: "UTWind campus event 2026", credit: "Photo by Neil Ta"},
+          { src: "/images/2025-2026 Gallery/DSCF8338.jpg", alt: "UTWind campus event 2026" },
+          { src: "/images/2025-2026 Gallery/IMG_1639.jpg", alt: "UTWind campus event 2026" },
         ],
       },
     ],
@@ -219,22 +221,28 @@ export default function GalleryPage() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {category.images.map((image, index) => (
-                        <div
+                          <div
                             key={image.src}
                             data-aos="fade-up"
                             data-aos-delay={index * 75}
                             className="group relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-xl transition"
-                        >
+                          >
                             <Image
-                            src={image.src}
-                            alt={image.alt}
-                            width={600}
-                            height={400}
-                            className="h-64 w-full object-cover transition duration-500 group-hover:scale-105"
+                              src={image.src}
+                              alt={image.alt}
+                              width={600}
+                              height={400}
+                              className="h-64 w-full object-cover transition duration-500 group-hover:scale-105"
                             />
 
                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition"></div>
-                        </div>
+
+                            {image.credit && (
+                              <div className="absolute bottom-0 left-0 right-0 bg-black/60 px-4 py-2 text-left text-sm text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                {image.credit}
+                              </div>
+                            )}
+                          </div>
                         ))}
                     </div>
                     </div>

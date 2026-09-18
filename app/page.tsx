@@ -15,6 +15,25 @@ export default function Home() {
 
 
   useEffect(() => {
+  const shouldScroll = sessionStorage.getItem("scrollToContact");
+
+  if (shouldScroll === "true") {
+    sessionStorage.removeItem("scrollToContact");
+
+    const timer = setTimeout(() => {
+      const section = document.getElementById("contact");
+
+      section?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 1100);
+
+    return () => clearTimeout(timer);
+  }
+}, []);
+  
+  useEffect(() => {
     // aos init
     AOS.init({ duration: 1000, once: true });
 
@@ -36,6 +55,7 @@ export default function Home() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  
 
   // simple toggle using state
   const toggleMenu = () => setMobileOpen((v) => !v);
@@ -48,61 +68,73 @@ type TeamUpdate = {
 
 const TEAM_UPDATES: TeamUpdate[] = [
   {
-    date: "Dec 3, 2025",
-    title: "End of Semester Accomplishments Update",
- description: `🌬️ Aerodynamics 🌀
-• Selected the H-Rotor VAWT configuration after evaluating both H-Rotor and Helical designs and identifying the strongest aerodynamic performance
-• Locked in the full turbine geometry to meet competition swept-area constraints, including aspect ratio (height & radius), solidity, chord length, and strut geometry
-• Determined the optimal operating conditions for maximum power at 9 m/s, including pitch angle, tip speed ratio (TSR), and RPM
-• Finalized the airfoil selection: FFA-W3-241
+    date: "Sep 16, 2026",
+    title: "SolidWorks Workshop for Beginners!",
+    description:
+      `Hey @channel, quick heads up on an upcoming opportunity!
 
-💻 Control Systems 🧪
-• Co-hosted Arduino workshop with IEEE
-• Launching new web-app for real-time data display
-• Programmed vibration sensors
-• Simulating MPPT for maximum power output
+Our next mechanical sub-team meeting is an intro SolidWorks technical workshop at the Galbraith ECF (GB144), on Friday, September 18th from 18:00-20:00.
 
-⚙️ Mechanical and Manufacturing 🔧
-• Hosted CAD and 3D printing workshops
-• Modular brake unit design in progress
-• Tested generator starting torque
-• Modifying PET bottle recycling Recreator to prevent overheat
-• Demonstrated modelling process of turbine blades
+This is designed for people with little to no SolidWorks experience, and you don't need to be in Mech or MechE to come. If you're on Business, Electrical, Aero, or any other subteam and any major, you're welcome. CAD is one of the most transferable skills you can pick up on a design team, and this is the easiest possible entry point for you to learn a new skill for your portfolio, resume, or any personal projects you may want to create!
 
-⚡ Power Systems ✨
-• Completed LTSpice and Altium onboarding
-• Successfully tested the generator and isolator (repaired)
-• Researched and narrowed down converter options for the team’s most comprehensive power system design to date
-• Selected the optimal e-load for upcoming power system testing
+Spots are limited by lab capacity and filling up fast, so please sign up here to reserve a guaranteed seat: https://forms.gle/iAPLw3bPE3ahbGCu7 We will be doing registration at the door, and there may be walk-in available on a FCFS basis if there are no-shows.
 
-🌍 Sustainability ♻️
-• Launched a new wildlife monitoring project to detect bats with ultrasonic sensors, preventing collisions with the turbine
-• Started research on composite blade manufacturing and planning for natural composite blades
-• Planning tensile testing on 3D-printed recycled PET samples to collect data for simulation and allow future use in the turbine
+Workshop starts promptly at 18:15 so please be on time!
 
-🤝 Exec Team 📈
-• Recruited 130+ new members, making this our largest intake in UTWind history
-• Successfully applied for and received over $4,000 in CPSIF funding (the most the team has ever received through CPSIF)
-• Secured over $6,000 in SEF funding for power systems testing, enabling purchase of critical testing equipment (DC power source, oscilloscope, e-load)
-• Created the new 2025 UTWind Sponsorship Package
-• Represented UTWind at the Dean’s Dinner 2025 as one of only two design teams showcased
-• Engaged 30+ high school students in discussions on wind energy and SDG 11 through the EWB Youth Program
+A few logistics:
+
+ECF computers are available to run SolidWorks, so you can just show up
+If you'd rather bring your own laptop, install Remote ECF beforehand (no VPN needed on UofT wifi), or install SolidWorks directly
+Already comfortable with SolidWorks? Check out a challenge @Shafwat sent out in the #mechanical channel.
+
+
+Feel free to bring a friend who's been thinking about joining UTWind as the event is open to all UofT students!
+
+Questions? Message @Shafwat or @Teagan McKenzie!`,
+  },
+  {
+    date: "Sep 9, 2026",
+    title: "Start of Semester Kick Off Update",
+ description: `Hi @everyone, thank you to those who were able to make it out to our kick-off event today!
+
+If any of your friends want to join UTWind, as them to fill out the recruitment form in our Instagram BIO and we will send them a Slack Invite to this workspace!
+
+Feel free to reach out to myself or any of the other leads if you have any questions and check our master schedule for events happening within UTWind. This spreadsheet will always contain most up-to-date information about event times and locations!
+
+There will be more specific information for each sub-team in their own respective channels, so please join any that interest you!
+
+Looking forward to working with everyone this design cycle!
 `,
     //image: "/images/updates/blade-design.jpg",
   },
   {
-    date: "Nov 15, 2025",
-    title: "PET Recycling Drop-Offs Expanded",
-    description:
-      "We added new PET bottle collection bins across campus to increase feedstock for our recycled filament process.",
-    //image: "/images/updates/pet-bins.jpg",
-  },
-  {
-    date: "Oct 28, 2025",
-    title: "New Members Onboarded",
-    description:
-      "We welcomed new members to all sub-teams! Training sessions are underway covering wind energy fundamentals and our turbine architecture.",
-  },
+  date: "Sep 6, 2026",
+  title: "Welcome to the 2026–2027 UTWind Design Cycle!",
+  description: `Hello @everyone! Welcome to the 2026–2027 UTWind Design Cycle!
+
+We’re kicking things off with our Kick-Off Meeting on Wednesday, Sept 9th, 18:15-20:00 in the Myhal Arena. For new members, this is the best way to learn more about our sub-teams and decide which ones to join. For returning members, it’s a chance to reconnect and see what’s planned for the cycle.
+
+For new members, to join a sub-team just click on channel(s) that correspond to the sub-teams of interest to you:
+
+• #aerodynamics (Leads: @Alex Kim, @Glenn)
+
+• #controls (Leads: @Wanning He, @Jacob Duplessis)
+
+• #powersystems (Leads: @Alec MacGregor, @Deniz Kantar)
+
+• #mechanical (Leads: @Teagan McKenzie, @Shafwat)
+
+• #sustainability (Leads: @Stella Cook, @Pakhi)
+
+• #business (Business Director: @Dhara Patel)
+
+The sub-teams will have their first meetings after the kick-off. Check your respective channel(s) for details regarding when and where the weekly meetings will happen.
+
+If you have any questions, feel free to contact anyone on the leadership team at anytime! Thanks everyone and looking forward to a successful design cycle!`,
+
+  // image: "/images/updates/pet-bins.jpg",
+},
+  
   // Add more updates here
 ];
   const [activeIndex, setActiveIndex] = useState(0);
@@ -249,8 +281,8 @@ const TEAM_UPDATES: TeamUpdate[] = [
               recycling milestones, and team events.
             </p>
           </div>
-          <p className="text-xs text-slate-500">
-            Scroll through recent updates • Click to expand details
+          <p className="text-xs text-slate-500 text-right">
+            Scroll our updates and announcements from our Slack Channel • Click to expand details
           </p>
         </div>
 
@@ -354,8 +386,12 @@ const TEAM_UPDATES: TeamUpdate[] = [
           </p>
         </div>
       </section>
-
-      {/* contact */}
+    <section
+      id="contact"
+      className="scroll-mt-24"
+    >
+      {/* Contact content */}
+    </section>
       <section id="contact" className="bg-indigo-50 py-20">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-gray-800 text-center mb-8">Contact Us</h2>
@@ -371,6 +407,23 @@ const TEAM_UPDATES: TeamUpdate[] = [
                 <strong>Email:</strong>{' '}
                 <a href="mailto:contact@utwind.com" className="text-indigo-600 font-semibold hover:underline">
                   contact@utwind.com
+                </a>
+               <a
+                  href="https://www.instagram.com/utwindclub/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-lg text-blue-700 font-semibold hover:text-blue-900 transition"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-7 h-7"
+                  >
+                    <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5Zm8.75 2.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+                  </svg>
+
+                  <span>@utwind</span>
                 </a>
               </p>
               <p className="text-gray-700 mb-4">

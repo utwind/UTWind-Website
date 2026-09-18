@@ -128,6 +128,24 @@ export default function CompetitionPage() {
           <div className="max-w-6xl mx-auto px-6 relative">
             <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Competition History</h2>
 
+          {/*2026*/}
+
+            <div className="relative flex flex-col lg:flex-row-reverse items-center mb-24" data-aos="fade-up">
+              <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white shadow-md z-10 hidden lg:block" />
+              <div className="lg:w-1/2 lg:pl-10 text-center mb-8 lg:mb-0">
+                <h3 className="text-6xl font-semibold text-indigo-700 mb-4">2026</h3>
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  Back in the Netherlands for our fifth consecutive ISWTC, UTWind competed with the second iteration of our Vertical Axis Wind Turbine (VAWT). This year marked major progress: we sent our largest competition delegation yet, arrived with functioning mechanical, power, and control systems, introduced lighter blades and bat-monitoring sensors, and achieved one of our lowest cut-in wind speeds to date. While there is still plenty to improve, the competition gave us valuable insights to carry into our next iteration.
+                </p>
+              </div>
+              <div className="lg:w-1/2 lg:pr-10 text-center">
+                <Image src="/images/turbine pics/ISWTC 2026.jpg" alt="ISWTC 2026" width={1200} height={800} className="rounded-xl shadow-md w-full h-auto object-cover mb-3" />
+                <p className="text-gray-600 italic text-lg">UTWind&apos;s Lowest Cut-in Speed Turbine - 2026</p>
+              </div>
+            </div>
+             
+             {/*2025*/}
+            
             <div className="absolute left-1/2 -translate-x-1/2 top-[140px] bottom-[140px] w-1 bg-indigo-300 hidden lg:block" />
 
             <div className="relative flex flex-col lg:flex-row items-center mb-24" data-aos="fade-up">
@@ -139,10 +157,12 @@ export default function CompetitionPage() {
                 </p>
               </div>
               <div className="lg:w-1/2 lg:pl-10 text-center">
-                <Image src="/images/ISWTC 2025.png" alt="ISWTC 2025" width={1200} height={800} className="rounded-xl shadow-md w-full h-auto object-cover mb-3" />
+                <Image src="/images/turbine pics/ISWTC 2025.png" alt="ISWTC 2025" width={1200} height={800} className="rounded-xl shadow-md w-full h-auto object-cover mb-3" />
                 <p className="text-gray-600 italic text-lg">UTWind&apos;s 1st Iteration of VAWT - 2025</p>
               </div>
             </div>
+
+            {/*2024*/}
 
             <div className="relative flex flex-col lg:flex-row-reverse items-center mb-24" data-aos="fade-up">
               <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white shadow-md z-10 hidden lg:block" />
@@ -153,10 +173,12 @@ export default function CompetitionPage() {
                 </p>
               </div>
               <div className="lg:w-1/2 lg:pr-10 text-center">
-                <Image src="/images/ISWTC 2024.jpg" alt="ISWTC 2024" width={1200} height={800} className="rounded-xl shadow-md w-full h-auto object-cover mb-3" />
+                <Image src="/images/turbine pics/ISWTC 2024.jpg" alt="ISWTC 2024" width={1200} height={800} className="rounded-xl shadow-md w-full h-auto object-cover mb-3" />
                 <p className="text-gray-600 italic text-lg">UTWind&apos;s 1st Place Award Winning Turbine - 2024</p>
               </div>
             </div>
+
+            {/*2023*/}
 
             <div className="relative flex flex-col lg:flex-row items-center mb-24" data-aos="fade-up">
               <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white shadow-md z-10 hidden lg:block" />
@@ -167,10 +189,12 @@ export default function CompetitionPage() {
                 </p>
               </div>
               <div className="lg:w-1/2 lg:pl-10 text-center">
-                <Image src="/images/ISWTC 2023.jpg" alt="ISWTC 2023" width={1200} height={800} className="rounded-xl shadow-md w-full h-auto object-cover mb-3" />
+                <Image src="/images/turbine pics/ISWTC 2023.jpg" alt="ISWTC 2023" width={1200} height={800} className="rounded-xl shadow-md w-full h-auto object-cover mb-3" />
                 <p className="text-gray-600 italic text-lg">UTWind&apos;s Most Sustainable Award Winning Turbine - 2023</p>
               </div>
             </div>
+
+            {/*2023-2024*/}
 
             <div className="relative flex flex-col lg:flex-row-reverse items-center" data-aos="fade-up">
               <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white shadow-md z-10 hidden lg:block" />
@@ -181,7 +205,7 @@ export default function CompetitionPage() {
                 </p>
               </div>
               <div className="lg:w-1/2 lg:pr-10 text-center">
-                <Image src="/images/ISWTC 2022.jpg" alt="ISWTC 2022" width={1200} height={800} className="rounded-xl shadow-md w-full h-auto object-cover mb-3" />
+                <Image src="/images/turbine pics/ISWTC 2022.jpg" alt="ISWTC 2022" width={1200} height={800} className="rounded-xl shadow-md w-full h-auto object-cover mb-3" />
                 <p className="text-gray-600 italic text-lg">UTWind&apos;s 1st Place Award Winning Turbine - 2022</p>
               </div>
             </div>

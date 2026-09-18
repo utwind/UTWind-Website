@@ -150,16 +150,16 @@ export default function JoinUsPage() {
                 <h3 className="text-xl font-semibold text-indigo-700 mb-2">
                   Aerodynamics
                 </h3>
-                <p className="text-gray-700">Mondays @ 6:00-7:00 PM</p>
-                <p className="text-gray-500 italic">@ MY763 + Zoom (Hybrid)</p>
+                <p className="text-gray-700">Fridays @ 6:00-7:00 PM</p>
+                <p className="text-gray-500 italic">@ Myhal Arena</p>
               </div>
 
               {/* Mechanical & Manufacturing */}
               <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                  Mechanical &amp; Manufacturing
+                  Mechanical
                 </h3>
-                <p className="text-gray-700">Wednesdays @ 7:00-9:00 PM</p>
+                <p className="text-gray-700">Fridays @ 6:00-8:00 PM</p>
                 <p className="text-gray-500 italic">@ Myhal Arena</p>
               </div>
 
@@ -168,7 +168,7 @@ export default function JoinUsPage() {
                 <h3 className="text-xl font-semibold text-indigo-700 mb-2">
                   Control Systems
                 </h3>
-                <p className="text-gray-700">Wednesdays @ 6:30-8:00 PM</p>
+                <p className="text-gray-700">Mondays @ 7:00-9:00 PM</p>
                 <p className="text-gray-500 italic">@ Myhal Arena</p>
               </div>
 
@@ -177,7 +177,7 @@ export default function JoinUsPage() {
                 <h3 className="text-xl font-semibold text-indigo-700 mb-2">
                   Power Systems
                 </h3>
-                <p className="text-gray-700">Tuesdays @ 7:00-8:00 PM</p>
+                <p className="text-gray-700"> Tuesdays @ 6:00-8:00 PM</p>
                 <p className="text-gray-500 italic">@ Myhal Arena</p>
               </div>
 
@@ -187,7 +187,7 @@ export default function JoinUsPage() {
                   Sustainability
                 </h3>
                 <p className="text-gray-700">Saturdays @ 1:30-2:30 PM</p>
-                <p className="text-gray-500 italic">@ Myhal Arena + Zoom(Hybrid)</p>
+                <p className="text-gray-500 italic">@ Myhal Arena</p>
               </div>
             </div>
           </div>

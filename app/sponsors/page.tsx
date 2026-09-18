@@ -5,6 +5,7 @@ import Link from "next/link";
 import AOS from "aos";
 import Image from "next/image";
 import "aos/dist/aos.css";
+import ContactLink from "../components/ContactLink";
 
 export default function SponsorsPage() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -106,7 +107,7 @@ export default function SponsorsPage() {
           <Link href="/joinus" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Join Us</Link>
           <Link href="/sponsors" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Sponsors</Link>
           <Link href="/gallery" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Gallery</Link>
-          <Link href="/#contact" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Contact</Link>
+          <ContactLink className="px-4 py-2 rounded-lg hover:bg-gray-200 transition" />
           
           
         </div>
@@ -152,7 +153,7 @@ export default function SponsorsPage() {
               data-aos-delay="100"
             >
               <Image
-                src="/images/SKULE.png"
+                src="/images/sponsors/SKULE.png"
                 alt="Skule"
                 width={200}
                 height={128}
@@ -169,7 +170,7 @@ export default function SponsorsPage() {
               data-aos-delay="200"
             >
               <Image
-                src="/images/Uoft.png"
+                src="/images/sponsors/Uoft.png"
                 alt="University of Toronto"
                 width={200}
                 height={128}
@@ -186,7 +187,7 @@ export default function SponsorsPage() {
               data-aos-delay="300"
             >
               <Image
-                src="/images/CPSIF.png"
+                src="/images/sponsors/CPSIF.png"
                 alt="CPSIF"
                 width={200}
                 height={128}
@@ -203,7 +204,7 @@ export default function SponsorsPage() {
               data-aos-delay="400"
             >
               <Image
-                src="/images/UTERN.png"
+                src="/images/sponsors/UTERN.png"
                 alt="UTERN"
                 width={200}
                 height={128}
@@ -220,7 +221,7 @@ export default function SponsorsPage() {
               data-aos-delay="100"
             >
               <Image
-                src="/images/RLXsol.png"
+                src="/images/sponsors/RLXsol.png"
                 alt="RLX Solutions"
                 width={200}
                 height={128}
@@ -237,7 +238,7 @@ export default function SponsorsPage() {
               data-aos-delay="200"
             >
               <Image
-                src="/images/Hakko.png"
+                src="/images/sponsors/Hakko.png"
                 alt="Hakko"
                 width={200}
                 height={128}
@@ -254,7 +255,7 @@ export default function SponsorsPage() {
               data-aos-delay="300"
             >
               <Image
-                src="/images/Solidworks.png"
+                src="/images/sponsors/Solidworks.png"
                 alt="SolidWorks"
                 width={200}
                 height={128}
@@ -271,7 +272,7 @@ export default function SponsorsPage() {
               data-aos-delay="400"
             >
               <Image
-                src="/images/Altium.png"
+                src="/images/sponsors/Altium.png"
                 alt="Altium"
                 width={200}
                 height={128}
@@ -288,7 +289,7 @@ export default function SponsorsPage() {
               data-aos-delay="100"
             >
               <Image
-                src="/images/Molex.png"
+                src="/images/sponsors/Molex.png"
                 alt="Molex"
                 width={200}
                 height={128}
@@ -305,7 +306,7 @@ export default function SponsorsPage() {
               data-aos-delay="200"
             >
               <Image
-                src="/images/MGchemicals.png"
+                src="/images/sponsors/MGchemicals.png"
                 alt="MG Chemicals"
                 width={200}
                 height={128}
@@ -322,7 +323,7 @@ export default function SponsorsPage() {
               data-aos-delay="300"
             >
               <Image
-                src="/images/GILL.png"
+                src="/images/sponsors/GILL.png"
                 alt="Gill Instruments"
                 width={200}
                 height={128}
@@ -339,7 +340,7 @@ export default function SponsorsPage() {
               data-aos-delay="400"
             >
               <Image
-                src="/images/ANSYS.png"
+                src="/images/sponsors/ANSYS.png"
                 alt="ANSYS"
                 width={200}
                 height={128}

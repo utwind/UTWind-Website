@@ -80,7 +80,7 @@ const teamData: Record<TeamKey, TeamMember[]> = {
       year: "INDY 2T9 + PEY",
       position: "Operations Co-Lead",
       img: "/images/2026-2027 team picture folder/Han_Hsu_Eain_INDY2T9+PEY_OperationsCoLead.jpg",
-      linkedin: "https://ca.linkedin.com/in/juneetavangala"
+      linkedin: "https://www.linkedin.com/in/han-hsu-306ab32ba/" 
     },
   ],
   mechanical: [

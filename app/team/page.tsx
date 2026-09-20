@@ -42,44 +42,51 @@ const teamData: Record<TeamKey, TeamMember[]> = {
     },
     {
       name: "Diane Qin",
-      year: "MECH2T9 + PEY",
+      year: "MECH 2T9 + PEY",
       position: "Marketing Lead",
       img: "/images/2026-2027 team picture folder/Diane_Qin_Mech_2T9+PEY_Marketing.png",
       linkedin: "https://www.linkedin.com/in/dianecqin/"
     },
     {
       name: "Thomas Dong",
-      year: "INDY2T9 + PEY",
+      year: "INDY 2T9 + PEY",
       position: "Finance Lead",
       img: "/images/2026-2027 team picture folder/Thomas_Dong_INDY2T9+PEY_FinanceLead.jpg",
       linkedin: "https://ca.linkedin.com/in/thomas-dong26"
     },
     {
       name: "Calvert Zhu",
-      year: "MSE2T7 + PEY",
+      year: "MSE 2T7 + PEY",
       position: "Sponsorships Co-Lead",
       img: "/images/2026-2027 team picture folder/Calvert_Zhu_MSE2T7+PEY_Sponsorship.JPG",
       linkedin: "https://www.linkedin.com/in/calvert-zhu/ "
     },
     {
       name: "Stefano Ma",
-      year: "ENVS+W&O2T9",
+      year: "ENVS+W&O 2T9",
       position: "Sponsorships Co-Lead",
       img: "/images/2026-2027 team picture folder/Stefano_Ma_ENVS+W&O2T9_SponsorshipLead.png",
       linkedin: "https://ca.linkedin.com/in/ma-bing-hung-309075396"
     },
     {
       name: "Juneeta Vangala",
-      year: "INDY2T8 + PEY",
-      position: "Operations Lead",
+      year: "INDY 2T8 + PEY",
+      position: "Operations Co-Lead",
       img: "/images/2026-2027 team picture folder/Juneeta_Vangala_Indy2T8+PEY_OperationsLead .PNG",
+      linkedin: "https://ca.linkedin.com/in/juneetavangala"
+    },
+    {
+      name: "Han Hsu Eain",
+      year: "INDY 2T9 + PEY",
+      position: "Operations Co-Lead",
+      img: "/images/2026-2027 team picture folder/Han_Hsu_Eain_INDY2T9+PEY_OperationsCoLead.jpg",
       linkedin: "https://ca.linkedin.com/in/juneetavangala"
     },
   ],
   mechanical: [
     {
       name: "Teagan McKenzie",
-      year: "MECH2T7 + PEY",
+      year: "MECH 2T7 + PEY",
       position: "Mechanical Co-Lead",
       img: "/images/2026-2027 team picture folder/STeagan_McKenzie_MECH2T7+PEY_MechanicalCoLead.jpg",
       linkedin: "https://ca.linkedin.com/in/teagan-mckenzie-16a5401b2"
@@ -95,14 +102,14 @@ const teamData: Record<TeamKey, TeamMember[]> = {
   control: [
     {
       name: "Wanning He",
-      year: "ECE2T6",
+      year: "ECE 2T6",
       position: "Control Systems Co-Lead",
       img: "/images/2026-2027 team picture folder/Wanning_He_ECE_2T6_ControlsCoLead.jpg",
       linkedin: "https://ca.linkedin.com/in/wanning-he"
     },
     {
       name: "Jacob Duplessis",
-      year: "ECE2T7 + PEY",
+      year: "ECE 2T7 + PEY",
       position: "Contol Systems Co-Lead",
       img: "/images/2026-2027 team picture folder/Jacob_Duplessis_ECE_2T7_ControlsCoLead.jpg",
       linkedin: "https://www.linkedin.com/in/jacob-duplessis-34aa4b248/"
@@ -118,7 +125,7 @@ const teamData: Record<TeamKey, TeamMember[]> = {
     },
     {
       name: "Deniz Kantar",
-      year: "ECE2T8 + PEY",
+      year: "ECE 2T8 + PEY",
       position: "Power Systems Co-Lead",
       img: "/images/2026-2027 team picture folder/Deniz_Kantar_ECE_2T8+PEY_PowerCoLead.jpg",
       linkedin: "https://ca.linkedin.com/in/deniz-kantar"
@@ -144,16 +151,16 @@ const teamData: Record<TeamKey, TeamMember[]> = {
   sustainability: [
     {
       name: "Stella Cook",
-      year: "CHEM2T7 + PEY",
+      year: "CHEM 2T7 + PEY",
       position: "Sustainability Co-Lead",
       img: "/images/2026-2027 team picture folder/Stella_Cook_CHEM2T7+PEY_SustainabilityLead.jpg",
       linkedin: "https://ca.linkedin.com/in/stella-cook-046948246"
     },
     {
       name: "Pakhi Gupta",
-      year: "CIV2T7 + PEY",
+      year: "CIV 2T7 + PEY",
       position: "Sustainability Co-Lead",
-      img: "/images/2026-2027 team picture folder/Pakhi_Gupta_CIV2T7+PEY_SustainabilityBusinessLead.jpg",
+      img: "/images/2026-2027 team picture folder/Pakhi_Gupta_Civ2T7+PEY_SustainabilityBusinessLead.jpg",
       linkedin: "https://ca.linkedin.com/in/pakhigupta29"
     }
   ],

@@ -48,7 +48,7 @@ export default function JoinUsPage() {
             navHidden ? "opacity-0 -translate-y-10" : "opacity-100 translate-y-0"
           }`}
         >
-          <div className="max-w-7xl mx-auto flex justify-between items-center p-4 space-x-8">
+          <div className="flex justify-between items-center py-4 pl-4 pr-6">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2">
               <Image
@@ -150,7 +150,7 @@ export default function JoinUsPage() {
                 <h3 className="text-xl font-semibold text-indigo-700 mb-2">
                   Aerodynamics
                 </h3>
-                <p className="text-gray-700">Fridays @ 6:00-7:00 PM</p>
+                <p className="text-gray-700">Sundays @ 10:00-11:00 AM</p>
                 <p className="text-gray-500 italic">@ Myhal Arena</p>
               </div>
 

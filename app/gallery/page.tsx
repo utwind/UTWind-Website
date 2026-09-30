@@ -90,6 +90,52 @@ const galleryYears: GalleryYear[] = [
       },
     ],
   },
+    {
+    year: "2023-2024",
+    categories: [
+      {
+        title: "Competition",
+        images: [
+          { src: "/images/2023-2024 Gallery/DSC02322.JPG", alt: "UTWind competition photo 2024" },
+          { src: "/images/2023-2024 Gallery/DSC02326.JPG", alt: "UTWind turbine competition 2024" },
+          { src: "/images/2023-2024 Gallery/DSC02329.JPG", alt: "UTWind testing at competition 2024" },
+          { src: "/images/2023-2024 Gallery/DSC02342.JPG", alt: "UTWind competition photo 2024" },
+          { src: "/images/2023-2024 Gallery/IMG_4275.jpg", alt: "UTWind turbine competition 2024" },
+          { src: "/images/2023-2024 Gallery/IMG_9715.jpg", alt: "UTWind testing at competition 2024" },
+        ],
+      },
+    ],
+  },
+    {
+    year: "2022-2023",
+    categories: [
+      {
+        title: "Competition",
+        images: [
+          { src: "/images/2022-2023 Gallery/DSC06339.jpg", alt: "UTWind competition photo 2024" },
+          { src: "/images/2022-2023 Gallery/DSC06514.JPG", alt: "UTWind turbine competition 2024" },
+          { src: "/images/2022-2023 Gallery/IMG_9144.jpg", alt: "UTWind testing at competition 2024" },
+          { src: "/images/2022-2023 Gallery/DSC06322.JPG", alt: "UTWind testing at competition 2024" },
+          { src: "/images/2022-2023 Gallery/IMG_9531.jpg", alt: "UTWind testing at competition 2024" },
+        ],
+      },
+    ],
+  },
+  {
+    year: "2021-2022",
+    categories: [
+      {
+        title: "Competition",
+        images: [
+          { src: "/images/2021-2022 Gallery/20220602_173902.jpg", alt: "UTWind competition photo 2024" },
+          { src: "/images/2021-2022 Gallery/Copy of IMG_1419.jpg", alt: "UTWind turbine competition 2024" },
+          { src: "/images/2021-2022 Gallery/IMG_1407.jpg", alt: "UTWind testing at competition 2024" },
+          { src: "/images/2021-2022 Gallery/IMG_1426.jpg", alt: "UTWind testing at competition 2024" },
+          { src: "/images/2021-2022 Gallery/IMG_1435.jpg", alt: "UTWind testing at competition 2024" },
+        ],
+      },
+    ],
+  },
 ];
 
 export default function GalleryPage() {
@@ -98,7 +144,7 @@ export default function GalleryPage() {
     const lastScrollY = useRef(0);
     
     useEffect(() => {
-      AOS.init({ duration: 1000, once: true });
+      AOS.init({ duration: 400, once: true });
     }, []);
   
     useEffect(() => {
@@ -219,23 +265,22 @@ export default function GalleryPage() {
                         {category.title}
                     </h3>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
                         {category.images.map((image, index) => (
                           <div
                             key={image.src}
                             data-aos="fade-up"
                             data-aos-delay={index * 75}
-                            className="group relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-xl transition"
+                            className="group relative mb-6 break-inside-avoid overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-xl transition"
                           >
                             <Image
                               src={image.src}
                               alt={image.alt}
-                              width={600}
-                              height={400}
-                              className="h-64 w-full object-cover transition duration-500 group-hover:scale-105"
+                              width={1200}
+                              height={800}
+                              quality={100}
+                              className="block w-full h-auto"
                             />
-
-                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition"></div>
 
                             {image.credit && (
                               <div className="absolute bottom-0 left-0 right-0 bg-black/60 px-4 py-2 text-left text-sm text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -244,7 +289,7 @@ export default function GalleryPage() {
                             )}
                           </div>
                         ))}
-                    </div>
+                      </div>
                     </div>
                 ))}
                 </div>
@@ -252,6 +297,105 @@ export default function GalleryPage() {
             ))}
         </div>
       </section>
+
+
+{/* Footer */}
+<footer className="bg-blue-100 py-10 mt-20">
+  <div className="mx-auto max-w-7xl px-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
+      
+      {/* Left: Logo */}
+      <div className="flex justify-center md:justify-start">
+        <Image
+          src="/images/Utwind footer logo.png"
+          alt="UTWind Logo"
+          width={200}
+          height={200}
+          className="h-16 w-auto object-contain"
+          quality={100}
+          unoptimized
+        />
+      </div>
+
+      {/* Middle: Contact links */}
+      <div className="flex flex-col items-center text-center">
+        <h3 className="text-lg font-bold text-black mb-3">
+          Emails
+        </h3>
+
+        <div className="flex flex-col gap-2 text-black">
+          <a
+            href="mailto:contact@utwind.com"
+            className="hover:text-blue-700 transition"
+          >
+            <span className="font-semibold">General Inquiries:</span>{" "}
+            contact@utwind.com
+          </a>
+
+          <a
+            href="mailto:sponsorships@utwind.skule.ca"
+            className="hover:text-blue-700 transition"
+          >
+            <span className="font-semibold">Sponsorships:</span>{" "}
+            sponsorships@utwind.skule.ca
+          </a>
+
+          <a
+            href="mailto:operations@utwind.skule.ca"
+            className="hover:text-blue-700 transition"
+          >
+            <span className="font-semibold">Operations:</span>{" "}
+            operations@utwind.skule.ca
+          </a>
+        </div>
+
+        {/* Social icons */}
+        <div className="flex items-center justify-center gap-4 mt-5">
+          <a
+            href="https://www.instagram.com/utwindclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="UTWind Instagram"
+            className="text-black hover:text-blue-700 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-7 h-7"
+            >
+              <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5Zm8.75 2.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+            </svg>
+          </a>
+
+          <a
+            href="https://ca.linkedin.com/company/utwind"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="UTWind LinkedIn"
+            className="text-black hover:text-blue-700 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-7 h-7"
+            >
+              <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.32 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.1 20.45H3.54V9H7.1v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      {/* Right: Copyright */}
+      <div className="flex justify-center md:justify-end">
+        <p className="text-sm text-black">
+          © 2026 UTWind | University of Toronto
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
     </main>
   );
 }

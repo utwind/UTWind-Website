@@ -178,8 +178,7 @@ const teamData: Record<TeamKey, TeamMember[]> = {
 
 export default function TeamPage() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeTeam, setActiveTeam] = useState<TeamKey>("president");
-
+  
   const navbarRef = useRef<HTMLDivElement | null>(null);
   const lastScrollY = useRef(0);
 
@@ -212,17 +211,17 @@ export default function TeamPage() {
   return team.map((member) => (
     <div
       key={member.name}
-      className="bg-white rounded-xl shadow-md p-4 text-center hover:shadow-lg transition"
+      className="bg-white rounded-2xl shadow-md p-10 text-center hover:shadow-xl transition w-96 min-h-[430px]"
     >
       {/* Image + LinkedIn hover */}
-      <div className="group relative w-32 h-32 mx-auto mb-4">
+      <div className="group relative w-52 h-52 mx-auto mb-8">
         <Image
           src={member.img}
           alt={member.name}
           width={600}
           height={600}
           quality={100}
-          className="w-32 h-32 rounded-full object-cover"
+          className="w-52 h-52 rounded-full object-cover"
         />
 
         {member.linkedin && (
@@ -246,18 +245,12 @@ export default function TeamPage() {
         )}
       </div>
 
-      <h3 className="font-bold text-lg">{member.name}</h3>
-      <p className="text-gray-600">{member.year}</p>
-      <p className="text-gray-500 italic">{member.position}</p>
+      <h3 className="font-bold text-2xl">{member.name}</h3>
+      <p className="text-gray-600 text-xl mt-2">{member.year}</p>
+      <p className="text-gray-500 italic text-xl mt-2">{member.position}</p>
     </div>
   ));
 };
-
-  const baseBtnClasses =
-    "team-btn font-semibold py-3 px-4 rounded-md transition text-left";
-
-  const inactiveBtnClasses = "bg-gray-200 text-gray-800 hover:bg-gray-300";
-  const activeBtnClasses = "bg-indigo-700 text-white";
 
   return (
     <div className="bg-gray-50 text-gray-800 min-h-screen">
@@ -364,114 +357,225 @@ export default function TeamPage() {
           </div>
       </nav>
 
-      {/* Team Section */}
-      <section id="team" className="bg-gray-50 py-20">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 px-6">
-          {/* Left Sidebar */}
-          <div className="w-full md:w-1/4 flex flex-col space-y-4">
-            <button
-              className={`${baseBtnClasses} ${
-                activeTeam === "president" ? activeBtnClasses : inactiveBtnClasses
-              }`}
-              onClick={() => setActiveTeam("president")}
-            >
-              President
-            </button>
-            <button
-              className={`${baseBtnClasses} ${
-                activeTeam === "business" ? activeBtnClasses : inactiveBtnClasses
-              }`}
-              onClick={() => setActiveTeam("business")}
-            >
-              Business Leads
-            </button>
-            <button
-              className={`${baseBtnClasses} ${
-                activeTeam === "mechanical" ? activeBtnClasses : inactiveBtnClasses
-              }`}
-              onClick={() => setActiveTeam("mechanical")}
-            >
-              Mechanical Leads
-            </button>
-            <button
-              className={`${baseBtnClasses} ${
-                activeTeam === "control" ? activeBtnClasses : inactiveBtnClasses
-              }`}
-              onClick={() => setActiveTeam("control")}
-            >
-              Control Systems Leads
-            </button>
-            <button
-              className={`${baseBtnClasses} ${
-                activeTeam === "power" ? activeBtnClasses : inactiveBtnClasses
-              }`}
-              onClick={() => setActiveTeam("power")}
-            >
-              Power Systems Leads
-            </button>
-            <button
-              className={`${baseBtnClasses} ${
-                activeTeam === "aero" ? activeBtnClasses : inactiveBtnClasses
-              }`}
-              onClick={() => setActiveTeam("aero")}
-            >
-              Aerodynamics Leads
-            </button>
-            <button
-              className={`${baseBtnClasses} ${
-                activeTeam === "sustainability" ? activeBtnClasses : inactiveBtnClasses
-              }`}
-              onClick={() => setActiveTeam("sustainability")}
-            >
-              Sustainability Lead
-            </button>
-            <button
-              className={`${baseBtnClasses} ${
-                activeTeam === "web" ? activeBtnClasses : inactiveBtnClasses
-              }`}
-              onClick={() => setActiveTeam("web")}
-            >
-              Webmaster
-            </button>
-          </div>
+     {/* Team Section */}
+<section id="team" className="bg-gray-50 py-20">
+  <div className="max-w-7xl mx-auto px-6">
 
-          {/* Right Grid */}
-          <div className="w-full md:w-3/4">
-            <div
-              id="team-grid"
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-            >
-              {renderTeam(activeTeam)}
-            </div>
-          </div>
-        </div>
-      </section>
+    {/* Page Title */}
+    <div className="text-center mb-16">
+      <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
+        Meet Our Team
+      </h1>
 
-      {/* Footer */}
-      <footer className="bg-blue-100 py-6 mt-20">
-        <div className="mx-auto max-w-7xl px-6 flex flex-wrap items-center justify-between gap-4">
-          {/* left */}
-          <div className="flex items-center gap-3 flex-1 min-w-0">
-            <Image
-              src="/images/Utwind footer logo.png"
-              alt="UTWind Logo"
-              width={200}
-              height={200}
-              className="h-16 w-auto object-contain shrink-0"
-              quality={100}
-              unoptimized
-            />
-            <span className="text-lg font-semibold text-black truncate">
-              contact@utwind.com
-            </span>
-          </div>
+      <p className="text-gray-600 mt-4 text-lg">
+        Meet the students behind UTWind.
+      </p>
+    </div>
+
+    {/* President */}
+    <div className="mb-20">
+      <div className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg mb-10 text-center">
+        <h2 className="text-3xl font-bold">
+          President
+        </h2>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-10">
+        {renderTeam("president")}
+      </div>
+    </div>
+
+    {/* Business */}
+    <div className="mb-20">
+      <div className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg mb-10 text-center">
+        <h2 className="text-3xl font-bold">
+          Business
+        </h2>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-10">
+        {renderTeam("business")}
+      </div>
+    </div>
+
+    {/* Mechanical */}
+    <div className="mb-20">
+      <div className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg mb-10 text-center">
+        <h2 className="text-3xl font-bold">
+          Mechanical
+        </h2>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-10">
+        {renderTeam("mechanical")}
+      </div>
+    </div>
+
+    {/* Control Systems */}
+    <div className="mb-20">
+      <div className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg mb-10 text-center">
+        <h2 className="text-3xl font-bold">
+          Control Systems
+        </h2>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-10">
+        {renderTeam("control")}
+      </div>
+    </div>
+
+    {/* Power Systems */}
+    <div className="mb-20">
+      <div className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg mb-10 text-center">
+        <h2 className="text-3xl font-bold">
+          Power Systems
+        </h2>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-10">
+        {renderTeam("power")}
+      </div>
+    </div>
+
+    {/* Aerodynamics */}
+    <div className="mb-20">
+      <div className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg mb-10 text-center">
+        <h2 className="text-3xl font-bold">
+          Aerodynamics
+        </h2>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-10">
+        {renderTeam("aero")}
+      </div>
+    </div>
+
+    {/* Sustainability */}
+    <div className="mb-20">
+      <div className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg mb-10 text-center">
+        <h2 className="text-3xl font-bold">
+          Sustainability
+        </h2>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-10">
+        {renderTeam("sustainability")}
+      </div>
+    </div>
+
+    {/* Webmaster */}
+    <div>
+      <div className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg mb-10 text-center">
+        <h2 className="text-3xl font-bold">
+          Webmaster
+        </h2>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-10">
+        {renderTeam("web")}
+      </div>
+    </div>
+
+  </div>
+</section>
+     
+  {/* Footer */}
+<footer className="bg-blue-100 py-10 mt-20">
+  <div className="mx-auto max-w-7xl px-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
       
-          {/* right */}
-          <p className="text-sm text-black shrink-0">
-            © 2025 UTWind | University of Toronto
-          </p>
+      {/* Left: Logo */}
+      <div className="flex justify-center md:justify-start">
+        <Image
+          src="/images/Utwind footer logo.png"
+          alt="UTWind Logo"
+          width={200}
+          height={200}
+          className="h-16 w-auto object-contain"
+          quality={100}
+          unoptimized
+        />
+      </div>
+
+      {/* Middle: Contact links */}
+      <div className="flex flex-col items-center text-center">
+        <h3 className="text-lg font-bold text-black mb-3">
+          Emails
+        </h3>
+
+        <div className="flex flex-col gap-2 text-black">
+          <a
+            href="mailto:contact@utwind.com"
+            className="hover:text-blue-700 transition"
+          >
+            <span className="font-semibold">General Inquiries:</span>{" "}
+            contact@utwind.com
+          </a>
+
+          <a
+            href="mailto:sponsorships@utwind.skule.ca"
+            className="hover:text-blue-700 transition"
+          >
+            <span className="font-semibold">Sponsorships:</span>{" "}
+            sponsorships@utwind.skule.ca
+          </a>
+
+          <a
+            href="mailto:operations@utwind.skule.ca"
+            className="hover:text-blue-700 transition"
+          >
+            <span className="font-semibold">Operations:</span>{" "}
+            operations@utwind.skule.ca
+          </a>
         </div>
-      </footer>
+
+        {/* Social icons */}
+        <div className="flex items-center justify-center gap-4 mt-5">
+          <a
+            href="https://www.instagram.com/utwindclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="UTWind Instagram"
+            className="text-black hover:text-blue-700 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-7 h-7"
+            >
+              <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5Zm8.75 2.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+            </svg>
+          </a>
+
+          <a
+            href="https://ca.linkedin.com/company/utwind"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="UTWind LinkedIn"
+            className="text-black hover:text-blue-700 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-7 h-7"
+            >
+              <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.32 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.1 20.45H3.54V9H7.1v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      {/* Right: Copyright */}
+      <div className="flex justify-center md:justify-end">
+        <p className="text-sm text-black">
+          © 2026 UTWind | University of Toronto
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
     </div>
   );
 }

@@ -241,7 +241,7 @@ export default function GalleryPage() {
           Gallery
         </h1>
 
-        <p className="mx-auto max-w-3xl text-lg md:text-xl text-gray-600">
+        <p className="mx-auto max-w-3xl text-lg md:text-2xl text-gray-600">
           Explore UTWind’s design, build, testing, outreach, and competition moments over the years.
         </p>
       </section>

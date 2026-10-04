@@ -107,8 +107,8 @@ export default function CompetitionPage() {
         {/* Hero/Intro to Competition */}
         <section id="competitions" className="bg-blue-200 py-20">
           <div className="max-w-5xl mx-auto text-center px-6">
-            <h2 className="text-4xl font-bold text-gray-800 mb-8">International Small Wind Turbine Contest (ISWTC)</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <h2 className="text-6xl font-bold text-gray-800 mb-8">International Small Wind Turbine Contest (ISWTC)</h2>
+            <p className="text-2xl text-gray-700 leading-relaxed">
               Every Summer UTWind competes in the{' '}
               <a
                 href="https://www.hanze.nl/en/research/centres/entrance-centre-of-expertise-energy/projects/international-small-wind-turbine-contest-iswtc"

@@ -16,7 +16,7 @@ export default function SponsorsPage() {
   // Init AOS
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 750,
       once: true,
     });
   }, []);
@@ -114,32 +114,38 @@ export default function SponsorsPage() {
     </nav>
       <section
         id="sponsors"
-        className="bg-white py-20"
+        className="bg-white pb-20"
         data-aos="fade-up"
       >
+          <div className="w-full bg-blue-50 border-y border-blue-200 py-16 mb-16">
         <div className="max-w-7xl mx-auto text-center px-6">
           <h2 className="text-6xl font-bold mb-10 text-blue-800">
-            Our Sponsors
+            Our Sponsors and Partners
           </h2>
-          <p className="text-xl mb-12">
-            Huge thanks to our sponsors that play a vital role in turning
-            theory into real-world engineering. With their support, UTWind is
-            able to prototype new turbine designs, test renewable technologies,
-            and represent the University of Toronto at international
-            competitions. We thank you for empowering the next generation of
-            engineers shaping the future of sustainable energy!
-          </p>
-          </div>
-          <div className="flex justify-center mt-8 mb-16">
+
+    <div className="max-w-7xl mx-auto px-6 text-center">
+      <p className="text-2xl leading-relaxed text-gray-800">
+        Huge thanks to our sponsors that play a vital role in turning
+        theory into real-world engineering. With their support, UTWind is
+        able to prototype new turbine designs, test renewable technologies,
+        and represent the University of Toronto at international
+        competitions. We thank you for empowering the next generation of
+        engineers shaping the future of sustainable energy!
+      </p>
+    </div>
+              </div>
+          <div className="flex justify-center mt-8 mb-10">
             <a
               href="\files\UTWind Sponsorship Package 2026-2027.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-blue-700 px-8 py-4 text-lg font-semibold text-white shadow-md transition hover:bg-blue-800 hover:shadow-lg"
+              className="inline-flex items-center justify-center rounded-full bg-blue-700 px-16 py-10 text-2xl font-semibold text-white shadow-md transition hover:bg-blue-800 hover:shadow-lg"
             >
               View Sponsorship Package
             </a>
           </div>
+  </div>
+
       
       
       {/* Sponsor Rankings */}
@@ -147,7 +153,7 @@ export default function SponsorsPage() {
       <div className="space-y-16">
         {/* Diamond */}
         <div>
-          <h3 className="text-center py-4 text-4xl font-bold text-blue-900 mb-8">
+          <h3 className="text-center py-4 text-6xl font-bold text-blue-900 mb-8">
             Diamond Sponsors
           </h3>
 
@@ -183,7 +189,7 @@ export default function SponsorsPage() {
         */}
         {/* Gold */}
         <div>
-          <h3 className="text-center py-4 text-4xl font-bold text-yellow-600 mb-8">
+          <h3 className="text-center py-4 text-6xl font-bold text-yellow-600 mb-8">
             Gold Sponsors
           </h3>
 
@@ -197,10 +203,10 @@ export default function SponsorsPage() {
               data-aos="zoom-in"
             >
               <Image
-                src="/images/sponsors/SEF.jpg"
+                src="/images/sponsors/sef-logo.jpg"
                 alt="SEF"
-                width={220}
-                height={140}
+                width={600 }
+                height={228}
                 className="h-32 w-full object-contain mx-auto"
               />
             </a>
@@ -226,7 +232,7 @@ export default function SponsorsPage() {
 
         {/* Silver */}
         <div>
-          <h3 className="text-center py-4 text-4xl font-bold text-gray-500 mb-8">
+          <h3 className="text-center py-4 text-6xl font-bold text-gray-500 mb-8">
             Silver Sponsors
           </h3>
 
@@ -251,7 +257,7 @@ export default function SponsorsPage() {
 
         {/* Bronze */}
         <div>
-          <h3 className="text-center py-4 text-4xl font-bold text-amber-700 mb-8">
+          <h3 className="text-center py-4 text-6xl font-bold text-amber-700 mb-8">
             Bronze Sponsors
           </h3>
 
@@ -274,10 +280,10 @@ export default function SponsorsPage() {
           </div>
         </div>
 
-        {/* Other Partners */}
+        {/* Technical Partners */}
         <div>
-          <h3 className="text-center py-4 text-4xl font-bold text-blue-900 mb-8">
-            Partners & Supporters
+          <h3 className="text-center py-4 text-6xl font-bold text-blue-900 mb-8">
+            Technical Partners
           </h3>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10">
@@ -286,6 +292,7 @@ export default function SponsorsPage() {
               target="_blank"
               rel="noreferrer"
               className="block transform hover:scale-105 transition"
+              data-aos="zoom-in"
             >
               <Image
                 src="/images/sponsors/Uoft.png"
@@ -293,6 +300,7 @@ export default function SponsorsPage() {
                 width={200}
                 height={128}
                 className="w-full h-32 object-contain mx-auto"
+                data-aos="zoom-in"
               />
             </a>
 
@@ -301,6 +309,7 @@ export default function SponsorsPage() {
               target="_blank"
               rel="noreferrer"
               className="block transform hover:scale-105 transition"
+              data-aos="zoom-in"
             >
               <Image
                 src="/images/sponsors/Solidworks.png"
@@ -308,6 +317,7 @@ export default function SponsorsPage() {
                 width={200}
                 height={128}
                 className="w-full h-32 object-contain mx-auto"
+                data-aos="zoom-in"
               />
             </a>
 
@@ -316,6 +326,7 @@ export default function SponsorsPage() {
               target="_blank"
               rel="noreferrer"
               className="block transform hover:scale-105 transition"
+              data-aos="zoom-in"
             >
               <Image
                 src="/images/sponsors/Altium.png"
@@ -323,6 +334,7 @@ export default function SponsorsPage() {
                 width={200}
                 height={128}
                 className="w-full h-32 object-contain mx-auto"
+                data-aos="zoom-in"
               />
             </a>
 
@@ -331,6 +343,7 @@ export default function SponsorsPage() {
               target="_blank"
               rel="noreferrer"
               className="block transform hover:scale-105 transition"
+              data-aos="zoom-in"
             >
               <Image
                 src="/images/sponsors/GILL.png"
@@ -338,6 +351,7 @@ export default function SponsorsPage() {
                 width={200}
                 height={128}
                 className="w-full h-32 object-contain mx-auto"
+                data-aos="zoom-in"
               />
             </a>
 
@@ -346,6 +360,7 @@ export default function SponsorsPage() {
               target="_blank"
               rel="noreferrer"
               className="block transform hover:scale-105 transition"
+              data-aos="zoom-in"
             >
               <Image
                 src="/images/sponsors/ANSYS.png"
@@ -353,6 +368,7 @@ export default function SponsorsPage() {
                 width={200}
                 height={128}
                 className="w-full h-32 object-contain mx-auto"
+                data-aos="zoom-in"
               />
             </a>
           </div>
@@ -389,12 +405,12 @@ export default function SponsorsPage() {
                     <th className="border border-blue-300 px-4 py-5"></th>
 
                     <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold">Diamond</div>
+                      <div className="text-xl font-bold text-blue-500">Diamond</div>
                       <div className="text-blue-300 mt-1">$10,000+</div>
                     </th>
 
                     <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold">Platinum</div>
+                      <div className="text-xl font-bold text-blue-300">Platinum</div>
                       <div className="text-blue-300 mt-1">$5,000+</div>
                     </th>
 
@@ -404,17 +420,17 @@ export default function SponsorsPage() {
                     </th>
 
                     <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold">Silver</div>
+                      <div className="text-xl font-bold text-slate-350">Silver</div>
                       <div className="text-blue-300 mt-1">$1,000+</div>
                     </th>
 
                     <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold">Bronze</div>
+                      <div className="text-xl font-bold text-amber-700">Bronze</div>
                       <div className="text-blue-300 mt-1">$500+</div>
                     </th>
 
                     <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold">In-Kind Partner</div>
+                      <div className="text-xl font-bold text-green-300">Technical Partner</div>
                       <div className="text-sm text-blue-300 mt-1">
                         Products, services, or technical support
                       </div>

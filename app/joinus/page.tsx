@@ -139,7 +139,7 @@ export default function JoinUsPage() {
         >
           <div className="max-w-5xl mx-auto px-6 text-center">
             <h2 className="text-4xl font-bold text-gray-800 mb-10">Meetings</h2>
-            <p className="text-lg font-bold text-gray-800 mb-8">
+            <p className="text-xl font-bold text-gray-800 mb-8">
               Below are the listed times and location that we have our work sessions!
             </p>
 

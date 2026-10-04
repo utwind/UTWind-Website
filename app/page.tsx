@@ -358,7 +358,7 @@ If you have any questions, feel free to contact anyone on the leadership team at
       <section id="about" className="bg-blue-500 text-white py-20" data-aos="fade-up">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-6xl font-bold mb-6">About Us</h2>
-          <p className="text-xl">
+          <p className="text-2xl">
             UTWind is a student team dedicated to building sustainable small-scale wind turbines.
             Formed in 2021, our team has grown to more than 80 talented students designing, building,
             and testing small-scale turbines for international competitions and research.
@@ -376,7 +376,7 @@ If you have any questions, feel free to contact anyone on the leadership team at
       <section id="vision" className="bg-white text-gray-800 py-20" data-aos="fade-up">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-6xl font-bold mb-6">Vision</h2>
-          <p className="text-xl italic leading-relaxed">
+          <p className="text-2xl italic leading-relaxed">
             &quot;Our vision is to bring wind energy to light for students at the University of Toronto,
             so they will be prepared and inspired to light up the world in a sustainable way.
             By working together, we hope to develop our skills in the context of a project we are
@@ -392,10 +392,10 @@ If you have any questions, feel free to contact anyone on the leadership team at
     >
       {/* Contact content */}
     </section>
-      <section id="contact" className="bg-indigo-50 py-20">
+      <section id="contact" className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-gray-800 text-center mb-8">Contact Us</h2>
-          <p className="text-center text-lg text-gray-700 max-w-2xl mx-auto mb-12">
+          <p className="text-center text-xl text-gray-700 max-w-2xl mx-auto mb-12">
             Interested in learning more about UTWind or collaborating with us?  
             We’d love to hear from you! Please reach out via email or visit us at Myhal Centre.
           </p>

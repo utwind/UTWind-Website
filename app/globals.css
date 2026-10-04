@@ -102,3 +102,18 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
 }
+
+.tier-label {
+  border: 1px solid #93c5fd;
+  padding: 1rem;
+  font-weight: 600;
+  text-align: center;
+  min-width: 180px;
+}
+
+.tier-cell {
+  border: 1px solid #93c5fd;
+  padding: 1rem;
+  font-size: 1.25rem;
+  min-width: 130px;
+}

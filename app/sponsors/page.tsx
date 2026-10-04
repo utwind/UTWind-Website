@@ -112,9 +112,6 @@ export default function SponsorsPage() {
           
         </div>
     </nav>
-
-      
-      {/* Sponsors Section */}
       <section
         id="sponsors"
         className="bg-white py-20"
@@ -124,7 +121,7 @@ export default function SponsorsPage() {
           <h2 className="text-6xl font-bold mb-10 text-blue-800">
             Our Sponsors
           </h2>
-          <p className="text-lg mb-12">
+          <p className="text-xl mb-12">
             Huge thanks to our sponsors that play a vital role in turning
             theory into real-world engineering. With their support, UTWind is
             able to prototype new turbine designs, test renewable technologies,
@@ -132,9 +129,10 @@ export default function SponsorsPage() {
             competitions. We thank you for empowering the next generation of
             engineers shaping the future of sustainable energy!
           </p>
+          </div>
           <div className="flex justify-center mt-8 mb-16">
             <a
-              href="\files\UTWind Sponsorship Package (2025 - 2026).pdf"
+              href="\files\UTWind Sponsorship Package 2026-2027.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-blue-700 px-8 py-4 text-lg font-semibold text-white shadow-md transition hover:bg-blue-800 hover:shadow-lg"
@@ -142,32 +140,152 @@ export default function SponsorsPage() {
               View Sponsorship Package
             </a>
           </div>
-          {/* Sponsor Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10">
+      
+      
+      {/* Sponsor Rankings */}
+
+      <div className="space-y-16">
+        {/* Diamond */}
+        <div>
+          <h3 className="text-center py-4 text-4xl font-bold text-blue-900 mb-8">
+            Diamond Sponsors
+          </h3>
+
+          <div className="flex justify-center">
             <a
               href="https://skule.ca/"
               target="_blank"
               rel="noreferrer"
               className="block transform hover:scale-105 transition"
               data-aos="zoom-in"
-              data-aos-delay="100"
             >
               <Image
                 src="/images/sponsors/SKULE.png"
                 alt="Skule"
-                width={200}
-                height={128}
-                className="w-full h-32 object-contain mx-auto"
+                width={260}
+                height={160}
+                className="h-40 w-auto object-contain mx-auto"
+              />
+            </a>
+          </div>
+        </div>
+        {/* Platinum */}
+        {/*
+        <div>
+          <h3 className="text-center py-4 text-4xl font-bold text-blue-900 mb-8">
+            Platinum Sponsors
+          </h3>
+
+          <p className="text-gray-500 italic">
+            No platinum sponsors currently
+          </p>
+        </div>
+        */}
+        {/* Gold */}
+        <div>
+          <h3 className="text-center py-4 text-4xl font-bold text-yellow-600 mb-8">
+            Gold Sponsors
+          </h3>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-3xl mx-auto">
+            {/* SEF */}
+            <a
+              href="https://skule.ca/finances/SEF.html"
+              target="_blank"
+              rel="noreferrer"
+              className="block transform hover:scale-105 transition"
+              data-aos="zoom-in"
+            >
+              <Image
+                src="/images/sponsors/SEF.jpg"
+                alt="SEF"
+                width={220}
+                height={140}
+                className="h-32 w-full object-contain mx-auto"
               />
             </a>
 
+            {/* CPSIF */}
+            <a
+              href="https://www.engineering.utoronto.ca/current-students/centralized-process-for-student-initiative-funding-cpsif/"
+              target="_blank"
+              rel="noreferrer"
+              className="block transform hover:scale-105 transition"
+              data-aos="zoom-in"
+            >
+              <Image
+                src="/images/sponsors/CPSIF.png"
+                alt="CPSIF"
+                width={220}
+                height={140}
+                className="h-32 w-full object-contain mx-auto"
+              />
+            </a>
+          </div>
+        </div>
+
+        {/* Silver */}
+        <div>
+          <h3 className="text-center py-4 text-4xl font-bold text-gray-500 mb-8">
+            Silver Sponsors
+          </h3>
+
+          <div className="flex justify-center">
+            <a
+              href="https://www.utern.ca/"
+              target="_blank"
+              rel="noreferrer"
+              className="block transform hover:scale-105 transition"
+              data-aos="zoom-in"
+            >
+              <Image
+                src="/images/sponsors/UTERN.png"
+                alt="UTERN"
+                width={220}
+                height={140}
+                className="h-32 w-auto object-contain mx-auto"
+              />
+            </a>
+          </div>
+        </div>
+
+        {/* Bronze */}
+        <div>
+          <h3 className="text-center py-4 text-4xl font-bold text-amber-700 mb-8">
+            Bronze Sponsors
+          </h3>
+
+          <div className="flex justify-center">
+            <a
+              href="https://www.hakko.com/english/products/"
+              target="_blank"
+              rel="noreferrer"
+              className="block transform hover:scale-105 transition"
+              data-aos="zoom-in"
+            >
+              <Image
+                src="/images/sponsors/Hakko.png"
+                alt="Hakko"
+                width={220}
+                height={140}
+                className="h-32 w-auto object-contain mx-auto"
+              />
+            </a>
+          </div>
+        </div>
+
+        {/* Other Partners */}
+        <div>
+          <h3 className="text-center py-4 text-4xl font-bold text-blue-900 mb-8">
+            Partners & Supporters
+          </h3>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10">
             <a
               href="https://www.utoronto.ca/"
               target="_blank"
               rel="noreferrer"
               className="block transform hover:scale-105 transition"
-              data-aos="zoom-in"
-              data-aos-delay="200"
             >
               <Image
                 src="/images/sponsors/Uoft.png"
@@ -179,80 +297,10 @@ export default function SponsorsPage() {
             </a>
 
             <a
-              href="https://www.engineering.utoronto.ca/current-students/centralized-process-for-student-initiative-funding-cpsif/"
-              target="_blank"
-              rel="noreferrer"
-              className="block transform hover:scale-105 transition"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              <Image
-                src="/images/sponsors/CPSIF.png"
-                alt="CPSIF"
-                width={200}
-                height={128}
-                className="w-full h-32 object-contain mx-auto"
-              />
-            </a>
-
-            <a
-              href="https://www.utern.ca/"
-              target="_blank"
-              rel="noreferrer"
-              className="block transform hover:scale-105 transition"
-              data-aos="zoom-in"
-              data-aos-delay="400"
-            >
-              <Image
-                src="/images/sponsors/UTERN.png"
-                alt="UTERN"
-                width={200}
-                height={128}
-                className="w-full h-32 object-contain mx-auto"
-              />
-            </a>
-
-            <a
-              href="https://rlxsolutions.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="block transform hover:scale-105 transition"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <Image
-                src="/images/sponsors/RLXsol.png"
-                alt="RLX Solutions"
-                width={200}
-                height={128}
-                className="w-full h-32 object-contain mx-auto"
-              />
-            </a>
-
-            <a
-              href="https://www.hakko.com/english/products/"
-              target="_blank"
-              rel="noreferrer"
-              className="block transform hover:scale-105 transition"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <Image
-                src="/images/sponsors/Hakko.png"
-                alt="Hakko"
-                width={200}
-                height={128}
-                className="w-full h-32 object-contain mx-auto"
-              />
-            </a>
-
-            <a
               href="https://www.solidworks.com/"
               target="_blank"
               rel="noreferrer"
               className="block transform hover:scale-105 transition"
-              data-aos="zoom-in"
-              data-aos-delay="300"
             >
               <Image
                 src="/images/sponsors/Solidworks.png"
@@ -268,8 +316,6 @@ export default function SponsorsPage() {
               target="_blank"
               rel="noreferrer"
               className="block transform hover:scale-105 transition"
-              data-aos="zoom-in"
-              data-aos-delay="400"
             >
               <Image
                 src="/images/sponsors/Altium.png"
@@ -281,46 +327,10 @@ export default function SponsorsPage() {
             </a>
 
             <a
-              href="https://www.molex.com/en-us/home"
-              target="_blank"
-              rel="noreferrer"
-              className="block transform hover:scale-105 transition"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <Image
-                src="/images/sponsors/Molex.png"
-                alt="Molex"
-                width={200}
-                height={128}
-                className="w-full h-32 object-contain mx-auto"
-              />
-            </a>
-
-            <a
-              href="https://mgchemicals.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="block transform hover:scale-105 transition"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <Image
-                src="/images/sponsors/MGchemicals.png"
-                alt="MG Chemicals"
-                width={200}
-                height={128}
-                className="w-full h-32 object-contain mx-auto"
-              />
-            </a>
-
-            <a
               href="https://gillinstruments.com/"
               target="_blank"
               rel="noreferrer"
               className="block transform hover:scale-105 transition"
-              data-aos="zoom-in"
-              data-aos-delay="300"
             >
               <Image
                 src="/images/sponsors/GILL.png"
@@ -336,8 +346,6 @@ export default function SponsorsPage() {
               target="_blank"
               rel="noreferrer"
               className="block transform hover:scale-105 transition"
-              data-aos="zoom-in"
-              data-aos-delay="400"
             >
               <Image
                 src="/images/sponsors/ANSYS.png"
@@ -349,7 +357,227 @@ export default function SponsorsPage() {
             </a>
           </div>
         </div>
-      </section>
+        </div>
+        </section>
+          {/* Sponsors Tiers */}
+          <section className="bg-white py-20 px-4">
+          <div className="max-w-7xl mx-auto">
+            {/* Header */}
+            <div className="bg-blue-900 text-white rounded-t-2xl px-6 py-10 text-center">
+              <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-wide">
+                Sponsorship Tiers
+              </h2>
+
+              <div className="w-3/4 max-w-3xl h-1 bg-white mx-auto my-5" />
+
+              <p className="max-w-5xl mx-auto text-lg md:text-2xl leading-relaxed">
+                We offer customizable partnerships through technical expertise,
+                financial contributions, and in-kind support. These contributions fund
+                critical components, materials, research, competition expenses, and
+                team operations. In return, sponsors gain direct access to skilled
+                engineering students while advancing their ESG priorities. This
+                support enables UTWind to design, build, test, and compete with
+                innovative clean-energy technologies.
+              </p>
+            </div>
+
+            {/* Table */}
+            <div className="overflow-x-auto shadow-lg rounded-b-2xl">
+              <table className="w-full min-w-[1000px] border-collapse text-center">
+                <thead>
+                  <tr className="bg-blue-950 text-white">
+                    <th className="border border-blue-300 px-4 py-5"></th>
+
+                    <th className="border border-blue-300 px-4 py-5">
+                      <div className="text-xl font-bold">Diamond</div>
+                      <div className="text-blue-300 mt-1">$10,000+</div>
+                    </th>
+
+                    <th className="border border-blue-300 px-4 py-5">
+                      <div className="text-xl font-bold">Platinum</div>
+                      <div className="text-blue-300 mt-1">$5,000+</div>
+                    </th>
+
+                    <th className="border border-blue-300 px-4 py-5">
+                      <div className="text-xl font-bold text-yellow-300">Gold</div>
+                      <div className="text-blue-300 mt-1">$2,500+</div>
+                    </th>
+
+                    <th className="border border-blue-300 px-4 py-5">
+                      <div className="text-xl font-bold">Silver</div>
+                      <div className="text-blue-300 mt-1">$1,000+</div>
+                    </th>
+
+                    <th className="border border-blue-300 px-4 py-5">
+                      <div className="text-xl font-bold">Bronze</div>
+                      <div className="text-blue-300 mt-1">$500+</div>
+                    </th>
+
+                    <th className="border border-blue-300 px-4 py-5">
+                      <div className="text-xl font-bold">In-Kind Partner</div>
+                      <div className="text-sm text-blue-300 mt-1">
+                        Products, services, or technical support
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody className="bg-blue-50 text-blue-950">
+                  {/* Row 1 */}
+                  <tr>
+                    <td className="tier-label">
+                      Invitation to team events & showcases
+                    </td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                  </tr>
+
+                  {/* Row 2 */}
+                  <tr>
+                    <td className="tier-label">
+                      Invitation to annual sponsor networking and recruitment event
+                    </td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                  </tr>
+
+                  {/* Row 3 */}
+                  <tr>
+                    <td className="tier-label">
+                      Sponsor job postings shared with members
+                    </td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell text-sm text-gray-500">
+                      By agreement
+                    </td>
+                  </tr>
+
+                  {/* Row 4 */}
+                  <tr>
+                    <td className="tier-label">Logo on team apparel</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell text-gray-400">—</td>
+                    <td className="tier-cell text-gray-400">—</td>
+                    <td className="tier-cell text-sm text-gray-500">
+                      By agreement
+                    </td>
+                  </tr>
+
+                  {/* Row 5 */}
+                  <tr>
+                    <td className="tier-label">Access to team résumé book</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell text-gray-400">—</td>
+                    <td className="tier-cell text-gray-400">—</td>
+                    <td className="tier-cell text-sm text-gray-500">
+                      By agreement
+                    </td>
+                  </tr>
+
+                  {/* Row 6 */}
+                  <tr>
+                    <td className="tier-label">
+                      Team attendance at sponsor event¹
+                    </td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell">✓</td>
+                    <td className="tier-cell text-sm text-gray-500">
+                      By agreement
+                    </td>
+                    <td className="tier-cell text-gray-400">—</td>
+                    <td className="tier-cell text-gray-400">—</td>
+                    <td className="tier-cell text-sm text-gray-500">
+                      By agreement
+                    </td>
+                  </tr>
+
+                  {/* Row 7 */}
+                  <tr>
+                    <td className="tier-label">Logo on website (linked for all)</td>
+                    <td className="tier-cell text-sm font-semibold">
+                      Featured profile
+                    </td>
+                    <td className="tier-cell text-sm font-semibold">
+                      Featured profile
+                    </td>
+                    <td className="tier-cell text-sm">
+                      Secondary feature
+                    </td>
+                    <td className="tier-cell text-sm">Logo only</td>
+                    <td className="tier-cell text-sm">Logo only</td>
+                    <td className="tier-cell text-sm text-gray-500">
+                      By agreement
+                    </td>
+                  </tr>
+
+                  {/* Row 8 */}
+                  <tr>
+                    <td className="tier-label">
+                      Logo on banners & competition displays
+                    </td>
+                    <td className="tier-cell">XL</td>
+                    <td className="tier-cell">Large</td>
+                    <td className="tier-cell">Medium</td>
+                    <td className="tier-cell">Small</td>
+                    <td className="tier-cell">Name listing</td>
+                    <td className="tier-cell text-sm text-gray-500">
+                      By agreement
+                    </td>
+                  </tr>
+
+                  {/* Row 9 */}
+                  <tr>
+                    <td className="tier-label">Logo on turbine</td>
+                    <td className="tier-cell">XL</td>
+                    <td className="tier-cell">Large</td>
+                    <td className="tier-cell">Medium</td>
+                    <td className="tier-cell">Small</td>
+                    <td className="tier-cell text-sm text-gray-500">
+                      By agreement
+                    </td>
+                    <td className="tier-cell text-sm text-gray-500">
+                      By agreement
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Notes */}
+            <div className="mt-5 text-sm text-gray-600">
+              <p>
+                All sponsorship amounts and equivalent contribution values are stated
+                in Canadian dollars (CAD).
+              </p>
+              <p>
+                We are always open to discussing sponsorship opportunities outside the
+                above ranges.
+              </p>
+              <p>
+                ¹ Subject to member availability and mutually agreed travel
+                arrangements.
+              </p>
+            </div>
+          </div>
+        </section>
+          
+          
 
         {/* Footer */}
       <footer className="bg-blue-100 py-10 mt-20">

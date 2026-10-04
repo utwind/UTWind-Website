@@ -286,12 +286,12 @@ export default function SponsorsPage() {
             Technical Partners
           </h3>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10">
+          <div className="grid grid-cols-6 gap-10 items-center">
             <a
               href="https://www.utoronto.ca/"
               target="_blank"
               rel="noreferrer"
-              className="block transform hover:scale-105 transition"
+              className="col-span-2 block transform hover:scale-105 transition"
               data-aos="zoom-in"
             >
               <Image
@@ -308,7 +308,7 @@ export default function SponsorsPage() {
               href="https://www.solidworks.com/"
               target="_blank"
               rel="noreferrer"
-              className="block transform hover:scale-105 transition"
+              className="col-span-2 block transform hover:scale-105 transition"
               data-aos="zoom-in"
             >
               <Image
@@ -325,7 +325,7 @@ export default function SponsorsPage() {
               href="https://www.altium.com/"
               target="_blank"
               rel="noreferrer"
-              className="block transform hover:scale-105 transition"
+              className="col-span-2 block transform hover:scale-105 transition"
               data-aos="zoom-in"
             >
               <Image
@@ -342,7 +342,7 @@ export default function SponsorsPage() {
               href="https://gillinstruments.com/"
               target="_blank"
               rel="noreferrer"
-              className="block transform hover:scale-105 transition"
+              className="col-span-2 col-start-2 block transform hover:scale-105 transition"
               data-aos="zoom-in"
             >
               <Image
@@ -359,7 +359,7 @@ export default function SponsorsPage() {
               href="https://www.ansys.com/"
               target="_blank"
               rel="noreferrer"
-              className="block transform hover:scale-105 transition"
+              className="col-span-2 col-start-4 block transform hover:scale-105 transition"
               data-aos="zoom-in"
             >
               <Image

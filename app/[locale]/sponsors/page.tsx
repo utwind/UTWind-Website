@@ -168,8 +168,8 @@ export default function SponsorsPage() {
               <Image
                 src="/images/sponsors/SKULE.png"
                 alt="Skule"
-                width={260}
-                height={160}
+                width={360}
+                height={260}
                 className="h-40 w-auto object-contain mx-auto"
               />
             </a>
@@ -205,8 +205,8 @@ export default function SponsorsPage() {
               <Image
                 src="/images/sponsors/sef-logo.jpg"
                 alt="SEF"
-                width={600 }
-                height={228}
+                width={700}
+                height={260}
                 className="h-32 w-full object-contain mx-auto"
               />
             </a>
@@ -222,8 +222,8 @@ export default function SponsorsPage() {
               <Image
                 src="/images/sponsors/CPSIF.png"
                 alt="CPSIF"
-                width={220}
-                height={140}
+                width={320}
+                height={240}
                 className="h-32 w-full object-contain mx-auto"
               />
             </a>
@@ -405,32 +405,32 @@ export default function SponsorsPage() {
                     <th className="border border-blue-300 px-4 py-5"></th>
 
                     <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold text-blue-500">Diamond</div>
+                      <div className="text-xl font-bold text-white">Diamond</div>
                       <div className="text-blue-300 mt-1">$10,000+</div>
                     </th>
 
                     <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold text-blue-300">Platinum</div>
+                      <div className="text-xl font-bold text-white">Platinum</div>
                       <div className="text-blue-300 mt-1">$5,000+</div>
                     </th>
 
                     <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold text-yellow-300">Gold</div>
+                      <div className="text-xl font-bold text-white">Gold</div>
                       <div className="text-blue-300 mt-1">$2,500+</div>
                     </th>
 
                     <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold text-slate-350">Silver</div>
+                      <div className="text-xl font-bold text-white">Silver</div>
                       <div className="text-blue-300 mt-1">$1,000+</div>
                     </th>
 
                     <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold text-amber-700">Bronze</div>
+                      <div className="text-xl font-bold text-white">Bronze</div>
                       <div className="text-blue-300 mt-1">$500+</div>
                     </th>
 
                     <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold text-green-300">Technical Partner</div>
+                      <div className="text-xl font-bold text-white">Technical Partner</div>
                       <div className="text-sm text-blue-300 mt-1">
                         Products, services, or technical support
                       </div>
@@ -475,7 +475,7 @@ export default function SponsorsPage() {
                     <td className="tier-cell">✓</td>
                     <td className="tier-cell">✓</td>
                     <td className="tier-cell">✓</td>
-                    <td className="tier-cell text-sm text-gray-500">
+                    <td className="tier-cell text-sm text-black">
                       By agreement
                     </td>
                   </tr>
@@ -488,7 +488,7 @@ export default function SponsorsPage() {
                     <td className="tier-cell">✓</td>
                     <td className="tier-cell text-gray-400">—</td>
                     <td className="tier-cell text-gray-400">—</td>
-                    <td className="tier-cell text-sm text-gray-500">
+                    <td className="tier-cell text-sm text-black">
                       By agreement
                     </td>
                   </tr>
@@ -501,7 +501,7 @@ export default function SponsorsPage() {
                     <td className="tier-cell">✓</td>
                     <td className="tier-cell text-gray-400">—</td>
                     <td className="tier-cell text-gray-400">—</td>
-                    <td className="tier-cell text-sm text-gray-500">
+                    <td className="tier-cell text-sm text-black">
                       By agreement
                     </td>
                   </tr>
@@ -513,12 +513,12 @@ export default function SponsorsPage() {
                     </td>
                     <td className="tier-cell">✓</td>
                     <td className="tier-cell">✓</td>
-                    <td className="tier-cell text-sm text-gray-500">
+                    <td className="tier-cell text-sm text-black">
                       By agreement
                     </td>
                     <td className="tier-cell text-gray-400">—</td>
                     <td className="tier-cell text-gray-400">—</td>
-                    <td className="tier-cell text-sm text-gray-500">
+                    <td className="tier-cell text-sm text-black">
                       By agreement
                     </td>
                   </tr>
@@ -537,7 +537,7 @@ export default function SponsorsPage() {
                     </td>
                     <td className="tier-cell text-sm">Logo only</td>
                     <td className="tier-cell text-sm">Logo only</td>
-                    <td className="tier-cell text-sm text-gray-500">
+                    <td className="tier-cell text-sm text-black">
                       By agreement
                     </td>
                   </tr>
@@ -552,7 +552,7 @@ export default function SponsorsPage() {
                     <td className="tier-cell">Medium</td>
                     <td className="tier-cell">Small</td>
                     <td className="tier-cell">Name listing</td>
-                    <td className="tier-cell text-sm text-gray-500">
+                    <td className="tier-cell text-sm text-black">
                       By agreement
                     </td>
                   </tr>
@@ -564,10 +564,10 @@ export default function SponsorsPage() {
                     <td className="tier-cell">Large</td>
                     <td className="tier-cell">Medium</td>
                     <td className="tier-cell">Small</td>
-                    <td className="tier-cell text-sm text-gray-500">
+                    <td className="tier-cell text-sm text-black">
                       By agreement
                     </td>
-                    <td className="tier-cell text-sm text-gray-500">
+                    <td className="tier-cell text-sm text-black">
                       By agreement
                     </td>
                   </tr>

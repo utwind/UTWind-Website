@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { Inter, Montserrat, Geist, Geist_Mono, Orbitron, Racing_Sans_One } from "next/font/google";
-import PageLoader from "./components/Pageloader";
+import PageLoader from "./[locale]/components/Pageloader";
 
 // Main fonts you want (Inter + Montserrat)
 const inter = Inter({

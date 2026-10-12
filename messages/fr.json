@@ -1,0 +1,24 @@
+{
+  "Navbar": {
+    "home": "Accueil",
+    "competition": "Compétition",
+    "team": "Équipe",
+    "projects": "Projets",
+    "joinUs": "Nous rejoindre",
+    "sponsors": "Commanditaires",
+    "gallery": "Galerie",
+    "contact": "Contact"
+  },
+
+  "Home": {
+    "title": "UTWind",
+    "subtitle": "Face au vent",
+    "description": "Équipe d'éoliennes de l'Université de Toronto"
+  },
+    "TeamUpdates": {
+    "label": "Mises à jour de l’équipe",
+    "title": "Ce qui se passe chez UTWind",
+    "description": "Restez au courant de nos derniers progrès en compétition, des avancées du recyclage du PET et des événements de l’équipe.",
+    "scrollNote": "Faites défiler nos mises à jour et annonces provenant de notre canal Slack • Cliquez pour afficher les détails"
+    }
+}

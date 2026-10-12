@@ -1,18 +1,23 @@
 'use client';
 
+import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import {Link} from "../../i18n/navigation";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Inter, Montserrat, Orbitron } from "next/font/google";
+import LanguageSwitcher from "./components/LanguageSwitcher";
+
 
 export default function Home() {
   // ref for navbar and mobile menu state
   const navbarRef = useRef<HTMLElement | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const lastScrollY = useRef(0);
-
+  const home = useTranslations("Home");
+  const nav = useTranslations("Navbar");
+  const t = useTranslations("TeamUpdates");
 
   useEffect(() => {
   const shouldScroll = sessionStorage.getItem("scrollToContact");
@@ -165,14 +170,17 @@ If you have any questions, feel free to contact anyone on the leadership team at
 
           {/* desktop links */}
           <div className="hidden md:flex space-x-6 items-center">
-            <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</Link>
-            <Link href="/competition" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</Link>
-            <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</Link>
-            <Link href="/projects" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</Link>
-            <Link href="/joinus" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</Link>
-            <Link href="/sponsors" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</Link>
-            <Link href="/gallery" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Gallery</Link>
-            <Link href="/#contact" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</Link>
+            <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("home")}</Link>
+            <Link href="/competition" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("competition")}</Link>
+            <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("team")}</Link>
+            <Link href="/projects" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("projects")}</Link>
+            <Link href="/joinus" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("joinUs")}</Link>
+            <Link href="/sponsors" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("sponsors")}</Link>
+            <Link href="/gallery" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("gallery")}</Link>
+            <Link href="/#contact" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("contact")}</Link>
+          
+            <LanguageSwitcher />
+
           </div>
 
           {/* mobile toggle */}
@@ -204,15 +212,16 @@ If you have any questions, feel free to contact anyone on the leadership team at
 
         {/* mobile dropdown */}
         <div className={`md:hidden flex-col items-center bg-white shadow-md space-y-4 py-4 ${mobileOpen ? "flex" : "hidden"}`}>
-          <Link href="/" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Home</Link>
-          <Link href="/competition" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Competition</Link>
-          <Link href="/team" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Team</Link>
-          <Link href="/projects" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Projects</Link>
-          <Link href="/joinus" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Join Us</Link>
-          <Link href="/sponsors" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Sponsors</Link>
-          <Link href="/gallery" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Gallery</Link>
-          <Link href="/#contact" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Contact</Link>
+          <Link href="/" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("home")}</Link>
+          <Link href="/competition" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("competition")}</Link>
+          <Link href="/team" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("team")}</Link>
+          <Link href="/projects" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("projects")}</Link>
+          <Link href="/joinus" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("joinUs")}</Link>
+          <Link href="/sponsors" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("sponsors")}</Link>
+          <Link href="/gallery" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("gallery")}</Link>
+          <Link href="/#contact" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("contact")}</Link>
           
+          <LanguageSwitcher />
           
         </div>
     </nav>
@@ -252,107 +261,119 @@ If you have any questions, feel free to contact anyone on the leadership team at
 
   {/* Text content */}
   <div className="relative z-20 max-w-3xl px-8 md:px-16">
-        <h1 className="font-racing text-8xl md:text-9xl font-bold mb-6 drop-shadow-lg">
-      UTWind
-    </h1>
-    <h2 className="text-5xl md:text-6xl font-light mb-4 drop-shadow-lg">
-      Face the Wind
-    </h2>
-    <p className="text-2xl md:text-3xl leading-relaxed drop-shadow-md">
-      University of Toronto Wind Turbine Team
-    </p>
+        <h1 className="text-8xl md:text-9xl font-racing">
+  {home("title")}
+</h1>
+
+<h1 className="text-7xl md:text-7xl font-racing">
+  {home("subtitle")}
+</h1>
+
+<p className="text-5xl md:text-3xl font-racing">
+  {home("description")}
+</p>  
   </div>
 </section>
 
+<section id="team-updates" className="py-16">
+  <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-sky-50 rounded-2xl shadow-sm px-6 py-8 md:px-10 md:py-10">
+      
+      {/* Heading */}
+      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+        <div>
+          <p className="text-sm font-semibold tracking-wide text-sky-600 uppercase">
+            {t("label")}
+          </p>
 
-    <section id="team-updates" className="bg-sky-50 py-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
-          <div>
-            <p className="text-sm font-semibold tracking-wide text-sky-600 uppercase">
-              Team Updates
-            </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
-              What&apos;s happening at UTWind
-            </h2>
-            <p className="mt-2 text-slate-600 max-w-2xl">
-              Stay up to date with our latest competition progress, PET
-              recycling milestones, and team events.
-            </p>
-          </div>
-          <p className="text-xs text-slate-500 text-right">
-            Scroll our updates and announcements from our Slack Channel • Click to expand details
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
+            {t("title")}
+          </h2>
+
+          <p className="mt-2 text-slate-600 max-w-2xl">
+            {t("description")}
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-stretch">
-          {/* Left: Scrollable list */}
-          <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-4 sm:p-5">
-            <h3 className="text-sm font-semibold text-slate-700 mb-3">
-              Timeline
-            </h3>
-            <div className="max-h-96 overflow-y-auto pr-2 space-y-4">
-              {TEAM_UPDATES.map((update, index) => (
-                <button
-                  key={update.date + update.title}
-                  onClick={() => setActiveIndex(index)}
-                  className={`w-full text-left rounded-xl border p-3 sm:p-4 transition 
-                  ${
-                    index === activeIndex
-                      ? "border-sky-500 bg-sky-50"
-                      : "border-slate-200 hover:border-sky-300 hover:bg-sky-50/60"
-                  }`}
-                >
-                  <div className="flex items-center justify-between gap-2 mb-1">
-                    <span className="text-xs font-medium uppercase tracking-wide text-sky-700">
-                      {update.date}
-                    </span>
-                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-sky-100 text-sky-700">
-                      {index + 1 < 10 ? `0${index + 1}` : index + 1}
-                    </span>
-                  </div>
-                  <p className="text-sm font-semibold text-slate-900">
-                    {update.title}
-                  </p>
-                  <p className="mt-1 text-xs text-slate-600 line-clamp-2">
-                    {update.description}
-                  </p>
-                </button>
-              ))}
-            </div>
-          </div>
+        <p className="text-xs text-slate-500 md:text-right">
+          {t("scrollNote")}
+        </p>
+      </div>
 
-          {/* Right: Active update details with image */}
-          <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-4 sm:p-6 flex flex-col overflow-y-auto max-h-[32rem] pr-2">
-            <div className="mb-4">
-              <p className="text-xs font-semibold tracking-wide text-sky-600 uppercase">
-                {activeUpdate.date}
-              </p>
-              <h3 className="mt-1 text-2xl font-bold text-slate-900">
-                {activeUpdate.title}
-              </h3>
-            </div>
+      {/* Timeline + Active Update */}
+      <div className="grid md:grid-cols-2 gap-8 items-stretch">
+        
+        {/* Left: Timeline */}
+        <div className="bg-white rounded-2xl shadow-md border border-slate-100 p-4 sm:p-5">
+          <h3 className="text-sm font-semibold text-slate-700 mb-3">
+            Timeline
+          </h3>
 
-            {activeUpdate.image && (
-              <div className="relative w-full h-56 sm:h-64 rounded-2xl overflow-hidden mb-4">
-                <Image
-                  src={activeUpdate.image}
-                  alt={activeUpdate.title}
-                  fill
-                  className="object-cover"
-                  sizes="(min-width: 1024px) 50vw, 100vw"
-                />
-              </div>
-            )}
+          <div className="max-h-96 overflow-y-auto pr-2 space-y-4">
+            {TEAM_UPDATES.map((update, index) => (
+              <button
+                key={update.date + update.title}
+                onClick={() => setActiveIndex(index)}
+                className={`w-full text-left rounded-xl border p-3 sm:p-4 transition ${
+                  index === activeIndex
+                    ? "border-sky-500 bg-sky-50"
+                    : "border-slate-200 hover:border-sky-300 hover:bg-sky-50/60"
+                }`}
+              >
+                <div className="flex items-center justify-between gap-2 mb-1">
+                  <span className="text-xs font-medium uppercase tracking-wide text-sky-700">
+                    {update.date}
+                  </span>
 
-            <p className="whitespace-pre-line text-sm md:text-base text-slate-700 leading-relaxed">
-                {activeUpdate.description}
-            </p>
+                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-sky-100 text-sky-700">
+                    {index + 1 < 10 ? `0${index + 1}` : index + 1}
+                  </span>
+                </div>
+
+                <p className="text-sm font-semibold text-slate-900">
+                  {update.title}
+                </p>
+
+                <p className="mt-1 text-xs text-slate-600 line-clamp-2">
+                  {update.description}
+                </p>
+              </button>
+            ))}
           </div>
         </div>
+
+        {/* Right: Active Update */}
+        <div className="bg-white rounded-2xl shadow-md border border-slate-100 p-4 sm:p-6 flex flex-col overflow-y-auto max-h-[32rem]">
+          <div className="mb-4">
+            <p className="text-xs font-semibold tracking-wide text-sky-600 uppercase">
+              {activeUpdate.date}
+            </p>
+
+            <h3 className="mt-1 text-2xl font-bold text-slate-900">
+              {activeUpdate.title}
+            </h3>
+          </div>
+
+          {activeUpdate.image && (
+            <div className="relative w-full h-56 sm:h-64 rounded-2xl overflow-hidden mb-4">
+              <Image
+                src={activeUpdate.image}
+                alt={activeUpdate.title}
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 50vw, 100vw"
+              />
+            </div>
+          )}
+
+          <p className="whitespace-pre-line text-sm md:text-base text-slate-700 leading-relaxed">
+            {activeUpdate.description}
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     {/* about */}
       <section id="about" className="bg-blue-500 text-white py-20" data-aos="fade-up">

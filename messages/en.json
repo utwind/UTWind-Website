@@ -1,0 +1,25 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "competition": "Competition",
+    "team": "Team",
+    "projects": "Projects",
+    "joinUs": "Join Us",
+    "sponsors": "Sponsors",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+
+  "Home": {
+    "title": "UTWind",
+    "subtitle": "Face the Wind",
+    "description": "University of Toronto Wind Turbine Team"
+  },
+
+  "TeamUpdates": {
+    "label": "Team Updates",
+    "title": "What's happening at UTWind",
+    "description": "Stay up to date with our latest competition progress, PET recycling milestones, and team events.",
+    "scrollNote": "Scroll our updates and announcements from our Slack Channel • Click to expand details"
+  }
+}

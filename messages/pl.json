@@ -1,0 +1,76 @@
+{
+  "Navbar": {
+    "home": "Strona główna",
+    "competition": "Konkurs",
+    "team": "Zespół",
+    "projects": "Projekty",
+    "joinUs": "Dołącz do nas",
+    "sponsors": "Sponsorzy",
+    "gallery": "Galeria",
+    "contact": "Kontakt"
+  },
+  "Home": {
+    "title": "UTWind",
+    "subtitle": "Staw czoła wiatrowi",
+    "description": "Zespół ds. turbin wiatrowych Uniwersytetu w Toronto"
+  },
+  "TeamUpdates": {
+    "label": "Aktualności dotyczące drużyny",
+    "title": "Co się dzieje w UTWind",
+    "description": "Bądź na bieżąco z najnowszymi informacjami o postępach w naszych konkursach, kamieniach milowych w recyklingu PET oraz wydarzeniach dotyczących naszego zespołu.",
+    "scrollNote": "Przejrzyj nasze aktualności i ogłoszenia z naszego kanału na Slacku • Kliknij, aby wyświetlić szczegóły",
+    "timeline": "Oś czasu",
+    "updates": {
+      "solidworksWorkshop": {
+        "date": "16 września 2026 r.",
+        "title": "Warsztaty SolidWorks dla początkujących!",
+        "description": "Cześć @channel, krótka informacja o nadchodzącej okazji!\n\nNasze kolejne spotkanie podzespołu mechanicznego to wprowadzające warsztaty techniczne z programu SolidWorks, które odbędą się w Galbraith ECF (GB144) w piątek, 18 września, w godz. 18:00–20:00.\n\nWarsztaty są przeznaczone dla osób z niewielkim doświadczeniem w SolidWorks lub bez niego, a udział w nich nie wymaga studiowania mechaniki ani inżynierii mechanicznej. Jeśli należysz do podzespołu biznesowego, elektrotechnicznego, lotniczego lub jakiegokolwiek innego i studiujesz dowolny kierunek, serdecznie zapraszamy. CAD to jedna z najbardziej uniwersalnych umiejętności, jakie można zdobyć w zespole projektowym, a to najłatwiejszy sposób na opanowanie nowej umiejętności, którą warto dodać do portfolio, CV lub wykorzystać w dowolnych projektach osobistych!\n\nLiczba miejsc jest ograniczona pojemnością laboratorium i szybko się zapełnia, więc zapisz się tutaj, aby zagwarantować sobie miejsce: https://forms.gle/iAPLw3bPE3ahbGCu7 Rejestracja odbędzie się na miejscu, a w przypadku nieobecności niektórych uczestników możliwe będzie przyjęcie osób bez rejestracji na zasadzie „kto pierwszy, ten lepszy”.\n\nWarsztaty rozpoczynają się punktualnie o 18:15, więc prosimy o punktualność!\n\nKilka informacji organizacyjnych:\n\nKomputery w ECF są przystosowane do pracy z programem SolidWorks, więc wystarczy po prostu przyjść.\n\nJeśli wolisz przynieść własny laptop, zainstaluj wcześniej Remote ECF (w sieci Wi-Fi UofT nie jest wymagane połączenie VPN) lub zainstaluj bezpośrednio program SolidWorks.\n\nZnasz już program SolidWorks? Sprawdź wyzwanie, które @Shafwat opublikował na kanale #mechanical.\n\nMożecie śmiało zabrać ze sobą znajomego, który rozważa dołączenie do UTWind, ponieważ wydarzenie jest otwarte dla wszystkich studentów UofT!\n\nMacie pytania? Napiszcie do @Shafwat lub @Teagan McKenzie!"
+      },
+      "semesterKickoffUpdate": {
+        "date": "9 września 2026 r.",
+        "title": "Aktualizacja dotycząca inauguracji semestru",
+        "description": "Cześć @wszyscy, dziękujemy wszystkim, którzy mogli dziś pojawić się na naszym wydarzeniu inauguracyjnym!\n\nJeśli któryś z waszych znajomych chce dołączyć do UTWind, poproście go, aby wypełnił formularz rekrutacyjny dostępny w opisie naszego profilu na Instagramie, a my wyślemy mu zaproszenie do tego obszaru roboczego na Slacku!\n\nJeśli macie jakieś pytania, śmiało kontaktujcie się ze mną lub którymkolwiek z pozostałych liderów. Zapoznajcie się też z naszym głównym harmonogramem wydarzeń organizowanych w ramach UTWind. Ten arkusz kalkulacyjny zawsze będzie zawierał najbardziej aktualne informacje o terminach i miejscach wydarzeń!\n\nBardziej szczegółowe informacje na temat poszczególnych podzespołów będą dostępne na ich własnych kanałach, więc dołączcie do tych, które Was interesują!\n\nNie mogę się doczekać współpracy z Wami wszystkimi podczas tego cyklu projektowego!"
+      },
+      "designCycleWelcome": {
+        "date": "6 września 2026 r.",
+        "title": "Witamy w cyklu projektowym UTWind na lata 2026–2027!",
+        "description": "Witajcie @wszyscy! Witamy w cyklu projektowym UTWind na lata 2026–2027!\n\nRozpoczynamy od spotkania inauguracyjnego w środę, 9 września, w godz. 18:15–20:00 w Myhal Arena. Dla nowych członków jest to najlepszy sposób, aby dowiedzieć się więcej o naszych podzespołach i zdecydować, do których z nich dołączyć. Dla powracających członków jest to okazja do ponownego nawiązania kontaktów i zapoznania się z planami na ten cykl.\n\nAby dołączyć do podzespołu, wystarczy kliknąć kanał(y) odpowiadające podzespołom, które was interesują:\n\n• #aerodynamics (Liderzy: @Alex Kim, @Glenn)\n\n• #controls (liderzy: @Wanning He, @Jacob Duplessis)\n\n• #powersystems (liderzy: @Alec MacGregor, @Deniz Kantar)\n\n• #mechanical (liderzy: @Teagan McKenzie, @Shafwat)\n\n• #zrównoważony rozwój (Liderzy: @Stella Cook, @Pakhi)\n\n• #biznes (Dyrektor ds. biznesowych: @Dhara Patel)\n\nPodzespoły odbędą swoje pierwsze spotkania po spotkaniu inauguracyjnym. Sprawdźcie odpowiednie kanały, aby uzyskać szczegółowe informacje dotyczące terminów i miejsc cotygodniowych spotkań.\n\nJeśli macie jakieś pytania, nie wahajcie się skontaktować z dowolnym członkiem zespołu kierowniczego w dowolnym momencie! Dziękujemy wszystkim i liczymy na udany cykl projektowy!"
+      }
+    }
+  },
+  "About": {
+    "title": "O nas",
+    "description": "UTWind to zespół studencki zajmujący się konstruowaniem zrównoważonych turbin wiatrowych małej mocy. Nasz zespół, założony w 2021 roku, rozrósł się do ponad 80 utalentowanych studentów, którzy projektują, budują i testują turbiny małej mocy na potrzeby międzynarodowych konkursów oraz badań naukowych.",
+    "button": "Poznaj nasz zespół"
+  },
+  "Vision": {
+    "title": "Wizja",
+    "description": "Naszą wizją jest przybliżenie studentom Uniwersytetu w Toronto tematyki energii wiatrowej, tak aby byli przygotowani i zainspirowani do tego, by oświecać świat w sposób zrównoważony. Poprzez wspólną pracę mamy nadzieję rozwijać nasze umiejętności w ramach projektu, który nas pasjonuje. Nasz zespół to miejsce, w którym dzielimy się wiedzą i przekazujemy ją dalej. Projekt ten ma na celu skupienie się nie tylko na tym, czego uczymy się dzisiaj, ale także na tym, co możemy osiągnąć, kształtując bardziej zrównoważoną przyszłość!"
+  },
+  "Contact": {
+    "title": "Skontaktuj się z nami",
+    "description": "Chcesz dowiedzieć się więcej o UTWind lub nawiązać z nami współpracę? Z przyjemnością odpowiemy na Twoje pytania! Skontaktuj się z nami przez e-mail lub odwiedź nas w Myhal Centre.",
+    "getInTouch": "Skontaktuj się z nami",
+    "email": "E-mail:",
+    "instagram": "@utwind",
+    "linkedin": "UTWind na LinkedIn",
+    "address": "Adres:",
+    "addressLine1": "Centrum Innowacji Inżynieryjnych i Przedsiębiorczości im. Myhala",
+    "addressLine2": "55 St George St, Toronto, ON M5S 0C9",
+    "closing": "Jeśli masz pytania dotyczące przystąpienia do programu, możliwości sponsoringu lub współpracy, skontaktuj się z nami — nasz zespół odpowie tak szybko, jak to możliwe."
+  },
+  "Footer": {
+    "emails": "E-maile",
+    "generalInquiries": "Ogólne zapytania:",
+    "sponsorships": "Sponsorzy:",
+    "operations": "Działalność operacyjna:",
+    "rightsReserved": "Wszelkie prawa zastrzeżone",
+    "contactUs": "Skontaktuj się z nami"
+  },
+  "Accessibility": {
+    "toggleMenu": "Rozwiń menu",
+    "utwindLogo": "Logo UTWind",
+    "instagram": "UTWind na Instagramie",
+    "linkedin": "UTWind na LinkedIn"
+  }
+}

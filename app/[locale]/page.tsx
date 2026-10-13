@@ -18,6 +18,10 @@ export default function Home() {
   const home = useTranslations("Home");
   const nav = useTranslations("Navbar");
   const t = useTranslations("TeamUpdates");
+  const about = useTranslations("About");
+  const vision = useTranslations("Vision");
+  const contact = useTranslations("Contact");
+  const footer = useTranslations("Footer");
 
   useEffect(() => {
   const shouldScroll = sessionStorage.getItem("scrollToContact");
@@ -376,19 +380,18 @@ If you have any questions, feel free to contact anyone on the leadership team at
 </section>
 
     {/* about */}
-      <section id="about" className="bg-blue-500 text-white py-20" data-aos="fade-up">
+      <section id="About" className="bg-blue-500 text-white py-20" data-aos="fade-up">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-6xl font-bold mb-6">About Us</h2>
-          <p className="text-2xl">
-            UTWind is a student team dedicated to building sustainable small-scale wind turbines.
-            Formed in 2021, our team has grown to more than 80 talented students designing, building,
-            and testing small-scale turbines for international competitions and research.
-          </p>
+          <h2 className="text-6xl font-bold mb-6">{about("title")}</h2>
+          <h2 className="text-2xl mb-6">
+              {about("description")}
+        
+          </h2>
           <a
             href="/team"
             className="inline-block mt-8 bg-indigo-200 hover:bg-indigo-400 text-black font-semibold py-4 px-10 rounded-lg shadow-md text-lg transition duration-300"
           >
-            Meet the Team
+            {about("button")}
           </a>
         </div>
       </section>
@@ -396,14 +399,9 @@ If you have any questions, feel free to contact anyone on the leadership team at
       {/* vision */}
       <section id="vision" className="bg-white text-gray-800 py-20" data-aos="fade-up">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-6xl font-bold mb-6">Vision</h2>
+          <h2 className="text-6xl font-bold mb-6">{vision("title")}</h2>
           <p className="text-2xl italic leading-relaxed">
-            &quot;Our vision is to bring wind energy to light for students at the University of Toronto,
-            so they will be prepared and inspired to light up the world in a sustainable way.
-            By working together, we hope to develop our skills in the context of a project we are
-            passionate about. The team is a place where knowledge is shared and passed on. The
-            project is designed to focus not just on what we learn today, but what we can achieve
-            in designing a more sustainable future!&quot;
+            &quot;{vision("description")}&quot;
           </p>
         </div>
       </section>
@@ -415,17 +413,16 @@ If you have any questions, feel free to contact anyone on the leadership team at
     </section>
       <section id="contact" className="py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-gray-800 text-center mb-8">Contact Us</h2>
+          <h2 className="text-4xl font-bold text-gray-800 text-center mb-8">{contact("title")}</h2>
           <p className="text-center text-xl text-gray-700 max-w-2xl mx-auto mb-12">
-            Interested in learning more about UTWind or collaborating with us?  
-            We’d love to hear from you! Please reach out via email or visit us at Myhal Centre.
+            {contact("description")}
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="bg-white rounded-xl shadow-md p-8">
-              <h3 className="text-2xl font-semibold text-indigo-700 mb-4">Get in Touch</h3>
+              <h3 className="text-2xl font-semibold text-indigo-700 mb-4">{contact("getInTouch")}</h3>
               <p className="text-gray-700 mb-2">
-                <strong>Email:</strong>{' '}
+                <strong>{contact("email")}:</strong>{' '}
                 <a href="mailto:contact@utwind.com" className="text-indigo-600 font-semibold hover:underline">
                   contact@utwind.com
                 </a>
@@ -470,7 +467,7 @@ If you have any questions, feel free to contact anyone on the leadership team at
                 55 St George St, Toronto, ON M5S 0C9
               </p>
               <p className="text-gray-600 font-bold">
-                Feel free to reach out with questions about joining, sponsorship opportunities, or partnerships — our team will respond as soon as possible.
+                {contact("closing")}
               </p>
             </div>
 
@@ -508,7 +505,7 @@ If you have any questions, feel free to contact anyone on the leadership team at
       {/* Middle: Contact links */}
       <div className="flex flex-col items-center text-center">
         <h3 className="text-lg font-bold text-black mb-3">
-          Emails
+          {footer("contactUs")}
         </h3>
 
         <div className="flex flex-col gap-2 text-black">
@@ -516,7 +513,7 @@ If you have any questions, feel free to contact anyone on the leadership team at
             href="mailto:contact@utwind.com"
             className="hover:text-blue-700 transition"
           >
-            <span className="font-semibold">General Inquiries:</span>{" "}
+            <span className="font-semibold">{footer("generalInquiries")}:</span>{" "}
             contact@utwind.com
           </a>
 
@@ -524,7 +521,7 @@ If you have any questions, feel free to contact anyone on the leadership team at
             href="mailto:sponsorships@utwind.skule.ca"
             className="hover:text-blue-700 transition"
           >
-            <span className="font-semibold">Sponsorships:</span>{" "}
+            <span className="font-semibold">{footer("sponsorships")}:</span>{" "}
             sponsorships@utwind.skule.ca
           </a>
 
@@ -532,7 +529,7 @@ If you have any questions, feel free to contact anyone on the leadership team at
             href="mailto:operations@utwind.skule.ca"
             className="hover:text-blue-700 transition"
           >
-            <span className="font-semibold">Operations:</span>{" "}
+            <span className="font-semibold">{footer("operations")}:</span>{" "}
             operations@utwind.skule.ca
           </a>
         </div>
@@ -578,7 +575,7 @@ If you have any questions, feel free to contact anyone on the leadership team at
       {/* Right: Copyright */}
       <div className="flex justify-center md:justify-end">
         <p className="text-sm text-black">
-          © 2026 UTWind | University of Toronto
+          &copy; {new Date().getFullYear()} UTWind. {footer("rightsReserved")}
         </p>
       </div>
     </div>

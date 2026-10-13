@@ -20,6 +20,67 @@
     "label": "Team Updates",
     "title": "What's happening at UTWind",
     "description": "Stay up to date with our latest competition progress, PET recycling milestones, and team events.",
-    "scrollNote": "Scroll our updates and announcements from our Slack Channel • Click to expand details"
+    "scrollNote": "Scroll our updates and announcements from our Slack Channel • Click to expand details",
+    "timeline": "Timeline",
+
+    "updates": {
+      "solidworksWorkshop": {
+        "date": "Sep 16, 2026",
+        "title": "SolidWorks Workshop for Beginners!",
+        "description": "Hey @channel, quick heads up on an upcoming opportunity!\n\nOur next mechanical sub-team meeting is an intro SolidWorks technical workshop at the Galbraith ECF (GB144), on Friday, September 18th from 18:00-20:00.\n\nThis is designed for people with little to no SolidWorks experience, and you don't need to be in Mech or MechE to come. If you're on Business, Electrical, Aero, or any other subteam and any major, you're welcome. CAD is one of the most transferable skills you can pick up on a design team, and this is the easiest possible entry point for you to learn a new skill for your portfolio, resume, or any personal projects you may want to create!\n\nSpots are limited by lab capacity and filling up fast, so please sign up here to reserve a guaranteed seat: https://forms.gle/iAPLw3bPE3ahbGCu7 We will be doing registration at the door, and there may be walk-in available on a FCFS basis if there are no-shows.\n\nWorkshop starts promptly at 18:15 so please be on time!\n\nA few logistics:\n\nECF computers are available to run SolidWorks, so you can just show up.\n\nIf you'd rather bring your own laptop, install Remote ECF beforehand (no VPN needed on UofT wifi), or install SolidWorks directly.\n\nAlready comfortable with SolidWorks? Check out a challenge @Shafwat sent out in the #mechanical channel.\n\nFeel free to bring a friend who's been thinking about joining UTWind as the event is open to all UofT students!\n\nQuestions? Message @Shafwat or @Teagan McKenzie!"
+      },
+
+      "semesterKickoffUpdate": {
+        "date": "Sep 9, 2026",
+        "title": "Start of Semester Kick Off Update",
+        "description": "Hi @everyone, thank you to those who were able to make it out to our kick-off event today!\n\nIf any of your friends want to join UTWind, ask them to fill out the recruitment form in our Instagram BIO and we will send them a Slack Invite to this workspace!\n\nFeel free to reach out to myself or any of the other leads if you have any questions and check our master schedule for events happening within UTWind. This spreadsheet will always contain the most up-to-date information about event times and locations!\n\nThere will be more specific information for each sub-team in their own respective channels, so please join any that interest you!\n\nLooking forward to working with everyone this design cycle!"
+      },
+
+      "designCycleWelcome": {
+        "date": "Sep 6, 2026",
+        "title": "Welcome to the 2026–2027 UTWind Design Cycle!",
+        "description": "Hello @everyone! Welcome to the 2026–2027 UTWind Design Cycle!\n\nWe’re kicking things off with our Kick-Off Meeting on Wednesday, Sept 9th, 18:15-20:00 in the Myhal Arena. For new members, this is the best way to learn more about our sub-teams and decide which ones to join. For returning members, it’s a chance to reconnect and see what’s planned for the cycle.\n\nFor new members, to join a sub-team just click on channel(s) that correspond to the sub-teams of interest to you:\n\n• #aerodynamics (Leads: @Alex Kim, @Glenn)\n\n• #controls (Leads: @Wanning He, @Jacob Duplessis)\n\n• #powersystems (Leads: @Alec MacGregor, @Deniz Kantar)\n\n• #mechanical (Leads: @Teagan McKenzie, @Shafwat)\n\n• #sustainability (Leads: @Stella Cook, @Pakhi)\n\n• #business (Business Director: @Dhara Patel)\n\nThe sub-teams will have their first meetings after the kick-off. Check your respective channel(s) for details regarding when and where the weekly meetings will happen.\n\nIf you have any questions, feel free to contact anyone on the leadership team at anytime! Thanks everyone and looking forward to a successful design cycle!"
+      }
+    }
+  },
+
+  "About": {
+    "title": "About Us",
+    "description": "UTWind is a student team dedicated to building sustainable small-scale wind turbines. Formed in 2021, our team has grown to more than 80 talented students designing, building, and testing small-scale turbines for international competitions and research.",
+    "button": "Meet the Team"
+  },
+
+  "Vision": {
+    "title": "Vision",
+    "description": "Our vision is to bring wind energy to light for students at the University of Toronto, so they will be prepared and inspired to light up the world in a sustainable way. By working together, we hope to develop our skills in the context of a project we are passionate about. The team is a place where knowledge is shared and passed on. The project is designed to focus not just on what we learn today, but what we can achieve in designing a more sustainable future!"
+  },
+
+  "Contact": {
+    "title": "Contact Us",
+    "description": "Interested in learning more about UTWind or collaborating with us? We’d love to hear from you! Please reach out via email or visit us at Myhal Centre.",
+    "getInTouch": "Get in Touch",
+    "email": "Email:",
+    "instagram": "@utwind",
+    "linkedin": "UTWind LinkedIn",
+    "address": "Address:",
+    "addressLine1": "Myhal Centre for Engineering Innovation & Entrepreneurship",
+    "addressLine2": "55 St George St, Toronto, ON M5S 0C9",
+    "closing": "Feel free to reach out with questions about joining, sponsorship opportunities, or partnerships — our team will respond as soon as possible."
+  },
+
+  "Footer": {
+    "emails": "Emails",
+    "generalInquiries": "General Inquiries:",
+    "sponsorships": "Sponsorships:",
+    "operations": "Operations:",
+    "rightsReserved": "All rights reserved",
+    "contactUs": "Contact Us"
+  },
+
+  "Accessibility": {
+    "toggleMenu": "Toggle Menu",
+    "utwindLogo": "UTWind Logo",
+    "instagram": "UTWind Instagram",
+    "linkedin": "UTWind LinkedIn"
   }
 }

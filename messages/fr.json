@@ -4,21 +4,73 @@
     "competition": "Compétition",
     "team": "Équipe",
     "projects": "Projets",
-    "joinUs": "Nous rejoindre",
-    "sponsors": "Commanditaires",
+    "joinUs": "Rejoignez-nous",
+    "sponsors": "Parrains",
     "gallery": "Galerie",
     "contact": "Contact"
   },
-
   "Home": {
     "title": "UTWind",
-    "subtitle": "Face au vent",
-    "description": "Équipe d'éoliennes de l'Université de Toronto"
+    "subtitle": "Faire face au vent",
+    "description": "Équipe « Éoliennes » de l'Université de Toronto"
   },
-    "TeamUpdates": {
-    "label": "Mises à jour de l’équipe",
-    "title": "Ce qui se passe chez UTWind",
-    "description": "Restez au courant de nos derniers progrès en compétition, des avancées du recyclage du PET et des événements de l’équipe.",
-    "scrollNote": "Faites défiler nos mises à jour et annonces provenant de notre canal Slack • Cliquez pour afficher les détails"
+  "TeamUpdates": {
+    "label": "Actualités de l'équipe",
+    "title": "Actualités de l'UTWind",
+    "description": "Restez informés des dernières avancées de notre concours, des étapes clés du recyclage du PET et des événements organisés par notre équipe.",
+    "scrollNote": "Parcourez nos mises à jour et annonces sur notre canal Slack • Cliquez pour afficher les détails",
+    "timeline": "Chronologie",
+    "updates": {
+      "solidworksWorkshop": {
+        "date": "16 septembre 2026",
+        "title": "Atelier SolidWorks pour débutants !",
+        "description": "Salut @channel, petit coup de fil pour vous signaler une opportunité à venir !\n\nNotre prochaine réunion de la sous-équipe mécanique prendra la forme d’un atelier technique d’initiation à SolidWorks au Galbraith ECF (GB144), le vendredi 18 septembre de 18 h à 20 h.\n\nCet atelier s'adresse aux personnes ayant peu ou pas d'expérience avec SolidWorks, et il n'est pas nécessaire d'être inscrit en mécanique ou en génie mécanique pour y participer. Que vous soyez dans l'équipe Business, Électricité, Aéronautique ou toute autre sous-équipe, et quelle que soit votre filière, vous êtes les bienvenus. La CAO est l’une des compétences les plus transférables que vous puissiez acquérir au sein d’une équipe de conception, et c’est le point d’entrée le plus simple pour apprendre une nouvelle compétence qui enrichira votre portfolio, votre CV ou tout projet personnel que vous souhaiteriez réaliser !\n\nLes places sont limitées par la capacité d’accueil du laboratoire et se remplissent rapidement ; veuillez donc vous inscrire ici pour réserver une place garantie : https://forms.gle/iAPLw3bPE3ahbGCu7. Les inscriptions se feront sur place, et des places pourraient être disponibles sans réservation, selon le principe du « premier arrivé, premier servi », en cas d’absences.\n\nL'atelier commence à 18 h 15 précises, soyez donc ponctuels !\n\nQuelques informations pratiques :\n\nDes ordinateurs de l'ECF sont disponibles pour utiliser SolidWorks, vous pouvez donc simplement vous présenter sur place.\n\nSi vous préférez apporter votre propre ordinateur portable, installez au préalable Remote ECF (aucun VPN n’est nécessaire sur le réseau Wi-Fi de l’UofT), ou installez directement SolidWorks.\n\nVous maîtrisez déjà SolidWorks ? Découvrez le défi lancé par @Shafwat sur le canal #mechanical.\n\nN’hésitez pas à venir accompagné d’un ami qui envisage de rejoindre UTWind, car l’événement est ouvert à tous les étudiants de l’UofT !\n\nDes questions ? Envoyez un message à @Shafwat ou à @Teagan McKenzie !"
+      },
+      "semesterKickoffUpdate": {
+        "date": "9 septembre 2026",
+        "title": "Point sur le lancement du semestre",
+        "description": "Salut @tout le monde, merci à tous ceux qui ont pu se joindre à nous aujourd'hui pour notre événement de lancement !\n\nSi certains de vos amis souhaitent rejoindre UTWind, demandez-leur de remplir le formulaire de recrutement disponible dans notre bio Instagram et nous leur enverrons une invitation Slack pour rejoindre cet espace de travail !\n\nN’hésitez pas à me contacter ou à contacter l’un des autres responsables si vous avez des questions, et consultez notre calendrier général pour connaître les événements organisés au sein d’UTWind. Cette feuille de calcul contiendra toujours les informations les plus récentes concernant les horaires et les lieux des événements !\n\nDes informations plus spécifiques à chaque sous-équipe seront disponibles dans leurs canaux respectifs ; n’hésitez donc pas à rejoindre ceux qui vous intéressent !\n\nJ’ai hâte de travailler avec vous tous au cours de ce cycle de conception !"
+      },
+      "designCycleWelcome": {
+        "date": "6 septembre 2026",
+        "title": "Bienvenue dans le cycle de conception UTWind 2026-2027 !",
+        "description": "Bonjour à tous ! Bienvenue dans le cycle de conception 2026-2027 de l'UTWind !\n\nNous donnons le coup d’envoi avec notre réunion de lancement le mercredi 9 septembre, de 18 h 15 à 20 h, à la Myhal Arena. Pour les nouveaux membres, c’est l’occasion idéale d’en savoir plus sur nos sous-équipes et de choisir celles que vous souhaitez rejoindre. Pour les membres confirmés, c’est l’occasion de se retrouver et de découvrir ce qui est prévu pour ce cycle.\n\nPour les nouveaux membres, pour rejoindre une sous-équipe, il suffit de cliquer sur le ou les canaux correspondant aux sous-équipes qui vous intéressent :\n\n• #aerodynamics (Responsables : @Alex Kim, @Glenn)\n\n• #controls (Responsables : @Wanning He, @Jacob Duplessis)\n\n• #powersystems (Responsables : @Alec MacGregor, @Deniz Kantar)\n\n• #mechanical (Responsables : @Teagan McKenzie, @Shafwat)\n\n• #sustainability (Responsables : @Stella Cook, @Pakhi)\n\n• #business (Directrice commerciale : @Dhara Patel)\n\nLes sous-équipes tiendront leurs premières réunions après la réunion de lancement. Consultez vos canaux respectifs pour connaître les détails concernant les dates et lieux des réunions hebdomadaires.\n\nSi vous avez des questions, n’hésitez pas à contacter n’importe quel membre de l’équipe de direction à tout moment ! Merci à tous et au plaisir de mener à bien ce cycle de conception !"
+      }
     }
+  },
+  "About": {
+    "title": "À propos de nous",
+    "description": "UTWind est une équipe étudiante qui se consacre à la conception et à la construction d'éoliennes durables de petite taille. Créée en 2021, notre équipe compte désormais plus de 80 étudiants talentueux qui conçoivent, construisent et testent des éoliennes de petite taille en vue de concours internationaux et à des fins de recherche.",
+    "button": "Présentation de l'équipe"
+  },
+  "Vision": {
+    "title": "Vision",
+    "description": "Notre vision est de faire découvrir l'énergie éolienne aux étudiants de l'Université de Toronto, afin qu'ils soient préparés et motivés à éclairer le monde de manière durable. En travaillant ensemble, nous espérons développer nos compétences dans le cadre d'un projet qui nous passionne. Notre équipe est un lieu où les connaissances sont partagées et transmises. Ce projet est conçu pour mettre l’accent non seulement sur ce que nous apprenons aujourd’hui, mais aussi sur ce que nous pouvons accomplir pour façonner un avenir plus durable !"
+  },
+  "Contact": {
+    "title": "Nous contacter",
+    "description": "Vous souhaitez en savoir plus sur UTWind ou collaborer avec nous ? N'hésitez pas à nous contacter ! Vous pouvez nous envoyer un e-mail ou venir nous rendre visite au Myhal Centre.",
+    "getInTouch": "Nous contacter",
+    "email": "E-mail :",
+    "instagram": "@utwind",
+    "linkedin": "UTWind sur LinkedIn",
+    "address": "Adresse :",
+    "addressLine1": "Centre Myhal pour l'innovation technique et l'entrepreneuriat",
+    "addressLine2": "55, rue St George, Toronto, ON M5S 0C9",
+    "closing": "N'hésitez pas à nous contacter si vous avez des questions concernant l'adhésion, les possibilités de parrainage ou les partenariats : notre équipe vous répondra dans les plus brefs délais."
+  },
+  "Footer": {
+    "emails": "E-mails",
+    "generalInquiries": "Renseignements généraux :",
+    "sponsorships": "Parrainages :",
+    "operations": "Opérations :",
+    "rightsReserved": "Tous droits réservés",
+    "contactUs": "Nous contacter"
+  },
+  "Accessibility": {
+    "toggleMenu": "Afficher/masquer le menu",
+    "utwindLogo": "Logo UTWind",
+    "instagram": "UTWind sur Instagram",
+    "linkedin": "UTWind sur LinkedIn"
+  }
 }

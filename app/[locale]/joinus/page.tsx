@@ -1,15 +1,21 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "../../../i18n/navigation";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 
 export default function JoinUsPage() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [navHidden, setNavHidden] = useState(false);
   const lastScrollY = useRef(0);
+  const nav = useTranslations("Navbar");
+  const joinUs = useTranslations("JoinUs");
+  const footer = useTranslations("Footer");
+  const navbarRef = useRef<HTMLElement | null>(null);
 
   // AOS init
   useEffect(() => {
@@ -42,153 +48,174 @@ export default function JoinUsPage() {
   return (
     <div className="bg-gray-50 text-gray-800 min-h-screen">
         {/* Navbar */}
-        <nav
-          id="navbar"
-          className={`bg-white shadow-md sticky top-0 z-50 transition-all duration-300 ${
-            navHidden ? "opacity-0 -translate-y-10" : "opacity-100 translate-y-0"
-          }`}
-        >
-          <div className="flex justify-between items-center py-4 pl-4 pr-6">
-            {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2">
-              <Image
-                src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
-                alt="UTWind Logo"
-                width={40}
-                height={40}
-                className="h-10 w-auto"
-                priority
-              />
-              <span className="text-2xl font-bold text-blue-600">UTWind</span>
-            </Link>
-
-            {/* Desktop Nav Links */}
-            <div className="hidden md:flex space-x-6 items-center">
-              <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</Link>
-              <Link href="/competition" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</Link>
-              <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</Link>
-              <Link href="/projects" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</Link>
-              <Link href="/joinus" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</Link>
-              <Link href="/sponsors" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</Link>
-              <Link href="/gallery" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Gallery</Link>
-              <Link href="/#contact" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</Link>
-            </div>
-
-
-            {/* Mobile Hamburger */}
-            <button
-              id="menu-btn"
-              className="block md:hidden focus:outline-none"
-              onClick={() => setMobileOpen((prev) => !prev)}
-              aria-label="Toggle navigation menu"
-            >
-              {!mobileOpen ? (
-                <svg
-                  id="hamburger-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-gray-700"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  id="close-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-gray-700"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              )}
-            </button>
-          </div>
-
-          {/* Mobile Dropdown Menu */}
-          <div className={`md:hidden flex-col items-center bg-white shadow-md space-y-4 py-4 ${mobileOpen ? "flex" : "hidden"}`}>
-            <Link href="/" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Home</Link>
-            <Link href="/competition" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Competition</Link>
-            <Link href="/team" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Team</Link>
-            <Link href="/projects" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Projects</Link>
-            <Link href="/joinus" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Join Us</Link>
-            <Link href="/sponsors" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Sponsors</Link>
-            <Link href="/gallery" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Gallery</Link>
-            <Link href="/#contact" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Contact</Link>
-          </div>
-        </nav>
+              <nav
+                ref={navbarRef}
+                id="navbar"
+                className="bg-white shadow-md sticky top-0 z-50 transition-all duration-250"
+              >
+              <div className="flex justify-between items-center py-4 pl-4 pr-6">
+                {/* logo */}
+                  <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
+                    <Image
+                      src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
+                      alt="UTWind Logo"
+                      width={40}
+                      height={40}
+                      className="h-10 w-auto"
+                      priority
+                    />
+                    <span className="text-2xl font-bold text-blue-600">UTWind</span>
+                  </Link>
+        
+                  {/* desktop links */}
+                  <div className="hidden md:flex space-x-6 items-center">
+                    <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("home")}</Link>
+                    <Link href="/competition" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("competition")}</Link>
+                    <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("team")}</Link>
+                    <Link href="/projects" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("projects")}</Link>
+                    <Link href="/joinus" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("joinUs")}</Link>
+                    <Link href="/sponsors" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("sponsors")}</Link>
+                    <Link href="/gallery" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("gallery")}</Link>
+                    <Link href="/#contact" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("contact")}</Link>
+                  
+                    <LanguageSwitcher />
+        
+                  </div>
+        
+                  {/* mobile toggle */}
+                  <button
+                    aria-label="Toggle Menu"
+                    onClick={() => setMobileOpen((v) => !v)}
+                    className="block md:hidden focus:outline-none"
+                  >
+                    <svg
+                      className={`h-8 w-8 text-gray-700 ${mobileOpen ? "hidden" : "block"}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg
+                      className={`h-8 w-8 text-gray-700 ${mobileOpen ? "block" : "hidden"}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+        
+                {/* mobile dropdown */}
+                <div className={`md:hidden flex-col items-center bg-white shadow-md space-y-4 py-4 ${mobileOpen ? "flex" : "hidden"}`}>
+                  <Link href="/" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("home")}</Link>
+                  <Link href="/competition" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("competition")}</Link>
+                  <Link href="/team" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("team")}</Link>
+                  <Link href="/projects" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("projects")}</Link>
+                  <Link href="/joinus" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("joinUs")}</Link>
+                  <Link href="/sponsors" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("sponsors")}</Link>
+                  <Link href="/gallery" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("gallery")}</Link>
+                  <Link href="/#contact" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("contact")}</Link>
+                  
+                  <LanguageSwitcher />
+                  
+                </div>
+            </nav>
 
         {/* Meetings Section */}
         <section
-          id="meetings"
-          className="bg-indigo-50 py-20"
-          data-aos="fade-up"
-        >
-          <div className="max-w-5xl mx-auto px-6 text-center">
-            <h2 className="text-4xl font-bold text-gray-800 mb-10">Meetings</h2>
-            <p className="text-xl font-bold text-gray-800 mb-8">
-              Below are the listed times and location that we have our work sessions!
-            </p>
+            id="meetings"
+            className="bg-indigo-50 py-20"
+            data-aos="fade-up"
+          >
+            <div className="max-w-5xl mx-auto px-6 text-center">
+              <h2 className="text-4xl font-bold text-gray-800 mb-10">
+                {joinUs("meetings.title")}
+              </h2>
+
+              <p className="text-xl font-bold text-gray-800 mb-8">
+                {joinUs("meetings.description")}
+              </p>
+            </div>
 
             {/* Meeting Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 max-w-4xl mx-auto">
               {/* Aerodynamics */}
               <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                  Aerodynamics
-                </h3>
-                <p className="text-gray-700">Sundays @ 10:00-11:00 AM</p>
-                <p className="text-gray-500 italic">@ Myhal Arena</p>
+              <h3 className="text-xl font-semibold text-indigo-700 mb-2">
+                {joinUs("meetings.aero.name")}
+              </h3>
+
+              <p className="text-gray-700">
+                {joinUs("meetings.aero.time")}
+              </p>
+
+              <p className="text-gray-500 italic">
+                {joinUs("meetings.aero.location")}
+              </p>
               </div>
 
               {/* Mechanical & Manufacturing */}
               <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                  Mechanical
+                  {joinUs("meetings.mechanical.name")}
                 </h3>
-                <p className="text-gray-700">Fridays @ 6:00-8:00 PM</p>
-                <p className="text-gray-500 italic">@ Myhal Arena</p>
+
+                <p className="text-gray-700">
+                  {joinUs("meetings.mechanical.time")}
+                </p>
+
+                <p className="text-gray-500 italic">
+                  {joinUs("meetings.mechanical.location")}
+                </p>
               </div>
 
               {/* Control Systems */}
               <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                  Control Systems
+                  {joinUs("meetings.control.name")}
                 </h3>
-                <p className="text-gray-700">Mondays @ 7:00-9:00 PM</p>
-                <p className="text-gray-500 italic">@ Myhal Arena</p>
+
+                <p className="text-gray-700">
+                  {joinUs("meetings.control.time")}
+                </p>
+
+                <p className="text-gray-500 italic">
+                  {joinUs("meetings.control.location")}
+                </p>
               </div>
 
               {/* Power Systems */}
               <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                  Power Systems
+                  {joinUs("meetings.power.name")}
                 </h3>
-                <p className="text-gray-700"> Tuesdays @ 6:00-8:00 PM</p>
-                <p className="text-gray-500 italic">@ Myhal Arena</p>
+
+                <p className="text-gray-700">
+                  {joinUs("meetings.power.time")}
+                </p>
+
+                <p className="text-gray-500 italic">
+                  {joinUs("meetings.power.location")}
+                </p>
               </div>
 
               {/* Sustainability */}
               <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                  Sustainability
+                  {joinUs("meetings.sustainability.name")}
                 </h3>
-                <p className="text-gray-700">Saturdays @ 1:30-2:30 PM</p>
-                <p className="text-gray-500 italic">@ Myhal Arena</p>
-              </div>
+
+                <p className="text-gray-700">
+                  {joinUs("meetings.sustainability.time")}
+                </p>
+
+                <p className="text-gray-500 italic">
+                  {joinUs("meetings.sustainability.location")}
+                </p>
             </div>
           </div>
         </section>
@@ -196,7 +223,7 @@ export default function JoinUsPage() {
     <section className="py-15 bg-gradient-to-b from-blue-100 to-blue-200  flex items-center">
 <div className="max-w-6xl mx-auto px-6 w-full">
 <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-blue-900 drop-shadow-sm">
-UTWind Team Forms
+{joinUs("forms.title")}
 </h2>
 
 
@@ -207,10 +234,10 @@ href="https://docs.google.com/forms/d/e/1FAIpQLScY2iR7qBZJUIgsyzM0dSK8P6kQg10vSS
 className="group block bg-white/80 backdrop-blur shadow-lg rounded-2xl p-10 border border-blue-300 hover:shadow-2xl hover:-translate-y-2 transition-all"
 >
 <h3 className="text-2xl font-bold mb-4 text-blue-800 group-hover:text-blue-600">
-Member Recruitment Form
+{joinUs("forms.recruitment.title")}
 </h3>
 <p className="text-blue-700">
-Join UTWind and get involved in engineering, design, and sustainability.
+{joinUs("forms.recruitment.description")}
 </p>
 </Link>
 
@@ -220,10 +247,10 @@ href="https://docs.google.com/forms/d/e/1FAIpQLSc1PIgdVWMF30m6HM2xMk0st6mY-030Nu
 className="group block bg-white/80 backdrop-blur shadow-lg rounded-2xl p-10 border border-blue-300 hover:shadow-2xl hover:-translate-y-2 transition-all"
 >
 <h3 className="text-2xl font-bold mb-4 text-blue-800 group-hover:text-blue-600">
-Team Feedback & Inquiries Form
+{joinUs("forms.feedback.title")}
 </h3>
 <p className="text-blue-700">
-Help improve UTWind with your thoughts and suggestions.
+{joinUs("forms.feedback.description")}
 </p>
 </Link>
 </div>
@@ -238,83 +265,66 @@ Help improve UTWind with your thoughts and suggestions.
         >
           <div className="max-w-6xl mx-auto px-6 text-center">
             <h2 className="text-4xl font-bold text-gray-800 mb-10">
-              A Bit About Our Subteams
+              {joinUs("subteams.title")}
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left text-gray-700">
               {/* Aerodynamics */}
               <div>
                 <h3 className="text-2xl font-semibold text-indigo-700 mb-2">
-                  Aerodynamics
+                  {joinUs("subteams.aero.title")}
                 </h3>
                 <p>
-                  The Aerodynamics subteam focuses on designing and optimizing
-                  the turbine blades for maximum efficiency. They use CFD
-                  simulations, wind-tunnel testing, and rapid prototyping to
-                  improve power output and minimize drag.
+                  {joinUs("subteams.aero.description")}
                 </p>
               </div>
 
               {/* Mechanical & Manufacturing */}
               <div>
                 <h3 className="text-2xl font-semibold text-indigo-700 mb-2">
-                  Mechanical
+                  {joinUs("subteams.mechanical.title")}
                 </h3>
                 <p>
-                  The Mechanical and Manufacturing subteam handles the
-                  structural and physical design of the turbine. They perform
-                  CAD modeling, material selection, machining, and 3D printing
-                  to bring each design to life.
+                  {joinUs("subteams.mechanical.description")}
                 </p>
               </div>
 
               {/* Control Systems */}
               <div>
                 <h3 className="text-2xl font-semibold text-indigo-700 mb-2">
-                  Control Systems
+                  {joinUs("subteams.control.title")}
                 </h3>
                 <p>
-                  The Control Systems subteam develops the hardware and software
-                  that monitor and regulate turbine performance. They integrate
-                  sensors, microcontrollers, and feedback algorithms to keep the
-                  turbine stable and efficient.
+                  {joinUs("subteams.control.description")}
                 </p>
               </div>
 
               {/* Power Systems */}
               <div>
                 <h3 className="text-2xl font-semibold text-indigo-700 mb-2">
-                  Power Systems
+                  {joinUs("subteams.power.title")}
                 </h3>
                 <p>
-                  The Power Systems subteam designs the electrical side of the
-                  turbine, including generators, converters, and circuitry.
-                  Their goal is to efficiently convert mechanical energy into
-                  reliable, usable electricity.
+                  {joinUs("subteams.power.description")}
                 </p>
               </div>
 
               {/* Sustainability */}
               <div>
                 <h3 className="text-2xl font-semibold text-indigo-700 mb-2">
-                  Sustainability
+                  {joinUs("subteams.sustainability.title")}
                 </h3>
                 <p>
-                  The Sustainability subteam leads UTWind’s PET bottle recycling
-                  initiative and promotes environmentally conscious design. They
-                  transform recycled plastic into 3D-printing filament for
-                  turbine components, closing the materials loop.
+                  {joinUs("subteams.sustainability.description")}
                 </p>
               </div>
               {/* Business */}
               <div>
                 <h3 className="text-2xl font-semibold text-indigo-700 mb-2">
-                  Business Development
+                  {joinUs("subteams.business.title")}
                 </h3>
                 <p>
-                  The Business Development team consists of Finance, Sponsorships, Marketing, and Operations. 
-                  Together, we secure and manage resources to support our growing team, build external partnerships, communicate and represent UTWind, 
-                  organize events, and coordinate competition logistics to keep the team running smoothly.
+                  {joinUs("subteams.business.description")}
                 </p>
               </div>
             </div>
@@ -323,6 +333,7 @@ Help improve UTWind with your thoughts and suggestions.
 
         {/* Footer */}
   {/* Footer */}
+{/* Footer */}
 <footer className="bg-blue-100 py-10 mt-20">
   <div className="mx-auto max-w-7xl px-6">
     <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
@@ -343,7 +354,7 @@ Help improve UTWind with your thoughts and suggestions.
       {/* Middle: Contact links */}
       <div className="flex flex-col items-center text-center">
         <h3 className="text-lg font-bold text-black mb-3">
-          Emails
+          {footer("contactUs")}
         </h3>
 
         <div className="flex flex-col gap-2 text-black">
@@ -351,7 +362,7 @@ Help improve UTWind with your thoughts and suggestions.
             href="mailto:contact@utwind.com"
             className="hover:text-blue-700 transition"
           >
-            <span className="font-semibold">General Inquiries:</span>{" "}
+            <span className="font-semibold">{footer("generalInquiries")}:</span>{" "}
             contact@utwind.com
           </a>
 
@@ -359,7 +370,7 @@ Help improve UTWind with your thoughts and suggestions.
             href="mailto:sponsorships@utwind.skule.ca"
             className="hover:text-blue-700 transition"
           >
-            <span className="font-semibold">Sponsorships:</span>{" "}
+            <span className="font-semibold">{footer("sponsorships")}:</span>{" "}
             sponsorships@utwind.skule.ca
           </a>
 
@@ -367,7 +378,7 @@ Help improve UTWind with your thoughts and suggestions.
             href="mailto:operations@utwind.skule.ca"
             className="hover:text-blue-700 transition"
           >
-            <span className="font-semibold">Operations:</span>{" "}
+            <span className="font-semibold">{footer("operations")}:</span>{" "}
             operations@utwind.skule.ca
           </a>
         </div>
@@ -413,7 +424,7 @@ Help improve UTWind with your thoughts and suggestions.
       {/* Right: Copyright */}
       <div className="flex justify-center md:justify-end">
         <p className="text-sm text-black">
-          © 2026 UTWind | University of Toronto
+          &copy; {new Date().getFullYear()} UTWind. {footer("rightsReserved")}
         </p>
       </div>
     </div>

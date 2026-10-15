@@ -24,12 +24,12 @@
       "solidworksWorkshop": {
         "date": "16 de septiembre de 2026",
         "title": "¡Taller de SolidWorks para principiantes!",
-        "description": "¡Hola, @channel, un aviso rápido sobre una oportunidad que se avecina!\n\nNuestra próxima reunión del subgrupo de mecánica consistirá en un taller técnico de introducción a SolidWorks en el Galbraith ECF (GB144), el viernes 18 de septiembre de 18:00 a 20:00.\n\nEstá pensado para personas con poca o ninguna experiencia en SolidWorks, y no hace falta que estudies Mecánica o Ingeniería Mecánica para asistir. Si estás en el subgrupo de Empresariales, Eléctrica, Aeronáutica o cualquier otro, y seas de cualquier especialidad, eres bienvenido. El CAD es una de las habilidades más transferibles que puedes adquirir en un equipo de diseño, ¡y esta es la forma más sencilla de iniciarte en el aprendizaje de una nueva habilidad para tu portafolio, tu currículum o cualquier proyecto personal que quieras llevar a cabo!\n\nLas plazas están limitadas por la capacidad del laboratorio y se están agotando rápidamente, así que inscríbete aquí para reservar una plaza garantizada: https://forms.gle/iAPLw3bPE3ahbGCu7. La inscripción se realizará en la puerta y es posible que haya plazas disponibles para quienes se presenten sin cita previa, por orden de llegada, en caso de que haya ausencias.\n\nEl taller comienza puntualmente a las 18:15, ¡así que por favor, llega a tiempo!\n\nAlgunos detalles prácticos:\n\nHay ordenadores del ECF disponibles para ejecutar SolidWorks, así que solo tienes que presentarte.\n\nSi prefieres traer tu propio portátil, instala Remote ECF de antemano (no se necesita VPN en la red wifi de la UofT) o instala SolidWorks directamente.\n\n¿Ya te sientes cómodo con SolidWorks? Echa un vistazo al reto que @Shafwat ha publicado en el canal #mechanical.\n\n¡No dudes en traer a un amigo que esté pensando en unirse a UTWind, ya que el evento está abierto a todos los estudiantes de la UofT!\n\n¿Alguna pregunta? ¡Envía un mensaje a @Shafwat o a @Teagan McKenzie!"
+        "description": "¡Hola, @channel, un aviso rápido sobre una oportunidad que se avecina!\n\nNuestra próxima reunión del subgrupo de ingeniería mecánica consistirá en un taller técnico de introducción a SolidWorks en el Galbraith ECF (GB144), el viernes 18 de septiembre de 18:00 a 20:00.\n\nEstá pensado para personas con poca o ninguna experiencia en SolidWorks, y no hace falta que estudies Mecánica o Ingeniería Mecánica para asistir. Si estás en el subgrupo de Negocios, Eléctrica, Aeronáutica o cualquier otro, y seas de cualquier especialidad, eres bienvenido. El CAD es una de las habilidades más transferibles que puedes adquirir en un equipo de diseño, ¡y esta es la forma más sencilla de iniciarte en el aprendizaje de una nueva habilidad para tu portafolio, tu currículum o cualquier proyecto personal que quieras crear!\n\nLas plazas están limitadas por la capacidad del laboratorio y se están agotando rápidamente, así que inscríbete aquí para reservar una plaza garantizada: https://forms.gle/iAPLw3bPE3ahbGCu7. La inscripción se realizará en la puerta y puede que haya plazas disponibles para quienes se presenten sin cita previa, por orden de llegada, en caso de que haya personas que no se presenten.\n\nEl taller comienza puntualmente a las 18:15, ¡así que por favor, llega a tiempo!\n\nAlgunos detalles prácticos:\n\nHay ordenadores del ECF disponibles para ejecutar SolidWorks, así que solo tienes que presentarte.\n\nSi prefieres traer tu propio portátil, instala Remote ECF con antelación (no se necesita VPN en la red wifi de la UofT) o instala SolidWorks directamente.\n\n¿Ya te manejas bien con SolidWorks? Echa un vistazo al reto que @Shafwat ha publicado en el canal #mechanical.\n\n¡No dudes en traer a un amigo que esté pensando en unirse a UTWind, ya que el evento está abierto a todos los estudiantes de la UofT!\n\n¿Alguna pregunta? ¡Envía un mensaje a @Shafwat o a @Teagan McKenzie!"
       },
       "semesterKickoffUpdate": {
         "date": "9 de septiembre de 2026",
         "title": "Actualización sobre el inicio del semestre",
-        "description": "Hola a todos, ¡gracias a todos los que habéis podido asistir hoy a nuestro evento de presentación!\n\nSi alguno de vuestros amigos quiere unirse a UTWind, decidle que rellene el formulario de inscripción que aparece en la biografía de nuestro Instagram y le enviaremos una invitación de Slack a este espacio de trabajo.\n\nNo dudéis en poneros en contacto conmigo o con cualquiera de los otros responsables si tenéis alguna pregunta, y consultad nuestro calendario general para ver los eventos que se celebran en UTWind. ¡Esta hoja de cálculo siempre contendrá la información más actualizada sobre los horarios y lugares de los eventos!\n\nHabrá información más específica para cada subgrupo en sus respectivos canales, ¡así que no dudéis en uniros a los que os interesen!\n\n¡Estoy deseando trabajar con todos vosotros en este ciclo de diseño!"
+        "description": "Hola a todos, ¡gracias a todos los que habéis podido asistir hoy a nuestro evento de presentación!\n\nSi alguno de vuestros amigos quiere unirse a UTWind, decidle que rellene el formulario de inscripción que aparece en nuestra biografía de Instagram y le enviaremos una invitación de Slack para este espacio de trabajo.\n\nNo dudéis en poneros en contacto conmigo o con cualquiera de los otros responsables si tenéis alguna pregunta, y consultad nuestro calendario general para ver los eventos que se celebran en UTWind. ¡Esta hoja de cálculo siempre contendrá la información más actualizada sobre los horarios y lugares de los eventos!\n\nHabrá información más específica para cada subgrupo en sus respectivos canales, ¡así que no dudéis en uniros a los que os interesen!\n\n¡Estoy deseando trabajar con todos vosotros en este ciclo de diseño!"
       },
       "designCycleWelcome": {
         "date": "6 de septiembre de 2026",
@@ -65,12 +65,303 @@
     "sponsorships": "Patrocinios:",
     "operations": "Operaciones:",
     "rightsReserved": "Todos los derechos reservados",
-    "contactUs": "Contáctanos"
+    "contactUs": "Contáctanos",
+    "copyright": "© 2026 UTWind | Universidad de Toronto"
   },
   "Accessibility": {
     "toggleMenu": "Mostrar/ocultar menú",
     "utwindLogo": "Logotipo de UTWind",
     "instagram": "UTWind en Instagram",
     "linkedin": "UTWind en LinkedIn"
+  },
+  "Competition": {
+    "title": "Concurso Internacional de Aerogeneradores de Pequeña Potencia (ISWTC)",
+    "intro": {
+      "beforeLink": "Cada verano, el UTWind participa en el",
+      "afterLink": "en los Países Bajos frente a otras universidades internacionales. UTWind ha vuelto a casa con un trofeo desde su debut y no podría estar más orgulloso de representar a la Universidad de Toronto. Sigue leyendo a continuación para saber más sobre cada competición."
+    },
+    "historyTitle": "Historial de competiciones",
+    "history": {
+      "2022": {
+        "description": "Esta fue la primera edición del ISWTC en la que participó UTWind tras casi dos años de preparación durante la pandemia. UTWind ganó el premio al «Mejor diseño global» <strong>(1.º puesto)</strong> en su debut en el ISWTC.",
+        "caption": "La turbina de UTWind, ganadora del primer premio — 2022"
+      },
+      "2023": {
+        "description": "El segundo año de participación de UTWind en el ISWTC no fue menos exigente, a pesar de que habíamos ganado la edición anterior; sin embargo, UTWind se llevó a casa el <strong>Premio a la turbina más sostenible.</strong>",
+        "caption": "La turbina más sostenible y galardonada de UTWind - 2023"
+      },
+      "2024": {
+        "description": "En nuestra tercera participación en la competición, probamos varias novedades: el reciclaje de botellas de PET para obtener filamento, el uso de un solo motor para el control del paso y la fabricación de palas de fibra de lino. Dada la gran cantidad de equipos nuevos, fue una gran sorpresa que el jurado otorgara el premio al Mejor Diseño Global <strong>(1.º puesto)</strong> al «Equipo de Toronto».",
+        "caption": "La turbina de UTWind, ganadora del primer premio — 2024"
+      },
+      "2025": {
+        "description": "La turbina más ambiciosa de UTWind hasta la fecha fue nuestra primera turbina eólica de eje vertical (VAWT). A pesar de los plazos tan ajustados y de la falta de experiencia, construimos una VAWT con rotor en H en solo cuatro meses y nos emocionó verla girar, generar energía y funcionar con un sistema de control operativo. Aunque no nos llevamos ningún trofeo a casa, aprendimos mucho y estamos deseando mejorar en nuestra próxima versión.",
+        "caption": "Primera versión del aerogenerador vertical (VAWT) de UTWind - 2025"
+      },
+      "2026": {
+        "description": "De vuelta en los Países Bajos para nuestra quinta participación consecutiva en el ISWTC, UTWind compitió con la segunda versión de nuestro aerogenerador de eje vertical (VAWT). Este año se han logrado avances importantes: enviamos nuestra mayor delegación de competición hasta la fecha, llegamos con sistemas mecánicos, de potencia y de control en pleno funcionamiento, incorporamos palas más ligeras y sensores de detección de murciélagos, y conseguimos una de nuestras velocidades de arranque más bajas hasta la fecha. Aunque aún hay mucho que mejorar, la competición nos ha proporcionado información valiosa que aplicaremos en nuestra próxima versión.",
+        "caption": "La turbina con la velocidad mínima de arranque más baja de UTWind: 2026"
+      },
+      "Footer": {
+        "emails": "Correos electrónicos",
+        "generalInquiries": "Consultas generales:",
+        "sponsorships": "Patrocinios:",
+        "operations": "Operaciones:",
+        "copyright": "© 2026 UTWind | Universidad de Toronto"
+      }
+    }
+  },
+  "Team": {
+    "title": "Conoce a nuestro equipo",
+    "description": "Te presentamos a los estudiantes que forman parte de UTWind.",
+    "sections": {
+      "president": "Presidente",
+      "business": "Negocios",
+      "mechanical": "Mecánica",
+      "control": "Sistemas de control",
+      "power": "Sistemas de energía",
+      "aero": "Aerodinámica",
+      "sustainability": "Sostenibilidad",
+      "web": "Administrador web"
+    },
+    "positions": {
+      "president": "Presidente",
+      "businessDirector": "Director comercial",
+      "marketingLead": "Responsable de marketing",
+      "financeLead": "Responsable de finanzas",
+      "sponsorshipsLead": "Responsable de patrocinios",
+      "operationsCoLead": "Codirector de Operaciones",
+      "mechanicalCoLead": "Codirector del área de ingeniería mecánica",
+      "controlCoLead": "Codirector de Sistemas de Control",
+      "powerCoLead": "Codirector de Sistemas Eléctricos",
+      "aeroCoLead": "Codirector de Aerodinámica",
+      "sustainabilityCoLead": "Codirector de Sostenibilidad",
+      "webmaster": "Administrador web"
+    },
+    "Footer": {
+      "emails": "Correos electrónicos",
+      "generalInquiries": "Consultas generales:",
+      "sponsorships": "Patrocinios:",
+      "operations": "Operaciones:",
+      "copyright": "© 2026 UTWind | Universidad de Toronto"
+    }
+  },
+  "Sponsors": {
+    "title": "Nuestros patrocinadores y colaboradores",
+    "description": "Muchísimas gracias a nuestros patrocinadores, que desempeñan un papel fundamental a la hora de convertir la teoría en ingeniería aplicada. Gracias a su apoyo, UTWind puede crear prototipos de nuevos diseños de turbinas, probar tecnologías renovables y representar a la Universidad de Toronto en competiciones internacionales. ¡Os agradecemos que apoyéis a la próxima generación de ingenieros que darán forma al futuro de la energía sostenible!",
+    "packageButton": "Ver paquete de patrocinio",
+    "categories": {
+      "diamond": "Patrocinadores Diamante",
+      "platinum": "Patrocinadores Platino",
+      "gold": "Patrocinadores Oro",
+      "silver": "Patrocinadores de plata",
+      "bronze": "Patrocinadores de bronce",
+      "technicalPartners": "Socios técnicos"
+    },
+    "tiers": {
+      "title": "Niveles de patrocinio",
+      "description": "Ofrecemos colaboraciones personalizables a través de conocimientos técnicos, aportaciones económicas y apoyo en especie. Estas aportaciones financian componentes esenciales, materiales, investigación, gastos de competición y el funcionamiento de los equipos. A cambio, los patrocinadores obtienen acceso directo a estudiantes de ingeniería cualificados, al tiempo que impulsan sus prioridades en materia de ESG. Este apoyo permite a UTWind diseñar, construir, probar y competir con tecnologías innovadoras de energía limpia.",
+      "diamond": "Diamante",
+      "platinum": "Platino",
+      "gold": "Oro",
+      "silver": "Plata",
+      "bronze": "Bronce",
+      "technicalPartner": "Socio técnico",
+      "technicalDescription": "Productos, servicios o asistencia técnica"
+    },
+    "benefits": {
+      "teamEvents": "Invitación a eventos y exhibiciones de equipos",
+      "networking": "Invitación al evento anual de networking y captación de patrocinadores",
+      "jobPostings": "Patrocinar ofertas de empleo compartidas con los socios",
+      "teamApparel": "Logotipo en la equipación del equipo",
+      "resumeBook": "Acceso al libro de currículos del equipo",
+      "sponsorEvent": "Asistencia del equipo al evento del patrocinador¹",
+      "website": "Logotipo en la página web (enlace para todos)",
+      "banners": "Logotipo en pancartas y carteles de competición",
+      "turbine": "Logotipo en la turbina"
+    },
+    "values": {
+      "byAgreement": "De común acuerdo",
+      "featuredProfile": "Perfil destacado",
+      "secondaryFeature": "Característica secundaria",
+      "logoOnly": "Solo el logotipo",
+      "large": "Grande",
+      "medium": "Medio",
+      "small": "Pequeño",
+      "nameListing": "Lista de nombres"
+    },
+    "notes": {
+      "currency": "Todos los importes de los patrocinios y los valores equivalentes de las aportaciones se expresan en dólares canadienses (CAD).",
+      "flexibility": "Siempre estamos abiertos a negociar oportunidades de patrocinio fuera de los rangos mencionados anteriormente.",
+      "availability": "¹ Sujeto a la disponibilidad de los socios y a los detalles del viaje acordados de mutuo acuerdo."
+    },
+    "Footer": {
+      "emails": "Correos electrónicos",
+      "generalInquiries": "Consultas generales:",
+      "sponsorships": "Patrocinios:",
+      "operations": "Operaciones:",
+      "copyright": "© 2026 UTWind | Universidad de Toronto"
+    }
+  },
+  "Projects": {
+    "title": "Descubre nuestros proyectos",
+    "description": "¡Haz clic en los siguientes botones para ver cada uno de nuestros proyectos!",
+    "buttons": {
+      "pet": "Proyecto de reciclaje de PET",
+      "turbine": "Proyecto «Campus Turbine»"
+    },
+    "pet": {
+      "title": "Iniciativa de reciclaje de botellas de PET",
+      "description": "Desde la primavera de 2024, UTWind ha estado recogiendo botellas de plástico PET1 en los campus de la Universidad de Toronto y reciclándolas para convertirlas en filamento de impresión 3D, que se utiliza para fabricar piezas de nuestro aerogenerador de competición. Cada año, hemos trabajado para mejorar el proceso y aumentar el número de componentes que podemos imprimir utilizando plástico reciclado.",
+      "thanksBeforeUtern": "Nos gustaría dar las gracias a",
+      "thanksMiddle": "por su continuo apoyo financiero y por la",
+      "thanksAfter": "por ser nuestra mayor fuente de donaciones de botellas.",
+      "process": {
+        "title": "Nuestro proceso de reciclaje de PET",
+        "step1": {
+          "title": "Paso 1: Recoger",
+          "description": "Recogemos botellas de plástico PET1 en los campus de la Universidad de Toronto y de nuestros socios locales."
+        },
+        "step2": {
+          "title": "Paso 2: Extruir",
+          "description": "¡Las botellas recogidas se cortan y se extruyen para convertirlas en filamento reutilizable!"
+        },
+        "step3": {
+          "title": "Paso 3: Impresión en 3D",
+          "description": "¡El filamento reciclado se utiliza para la impresión 3D!"
+        },
+        "step4": {
+          "title": "Paso 4: Resultados impresos",
+          "description": "¡La pieza impresa final se integra en los componentes funcionales de la turbina!"
+        },
+        "labels": {
+          "anemometer": "Soporte para anemómetro",
+          "gear": "Equipo",
+          "noseCone": "Cono de proa"
+        }
+      },
+      "contribute": {
+        "title": "¿Cómo puedo colaborar y participar?",
+        "description": "Si quieres entregar botellas o utilizar nuestra impresora 3D con filamento reciclado, envíanos un correo electrónico a",
+        "guidelinesTitle": "Normas para la entrega de botellas",
+        "guideline1": "Deben ser botellas de plástico PET1 (por ejemplo, garrafas de agua de 4 litros, botellas de soda de 2 litros o botellas de agua con gas). Se adjuntan fotos a continuación.",
+        "guideline2": "Las botellas no pueden haber contenido líquidos viscosos ni aceite.",
+        "guideline3": "Las botellas deben estar sin comprimir y limpias (libres de contaminación externa)."
+      },
+      "recycleWhy": {
+        "title": "¿Por qué debemos reciclar el plástico?",
+        "description": "La respuesta tiene múltiples facetas, así que aquí tienes algunos enlaces útiles para obtener más información:",
+        "links": {
+          "canada": "Gobierno de Canadá — Reducción de los residuos plásticos",
+          "circular": "Líderes de la Economía Circular de Canadá — Por qué debemos definir el reciclaje",
+          "buxton": "Buxton Water — Comunidad y medio ambiente",
+          "deskera": "Deskera — El reciclaje en la fabricación de plásticos"
+        }
+      }
+    },
+    "turbine": {
+      "title": "Proyecto «Campus Turbine»",
+      "description": "El proyecto «UTWind Campus Turbine» es nuestra iniciativa estrella de carácter práctico en el ámbito de las energías renovables.",
+      "comingSoon": "¡Próximamente se añadirá contenido detallado para esta sección!"
+    },
+    "Footer": {
+      "emails": "Correos electrónicos",
+      "generalInquiries": "Consultas generales:",
+      "sponsorships": "Patrocinios:",
+      "operations": "Operaciones:",
+      "copyright": "© 2026 UTWind | Universidad de Toronto"
+    }
+  },
+  "Gallery": {
+    "title": "Galería",
+    "description": "Descubre los momentos más destacados de UTWind a lo largo de los años en materia de diseño, construcción, pruebas, divulgación y competiciones.",
+    "categories": {
+      "competition": "Competición",
+      "schoolEvents": "Eventos escolares"
+    },
+    "photoBy": "Foto de",
+    "Footer": {
+      "emails": "Correos electrónicos",
+      "generalInquiries": "Consultas generales:",
+      "sponsorships": "Patrocinios:",
+      "operations": "Operaciones:",
+      "copyright": "© 2026 UTWind | Universidad de Toronto"
+    }
+  },
+  "JoinUs": {
+    "meetings": {
+      "title": "Reuniones",
+      "description": "¡A continuación se indican las horas y los lugares de nuestras sesiones de trabajo!",
+      "aero": {
+        "name": "Aerodinámica",
+        "time": "Los domingos, de 10:00 a 11:00 de la mañana",
+        "location": "@ Myhal Arena"
+      },
+      "mechanical": {
+        "name": "Mecánica",
+        "time": "Los viernes, de 18:00 a 20:00",
+        "location": "@ Myhal Arena"
+      },
+      "control": {
+        "name": "Sistemas de control",
+        "time": "Los lunes, de 19:00 a 21:00",
+        "location": "@ Myhal Arena"
+      },
+      "power": {
+        "name": "Sistemas de energía",
+        "time": "Los martes, de 18:00 a 20:00",
+        "location": "@ Myhal Arena"
+      },
+      "sustainability": {
+        "name": "Sostenibilidad",
+        "time": "Los sábados, de 13:30 a 14:30",
+        "location": "@ Myhal Arena"
+      }
+    },
+    "forms": {
+      "title": "Formularios del equipo UTWind",
+      "recruitment": {
+        "title": "Formulario de inscripción de socios",
+        "description": "Únete a UTWind y participa en proyectos de ingeniería, diseño y sostenibilidad."
+      },
+      "feedback": {
+        "title": "Formulario de comentarios y consultas del equipo",
+        "description": "Ayúdanos a mejorar UTWind con tus opiniones y sugerencias."
+      }
+    },
+    "subteams": {
+      "title": "Un poco sobre nuestros subgrupos",
+      "aero": {
+        "title": "Aerodinámica",
+        "description": "El subgrupo de Aerodinámica se centra en el diseño y la optimización de las palas de la turbina para lograr la máxima eficiencia. Utilizan simulaciones CFD, ensayos en túnel de viento y prototipado rápido para mejorar la potencia generada y minimizar la resistencia aerodinámica."
+      },
+      "mechanical": {
+        "title": "Mecánica",
+        "description": "El subgrupo de Mecánica y Fabricación se encarga del diseño estructural y físico de la turbina. Realizan modelado CAD, selección de materiales, mecanizado e impresión 3D para dar vida a cada diseño."
+      },
+      "control": {
+        "title": "Sistemas de control",
+        "description": "El subgrupo de Sistemas de Control desarrolla el hardware y el software que supervisan y regulan el rendimiento de la turbina. Integra sensores, microcontroladores y algoritmos de retroalimentación para mantener la turbina estable y eficiente."
+      },
+      "power": {
+        "title": "Sistemas de energía",
+        "description": "El subgrupo de Sistemas de Energía se encarga del diseño de la parte eléctrica de la turbina, lo que incluye generadores, convertidores y circuitos. Su objetivo es convertir de forma eficiente la energía mecánica en electricidad fiable y aprovechable."
+      },
+      "sustainability": {
+        "title": "Sostenibilidad",
+        "description": "El subgrupo de Sostenibilidad lidera la iniciativa de reciclaje de botellas de PET de UTWind y promueve el diseño respetuoso con el medio ambiente. Transforman el plástico reciclado en filamento para impresión 3D destinado a componentes de turbinas, cerrando así el ciclo de los materiales."
+      },
+      "business": {
+        "title": "Desarrollo empresarial",
+        "description": "El equipo de Desarrollo Empresarial está formado por los departamentos de Finanzas, Patrocinios, Marketing y Operaciones. Juntos, conseguimos y gestionamos los recursos necesarios para apoyar a nuestro equipo en expansión, establecemos colaboraciones externas, comunicamos y representamos a UTWind, organizamos eventos y coordinamos la logística de las competiciones para garantizar el buen funcionamiento del equipo."
+      }
+    },
+    "Footer": {
+      "emails": "Correos electrónicos",
+      "generalInquiries": "Consultas generales:",
+      "sponsorships": "Patrocinios:",
+      "operations": "Operaciones:",
+      "copyright": "© 2026 UTWind | Universidad de Toronto"
+    }
   }
 }

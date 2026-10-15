@@ -24,12 +24,12 @@
       "solidworksWorkshop": {
         "date": "16 september 2026",
         "title": "SolidWorks-workshop voor beginners!",
-        "description": "Hé @channel, even een korte tip over een aankomende activiteit!\n\nOnze volgende bijeenkomst van het mechanische subteam is een technische introductieworkshop over SolidWorks in het Galbraith ECF (GB144), op vrijdag 18 september van 18:00 tot 20:00 uur.\n\nDeze workshop is bedoeld voor mensen met weinig tot geen ervaring met SolidWorks, en je hoeft geen student Mechanica of Werktuigbouwkunde te zijn om mee te doen. Of je nu bij het subteam Bedrijfskunde, Elektrotechniek, Luchtvaarttechniek of een ander subteam zit, en welke studierichting je ook volgt, je bent van harte welkom. CAD is een van de meest inzetbare vaardigheden die je in een ontwerpteam kunt opdoen, en dit is de gemakkelijkste manier om een nieuwe vaardigheid te leren voor je portfolio, cv of persoonlijke projecten die je misschien wilt maken!\n\nHet aantal plaatsen is beperkt door de capaciteit van het lab en raakt snel vol, dus schrijf je hier in om een gegarandeerde plek te reserveren: https://forms.gle/iAPLw3bPE3ahbGCu7 We registreren je bij de ingang, en er kunnen nog plaatsen beschikbaar zijn op basis van ‘wie het eerst komt, het eerst maalt’ als er mensen niet komen opdagen.\n\nDe workshop begint stipt om 18:15 uur, dus zorg dat je op tijd bent!\n\nEen paar praktische zaken:\n\nEr zijn ECF-computers beschikbaar waarop SolidWorks draait, dus je kunt gewoon langskomen.\n\nAls je liever je eigen laptop meeneemt, installeer dan van tevoren Remote ECF (geen VPN nodig op de wifi van de UofT), of installeer SolidWorks direct.\n\nBen je al vertrouwd met SolidWorks? Bekijk dan eens de uitdaging die @Shafwat heeft gepost in het #mechanical-kanaal.\n\nNeem gerust een vriend(in) mee die erover nadenkt om lid te worden van UTWind, want het evenement staat open voor alle studenten van de UofT!\n\nVragen? Stuur een bericht naar @Shafwat of @Teagan McKenzie!"
+        "description": "Hé @channel, even een korte tip over een aankomende activiteit!\n\nOnze volgende bijeenkomst van het mechanische subteam is een technische introductieworkshop over SolidWorks in het Galbraith ECF (GB144), op vrijdag 18 september van 18:00 tot 20:00 uur.\n\nDeze workshop is bedoeld voor mensen met weinig tot geen ervaring met SolidWorks, en je hoeft geen student te zijn van Mech of MechE om mee te doen. Of je nu bij Business, Electrical, Aero of een ander subteam zit, en welke studierichting je ook volgt, je bent van harte welkom. CAD is een van de meest inzetbare vaardigheden die je in een ontwerpteam kunt opdoen, en dit is de gemakkelijkste manier om een nieuwe vaardigheid te leren voor je portfolio, cv of persoonlijke projecten die je misschien wilt maken!\n\nHet aantal plaatsen is beperkt door de capaciteit van het lab en raakt snel vol, dus schrijf je hier in om een gegarandeerde plek te reserveren: https://forms.gle/iAPLw3bPE3ahbGCu7 We registreren je bij de ingang, en er kunnen mogelijk nog plaatsen beschikbaar zijn op basis van ‘wie het eerst komt, het eerst maalt’ als er mensen niet komen opdagen.\n\nDe workshop begint stipt om 18:15 uur, dus zorg dat je op tijd bent!\n\nEen paar praktische zaken:\n\nEr zijn ECF-computers beschikbaar waarop SolidWorks draait, dus je kunt gewoon langskomen.\n\nAls je liever je eigen laptop meeneemt, installeer dan van tevoren Remote ECF (geen VPN nodig op de wifi van de UofT) of installeer SolidWorks rechtstreeks.\n\nBen je al vertrouwd met SolidWorks? Bekijk dan eens de uitdaging die @Shafwat heeft gepost in het #mechanical-kanaal.\n\nNeem gerust een vriend(in) mee die erover nadenkt om lid te worden van UTWind, want het evenement staat open voor alle studenten van de UofT!\n\nVragen? Stuur een bericht naar @Shafwat of @Teagan McKenzie!"
       },
       "semesterKickoffUpdate": {
         "date": "9 september 2026",
         "title": "Update over de start van het semester",
-        "description": "Hallo @iedereen, bedankt aan iedereen die vandaag bij ons kick-off-evenement aanwezig kon zijn!\n\nAls je vrienden lid willen worden van UTWind, vraag ze dan om het aanmeldingsformulier in onze Instagram-bio in te vullen. Dan sturen we ze een Slack-uitnodiging voor deze workspace!\n\nNeem gerust contact op met mij of een van de andere leiders als je vragen hebt, en bekijk ons hoofdrooster voor evenementen binnen UTWind. Deze spreadsheet bevat altijd de meest actuele informatie over de tijden en locaties van evenementen!\n\nEr komt meer specifieke informatie voor elk subteam in hun eigen kanalen, dus sluit je gerust aan bij de kanalen die je interesseren!\n\nIk kijk ernaar uit om deze ontwerpcyclus met jullie allemaal samen te werken!"
+        "description": "Hallo @iedereen, bedankt aan iedereen die vandaag bij ons kick-off-evenement aanwezig kon zijn!\n\nAls een van je vrienden lid wil worden van UTWind, vraag hem of haar dan om het aanmeldingsformulier in onze Instagram-bio in te vullen. Dan sturen we hem of haar een Slack-uitnodiging voor deze workspace!\n\nNeem gerust contact op met mij of een van de andere leiders als je vragen hebt, en bekijk ons overzichtschema voor evenementen binnen UTWind. Deze spreadsheet bevat altijd de meest actuele informatie over de tijden en locaties van evenementen!\n\nEr komt meer specifieke informatie voor elk subteam in hun eigen kanalen, dus sluit je gerust aan bij de kanalen die je interesseren!\n\nIk kijk ernaar uit om deze ontwerpcyclus met jullie allemaal samen te werken!"
       },
       "designCycleWelcome": {
         "date": "6 september 2026",
@@ -49,7 +49,7 @@
   },
   "Contact": {
     "title": "Neem contact met ons op",
-    "description": "Wilt u meer weten over UTWind of met ons samenwerken? We horen graag van u! Neem contact op via e-mail of kom langs bij het Myhal Centre.",
+    "description": "Wilt u meer weten over UTWind of met ons samenwerken? We horen graag van u! Neem contact met ons op via e-mail of kom langs bij het Myhal Centre.",
     "getInTouch": "Neem contact op",
     "email": "E-mail:",
     "instagram": "@utwind",
@@ -57,20 +57,311 @@
     "address": "Adres:",
     "addressLine1": "Myhal Centrum voor Technische Innovatie en Ondernemerschap",
     "addressLine2": "55 St George St, Toronto, ON M5S 0C9",
-    "closing": "Aarzel niet om contact met ons op te nemen als je vragen hebt over lidmaatschap, sponsormogelijkheden of samenwerkingsverbanden — ons team neemt zo snel mogelijk contact met je op."
+    "closing": "Neem gerust contact met ons op als je vragen hebt over lidmaatschap, sponsormogelijkheden of samenwerkingsverbanden — ons team zal zo snel mogelijk reageren."
   },
   "Footer": {
     "emails": "E-mails",
     "generalInquiries": "Algemene vragen:",
     "sponsorships": "Sponsoring:",
-    "operations": "Bedrijfsactiviteiten:",
+    "operations": "Bedrijfsvoering:",
     "rightsReserved": "Alle rechten voorbehouden",
-    "contactUs": "Neem contact met ons op"
+    "contactUs": "Neem contact met ons op",
+    "copyright": "© 2026 UTWind | Universiteit van Toronto"
   },
   "Accessibility": {
     "toggleMenu": "Menu openen/sluiten",
     "utwindLogo": "UTWind-logo",
     "instagram": "UTWind op Instagram",
     "linkedin": "UTWind op LinkedIn"
+  },
+  "Competition": {
+    "title": "Internationale wedstrijd voor kleine windturbines (ISWTC)",
+    "intro": {
+      "beforeLink": "Elke zomer neemt UTWind deel aan de",
+      "afterLink": "in Nederland tegen andere internationale universiteiten. UTWind heeft sinds ons debuut telkens een trofee mee naar huis genomen en is ontzettend trots om de Universiteit van Toronto te vertegenwoordigen. Lees hieronder meer over elke wedstrijd."
+    },
+    "historyTitle": "Wedstrijdgeschiedenis",
+    "history": {
+      "2022": {
+        "description": "Dit was de eerste ISWTC waaraan UTWind deelnam na bijna twee jaar voorbereiding tijdens de pandemie. UTWind won bij zijn debuut op de ISWTC de prijs voor ‘Best Overall Design’ <strong>(1e plaats)</strong>.",
+        "caption": "De turbine van UTWind die de eerste prijs won – 2022"
+      },
+      "2023": {
+        "description": "Het tweede jaar dat UTWind deelnam aan de ISWTC was niet minder uitdagend, juist omdat we de vorige wedstrijd hadden gewonnen, maar UTWind sleepte toch de <strong>prijs voor de meest duurzame turbine in de wacht.</strong>",
+        "caption": "UTWind's meest duurzame, bekroonde windturbine – 2023"
+      },
+      "2024": {
+        "description": "In het derde wedstrijdjaar werden verschillende primeurs getest: het recyclen van PET-flessen tot filament, het gebruik van één motor voor de pitchregeling en het vervaardigen van bladen van vlasvezels. Gezien het grote aantal nieuwe teams was het een enorme verrassing toen de jury de prijs voor het beste algemene ontwerp <strong>(1e plaats)</strong> toekende aan “The Team from Toronto”.",
+        "caption": "De met de eerste prijs bekroonde turbine van UTWind – 2024"
+      },
+      "2025": {
+        "description": "De meest ambitieuze windturbine van UTWind tot nu toe was onze allereerste windturbine met verticale as (VAWT). Ondanks de krappe tijdsplanning en het feit dat we hier nog geen ervaring mee hadden, bouwden we in slechts vier maanden tijd een H-Rotor VAWT en waren we dolblij toen we zagen dat hij draaide, stroom opwekte en werkte met een functionerend besturingssysteem. Hoewel we geen trofee in de wacht hebben gesleept, hebben we veel geleerd en kunnen we niet wachten om het in onze volgende versie nog beter te doen.",
+        "caption": "UTWind's eerste versie van de VAWT – 2025"
+      },
+      "2026": {
+        "description": "Terug in Nederland voor onze vijfde opeenvolgende ISWTC nam UTWind deel met de tweede versie van onze windturbine met verticale as (VAWT). Dit jaar boekten we aanzienlijke vooruitgang: we stuurden onze grootste wedstrijddelegatie tot nu toe, kwamen aan met goed functionerende mechanische, aandrijf- en besturingssystemen, introduceerden lichtere bladen en sensoren voor het monitoren van vleermuizen, en behaalden een van onze laagste inschakelsnelheden tot nu toe. Hoewel er nog veel te verbeteren valt, heeft de wedstrijd ons waardevolle inzichten opgeleverd die we kunnen meenemen naar onze volgende versie.",
+        "caption": "De turbine van UTWind met de laagste inschakelsnelheid – 2026"
+      },
+      "Footer": {
+        "emails": "E-mails",
+        "generalInquiries": "Algemene vragen:",
+        "sponsorships": "Sponsoring:",
+        "operations": "Bedrijfsactiviteiten:",
+        "copyright": "© 2026 UTWind | Universiteit van Toronto"
+      }
+    }
+  },
+  "Team": {
+    "title": "Maak kennis met ons team",
+    "description": "Maak kennis met de studenten achter UTWind.",
+    "sections": {
+      "president": "Voorzitter",
+      "business": "Zakelijk",
+      "mechanical": "Mechanisch",
+      "control": "Besturingssystemen",
+      "power": "Energiesystemen",
+      "aero": "Aerodynamica",
+      "sustainability": "Duurzaamheid",
+      "web": "Webbeheerder"
+    },
+    "positions": {
+      "president": "Voorzitter",
+      "businessDirector": "Bedrijfsdirecteur",
+      "marketingLead": "Marketingmanager",
+      "financeLead": "Financieel verantwoordelijke",
+      "sponsorshipsLead": "sponsoring verantwoordelijke",
+      "operationsCoLead": "Medeverantwoordelijke Operations",
+      "mechanicalCoLead": "Medeverantwoordelijke mechaniek",
+      "controlCoLead": "Medeverantwoordelijke voor besturingssystemen",
+      "powerCoLead": "Medeverantwoordelijke voor energiesystemen",
+      "aeroCoLead": "Medeverantwoordelijke aerodynamica",
+      "sustainabilityCoLead": "Medeverantwoordelijke voor duurzaamheid",
+      "webmaster": "Webbeheerder"
+    },
+    "Footer": {
+      "emails": "E-mails",
+      "generalInquiries": "Algemene vragen:",
+      "sponsorships": "Sponsoring:",
+      "operations": "Bedrijfsvoering:",
+      "copyright": "© 2026 UTWind | Universiteit van Toronto"
+    }
+  },
+  "Sponsors": {
+    "title": "Onze sponsors en partners",
+    "description": "Enorm bedankt aan onze sponsors, die een cruciale rol spelen bij het omzetten van theorie in praktische techniek. Dankzij hun steun kan UTWind prototypes van nieuwe turbineontwerpen bouwen, technologieën op het gebied van hernieuwbare energie testen en de Universiteit van Toronto vertegenwoordigen bij internationale wedstrijden. Wij danken u voor uw steun aan de volgende generatie ingenieurs die de toekomst van duurzame energie vormgeven!",
+    "packageButton": "Bekijk het sponsorpakket",
+    "categories": {
+      "diamond": "Diamantsponsors",
+      "platinum": "Platina-sponsors",
+      "gold": "Gouden sponsors",
+      "silver": "Zilveren sponsors",
+      "bronze": "Bronzen sponsors",
+      "technicalPartners": "Technische partners"
+    },
+    "tiers": {
+      "title": "Sponsorniveaus",
+      "description": "Wij bieden op maat gemaakte samenwerkingsverbanden aan in de vorm van technische expertise, financiële bijdragen en ondersteuning in natura. Deze bijdragen worden gebruikt voor de financiering van essentiële onderdelen, materialen, onderzoek, wedstrijdkosten en de teamactiviteiten. In ruil daarvoor krijgen sponsors rechtstreeks toegang tot getalenteerde ingenieursstudenten en kunnen ze tegelijkertijd hun ESG-prioriteiten bevorderen. Dankzij deze steun kan UTWind innovatieve technologieën op het gebied van schone energie ontwerpen, bouwen, testen en daarmee aan wedstrijden deelnemen.",
+      "diamond": "Diamant",
+      "platinum": "Platina",
+      "gold": "Goud",
+      "silver": "Zilver",
+      "bronze": "Brons",
+      "technicalPartner": "Technische partner",
+      "technicalDescription": "Producten, diensten of technische ondersteuning"
+    },
+    "benefits": {
+      "teamEvents": "Uitnodiging voor teamevenementen en showcases",
+      "networking": "Uitnodiging voor het jaarlijkse netwerkevenement voor sponsors en wervingsevenement",
+      "jobPostings": "Vacatures van sponsors die met leden worden gedeeld",
+      "teamApparel": "Logo op teamkleding",
+      "resumeBook": "Toegang tot het cv-boek van het team",
+      "sponsorEvent": "Deelname van het team aan het sponsorevenement¹",
+      "website": "Logo op de website (met link voor iedereen)",
+      "banners": "Logo op spandoeken en wedstrijddisplays",
+      "turbine": "Logo op de turbine"
+    },
+    "values": {
+      "byAgreement": "In onderling overleg",
+      "featuredProfile": "Uitgelicht profiel",
+      "secondaryFeature": "Secundaire functie",
+      "logoOnly": "Alleen het logo",
+      "large": "Groot",
+      "medium": "Medium",
+      "small": "Klein",
+      "nameListing": "Lijst met namen"
+    },
+    "notes": {
+      "currency": "Alle sponsorbedragen en de daarmee overeenkomende bijdragewaarden worden vermeld in Canadese dollar (CAD).",
+      "flexibility": "We staan altijd open voor gesprekken over sponsormogelijkheden die buiten de hierboven genoemde kaders vallen.",
+      "availability": "¹ Afhankelijk van de beschikbaarheid van de leden en onderling overeengekomen reisafspraken."
+    },
+    "Footer": {
+      "emails": "E-mails",
+      "generalInquiries": "Algemene vragen:",
+      "sponsorships": "Sponsoring:",
+      "operations": "Bedrijfsvoering:",
+      "copyright": "© 2026 UTWind | Universiteit van Toronto"
+    }
+  },
+  "Projects": {
+    "title": "Ontdek onze projecten",
+    "description": "Klik op de onderstaande knoppen om al onze projecten te bekijken!",
+    "buttons": {
+      "pet": "PET-recyclingproject",
+      "turbine": "Campus-turbineproject"
+    },
+    "pet": {
+      "title": "Initiatief voor de recycling van PET-flessen",
+      "description": "Sinds het voorjaar van 2024 zamelt UTWind PET1-plastic flessen in op de campussen van de Universiteit van Toronto en verwerkt deze tot 3D-printfilament, dat wordt gebruikt voor de productie van onderdelen van onze wedstrijdwindturbine. Elk jaar hebben we gewerkt aan het verbeteren van het proces en het vergroten van het aantal onderdelen dat we met gerecycled plastic kunnen printen.",
+      "thanksBeforeUtern": "We willen graag onze dank betuigen aan",
+      "thanksMiddle": "voor hun voortdurende financiële steun en de",
+      "thanksAfter": "omdat jullie onze grootste bron van flessen donaties zijn.",
+      "process": {
+        "title": "Ons PET-recyclingproces",
+        "step1": {
+          "title": "Stap 1: Verzamelen",
+          "description": "We zamelen PET1-plastic flessen in op de campussen van de Universiteit van Toronto en bij lokale partners."
+        },
+        "step2": {
+          "title": "Stap 2: Extruderen",
+          "description": "De ingezamelde flessen worden versneden en tot herbruikbaar filament geëxtrudeerd!"
+        },
+        "step3": {
+          "title": "Stap 3: 3D-printen",
+          "description": "Het gerecyclede filament wordt gebruikt voor 3D-printen!"
+        },
+        "step4": {
+          "title": "Stap 4: Afgedrukte resultaten",
+          "description": "Het uiteindelijke geprinte onderdeel wordt verwerkt in functionele turbineonderdelen!"
+        },
+        "labels": {
+          "anemometer": "Bevestiging voor anemometer",
+          "gear": "Uitrusting",
+          "noseCone": "Neuskegel"
+        }
+      },
+      "contribute": {
+        "title": "Hoe kan ik een bijdrage leveren en meedoen?",
+        "description": "Als u flessen wilt inleveren of onze 3D-printer met gerecycled filament wilt gebruiken, stuur ons dan een e-mail naar",
+        "guidelinesTitle": "Richtlijnen voor het inleveren van flessen",
+        "guideline1": "Het moeten PET1-plastic flessen zijn (bijvoorbeeld waterflessen van 4 liter, flessen sodawater van 2 liter of flessen bruisend water). Hieronder vind je foto’s.",
+        "guideline2": "De flessen mogen geen stroperige vloeistoffen of olie hebben bevat.",
+        "guideline3": "Flessen moeten onbeschadigd en schoon zijn (vrij van verontreiniging van buitenaf)."
+      },
+      "recycleWhy": {
+        "title": "Waarom moeten we plastic recyclen?",
+        "description": "Het antwoord is veelzijdig, dus hier zijn enkele nuttige links voor meer informatie:",
+        "links": {
+          "canada": "Regering van Canada — Terugdringen van plastic afval",
+          "circular": "Circular Economy Leaders Canada — Waarom we het begrip ‘recycling’ moeten definiëren",
+          "buxton": "Buxton Water — Gemeenschap en milieu",
+          "deskera": "Deskera — Recycling in de kunststofproductie"
+        }
+      }
+    },
+    "turbine": {
+      "title": "Campus-turbineproject",
+      "description": "Het UTWind Campus Turbine Project is ons vlaggenschip onder de praktijkgerichte initiatieven op het gebied van hernieuwbare energie.",
+      "comingSoon": "De gedetailleerde inhoud voor dit gedeelte wordt binnenkort toegevoegd!"
+    },
+    "Footer": {
+      "emails": "E-mails",
+      "generalInquiries": "Algemene vragen:",
+      "sponsorships": "Sponsoring:",
+      "operations": "Bedrijfsvoering:",
+      "copyright": "© 2026 UTWind | Universiteit van Toronto"
+    }
+  },
+  "Gallery": {
+    "title": "Galerij",
+    "description": "Ontdek de hoogtepunten van UTWind op het gebied van ontwerp, bouw, testen, publieksvoorlichting en wedstrijden door de jaren heen.",
+    "categories": {
+      "competition": "Wedstrijd",
+      "schoolEvents": "Schoolactiviteiten"
+    },
+    "photoBy": "Foto door",
+    "Footer": {
+      "emails": "E-mails",
+      "generalInquiries": "Algemene vragen:",
+      "sponsorships": "Sponsoring:",
+      "operations": "Bedrijfsvoering:",
+      "copyright": "© 2026 UTWind | Universiteit van Toronto"
+    }
+  },
+  "JoinUs": {
+    "meetings": {
+      "title": "Vergaderingen",
+      "description": "Hieronder vind je de tijden en locaties van onze werksessies!",
+      "aero": {
+        "name": "Aerodynamica",
+        "time": "Zondag van 10.00 tot 11.00 uur",
+        "location": "@ Myhal Arena"
+      },
+      "mechanical": {
+        "name": "Mechanisch",
+        "time": "Vrijdag van 18.00 tot 20.00 uur",
+        "location": "@ Myhal Arena"
+      },
+      "control": {
+        "name": "Besturingssystemen",
+        "time": "Maandag van 19.00 tot 21.00 uur",
+        "location": "@ Myhal Arena"
+      },
+      "power": {
+        "name": "Energiesystemen",
+        "time": "Dinsdagen van 18.00 tot 20.00 uur",
+        "location": "@ Myhal Arena"
+      },
+      "sustainability": {
+        "name": "Duurzaamheid",
+        "time": "Zaterdag van 13.30 tot 14.30 uur",
+        "location": "@ Myhal Arena"
+      }
+    },
+    "forms": {
+      "title": "UTWind-team wordt samengesteld",
+      "recruitment": {
+        "title": "Formulier voor het werven van leden",
+        "description": "Sluit je aan bij UTWind en zet je in voor techniek, ontwerp en duurzaamheid."
+      },
+      "feedback": {
+        "title": "Formulier voor feedback en vragen aan het team",
+        "description": "Help mee om UTWind te verbeteren met je ideeën en suggesties."
+      }
+    },
+    "subteams": {
+      "title": "Iets over onze subteams",
+      "aero": {
+        "title": "Aerodynamica",
+        "description": "Het subteam Aerodynamica richt zich op het ontwerpen en optimaliseren van de turbinebladen om een maximale efficiëntie te bereiken. Ze maken gebruik van CFD-simulaties, windtunneltests en rapid prototyping om het vermogen te verhogen en de luchtweerstand te minimaliseren."
+      },
+      "mechanical": {
+        "title": "Mechanisch",
+        "description": "Het subteam Mechanica en Productie houdt zich bezig met het structurele en fysieke ontwerp van de turbine. Zij voeren CAD-modellering, materiaalkeuze, verspaningswerkzaamheden en 3D-printen uit om elk ontwerp tot leven te brengen."
+      },
+      "control": {
+        "title": "Besturingssystemen",
+        "description": "Het subteam Besturingssystemen ontwikkelt de hardware en software waarmee de prestaties van de turbine worden bewaakt en geregeld. Zij integreren sensoren, microcontrollers en feedbackalgoritmen om de turbine stabiel en efficiënt te houden."
+      },
+      "power": {
+        "title": "Energiesystemen",
+        "description": "Het subteam Power Systems ontwerpt de elektrische kant van de turbine, waaronder generatoren, omvormers en schakelingen. Hun doel is om mechanische energie op efficiënte wijze om te zetten in betrouwbare, bruikbare elektriciteit."
+      },
+      "sustainability": {
+        "title": "Duurzaamheid",
+        "description": "Het subteam Duurzaamheid geeft leiding aan het PET-flesrecyclinginitiatief van UTWind en stimuleert milieubewust ontwerpen. Ze verwerken gerecycled plastic tot filament voor 3D-printen van turbineonderdelen, waarmee ze de materiaalkringloop sluiten."
+      },
+      "business": {
+        "title": "Bedrijfsontwikkeling",
+        "description": "Het Business Development-team bestaat uit de afdelingen Financiën, Sponsoring, Marketing en Operaties. Samen zorgen we voor het werven en beheren van middelen ter ondersteuning van ons groeiende team, bouwen we externe partnerschappen op, communiceren we namens UTWind en vertegenwoordigen we de organisatie, organiseren we evenementen en coördineren we de logistiek rond wedstrijden om het team soepel te laten draaien."
+      }
+    },
+    "Footer": {
+      "emails": "E-mails",
+      "generalInquiries": "Algemene vragen:",
+      "sponsorships": "Sponsoring:",
+      "operations": "Bedrijfsvoering:",
+      "copyright": "© 2026 UTWind | Universiteit van Toronto"
+    }
   }
 }

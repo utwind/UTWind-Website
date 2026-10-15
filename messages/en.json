@@ -74,13 +74,360 @@
     "sponsorships": "Sponsorships:",
     "operations": "Operations:",
     "rightsReserved": "All rights reserved",
-    "contactUs": "Contact Us"
-  },
+    "contactUs": "Contact Us",
+    "copyright": "© 2026 UTWind | University of Toronto"
+  },  
 
   "Accessibility": {
     "toggleMenu": "Toggle Menu",
     "utwindLogo": "UTWind Logo",
     "instagram": "UTWind Instagram",
     "linkedin": "UTWind LinkedIn"
+  },
+
+
+"Competition": {
+  "title": "International Small Wind Turbine Contest (ISWTC)",
+
+  "intro": {
+    "beforeLink": "Every Summer UTWind competes in the",
+    "afterLink": "in the Netherlands against other international universities. UTWind has been coming home with a trophy since our debut and couldn't be more proud to represent the University of Toronto. Read more below about each competition."
+  },
+
+  "historyTitle": "Competition History",
+
+  "history": {
+    "2026": {
+      "description": "Back in the Netherlands for our fifth consecutive ISWTC, UTWind competed with the second iteration of our Vertical Axis Wind Turbine (VAWT). This year marked major progress: we sent our largest competition delegation yet, arrived with functioning mechanical, power, and control systems, introduced lighter blades and bat-monitoring sensors, and achieved one of our lowest cut-in wind speeds to date. While there is still plenty to improve, the competition gave us valuable insights to carry into our next iteration.",
+      "caption": "UTWind's Lowest Cut-in Speed Turbine - 2026"
+    },
+
+    "2025": {
+      "description": "UTWind’s most ambitious turbine yet was our first-ever Vertical Axis Wind Turbine (VAWT). Despite the tight timeline and unfamiliarity, we built an H-Rotor VAWT in just four months and were thrilled to see it spin, generate power, and run with a working control system. Although we didn’t bring home a trophy, we learned a lot and can’t wait to improve in our next iteration.",
+      "caption": "UTWind's 1st Iteration of VAWT - 2025"
+    },
+
+    "2024": {
+      "description": "The third year competing tested several firsts: recycling PET bottles into filament, using one motor for pitch control, and making flax-fiber blades. With many new teams, it was a huge surprise when the Jury awarded Best Overall Design <strong>(1st place)</strong> to “The Team from Toronto.”",
+      "caption": "UTWind's 1st Place Award Winning Turbine - 2024"
+    },
+
+    "2023": {
+      "description": "The second year of UTWind's participation at the ISWTC was no less challenging because we won the previous competition, however UTWind brought home the <strong>Award for Most Sustainable Turbine.</strong>",
+      "caption": "UTWind's Most Sustainable Award Winning Turbine - 2023"
+    },
+
+    "2022": {
+      "description": "This was the first ISWTC that UTWind competed in after almost two years of preparation work during the pandemic. UTWind won Best Overall Design <strong>(1st place)</strong> in its debut at the ISWTC.",
+      "caption": "UTWind's 1st Place Award Winning Turbine - 2022"
+    },
+  "Footer": {
+  "emails": "Emails",
+  "generalInquiries": "General Inquiries:",
+  "sponsorships": "Sponsorships:",
+  "operations": "Operations:",
+  "copyright": "© 2026 UTWind | University of Toronto"
   }
+  }
+  },
+
+"Team": {
+  "title": "Meet Our Team",
+  "description": "Meet the students behind UTWind.",
+
+  "sections": {
+    "president": "President",
+    "business": "Business",
+    "mechanical": "Mechanical",
+    "control": "Control Systems",
+    "power": "Power Systems",
+    "aero": "Aerodynamics",
+    "sustainability": "Sustainability",
+    "web": "Webmaster"
+  },
+
+  "positions": {
+    "president": "President",
+    "businessDirector": "Business Director",
+    "marketingLead": "Marketing Lead",
+    "financeLead": "Finance Lead",
+    "sponsorshipsLead": "Sponsorships Lead",
+    "operationsCoLead": "Operations Co-Lead",
+    "mechanicalCoLead": "Mechanical Co-Lead",
+    "controlCoLead": "Control Systems Co-Lead",
+    "powerCoLead": "Power Systems Co-Lead",
+    "aeroCoLead": "Aerodynamics Co-Lead",
+    "sustainabilityCoLead": "Sustainability Co-Lead",
+    "webmaster": "Webmaster"
+  },
+
+  "Footer": {
+    "emails": "Emails",
+    "generalInquiries": "General Inquiries:",
+    "sponsorships": "Sponsorships:",
+    "operations": "Operations:",
+    "copyright": "© 2026 UTWind | University of Toronto"
+    }
+},
+
+"Sponsors": {
+  "title": "Our Sponsors and Partners",
+  "description": "Huge thanks to our sponsors that play a vital role in turning theory into real-world engineering. With their support, UTWind is able to prototype new turbine designs, test renewable technologies, and represent the University of Toronto at international competitions. We thank you for empowering the next generation of engineers shaping the future of sustainable energy!",
+  "packageButton": "View Sponsorship Package",
+
+  "categories": {
+    "diamond": "Diamond Sponsors",
+    "platinum": "Platinum Sponsors",
+    "gold": "Gold Sponsors",
+    "silver": "Silver Sponsors",
+    "bronze": "Bronze Sponsors",
+    "technicalPartners": "Technical Partners"
+  },
+
+  "tiers": {
+    "title": "Sponsorship Tiers",
+    "description": "We offer customizable partnerships through technical expertise, financial contributions, and in-kind support. These contributions fund critical components, materials, research, competition expenses, and team operations. In return, sponsors gain direct access to skilled engineering students while advancing their ESG priorities. This support enables UTWind to design, build, test, and compete with innovative clean-energy technologies.",
+    "diamond": "Diamond",
+    "platinum": "Platinum",
+    "gold": "Gold",
+    "silver": "Silver",
+    "bronze": "Bronze",
+    "technicalPartner": "Technical Partner",
+    "technicalDescription": "Products, services, or technical support"
+  },
+
+  "benefits": {
+    "teamEvents": "Invitation to team events & showcases",
+    "networking": "Invitation to annual sponsor networking and recruitment event",
+    "jobPostings": "Sponsor job postings shared with members",
+    "teamApparel": "Logo on team apparel",
+    "resumeBook": "Access to team résumé book",
+    "sponsorEvent": "Team attendance at sponsor event¹",
+    "website": "Logo on website (linked for all)",
+    "banners": "Logo on banners & competition displays",
+    "turbine": "Logo on turbine"
+  },
+
+  "values": {
+    "byAgreement": "By agreement",
+    "featuredProfile": "Featured profile",
+    "secondaryFeature": "Secondary feature",
+    "logoOnly": "Logo only",
+    "large": "Large",
+    "medium": "Medium",
+    "small": "Small",
+    "nameListing": "Name listing"
+  },
+
+  "notes": {
+    "currency": "All sponsorship amounts and equivalent contribution values are stated in Canadian dollars (CAD).",
+    "flexibility": "We are always open to discussing sponsorship opportunities outside the above ranges.",
+    "availability": "¹ Subject to member availability and mutually agreed travel arrangements."
+  },
+  
+  "Footer": {
+    "emails": "Emails",
+    "generalInquiries": "General Inquiries:",
+    "sponsorships": "Sponsorships:",
+    "operations": "Operations:",
+    "copyright": "© 2026 UTWind | University of Toronto"
+    } 
+},
+
+
+
+
+"Projects": {
+  "title": "Explore Our Projects",
+  "description": "Click the following buttons to check out each of our projects!",
+
+  "buttons": {
+    "pet": "PET Recycling Project",
+    "turbine": "Campus Turbine Project"
+  },
+
+  "pet": {
+    "title": "PET Bottle Recycling Initiative",
+    "description": "Since Spring 2024, UTWind has been collecting PET1 plastic bottles from U of T campuses and recycling them into 3D printing filament used to manufacture parts of our competition wind turbine. Each year, we’ve worked to improve the process and increase the number of components we can print using recycled plastic.",
+
+    "thanksBeforeUtern": "We’d like to thank",
+    "thanksMiddle": "for their continued funding support and the",
+    "thanksAfter": "for being our largest source of bottle donations.",
+
+    "process": {
+      "title": "Our PET Recycling Process",
+
+      "step1": {
+        "title": "Step 1: Collect",
+        "description": "We gather PET1 plastic bottles from U of T campuses and local partners."
+      },
+
+      "step2": {
+        "title": "Step 2: Extrude",
+        "description": "The collected bottles are cut and extruded into reusable filament!"
+      },
+
+      "step3": {
+        "title": "Step 3: 3D Print",
+        "description": "The recycled filament is used for 3D printing!"
+      },
+
+      "step4": {
+        "title": "Step 4: Printed Results",
+        "description": "The final printed part is integrated into functional turbine components!"
+      },
+
+      "labels": {
+        "anemometer": "Anemometer Mount",
+        "gear": "Gear",
+        "noseCone": "Nose Cone"
+      }
+    },
+
+    "contribute": {
+      "title": "How Can I Contribute and Participate?",
+      "description": "To drop off bottles or use our 3D printer for recycled filament, please email us at",
+      "guidelinesTitle": "Bottle Drop-Off Guidelines",
+
+      "guideline1": "Must be PET1 plastic bottles (e.g., 4 L water jugs, 2 L club soda, or sparkling water bottles). Photos attached below.",
+      "guideline2": "Bottles cannot have contained viscous liquids or oil.",
+      "guideline3": "Bottles should be uncompressed and clean (free of outside contamination)."
+    },
+
+    "recycleWhy": {
+      "title": "Why Should We Recycle Plastic?",
+      "description": "The answer is multifaceted, so here are some useful links to learn more:",
+
+      "links": {
+        "canada": "Government of Canada — Reducing Plastic Waste",
+        "circular": "Circular Economy Leaders Canada — Why We Need to Define Recycling",
+        "buxton": "Buxton Water — Community & Environment",
+        "deskera": "Deskera — Recycling in Plastic Manufacturing"
+      }
+    }
+  },
+
+  "turbine": {
+    "title": "Campus Turbine Project",
+    "description": "The UTWind Campus Turbine Project is our flagship hands-on renewable energy initiative.",
+    "comingSoon": "Detailed content for this section will be added soon!"
+  },
+  "Footer": {
+    "emails": "Emails",
+    "generalInquiries": "General Inquiries:",
+    "sponsorships": "Sponsorships:",
+    "operations": "Operations:",
+    "copyright": "© 2026 UTWind | University of Toronto"
+    }
+},
+"Gallery": {
+  "title": "Gallery",
+  "description": "Explore UTWind’s design, build, testing, outreach, and competition moments over the years.",
+
+  "categories": {
+    "competition": "Competition",
+    "schoolEvents": "School Events"
+  },
+
+  "photoBy": "Photo by"
+  ,
+  "Footer": {
+    "emails": "Emails",
+    "generalInquiries": "General Inquiries:",
+    "sponsorships": "Sponsorships:",
+    "operations": "Operations:",
+    "copyright": "© 2026 UTWind | University of Toronto"
+    }
+},
+"JoinUs": {
+  "meetings": {
+    "title": "Meetings",
+    "description": "Below are the listed times and locations for our work sessions!",
+
+    "aero": {
+      "name": "Aerodynamics",
+      "time": "Sundays @ 10:00-11:00 AM",
+      "location": "@ Myhal Arena"
+    },
+
+    "mechanical": {
+      "name": "Mechanical",
+      "time": "Fridays @ 6:00-8:00 PM",
+      "location": "@ Myhal Arena"
+    },
+
+    "control": {
+      "name": "Control Systems",
+      "time": "Mondays @ 7:00-9:00 PM",
+      "location": "@ Myhal Arena"
+    },
+
+    "power": {
+      "name": "Power Systems",
+      "time": "Tuesdays @ 6:00-8:00 PM",
+      "location": "@ Myhal Arena"
+    },
+
+    "sustainability": {
+      "name": "Sustainability",
+      "time": "Saturdays @ 1:30-2:30 PM",
+      "location": "@ Myhal Arena"
+    }
+  },
+
+  "forms": {
+    "title": "UTWind Team Forms",
+
+    "recruitment": {
+      "title": "Member Recruitment Form",
+      "description": "Join UTWind and get involved in engineering, design, and sustainability."
+    },
+
+    "feedback": {
+      "title": "Team Feedback & Inquiries Form",
+      "description": "Help improve UTWind with your thoughts and suggestions."
+    }
+  },
+
+  "subteams": {
+    "title": "A Bit About Our Subteams",
+
+    "aero": {
+      "title": "Aerodynamics",
+      "description": "The Aerodynamics subteam focuses on designing and optimizing the turbine blades for maximum efficiency. They use CFD simulations, wind-tunnel testing, and rapid prototyping to improve power output and minimize drag."
+    },
+
+    "mechanical": {
+      "title": "Mechanical",
+      "description": "The Mechanical and Manufacturing subteam handles the structural and physical design of the turbine. They perform CAD modeling, material selection, machining, and 3D printing to bring each design to life."
+    },
+
+    "control": {
+      "title": "Control Systems",
+      "description": "The Control Systems subteam develops the hardware and software that monitor and regulate turbine performance. They integrate sensors, microcontrollers, and feedback algorithms to keep the turbine stable and efficient."
+    },
+
+    "power": {
+      "title": "Power Systems",
+      "description": "The Power Systems subteam designs the electrical side of the turbine, including generators, converters, and circuitry. Their goal is to efficiently convert mechanical energy into reliable, usable electricity."
+    },
+
+    "sustainability": {
+      "title": "Sustainability",
+      "description": "The Sustainability subteam leads UTWind’s PET bottle recycling initiative and promotes environmentally conscious design. They transform recycled plastic into 3D-printing filament for turbine components, closing the materials loop."
+    },
+
+    "business": {
+      "title": "Business Development",
+      "description": "The Business Development team consists of Finance, Sponsorships, Marketing, and Operations. Together, we secure and manage resources to support our growing team, build external partnerships, communicate and represent UTWind, organize events, and coordinate competition logistics to keep the team running smoothly."
+    }
+  },
+  "Footer": {
+    "emails": "Emails",
+    "generalInquiries": "General Inquiries:",
+    "sponsorships": "Sponsorships:",
+    "operations": "Operations:",
+    "copyright": "© 2026 UTWind | University of Toronto"
+    }
 }
+  }

@@ -1,8 +1,12 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "../../../i18n/navigation";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 
 type Project = "pet" | "turbine" | null;
 
@@ -14,6 +18,9 @@ export default function ProjectsPage() {
 
   const navbarRef = useRef<HTMLDivElement | null>(null);
   const lastScrollY = useRef(0);
+  const nav = useTranslations("Navbar");
+  const projects = useTranslations("Projects");
+  const footer = useTranslations("Footer");
 
   // navbar show/hide on scroll
   useEffect(() => {
@@ -57,73 +64,82 @@ export default function ProjectsPage() {
   return (
     <div className="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
       {/* Navbar */}
-        <nav
-          ref={navbarRef}
-          id="navbar"
-          className="bg-white shadow-md sticky top-0 z-50 transition-all duration-200"
-        >
-          <div className="flex justify-between items-center py-4 pl-4 pr-6">
-            <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
-              <Image
-                src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
-                alt="UTWind Logo"
-                width={40}
-                height={40}
-                className="h-10 w-auto"
-                priority
-              />
-              <span className="text-2xl font-bold text-blue-600">UTWind</span>
-            </Link>
-
-            <div className="hidden md:flex space-x-6 items-center">
-              <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</Link>
-              <Link href="/competition" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</Link>
-              <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</Link>
-              <Link href="/projects" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</Link>
-              <Link href="/joinus" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</Link>
-              <Link href="/sponsors" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</Link>
-              <Link href="/gallery" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Gallery</Link>
-              <Link href="/#contact" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</Link>
-            </div>
-
-
-            <button
-              aria-label="Toggle Menu"
-              onClick={() => setMobileOpen((v) => !v)}
-              className="block md:hidden focus:outline-none"
-            >
-              <svg
-                className={`h-8 w-8 text-gray-700 ${mobileOpen ? "hidden" : "block"}`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+<nav
+                ref={navbarRef}
+                id="navbar"
+                className="bg-white shadow-md sticky top-0 z-50 transition-all duration-250"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-              <svg
-                className={`h-8 w-8 text-gray-700 ${mobileOpen ? "block" : "hidden"}`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-
-          <div className={`md:hidden flex-col items-center bg-white shadow-md space-y-4 py-4 ${mobileOpen ? "flex" : "hidden"}`}>
-            <Link href="/" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Home</Link>
-            <Link href="/competition" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Competition</Link>
-            <Link href="/team" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Team</Link>
-            <Link href="/projects" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Projects</Link>
-            <Link href="/joinus" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Join Us</Link>
-            <Link href="/sponsors" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Sponsors</Link>
-            <Link href="/gallery" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Gallery</Link>
-            <Link href="/#contact" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Contact</Link>
-          </div>
-        </nav>
+              <div className="flex justify-between items-center py-4 pl-4 pr-6">
+                {/* logo */}
+                  <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
+                    <Image
+                      src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
+                      alt="UTWind Logo"
+                      width={40}
+                      height={40}
+                      className="h-10 w-auto"
+                      priority
+                    />
+                    <span className="text-2xl font-bold text-blue-600">UTWind</span>
+                  </Link>
+        
+                  {/* desktop links */}
+                  <div className="hidden md:flex space-x-6 items-center">
+                    <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("home")}</Link>
+                    <Link href="/competition" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("competition")}</Link>
+                    <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("team")}</Link>
+                    <Link href="/projects" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("projects")}</Link>
+                    <Link href="/joinus" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("joinUs")}</Link>
+                    <Link href="/sponsors" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("sponsors")}</Link>
+                    <Link href="/gallery" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("gallery")}</Link>
+                    <Link href="/#contact" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("contact")}</Link>
+                  
+                    <LanguageSwitcher />
+        
+                  </div>
+        
+                  {/* mobile toggle */}
+                  <button
+                    aria-label="Toggle Menu"
+                    onClick={() => setMobileOpen((v) => !v)}
+                    className="block md:hidden focus:outline-none"
+                  >
+                    <svg
+                      className={`h-8 w-8 text-gray-700 ${mobileOpen ? "hidden" : "block"}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg
+                      className={`h-8 w-8 text-gray-700 ${mobileOpen ? "block" : "hidden"}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+        
+                {/* mobile dropdown */}
+                <div className={`md:hidden flex-col items-center bg-white shadow-md space-y-4 py-4 ${mobileOpen ? "flex" : "hidden"}`}>
+                  <Link href="/" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("home")}</Link>
+                  <Link href="/competition" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("competition")}</Link>
+                  <Link href="/team" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("team")}</Link>
+                  <Link href="/projects" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("projects")}</Link>
+                  <Link href="/joinus" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("joinUs")}</Link>
+                  <Link href="/sponsors" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("sponsors")}</Link>
+                  <Link href="/gallery" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("gallery")}</Link>
+                  <Link href="/#contact" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("contact")}</Link>
+                  
+                  <LanguageSwitcher />
+                  
+                </div>
+            </nav>
 
       {/* MAIN CONTENT */}
       <main
@@ -135,9 +151,9 @@ export default function ProjectsPage() {
         {/* Project Toggle Section */}
         <section id="project-toggle" className="py-8">
           <div className="max-w-6xl mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8">Explore Our Projects</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-8">{projects("title")}</h2>
             <p className="text-gray-900 mb-8">
-              Click the following buttons to check out each of our projects!
+              {projects("description")}
             </p>
             {/* Buttons */}
             <div className="flex flex-wrap justify-center gap-6 mb-10">
@@ -147,7 +163,7 @@ export default function ProjectsPage() {
                   activeProject === "pet" ? "ring-4 ring-offset-2 ring-indigo-300 scale-105" : ""
                 }`}
               >
-                PET Recycling Project
+                {projects("buttons.pet")}
               </button>
 
               <button
@@ -156,7 +172,7 @@ export default function ProjectsPage() {
                   activeProject === "turbine" ? "ring-4 ring-offset-2 ring-indigo-300 scale-105" : ""
                 }`}
               >
-                Campus Turbine Project
+                {projects("buttons.turbine")}
               </button>
             </div>
           </div>
@@ -171,18 +187,16 @@ export default function ProjectsPage() {
                 {/* Left Text */}
                 <div className="lg:w-1/2 text-left mb-12 lg:mb-0">
                   <h2 className="text-4xl font-bold text-gray-800 mb-8">
-                    PET Bottle Recycling Initiative
+                    {projects("pet.title")}
                   </h2>
 
                   <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                    Since Spring 2024, UTWind has been collecting PET1 plastic bottles from U of T
-                    campuses and recycling them into 3D printing filament used to manufacture parts
-                    of our competition wind turbine. Each year, we’ve worked to improve the process
-                    and increase the number of components we can print using recycled plastic.
+                    {projects("pet.description")}
                   </p>
 
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    We’d like to thank{" "}
+                    {projects("pet.thanksBeforeUtern")}{" "}
+
                     <a
                       href="https://utern.ca/"
                       target="_blank"
@@ -191,7 +205,9 @@ export default function ProjectsPage() {
                     >
                       UTERN
                     </a>{" "}
-                    for their continued funding support and the{" "}
+
+                    {projects("pet.thanksMiddle")}{" "}
+
                     <a
                       href="https://skulepedia.ca/wiki/Hard_Hat_Cafe"
                       target="_blank"
@@ -200,7 +216,8 @@ export default function ProjectsPage() {
                     >
                       Hard Hat Café
                     </a>{" "}
-                    for being our largest source of bottle donations.
+
+                    {projects("pet.thanksAfter")}
                   </p>
                 </div>
 
@@ -221,7 +238,7 @@ export default function ProjectsPage() {
             <section id="recycling-process" className="bg-white py-20 relative">
               <div className="max-w-6xl mx-auto px-8 text-center relative">
                 <h2 className="text-4xl font-bold text-gray-800 mb-16">
-                  Our PET Recycling Process
+                  {projects("pet.process.title")}
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 relative">
@@ -258,10 +275,10 @@ export default function ProjectsPage() {
                     </div>
 
                     <h3 className="text-2xl font-semibold text-indigo-700 mb-2">
-                      Step 1: Collect
+                      {projects("pet.process.step1.title")}
                     </h3>
                     <p className="text-gray-700 leading-relaxed">
-                      We gather PET1 plastic bottles from U of T campuses and local partners.
+                      {projects("pet.process.step1.description")}
                     </p>
 
                     {/* Arrow to Step 2 */}
@@ -295,10 +312,10 @@ export default function ProjectsPage() {
                     </div>
 
                     <h3 className="text-2xl font-semibold text-indigo-700 mb-2">
-                      Step 2: Extrude
+                      {projects("pet.process.step2.title")}
                     </h3>
                     <p className="text-gray-700 leading-relaxed">
-                      The collected bottles are cut and extruded into reuseable filament!
+                      {projects("pet.process.step2.description")}
                     </p>
 
                     {/* Arrow down to Step 4 */}
@@ -330,7 +347,7 @@ export default function ProjectsPage() {
                           className="w-full h-full object-cover rounded-xl"
                         />
                         <p className="absolute bottom-2 left-1/2 -translate-x-1/2 text-white text-sm bg-black/50 px-3 py-1 rounded-full">
-                          Anemometer Mount
+                          {projects("pet.process.labels.anemometer")}
                         </p>
                       </div>
 
@@ -346,7 +363,7 @@ export default function ProjectsPage() {
                           className="w-full h-full object-cover rounded-xl"
                         />
                         <p className="absolute bottom-2 left-1/2 -translate-x-1/2 text-white text-sm bg-black/50 px-3 py-1 rounded-full">
-                          Gear
+                          {projects("pet.process.labels.gear")}
                         </p>
                       </div>
 
@@ -362,7 +379,7 @@ export default function ProjectsPage() {
                           className="w-full h-full object-cover rounded-xl"
                         />
                         <p className="absolute bottom-2 left-1/2 -translate-x-1/2 text-white text-sm bg-black/50 px-3 py-1 rounded-full">
-                          Nose cone
+                          {projects("pet.process.labels.noseCone")}
                         </p>
                       </div>
 
@@ -379,10 +396,10 @@ export default function ProjectsPage() {
                     </div>
 
                     <h3 className="text-2xl font-semibold text-indigo-700 mb-2">
-                      Step 4: Printed results
+                      {projects("pet.process.step4.title")}
                     </h3>
                     <p className="text-gray-700 leading-relaxed">
-                      The final printed part is integrated into functional turbine components!
+                      {projects("pet.process.step4.description")}
                     </p>
 
                     {/* Arrow up to Step 3 */}
@@ -409,10 +426,10 @@ export default function ProjectsPage() {
                       className="w-full h-60 object-cover rounded-xl mb-6 border-4 border-white shadow-md"
                     />
                     <h3 className="text-2xl font-semibold text-indigo-700 mb-2">
-                      Step 3: 3D Print
+                      {projects("pet.process.step3.title")}
                     </h3>
                     <p className="text-gray-700 leading-relaxed">
-                      The recycled filament is used for 3D printing!
+                      {projects("pet.process.step3.description")}
                     </p>
 
                     {/* Arrow to Step 1 */}
@@ -436,12 +453,11 @@ export default function ProjectsPage() {
             <section id="recycling-contribute" className="bg-blue-50 py-20">
               <div className="max-w-5xl mx-auto px-6 text-center">
                 <h2 className="text-4xl font-bold text-gray-800 mb-10">
-                  How Can I Contribute and Participate?
+                  {projects("pet.contribute.title")}
                 </h2>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  To drop off bottles or use our 3D printer for recycled filament, please email us
-                  at{" "}
+                  {projects("pet.contribute.description")}{" "}
                   <a
                     href="mailto:contact@utwind.com"
                     className="text-indigo-600 font-semibold hover:underline"
@@ -453,19 +469,12 @@ export default function ProjectsPage() {
 
                 <div className="bg-white rounded-2xl shadow-md p-8 border-2 border-blue-200 text-left max-w-3xl mx-auto">
                   <h3 className="text-2xl font-semibold text-indigo-700 mb-4 text-center">
-                    Bottle Drop-Off Guidelines
+                    {projects("pet.contribute.guidelinesTitle")}
                   </h3>
                   <ul className="list-disc text-gray-700 leading-relaxed space-y-3 pl-6">
-                    <li>
-                      Must be <span className="font-semibold">PET1 plastic bottles</span> (e.g., 4 L
-                      water jugs, 2 L club soda, or sparkling water bottles).{" "}
-                      <em>Photos attached below.</em>
-                    </li>
-                    <li>Bottles cannot have contained viscous liquids or oil.</li>
-                    <li>
-                      Bottles should be <span className="font-semibold">uncompressed and clean</span>{" "}
-                      (free of outside contamination).
-                    </li>
+                    <li>{projects("pet.contribute.guideline1")}</li>
+                    <li>{projects("pet.contribute.guideline2")}</li>
+                    <li>{projects("pet.contribute.guideline3")}</li>
                   </ul>
                   <div className="mt-6 flex flex-wrap justify-center gap-4">
                   </div>
@@ -473,10 +482,10 @@ export default function ProjectsPage() {
 
                 <div className="mt-16">
                   <h3 className="text-3xl font-bold text-gray-800 mb-6">
-                    Why Should We Recycle Plastic?
+                    {projects("pet.recycleWhy.title")}
                   </h3>
                   <p className="text-gray-700 text-lg mb-4">
-                    The answer is multifaceted, so here are some useful links to learn more:
+                    {projects("pet.recycleWhy.description")}
                   </p>
                   <ul className="space-y-3 text-indigo-600 font-medium text-lg">
                     <li>
@@ -486,7 +495,7 @@ export default function ProjectsPage() {
                         rel="noreferrer"
                         className="hover:underline"
                       >
-                        Government of Canada — Reducing Plastic Waste
+                        {projects("pet.recycleWhy.links.canada")}
                       </a>
                     </li>
                     <li>
@@ -496,7 +505,7 @@ export default function ProjectsPage() {
                         rel="noreferrer"
                         className="hover:underline"
                       >
-                        Circular Economy Leaders Canada — Why We Need to Define Recycling
+                        {projects("pet.recycleWhy.links.circular")}
                       </a>
                     </li>
                     <li>
@@ -506,7 +515,7 @@ export default function ProjectsPage() {
                         rel="noreferrer"
                         className="hover:underline"
                       >
-                        Buxton Water — Community & Environment
+                        {projects("pet.recycleWhy.links.buxton")}
                       </a>
                     </li>
                     <li>
@@ -516,7 +525,7 @@ export default function ProjectsPage() {
                         rel="noreferrer"
                         className="hover:underline"
                       >
-                        Deskera — Recycling in Plastic Manufacturing
+                        {projects("pet.recycleWhy.links.deskera")}
                       </a>
                     </li>
                   </ul>
@@ -530,13 +539,12 @@ export default function ProjectsPage() {
         {activeProject === "turbine" && (
           <section className="bg-blue-50 py-20 text-center">
             <div className="max-w-4xl mx-auto px-6">
-              <h2 className="text-4xl font-bold text-gray-800 mb-6">Campus Turbine Project</h2>
+              <h2 className="text-4xl font-bold text-gray-800 mb-6">{projects("turbine.title")}</h2>
               <p className="text-lg text-gray-700 mb-8">
-                The UTWind Campus Turbine Project is our flagship hands-on renewable energy
-                initiative.
+                 {projects("turbine.description")}
               </p>
               <p className="text-lg text-gray-700 mb-8">
-                Detailed content for this section will be added soon!
+                  {projects("turbine.comingSoon")}
               </p>
             </div>
           </section>
@@ -544,6 +552,7 @@ export default function ProjectsPage() {
       </main>
 
   {/* Footer */}
+{/* Footer */}
 <footer className="bg-blue-100 py-10 mt-20">
   <div className="mx-auto max-w-7xl px-6">
     <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
@@ -564,7 +573,7 @@ export default function ProjectsPage() {
       {/* Middle: Contact links */}
       <div className="flex flex-col items-center text-center">
         <h3 className="text-lg font-bold text-black mb-3">
-          Emails
+          {footer("contactUs")}
         </h3>
 
         <div className="flex flex-col gap-2 text-black">
@@ -572,7 +581,7 @@ export default function ProjectsPage() {
             href="mailto:contact@utwind.com"
             className="hover:text-blue-700 transition"
           >
-            <span className="font-semibold">General Inquiries:</span>{" "}
+            <span className="font-semibold">{footer("generalInquiries")}:</span>{" "}
             contact@utwind.com
           </a>
 
@@ -580,7 +589,7 @@ export default function ProjectsPage() {
             href="mailto:sponsorships@utwind.skule.ca"
             className="hover:text-blue-700 transition"
           >
-            <span className="font-semibold">Sponsorships:</span>{" "}
+            <span className="font-semibold">{footer("sponsorships")}:</span>{" "}
             sponsorships@utwind.skule.ca
           </a>
 
@@ -588,7 +597,7 @@ export default function ProjectsPage() {
             href="mailto:operations@utwind.skule.ca"
             className="hover:text-blue-700 transition"
           >
-            <span className="font-semibold">Operations:</span>{" "}
+            <span className="font-semibold">{footer("operations")}:</span>{" "}
             operations@utwind.skule.ca
           </a>
         </div>
@@ -634,7 +643,7 @@ export default function ProjectsPage() {
       {/* Right: Copyright */}
       <div className="flex justify-center md:justify-end">
         <p className="text-sm text-black">
-          © 2026 UTWind | University of Toronto
+          &copy; {new Date().getFullYear()} UTWind. {footer("rightsReserved")}
         </p>
       </div>
     </div>

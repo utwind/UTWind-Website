@@ -1,11 +1,12 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "../../../i18n/navigation";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { title } from "process";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 
 type GalleryImage = {
   src: string;
@@ -14,7 +15,7 @@ type GalleryImage = {
 };
 
 type GalleryCategory = {
-  title: string;
+  titleKey: "competition" | "schoolEvents";
   images: GalleryImage[];
 };
 
@@ -28,7 +29,7 @@ const galleryYears: GalleryYear[] = [
     year: "2026-2027",
     categories: [
       {
-        title: "School Events",
+        titleKey: "schoolEvents",
         images: [
           
           { src: "/images/2026-2027 Gallery/IMG_0883.png", alt: "UTWind outreach event 2026" },
@@ -47,7 +48,7 @@ const galleryYears: GalleryYear[] = [
     year: "2025-2026",
     categories: [
       {
-      title: "Competition",
+      titleKey: "competition",
         images: [
           { src: "/images/2025-2026 Gallery/20260709_143112(0).jpg", alt: "UTWind school event 2026" },
           { src: "/images/2025-2026 Gallery/PXL_20260707_130908880.jpg", alt: "UTWind outreach event 2026" },
@@ -58,11 +59,11 @@ const galleryYears: GalleryYear[] = [
         ],
       },    
       {    
-        title: "School Events",
+        titleKey: "schoolEvents",
         images: [
-          { src: "/images/2025-2026 Gallery/54899810267_247a875b9f_o.jpg", alt: "UTWind school event 2026", credit: "Photo by Neil Ta"},
-          { src: "/images/2025-2026 Gallery/54900916478_e617340791_o.jpg", alt: "UTWind outreach event 2026", credit: "Photo by Neil Ta"},
-          { src: "/images/2025-2026 Gallery/54900991435_98524c5ac7_o.jpg", alt: "UTWind campus event 2026", credit: "Photo by Neil Ta"},
+          { src: "/images/2025-2026 Gallery/54899810267_247a875b9f_o.jpg", alt: "UTWind school event 2026", credit: "Neil Ta"},
+          { src: "/images/2025-2026 Gallery/54900916478_e617340791_o.jpg", alt: "UTWind outreach event 2026", credit: "Neil Ta"},
+          { src: "/images/2025-2026 Gallery/54900991435_98524c5ac7_o.jpg", alt: "UTWind campus event 2026", credit: "Neil Ta"},
           { src: "/images/2025-2026 Gallery/DSCF8338.jpg", alt: "UTWind campus event 2026" },
           { src: "/images/2025-2026 Gallery/IMG_1639.jpg", alt: "UTWind campus event 2026" },
         ],
@@ -73,7 +74,7 @@ const galleryYears: GalleryYear[] = [
     year: "2024-2025",
     categories: [
       {
-        title: "Competition",
+        titleKey: "competition",
         images: [
           { src: "/images/2024-2025 Gallery/c8214652-6feb-412f-9b73-3c9800dcb020.jpg", alt: "UTWind competition photo 2024" },
           { src: "/images/2024-2025 Gallery/IMG_7017.jpg", alt: "UTWind turbine competition 2024" },
@@ -81,7 +82,7 @@ const galleryYears: GalleryYear[] = [
         ],
       },
       {
-        title: "School Events",
+        titleKey: "schoolEvents",
         images: [
           { src: "/images/2024-2025 Gallery/IMG_3953.jpg", alt: "UTWind school event 2024" },
           { src: "/images/2024-2025 Gallery/IMG_3955.jpg", alt: "UTWind outreach event 2024" },
@@ -94,7 +95,7 @@ const galleryYears: GalleryYear[] = [
     year: "2023-2024",
     categories: [
       {
-        title: "Competition",
+        titleKey: "competition",
         images: [
           { src: "/images/2023-2024 Gallery/DSC02322.JPG", alt: "UTWind competition photo 2024" },
           { src: "/images/2023-2024 Gallery/DSC02326.JPG", alt: "UTWind turbine competition 2024" },
@@ -110,7 +111,7 @@ const galleryYears: GalleryYear[] = [
     year: "2022-2023",
     categories: [
       {
-        title: "Competition",
+        titleKey: "competition",
         images: [
           { src: "/images/2022-2023 Gallery/DSC06339.jpg", alt: "UTWind competition photo 2024" },
           { src: "/images/2022-2023 Gallery/DSC06514.JPG", alt: "UTWind turbine competition 2024" },
@@ -125,7 +126,7 @@ const galleryYears: GalleryYear[] = [
     year: "2021-2022",
     categories: [
       {
-        title: "Competition",
+        titleKey: "competition",
         images: [
           { src: "/images/2021-2022 Gallery/20220602_173902.jpg", alt: "UTWind competition photo 2024" },
           { src: "/images/2021-2022 Gallery/Copy of IMG_1419.jpg", alt: "UTWind turbine competition 2024" },
@@ -142,6 +143,9 @@ export default function GalleryPage() {
   const [mobileOpen, setMobileOpen] = useState(false);
     const navbarRef = useRef<HTMLDivElement | null>(null);
     const lastScrollY = useRef(0);
+    const nav = useTranslations("Navbar");
+    const gallery = useTranslations("Gallery");
+    const footer = useTranslations("Footer");
     
     useEffect(() => {
       AOS.init({ duration: 400, once: true });
@@ -167,82 +171,91 @@ export default function GalleryPage() {
     return (
     <main className="min-h-screen bg-gray-50 text-gray-900">
       {/* Navbar */}
-        <nav
-          ref={navbarRef}
-          id="navbar"
-          className="bg-white shadow-md sticky top-0 z-50 transition-all duration-200"
-        >
-          <div className="flex justify-between items-center py-4 pl-4 pr-6">
-            <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
-              <Image
-                src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
-                alt="UTWind Logo"
-                width={40}
-                height={40}
-                className="h-10 w-auto"
-                priority
-              />
-              <span className="text-2xl font-bold text-blue-600">UTWind</span>
-            </Link>
-
-            <div className="hidden md:flex space-x-6 items-center">
-              <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Home</Link>
-              <Link href="/competition" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Competition</Link>
-              <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Team</Link>
-              <Link href="/projects" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Projects</Link>
-              <Link href="/joinus" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Join Us</Link>
-              <Link href="/sponsors" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Sponsors</Link>
-              <Link href="/gallery" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Gallery</Link>
-              <Link href="/#contact" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">Contact</Link>
-            </div>
-
-
-            <button
-              aria-label="Toggle Menu"
-              onClick={() => setMobileOpen((v) => !v)}
-              className="block md:hidden focus:outline-none"
-            >
-              <svg
-                className={`h-8 w-8 text-gray-700 ${mobileOpen ? "hidden" : "block"}`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+<nav
+                ref={navbarRef}
+                id="navbar"
+                className="bg-white shadow-md sticky top-0 z-50 transition-all duration-250"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-              <svg
-                className={`h-8 w-8 text-gray-700 ${mobileOpen ? "block" : "hidden"}`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-
-          <div className={`md:hidden flex-col items-center bg-white shadow-md space-y-4 py-4 ${mobileOpen ? "flex" : "hidden"}`}>
-            <Link href="/" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Home</Link>
-            <Link href="/competition" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Competition</Link>
-            <Link href="/team" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Team</Link>
-            <Link href="/projects" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Projects</Link>
-            <Link href="/joinus" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Join Us</Link>
-            <Link href="/sponsors" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Sponsors</Link>
-            <Link href="/gallery" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Gallery</Link>
-            <Link href="/#contact" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>Contact</Link>
-          </div>
-          </nav>
+              <div className="flex justify-between items-center py-4 pl-4 pr-6">
+                {/* logo */}
+                  <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
+                    <Image
+                      src="/images/UTWIND Logo_Circular_without_LogoType_1 color.jpg"
+                      alt="UTWind Logo"
+                      width={40}
+                      height={40}
+                      className="h-10 w-auto"
+                      priority
+                    />
+                    <span className="text-2xl font-bold text-blue-600">UTWind</span>
+                  </Link>
+        
+                  {/* desktop links */}
+                  <div className="hidden md:flex space-x-6 items-center">
+                    <Link href="/" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("home")}</Link>
+                    <Link href="/competition" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("competition")}</Link>
+                    <Link href="/team" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("team")}</Link>
+                    <Link href="/projects" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("projects")}</Link>
+                    <Link href="/joinus" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("joinUs")}</Link>
+                    <Link href="/sponsors" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("sponsors")}</Link>
+                    <Link href="/gallery" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("gallery")}</Link>
+                    <Link href="/#contact" className="px-4 py-2 rounded-lg hover:bg-gray-200 transition">{nav("contact")}</Link>
+                  
+                    <LanguageSwitcher />
+        
+                  </div>
+        
+                  {/* mobile toggle */}
+                  <button
+                    aria-label="Toggle Menu"
+                    onClick={() => setMobileOpen((v) => !v)}
+                    className="block md:hidden focus:outline-none"
+                  >
+                    <svg
+                      className={`h-8 w-8 text-gray-700 ${mobileOpen ? "hidden" : "block"}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg
+                      className={`h-8 w-8 text-gray-700 ${mobileOpen ? "block" : "hidden"}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+        
+                {/* mobile dropdown */}
+                <div className={`md:hidden flex-col items-center bg-white shadow-md space-y-4 py-4 ${mobileOpen ? "flex" : "hidden"}`}>
+                  <Link href="/" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("home")}</Link>
+                  <Link href="/competition" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("competition")}</Link>
+                  <Link href="/team" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("team")}</Link>
+                  <Link href="/projects" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("projects")}</Link>
+                  <Link href="/joinus" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("joinUs")}</Link>
+                  <Link href="/sponsors" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("sponsors")}</Link>
+                  <Link href="/gallery" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("gallery")}</Link>
+                  <Link href="/#contact" className="hover:text-blue-600 transition" onClick={() => setMobileOpen(false)}>{nav("contact")}</Link>
+                  
+                  <LanguageSwitcher />
+                  
+                </div>
+            </nav>
 
       {/* Header */}
       <section className="px-6 pt-20 pb-12 text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-blue-900">
-          Gallery
+          {gallery("title")}
         </h1>
 
         <p className="mx-auto max-w-3xl text-lg md:text-2xl text-gray-600">
-          Explore UTWind’s design, build, testing, outreach, and competition moments over the years.
+          {gallery("description")}
         </p>
       </section>
 
@@ -260,9 +273,9 @@ export default function GalleryPage() {
 
                 <div className="space-y-20">
                 {yearGroup.categories.map((category) => (
-                    <div key={`${yearGroup.year}-${category.title}`} data-aos="fade-up">
+                    <div key={`${yearGroup.year}-${category.titleKey}`} data-aos="fade-up">
                     <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-                        {category.title}
+                        {gallery(`categories.${category.titleKey}`)}
                     </h3>
 
                       <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
@@ -284,7 +297,7 @@ export default function GalleryPage() {
 
                             {image.credit && (
                               <div className="absolute bottom-0 left-0 right-0 bg-black/60 px-4 py-2 text-left text-sm text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                {image.credit}
+                                {gallery("photoBy")} {image.credit}
                               </div>
                             )}
                           </div>
@@ -320,7 +333,7 @@ export default function GalleryPage() {
       {/* Middle: Contact links */}
       <div className="flex flex-col items-center text-center">
         <h3 className="text-lg font-bold text-black mb-3">
-          Emails
+          {footer("contactUs")}
         </h3>
 
         <div className="flex flex-col gap-2 text-black">
@@ -328,7 +341,7 @@ export default function GalleryPage() {
             href="mailto:contact@utwind.com"
             className="hover:text-blue-700 transition"
           >
-            <span className="font-semibold">General Inquiries:</span>{" "}
+            <span className="font-semibold">{footer("generalInquiries")}:</span>{" "}
             contact@utwind.com
           </a>
 
@@ -336,7 +349,7 @@ export default function GalleryPage() {
             href="mailto:sponsorships@utwind.skule.ca"
             className="hover:text-blue-700 transition"
           >
-            <span className="font-semibold">Sponsorships:</span>{" "}
+            <span className="font-semibold">{footer("sponsorships")}:</span>{" "}
             sponsorships@utwind.skule.ca
           </a>
 
@@ -344,7 +357,7 @@ export default function GalleryPage() {
             href="mailto:operations@utwind.skule.ca"
             className="hover:text-blue-700 transition"
           >
-            <span className="font-semibold">Operations:</span>{" "}
+            <span className="font-semibold">{footer("operations")}:</span>{" "}
             operations@utwind.skule.ca
           </a>
         </div>
@@ -390,7 +403,7 @@ export default function GalleryPage() {
       {/* Right: Copyright */}
       <div className="flex justify-center md:justify-end">
         <p className="text-sm text-black">
-          © 2026 UTWind | University of Toronto
+          &copy; {new Date().getFullYear()} UTWind. {footer("rightsReserved")}
         </p>
       </div>
     </div>

@@ -60,7 +60,7 @@ export default function SponsorsPage() {
             className="h-10 w-auto"
             priority
           />
-          <span className="text-2xl font-bold text-blue-600">UTWind</span>
+          <span className="text-2xl font-bold text-blue-600 font-racing">UTWind</span>
         </Link>
 
         {/* desktop links */}
@@ -374,209 +374,399 @@ export default function SponsorsPage() {
           </div>
         </div>
         </div>
-        </section>
-          {/* Sponsors Tiers */}
-          <section className="bg-white py-20 px-4">
-          <div className="max-w-7xl mx-auto">
-            {/* Header */}
-            <div className="bg-blue-900 text-white rounded-t-2xl px-6 py-10 text-center">
-              <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-wide">
-                {sponsors("tiers.title")}
-              </h2>
+    </section>
+        {/* Sponsorship Tiers */}
+{/* Sponsorship Tiers */}
+<section className="bg-white py-20 px-4">
+  <div className="max-w-7xl mx-auto">
 
-              <div className="w-3/4 max-w-3xl h-1 bg-white mx-auto my-5" />
+    {/* Main title */}
+    <div className="text-center mb-8">
+      <h2 className="text-5xl md:text-7xl font-bold uppercase text-[#0B4F73] tracking-wide">
+        {sponsors("tiers.title")}
+      </h2>
 
-                <p className="max-w-5xl mx-auto text-lg md:text-2xl leading-relaxed">
-                  {sponsors("tiers.description")}
-                </p>
-            </div>
-            </div>
+      <div className="w-3/4 max-w-3xl h-1 bg-[#0B4F73] mx-auto mt-5" />
+    </div>
 
-            {/* Table */}
-            <div className="overflow-x-auto shadow-lg rounded-b-2xl">
-              <table className="w-full min-w-[1000px] border-collapse text-center">
-                <thead>
-                  <tr className="bg-blue-950 text-white">
-                    <th className="border border-blue-300 px-4 py-5"></th>
 
-                    <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold text-white">{sponsors("tiers.diamond")}</div>
-                      <div className="text-blue-300 mt-1">$10,000+</div>
-                    </th>
+    {/* All Sponsors Receive */}
+    <div className="bg-blue-100 border-l-4 border-[#0B4F73] px-5 py-4 mb-8">
+      <h3 className="text-xl md:text-2xl font-bold uppercase text-[#0B4F73]">
+        {sponsors("allSponsorsReceive")}
+      </h3>
 
-                    <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold text-white">{sponsors("tiers.platinum")}</div>
-                      <div className="text-blue-300 mt-1">$5,000+</div>
-                    </th>
+      <p className="text-sm md:text-base text-[#0B4F73] mt-1 leading-relaxed">
+        {sponsors("allSponsors.showcases")} •{" "}
+        {sponsors("allSponsors.networking")}
+        <br />
 
-                    <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold text-white">{sponsors("tiers.gold")}</div>
-                      <div className="text-blue-300 mt-1">$2,500+</div>
-                    </th>
+        {sponsors("allSponsors.jobPostings")} •{" "}
+        {sponsors("allSponsors.impactReport")} •{" "}
+        {sponsors("allSponsors.iswtcAcknowledgement")}
+        <sup>1</sup>
+      </p>
+    </div>
 
-                    <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold text-white">{sponsors("tiers.silver")}</div>
-                      <div className="text-blue-300 mt-1">$1,000+</div>
-                    </th>
 
-                    <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold text-white">{sponsors("tiers.bronze")}</div>
-                      <div className="text-blue-300 mt-1">$500+</div>
-                    </th>
+    {/* Choose your level */}
+    <h3 className="text-xl md:text-2xl font-bold uppercase text-[#0B4F73] mb-3">
+      {sponsors("table.chooseLevel")}
+    </h3>
 
-                    <th className="border border-blue-300 px-4 py-5">
-                      <div className="text-xl font-bold text-white">{sponsors("tiers.technicalPartner")}</div>
-                      <div className="text-sm text-blue-300 mt-1">
-                        {sponsors("tiers.technicalDescription")}
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
 
-                <tbody className="bg-blue-50 text-blue-950">
-                  {/* Row 1 */}
-                  <tr>
-                    <td className="tier-label">
-                      {sponsors("benefits.teamEvents")}
-                    </td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                  </tr>
+    {/* Sponsorship Table */}
+    <div className="overflow-x-auto">
+      <table className="w-full min-w-[1050px] border-collapse text-center">
 
-                  {/* Row 2 */}
-                  <tr>
-                    <td className="tier-label">
-                      {sponsors("benefits.networking")}
-                    </td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                  </tr>
+        {/* Header */}
+        <thead>
+          <tr className="bg-[#0B4F73] text-white">
 
-                  {/* Row 3 */}
-                  <tr>
-                    <td className="tier-label">
-                      {sponsors("benefits.jobPostings")}
-                    </td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell text-sm text-black">
-                      {sponsors("values.byAgreement")}
-                    </td>
-                  </tr>
+            {/* Benefit column */}
+            <th className="border border-white px-5 py-5 text-left w-[36%]">
+              <span className="text-lg font-bold uppercase">
+                {sponsors("table.sponsorBenefit")}
+              </span>
+            </th>
 
-                  {/* Row 4 */}
-                  <tr>
-                    <td className="tier-label">{sponsors("benefits.teamApparel")}</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell text-gray-400">—</td>
-                    <td className="tier-cell text-gray-400">—</td>
-                    <td className="tier-cell text-sm text-black">
-                      {sponsors("values.byAgreement")}
-                    </td>
-                  </tr>
 
-                  {/* Row 5 */}
-                  <tr>
-                    <td className="tier-label">{sponsors("benefits.resumeBook")}</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell text-gray-400">—</td>
-                    <td className="tier-cell text-gray-400">—</td>
-                    <td className="tier-cell text-sm text-black">
-                      {sponsors("values.byAgreement")}
-                    </td>
-                  </tr>
+            {/* Diamond */}
+            <th className="border border-white px-3 py-5">
+              <div className="text-xl font-bold">
+                {sponsors("tiers.diamond")}
+              </div>
 
-                  {/* Row 6 */}
-                  <tr>
-                    <td className="tier-label">
-                      {sponsors("benefits.sponsorEvent")}
-                    </td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell">✓</td>
-                    <td className="tier-cell text-sm text-black">
-                      {sponsors("values.byAgreement")}
-                    </td>
-                    <td className="tier-cell text-gray-400">—</td>
-                    <td className="tier-cell text-gray-400">—</td>
-                    <td className="tier-cell text-sm text-black">
-                      {sponsors("values.byAgreement")}
-                    </td>
-                  </tr>
+              <div className="w-12 h-[2px] bg-sky-300 mx-auto my-2" />
 
-                  {/* Row 7 */}
-                  <tr>
-                    <td className="tier-label">{sponsors("benefits.website")}</td>
-                    <td className="tier-cell text-sm font-semibold">
-                      {sponsors("values.featuredProfile")}
-                    </td>
-                    <td className="tier-cell text-sm font-semibold">
-                      {sponsors("values.featuredProfile")}
-                    </td>
-                    <td className="tier-cell text-sm">
-                      {sponsors("values.secondaryFeature")}
-                    </td>
-                    <td className="tier-cell text-sm">{sponsors("values.logoOnly")}</td>
-                    <td className="tier-cell text-sm">{sponsors("values.logoOnly")}</td>
-                    <td className="tier-cell text-sm text-black">
-                      {sponsors("values.byAgreement")}
-                    </td>
-                  </tr>
+              <div className="text-sky-300 text-lg">
+                $10,000+
+              </div>
 
-                  {/* Row 8 */}
-                  <tr>
-                    <td className="tier-label">
-                      {sponsors("benefits.banners")}
-                    </td>
-                    <td className="tier-cell">XL</td>
-                    <td className="tier-cell">{sponsors("values.large")}</td>
-                    <td className="tier-cell">{sponsors("values.medium")}</td>
-                    <td className="tier-cell">{sponsors("values.small")}</td>
-                    <td className="tier-cell">{sponsors("values.nameListing")}</td>
-                    <td className="tier-cell text-sm text-black">
-                      {sponsors("values.byAgreement")}
-                    </td>
-                  </tr>
+              <div className="text-xs font-bold uppercase mt-2">
+                {sponsors("values.oneAvailable")}
+              </div>
+            </th>
 
-                  {/* Row 9 */}
-                  <tr>
-                    <td className="tier-label">{sponsors("benefits.turbine")}</td>
-                    <td className="tier-cell">XL</td>
-                    <td className="tier-cell">{sponsors("values.large")}</td>
-                    <td className="tier-cell">{sponsors("values.medium")}</td>
-                    <td className="tier-cell">{sponsors("values.small")}</td>
-                    <td className="tier-cell text-sm text-black">
-                      {sponsors("values.byAgreement")}
-                    </td>
-                    <td className="tier-cell text-sm text-black">
-                      {sponsors("values.byAgreement")}
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
 
-            {/* Notes */}
-            <div className="mt-5 text-sm text-gray-600">
-              <p>{sponsors("notes.currency")}</p>
-              <p>{sponsors("notes.flexibility")}</p>
-              <p>{sponsors("notes.availability")}</p>
-            </div>
-        </section>
+            {/* Platinum */}
+            <th className="border border-white px-3 py-5">
+              <div className="text-xl font-bold">
+                {sponsors("tiers.platinum")}
+              </div>
+
+              <div className="w-12 h-[2px] bg-gray-300 mx-auto my-2" />
+
+              <div className="text-sky-300 text-lg">
+                $5,000+
+              </div>
+            </th>
+
+
+            {/* Gold */}
+            <th className="border border-white px-3 py-5">
+              <div className="text-xl font-bold">
+                {sponsors("tiers.gold")}
+              </div>
+
+              <div className="w-12 h-[2px] bg-yellow-400 mx-auto my-2" />
+
+              <div className="text-sky-300 text-lg">
+                $2,500+
+              </div>
+            </th>
+
+
+            {/* Silver */}
+            <th className="border border-white px-3 py-5">
+              <div className="text-xl font-bold">
+                {sponsors("tiers.silver")}
+              </div>
+
+              <div className="w-12 h-[2px] bg-gray-300 mx-auto my-2" />
+
+              <div className="text-sky-300 text-lg">
+                $1,000+
+              </div>
+            </th>
+
+
+            {/* Bronze */}
+            <th className="border border-white px-3 py-5">
+              <div className="text-xl font-bold">
+                {sponsors("tiers.bronze")}
+              </div>
+
+              <div className="w-12 h-[2px] bg-amber-600 mx-auto my-2" />
+
+              <div className="text-sky-300 text-lg">
+                $500+
+              </div>
+            </th>
+
+          </tr>
+        </thead>
+
+
+        <tbody className="text-[#0B4F73]">
+
+          {/* Website Recognition */}
+          <tr className="bg-blue-50">
+            <td className="tier-label">
+              {sponsors("benefits.website")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.featuredProfile")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.secondaryFeature")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.secondaryFeature")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.logoOnly")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.logoOnly")}
+            </td>
+          </tr>
+
+
+          {/* Banners */}
+          <tr className="bg-blue-100/70">
+            <td className="tier-label">
+              {sponsors("benefits.banners")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.xlLogo")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.largeLogo")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.mediumLogo")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.smallLogo")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.nameListing")}
+            </td>
+          </tr>
+
+
+          {/* Logo on Turbine */}
+          <tr className="bg-blue-50">
+            <td className="tier-label">
+              {sponsors("benefits.turbine")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.xl")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.large")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.medium")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.small")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.byAgreement")}
+            </td>
+          </tr>
+
+
+          {/* Social Media */}
+          <tr className="bg-blue-100/70">
+            <td className="tier-label">
+              {sponsors("benefits.socialMedia")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.featuredVideo")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.dedicatedPost")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.dedicatedPost")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.dedicatedPost")}
+            </td>
+
+            <td className="tier-cell">
+              {sponsors("values.groupRecognition")}
+            </td>
+          </tr>
+
+
+          {/* Logo on Apparel */}
+          <tr className="bg-blue-50">
+            <td className="tier-label">
+              {sponsors("benefits.teamApparel")}
+            </td>
+
+            <td className="tier-cell text-3xl font-bold">✓</td>
+            <td className="tier-cell text-3xl font-bold">✓</td>
+            <td className="tier-cell text-3xl font-bold">✓</td>
+            <td className="tier-cell text-gray-400">—</td>
+            <td className="tier-cell text-gray-400">—</td>
+          </tr>
+
+
+          {/* Resume Book */}
+          <tr className="bg-blue-100/70">
+            <td className="tier-label">
+              {sponsors("benefits.resumeBook")}
+            </td>
+
+            <td className="tier-cell text-3xl font-bold">✓</td>
+            <td className="tier-cell text-3xl font-bold">✓</td>
+            <td className="tier-cell text-3xl font-bold">✓</td>
+            <td className="tier-cell text-gray-400">—</td>
+            <td className="tier-cell text-gray-400">—</td>
+          </tr>
+
+
+          {/* Project Sponsor Recognition */}
+          <tr className="bg-blue-50">
+            <td className="tier-label">
+              {sponsors("benefits.projectSponsor")}
+              <sup>2</sup>
+            </td>
+
+            <td className="tier-cell text-3xl font-bold">✓</td>
+            <td className="tier-cell text-3xl font-bold">✓</td>
+            <td className="tier-cell text-3xl font-bold">✓</td>
+            <td className="tier-cell text-gray-400">—</td>
+            <td className="tier-cell text-gray-400">—</td>
+          </tr>
+
+
+          {/* Workshop */}
+          <tr className="bg-blue-100/70">
+            <td className="tier-label">
+              {sponsors("benefits.workshop")}
+              <sup>3</sup>
+            </td>
+
+            <td className="tier-cell text-3xl font-bold">✓</td>
+            <td className="tier-cell text-3xl font-bold">✓</td>
+            <td className="tier-cell text-gray-400">—</td>
+            <td className="tier-cell text-gray-400">—</td>
+            <td className="tier-cell text-gray-400">—</td>
+          </tr>
+
+
+          {/* Speaking Slot */}
+          <tr className="bg-blue-50">
+            <td className="tier-label">
+              {sponsors("benefits.speakingSlot")}
+              <sup>3</sup>
+            </td>
+
+            <td className="tier-cell text-3xl font-bold">✓</td>
+            <td className="tier-cell text-gray-400">—</td>
+            <td className="tier-cell text-gray-400">—</td>
+            <td className="tier-cell text-gray-400">—</td>
+            <td className="tier-cell text-gray-400">—</td>
+          </tr>
+
+
+          {/* Naming Rights */}
+          <tr className="bg-blue-100/70">
+            <td className="tier-label">
+              {sponsors("benefits.namingRights")}
+              <sup>2</sup>
+            </td>
+
+            <td className="tier-cell text-3xl font-bold">✓</td>
+            <td className="tier-cell text-gray-400">—</td>
+            <td className="tier-cell text-gray-400">—</td>
+            <td className="tier-cell text-gray-400">—</td>
+            <td className="tier-cell text-gray-400">—</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+
+    {/* Canadian Dollar Note */}
+    <div className="mt-3 text-sm text-gray-600">
+      {sponsors("notes.currency")}
+    </div>
+
+
+    {/* Technical Partners */}
+    <div className="mt-6 bg-[#0B4F73] text-white px-5 md:px-7 py-6">
+
+      <h3 className="text-2xl md:text-3xl font-bold uppercase">
+        {sponsors("technical.title")}
+      </h3>
+
+      <p className="text-lg md:text-xl font-bold text-sky-300 mt-1 mb-4">
+        {sponsors("technical.subtitle")}
+      </p>
+
+      <p className="text-base md:text-lg leading-relaxed">
+        {sponsors("technical.description")}
+      </p>
+
+      <p className="text-base md:text-lg leading-relaxed">
+        {sponsors("technical.recognitionBefore")}{" "}
+
+        <span className="font-medium">
+          “{sponsors("technical.recognition")}”
+        </span>{" "}
+
+        {sponsors("technical.recognitionAfter")}
+      </p>
+
+    </div>
+
+
+    {/* Footnotes */}
+    <div className="mt-3 text-sm text-gray-600 leading-relaxed">
+
+      <p>
+        1. {sponsors("notes.report")}
+      </p>
+
+      <p>
+        2. {sponsors("notes.naming")}
+      </p>
+
+      <p>
+        3. {sponsors("notes.events")}
+      </p>
+
+    </div>
+
+  </div>
+</section>
           
           
 

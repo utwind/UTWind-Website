@@ -5,14 +5,14 @@
     "team": "Équipe",
     "projects": "Projets",
     "joinUs": "Rejoignez-nous",
-    "sponsors": "Parrains et marraines",
+    "sponsors": "Parrains",
     "gallery": "Galerie",
     "contact": "Contact"
   },
   "Home": {
     "title": "UTWind",
     "subtitle": "Faire face au vent",
-    "description": "Équipe « Wind Turbine » de l'Université de Toronto"
+    "description": "Équipe « Éoliennes » de l'Université de Toronto"
   },
   "TeamUpdates": {
     "label": "Actualités de l'équipe",
@@ -24,7 +24,7 @@
       "solidworksWorkshop": {
         "date": "16 septembre 2026",
         "title": "Atelier SolidWorks pour débutants !",
-        "description": "Salut @channel, petit coup de fil pour vous signaler une opportunité à venir !\n\nNotre prochaine réunion de la sous-équipe mécanique prendra la forme d’un atelier technique d’initiation à SolidWorks au Galbraith ECF (GB144), le vendredi 18 septembre de 18 h à 20 h.\n\nCet atelier s'adresse aux personnes ayant peu ou pas d'expérience avec SolidWorks, et il n'est pas nécessaire d'être inscrit en mécanique ou en génie mécanique pour y participer. Que vous fassiez partie de la sous-équipe Business, Électricité, Aéronautique ou de toute autre sous-équipe, et quelle que soit votre filière, vous êtes les bienvenus. La CAO est l’une des compétences les plus transférables que vous puissiez acquérir au sein d’une équipe de conception, et c’est le point d’entrée le plus simple pour apprendre une nouvelle compétence qui enrichira votre portfolio, votre CV ou tout projet personnel que vous souhaiteriez réaliser !\n\nLes places sont limitées par la capacité d’accueil du laboratoire et se remplissent rapidement ; veuillez donc vous inscrire ici pour réserver une place garantie : https://forms.gle/iAPLw3bPE3ahbGCu7. Les inscriptions se feront sur place, et des places pourraient être disponibles sans réservation, selon le principe du « premier arrivé, premier servi », en cas d’absences.\n\nL'atelier commence à 18 h 15 précises, soyez donc ponctuels !\n\nQuelques informations pratiques :\n\nDes ordinateurs de l'ECF sont disponibles pour utiliser SolidWorks, vous pouvez donc simplement vous présenter sur place.\n\nSi vous préférez apporter votre propre ordinateur portable, installez au préalable Remote ECF (aucun VPN n’est nécessaire sur le Wi-Fi de l’UofT), ou installez directement SolidWorks.\n\nVous maîtrisez déjà SolidWorks ? Découvrez le défi lancé par @Shafwat sur le canal #mechanical.\n\nN’hésitez pas à venir accompagné d’un ami qui envisage de rejoindre UTWind, car l’événement est ouvert à tous les étudiants de l’UofT !\n\nDes questions ? Envoyez un message à @Shafwat ou à @Teagan McKenzie !"
+        "description": "Salut @channel, petit coup de fil pour vous signaler une opportunité à venir !\n\nNotre prochaine réunion de la sous-équipe mécanique prendra la forme d’un atelier technique d’initiation à SolidWorks au Galbraith ECF (GB144), le vendredi 18 septembre de 18 h à 20 h.\n\nCet atelier s'adresse aux personnes ayant peu ou pas d'expérience avec SolidWorks, et il n'est pas nécessaire d'être inscrit en mécanique ou en génie mécanique pour y participer. Que vous fassiez partie de la sous-équipe Business, Électricité, Aéronautique ou de toute autre sous-équipe, et quelle que soit votre filière, vous êtes les bienvenus. La CAO est l’une des compétences les plus transférables que vous puissiez acquérir au sein d’une équipe de conception, et c’est le point d’entrée le plus simple pour apprendre une nouvelle compétence qui enrichira votre portfolio, votre CV ou tout projet personnel que vous souhaiteriez réaliser !\n\nLes places sont limitées par la capacité d’accueil du laboratoire et se remplissent rapidement ; veuillez donc vous inscrire ici pour réserver une place garantie : https://forms.gle/iAPLw3bPE3ahbGCu7. Les inscriptions se feront sur place, et des places pourraient être disponibles sans réservation, selon le principe du « premier arrivé, premier servi », en cas d’absences.\n\nL'atelier commence à 18 h 15 précises, soyez donc ponctuels !\n\nQuelques informations pratiques :\n\nDes ordinateurs de l'ECF sont disponibles pour utiliser SolidWorks, vous pouvez donc simplement vous présenter sur place.\n\nSi vous préférez apporter votre propre ordinateur portable, installez au préalable Remote ECF (aucun VPN n’est nécessaire sur le réseau Wi-Fi de l’UofT), ou installez directement SolidWorks.\n\nVous maîtrisez déjà SolidWorks ? Découvrez le défi lancé par @Shafwat sur le canal #mechanical.\n\nN’hésitez pas à venir accompagné d’un ami qui envisage de rejoindre UTWind, car l’événement est ouvert à tous les étudiants de l’UofT !\n\nDes questions ? Envoyez un message à @Shafwat ou à @Teagan McKenzie !"
       },
       "semesterKickoffUpdate": {
         "date": "9 septembre 2026",
@@ -34,7 +34,7 @@
       "designCycleWelcome": {
         "date": "6 septembre 2026",
         "title": "Bienvenue dans le cycle de conception UTWind 2026-2027 !",
-        "description": "Bonjour à tous ! Bienvenue dans le cycle de conception 2026-2027 de l'UTWind !\n\nNous donnons le coup d’envoi avec notre réunion de lancement le mercredi 9 septembre, de 18 h 15 à 20 h, à la Myhal Arena. Pour les nouveaux membres, c’est l’occasion idéale d’en savoir plus sur nos sous-équipes et de choisir celles que vous souhaitez rejoindre. Pour les membres confirmés, c’est l’occasion de se retrouver et de découvrir ce qui est prévu pour ce cycle.\n\nPour les nouveaux membres, pour rejoindre une sous-équipe, il suffit de cliquer sur le ou les canaux correspondant aux sous-équipes qui vous intéressent :\n\n• #aerodynamics (Responsables : @Alex Kim, @Glenn)\n\n• #controls (Responsables : @Wanning He, @Jacob Duplessis)\n\n• #powersystems (Responsables : @Alec MacGregor, @Deniz Kantar)\n\n• #mechanical (Responsables : @Teagan McKenzie, @Shafwat)\n\n• #sustainability (Responsables : @Stella Cook, @Pakhi)\n\n• #business (Directrice commerciale : @Dhara Patel)\n\nLes sous-équipes tiendront leurs premières réunions après la réunion de lancement. Consultez vos canaux respectifs pour connaître les détails concernant les dates et lieux des réunions hebdomadaires.\n\nSi vous avez des questions, n’hésitez pas à contacter n’importe quel membre de l’équipe de direction à tout moment ! Merci à tous et au plaisir de mener à bien ce cycle de conception !"
+        "description": "Bonjour à tous ! Bienvenue dans le cycle de conception 2026-2027 de l'UTWind !\n\nNous donnons le coup d’envoi avec notre réunion de lancement le mercredi 9 septembre, de 18 h 15 à 20 h, à la Myhal Arena. Pour les nouveaux membres, c’est l’occasion idéale d’en savoir plus sur nos sous-équipes et de choisir celles que vous souhaitez rejoindre. Pour les membres confirmés, c’est l’occasion de se retrouver et de découvrir ce qui est prévu pour ce cycle.\n\nPour les nouveaux membres, afin de rejoindre une sous-équipe, il suffit de cliquer sur le ou les canaux correspondant aux sous-équipes qui vous intéressent :\n\n• #aerodynamics (Responsables : @Alex Kim, @Glenn)\n\n• #controls (Responsables : @Wanning He, @Jacob Duplessis)\n\n• #powersystems (Responsables : @Alec MacGregor, @Deniz Kantar)\n\n• #mechanical (Responsables : @Teagan McKenzie, @Shafwat)\n\n• #sustainability (Responsables : @Stella Cook, @Pakhi)\n\n• #business (Directrice commerciale : @Dhara Patel)\n\nLes sous-équipes tiendront leurs premières réunions après la réunion de lancement. Consultez vos canaux respectifs pour connaître les détails concernant les dates et lieux des réunions hebdomadaires.\n\nSi vous avez des questions, n’hésitez pas à contacter n’importe quel membre de l’équipe de direction à tout moment ! Merci à tous et au plaisir de mener à bien ce cycle de conception !"
       }
     }
   },
@@ -71,14 +71,14 @@
   "Accessibility": {
     "toggleMenu": "Afficher/masquer le menu",
     "utwindLogo": "Logo UTWind",
-    "instagram": "UTWind sur Instagram",
+    "instagram": "Compte Instagram d'UTWind",
     "linkedin": "UTWind sur LinkedIn"
   },
   "Competition": {
     "title": "Concours international des petites éoliennes (ISWTC)",
     "intro": {
       "beforeLink": "Chaque été, l'UTWind participe au",
-      "afterLink": "aux Pays-Bas, face à d’autres universités internationales. L’équipe UTWind remporte un trophée à chaque participation depuis ses débuts et est extrêmement fière de représenter l’Université de Toronto. Découvrez ci-dessous plus d’informations sur chaque compétition."
+      "afterLink": "aux Pays-Bas, face à d'autres universités internationales. Depuis ses débuts, l'UTWind remporte un trophée à chaque fois et est extrêmement fière de représenter l'Université de Toronto. Découvrez ci-dessous plus d'informations sur chaque compétition."
     },
     "historyTitle": "Historique des compétitions",
     "history": {
@@ -91,15 +91,15 @@
         "caption": "L'éolienne la plus durable d'UTWind, lauréate d'un prix - 2023"
       },
       "2024": {
-        "description": "Cette troisième année de compétition a été marquée par plusieurs innovations : le recyclage de bouteilles en PET pour fabriquer du filament, l’utilisation d’un seul moteur pour le contrôle du pas et la fabrication de pales en fibre de lin. Avec l’arrivée de nombreuses nouvelles équipes, ce fut une immense surprise lorsque le jury a décerné le prix du « Meilleur design global » <strong> (1re place) </strong> à « l’équipe de Toronto ».",
+        "description": "Cette troisième année de compétition a été marquée par plusieurs innovations : le recyclage de bouteilles en PET pour fabriquer du filament, l’utilisation d’un seul moteur pour le contrôle du pas et la fabrication de pales en fibre de lin. Avec l’arrivée de nombreuses nouvelles équipes, ce fut une immense surprise lorsque le jury a décerné le prix du « Meilleur design global » <strong>(1re place)</strong> à « l’équipe de Toronto ».",
         "caption": "Éolienne d'UTWind, lauréate du 1er prix - 2024"
       },
       "2025": {
-        "description": "La turbine la plus ambitieuse jamais conçue par UTWind était notre toute première éolienne à axe vertical (VAWT). Malgré des délais serrés et un manque d’expérience, nous avons construit une éolienne à axe vertical (VAWT) de type H-Rotor en seulement quatre mois et avons été ravis de la voir tourner, produire de l’électricité et fonctionner grâce à un système de contrôle opérationnel. Même si nous n’avons pas remporté de trophée, nous avons beaucoup appris et sommes impatients de nous améliorer lors de notre prochaine version.",
+        "description": "La turbine la plus ambitieuse jamais réalisée par UTWind a été notre toute première éolienne à axe vertical (VAWT). Malgré des délais serrés et un manque d’expérience, nous avons construit une éolienne à axe vertical (VAWT) de type H-Rotor en seulement quatre mois et avons été ravis de la voir tourner, produire de l’électricité et fonctionner grâce à un système de contrôle opérationnel. Même si nous n’avons pas remporté de trophée, nous avons beaucoup appris et sommes impatients de nous améliorer lors de notre prochaine version.",
         "caption": "Première version de l'éolienne à axe vertical (VAWT) d'UTWind - 2025"
       },
       "2026": {
-        "description": "De retour aux Pays-Bas pour notre cinquième participation consécutive à l’ISWTC, UTWind a présenté la deuxième version de notre éolienne à axe vertical (VAWT). Cette année a été marquée par des progrès majeurs : nous avons envoyé notre plus grande délégation de compétition à ce jour, sommes arrivés avec des systèmes mécaniques, électriques et de contrôle opérationnels, avons introduit des pales plus légères et des capteurs de surveillance des chauves-souris, et avons atteint l'une de nos vitesses de démarrage les plus basses à ce jour. Bien qu'il y ait encore beaucoup à améliorer, la compétition nous a apporté des enseignements précieux que nous mettrons à profit pour notre prochaine version.",
+        "description": "De retour aux Pays-Bas pour notre cinquième participation consécutive à l’ISWTC, UTWind a concouru avec la deuxième version de notre éolienne à axe vertical (VAWT). Cette année a été marquée par des progrès majeurs : nous avons envoyé notre plus grande délégation de compétition à ce jour, sommes arrivés avec des systèmes mécaniques, électriques et de contrôle opérationnels, avons introduit des pales plus légères et des capteurs de surveillance des chauves-souris, et avons atteint l'une de nos vitesses de démarrage les plus basses à ce jour. Bien qu'il y ait encore beaucoup à améliorer, la compétition nous a apporté des enseignements précieux que nous mettrons à profit pour notre prochaine version.",
         "caption": "La turbine d'UTWind présentant la vitesse de démarrage la plus basse - 2026"
       },
       "Footer": {
@@ -115,7 +115,7 @@
     "title": "Découvrez notre équipe",
     "description": "Découvrez les étudiants à l'origine d'UTWind.",
     "sections": {
-      "president": "Président",
+      "teamcaptain": "Capitaine de l'équipe",
       "business": "Affaires",
       "mechanical": "Mécanique",
       "control": "Systèmes de contrôle",
@@ -125,13 +125,14 @@
       "web": "Webmaster"
     },
     "positions": {
-      "president": "Président",
+      "teamcaptain": "Capitaine de l'équipe",
       "businessDirector": "Directeur commercial",
       "marketingLead": "Responsable marketing",
       "financeLead": "Responsable des finances",
       "sponsorshipsLead": "Responsable des partenariats",
       "operationsCoLead": "Co-responsable des opérations",
       "mechanicalCoLead": "Co-responsable mécanique",
+      "systemsintegrationLead": "Responsable de l'intégration des systèmes",
       "controlCoLead": "Co-responsable des systèmes de contrôle",
       "powerCoLead": "Co-responsable des systèmes d'alimentation électrique",
       "aeroCoLead": "Co-responsable de l'aérodynamique",
@@ -160,7 +161,7 @@
     },
     "tiers": {
       "title": "Niveaux de parrainage",
-      "description": "Nous proposons des partenariats personnalisables grâce à notre expertise technique, à des contributions financières et à un soutien en nature. Ces contributions permettent de financer des composants essentiels, du matériel, la recherche, les frais liés aux compétitions et le fonctionnement des équipes. En contrepartie, les sponsors bénéficient d’un accès direct à des étudiants en ingénierie hautement qualifiés tout en faisant progresser leurs priorités en matière d’ESG. Ce soutien permet à UTWind de concevoir, construire, tester et concourir avec des technologies innovantes dans le domaine des énergies propres.",
+      "description": "Nous proposons des partenariats personnalisables grâce à notre expertise technique, à des contributions financières et à un soutien en nature. Ces contributions permettent de financer des composants essentiels, du matériel, la recherche, les frais liés aux compétitions et le fonctionnement des équipes. En contrepartie, les sponsors bénéficient d’un accès direct à des étudiants en ingénierie hautement qualifiés tout en faisant progresser leurs priorités en matière d’ESG. Ce soutien permet à UTWind de concevoir, construire, tester et participer à des compétitions avec des technologies innovantes dans le domaine des énergies propres.",
       "diamond": "Diamant",
       "platinum": "Platine",
       "gold": "Or",
@@ -169,31 +170,62 @@
       "technicalPartner": "Partenaire technique",
       "technicalDescription": "Produits, services ou assistance technique"
     },
+    "allSponsorsReceive": "Tous les sponsors reçoivent :",
+    "allSponsors": {
+      "showcases": "Invitation aux présentations des équipes",
+      "networking": "Événement annuel de réseautage et de recrutement",
+      "jobPostings": "Offres d'emploi pertinentes partagées avec les membres",
+      "impactReport": "Rapport d'impact annuel",
+      "iswtcAcknowledgement": "Remerciements concernant le rapport de l'ISWTC"
+    },
+    "table": {
+      "chooseLevel": "Choisissez votre niveau d'implication",
+      "sponsorBenefit": "Avantages pour les sponsors"
+    },
     "benefits": {
-      "teamEvents": "Invitation aux événements et aux démonstrations des équipes",
-      "networking": "Invitation à la rencontre annuelle de réseautage et de recrutement des sponsors",
-      "jobPostings": "Parrainer des offres d'emploi partagées avec les membres",
+      "website": "Reconnaissance du site web",
+      "banners": "Bannières et présentoirs de concours",
+      "turbine": "Logo sur la turbine",
+      "socialMedia": "Visibilité sur les réseaux sociaux",
       "teamApparel": "Logo sur les tenues de l'équipe",
-      "resumeBook": "Accès au recueil de CV de l'équipe",
-      "sponsorEvent": "Présence de l'équipe à l'événement organisé par le sponsor¹",
-      "website": "Logo sur le site web (lien accessible à tous)",
-      "banners": "Logo sur les bannières et les supports de compétition",
-      "turbine": "Logo sur la turbine"
+      "resumeBook": "Accès au recueil de CV (sur inscription)",
+      "projectSponsor": "Remerciements aux promoteurs du projet",
+      "workshop": "Atelier annuel, conférence technique ou événement organisé par un partenaire",
+      "speakingSlot": "Lancement / Présentation : intervention",
+      "namingRights": "Droits de dénomination des éoliennes"
     },
     "values": {
-      "byAgreement": "D'un commun accord",
       "featuredProfile": "Profil à l'honneur",
       "secondaryFeature": "Fonction secondaire",
       "logoOnly": "Logo uniquement",
+      "xlLogo": "Logo XL",
+      "largeLogo": "Grand logo",
+      "mediumLogo": "Logo de taille moyenne",
+      "smallLogo": "Petit logo",
+      "nameListing": "Liste des noms",
+      "xl": "XL",
       "large": "Grand",
       "medium": "Moyen",
       "small": "Petit",
-      "nameListing": "Liste des noms"
+      "byAgreement": "D'un commun accord",
+      "featuredVideo": "Vidéo à la une",
+      "dedicatedPost": "Article dédié",
+      "groupRecognition": "Reconnaissance du groupe",
+      "oneAvailable": "1 disponible !"
+    },
+    "technical": {
+      "title": "Partenaires techniques",
+      "subtitle": "Votre contribution. Une reconnaissance à la hauteur de celle-ci",
+      "description": "Les produits, services et assistance technique sont évalués à la valeur de marché équitable convenue d'un commun accord, correspondant au niveau de trésorerie équivalent.",
+      "recognitionBefore": "Les partenaires bénéficient également de",
+      "recognition": "Réalisé par [Entreprise]",
+      "recognitionAfter": "mention sur le composant fourni ou sur la documentation associée au projet, lorsque cela est possible."
     },
     "notes": {
       "currency": "Tous les montants des parrainages et les valeurs équivalentes des contributions sont exprimés en dollars canadiens (CAD).",
-      "flexibility": "Nous sommes toujours disposés à discuter d'opportunités de parrainage en dehors des fourchettes indiquées ci-dessus.",
-      "availability": "¹ Sous réserve de la disponibilité des membres et des modalités de déplacement convenues d'un commun accord."
+      "report": "La prise en compte du rapport est soumise au respect des conditions de soumission au concours.",
+      "naming": "Le choix du nom et le parrainage du projet sont soumis à disponibilité et à un libellé convenu d'un commun accord.",
+      "events": "L'organisation d'événements et d'ateliers nécessite la mise en place d'un calendrier convenu, l'autorisation des responsables des locaux et le respect des normes de sécurité."
     },
     "Footer": {
       "emails": "E-mails",
@@ -219,7 +251,7 @@
       "process": {
         "title": "Notre processus de recyclage du PET",
         "step1": {
-          "title": "Étape 1 : Collecter",
+          "title": "Étape 1 : Rassembler",
           "description": "Nous collectons des bouteilles en plastique PET1 sur les campus de l'Université de Toronto et auprès de partenaires locaux."
         },
         "step2": {
@@ -294,7 +326,7 @@
       "description": "Vous trouverez ci-dessous les horaires et les lieux de nos séances de travail !",
       "aero": {
         "name": "Aérodynamique",
-        "time": "Les dimanches, de 10 h à 11 h",
+        "time": "Les dimanches de 10 h à 11 h",
         "location": "@ Myhal Arena"
       },
       "mechanical": {
@@ -345,7 +377,7 @@
       },
       "power": {
         "title": "Systèmes d'alimentation électrique",
-        "description": "La sous-équipe « Systèmes électriques » conçoit la partie électrique de la turbine, notamment les générateurs, les convertisseurs et les circuits. Son objectif est de convertir efficacement l'énergie mécanique en électricité fiable et exploitable."
+        "description": "La sous-équipe « Systèmes d'alimentation » conçoit la partie électrique de la turbine, notamment les générateurs, les convertisseurs et les circuits. Son objectif est de convertir efficacement l'énergie mécanique en électricité fiable et exploitable."
       },
       "sustainability": {
         "title": "Développement durable",
@@ -353,7 +385,7 @@
       },
       "business": {
         "title": "Développement commercial",
-        "description": "L'équipe de développement commercial regroupe les départements Finance, Partenariats, Marketing et Opérations. Ensemble, nous mobilisons et gérons les ressources nécessaires pour soutenir notre équipe en pleine croissance, nouer des partenariats externes, communiquer au nom d'UTWind et représenter l'université, organiser des événements et coordonner la logistique des compétitions afin d'assurer le bon fonctionnement de l'équipe."
+        "description": "L'équipe de développement commercial regroupe les départements Finance, Partenariats, Marketing et Opérations. Ensemble, nous mobilisons et gérons les ressources nécessaires pour soutenir notre équipe en pleine croissance, nouer des partenariats externes, communiquer au nom d'UTWind et la représenter, organiser des événements et coordonner la logistique des compétitions afin d'assurer le bon fonctionnement de l'équipe."
       }
     },
     "Footer": {

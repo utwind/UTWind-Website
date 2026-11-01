@@ -9,6 +9,14 @@ import "aos/dist/aos.css";
 import { Inter, Montserrat, Orbitron } from "next/font/google";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 
+type Pixel = {
+  width: number;
+  height: number;
+  left: number;
+  top: number;
+  duration: number;
+  delay: number;
+};
 
 export default function Home() {
   // ref for navbar and mobile menu state
@@ -40,6 +48,21 @@ export default function Home() {
 
     return () => clearTimeout(timer);
   }
+}, []);
+
+const [pixels, setPixels] = useState<Pixel[]>([]);
+
+useEffect(() => {
+  const generatedPixels: Pixel[] = Array.from({ length: 1000 }, () => ({
+    width: Math.random() * 4,
+    height: Math.random() * 4,
+    left: Math.random() * 100,
+    top: Math.random() * -100,
+    duration: Math.random() * 8 + 6,
+    delay: Math.random() * 6,
+  }));
+
+  setPixels(generatedPixels);
 }, []);
   
   useEffect(() => {
@@ -169,7 +192,7 @@ If you have any questions, feel free to contact anyone on the leadership team at
               className="h-10 w-auto"
               priority
             />
-            <span className="text-2xl font-bold text-blue-600">UTWind</span>
+            <span className="text-2xl font-bold text-blue-600 font-racing">UTWind</span>
           </Link>
 
           {/* desktop links */}
@@ -230,181 +253,143 @@ If you have any questions, feel free to contact anyone on the leadership team at
         </div>
     </nav>
 
-      {/* hero */}
-<section className="relative h-screen overflow-hidden flex items-center text-white bg-gradient-to-br from-sky-900 via-blue-800 to-slate-900">
-  {/* Animated turbine background */}
-  <div className="absolute inset-0 flex items-center justify-center opacity-35">
-    <div className="relative w-[520px] h-[520px] md:w-[780px] md:h-[780px]">
-      {/* Tower */}
-      <div className="absolute left-1/2 top-[52%] w-8 h-[420px] md:h-[560px] bg-gradient-to-b from-white/80 to-white/30 -translate-x-1/2 rounded-t-md clip-tower"></div>
+{/* HERO + ABOUT + VISION */}
+<div className="relative overflow-hidden">
 
-      {/* Spinning rotor wrapper */}
-      <div className="absolute left-1/2 top-1/2 w-24 h-24 -translate-x-1/2 -translate-y-1/2">
+  {/* Shared dark tint */}
+  <div className="absolute inset-0 z-0 bg-black/30 pointer-events-none" />
+
+  {/* Continuous falling pixels across all 3 sections */}
+  <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden">
+    {pixels.map((pixel, i) => (
+      <span
+        key={i}
+        className="absolute block bg-white/70 animate-fall"
+        style={{
+          width: `${pixel.width}px`,
+          height: `${pixel.height}px`,
+          left: `${pixel.left}%`,
+          top: `${pixel.top}%`,
+          animationDuration: `${pixel.duration}s`,
+          animationDelay: `${pixel.delay}s`,
+        }}
+      />
+    ))}
+  </div>
+
+  {/* HERO */}
+  <section className="relative h-screen flex items-center text-white bg-gradient-to-b from-blue-900 via-blue-600 to-sky-300">
+
+  {/* Dark tint */}
+  <div className="absolute inset-0 z-[5] bg-black/40 pointer-events-none" />
+
+  {/* Animated turbine - ABOVE divider */}
+  <div className="absolute inset-0 z-[8] flex items-center justify-center opacity-35 pointer-events-none overflow-hidden">
+    <div className="relative w-full h-full">
+
+      {/* Tower */}
+      <div className="absolute left-1/2 top-[46%] w-8 h-[58vh] md:h-[65vh] bg-gradient-to-b from-white/80 to-white/30 -translate-x-1/2 rounded-t-md clip-tower" />
+
+      {/* Rotor */}
+      <div className="absolute left-1/2 top-[36%] w-[55vw] h-[55vw] max-w-[900px] max-h-[900px] min-w-[340px] min-h-[340px] -translate-x-1/2 -translate-y-1/2">
         <div className="relative w-full h-full animate-spin-slow">
+
           {/* Blade 1 */}
-          <div className="turbine-blade absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full origin-bottom"></div>
+          <div className="turbine-blade absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full origin-bottom" />
 
           {/* Blade 2 */}
-          <div className="turbine-blade absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full origin-bottom rotate-[120deg]"></div>
+          <div className="turbine-blade absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full origin-bottom rotate-[120deg]" />
 
           {/* Blade 3 */}
-          <div className="turbine-blade absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full origin-bottom rotate-[240deg]"></div>
+          <div className="turbine-blade absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full origin-bottom rotate-[240deg]" />
 
           {/* Hub */}
-          <div className="absolute left-1/2 top-1/2 w-20 h-20 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 z-10 shadow-xl border border-white/40"></div>
+          <div className="absolute left-1/2 top-1/2 w-20 h-20 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 z-10 shadow-xl border border-white/40" />
 
           {/* Center cap */}
-          <div className="absolute left-1/2 top-1/2 w-8 h-8 bg-slate-200 rounded-full -translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute left-1/2 top-1/2 w-8 h-8 bg-slate-200 rounded-full -translate-x-1/2 -translate-y-1/2 z-20" />
+
         </div>
       </div>
+
     </div>
   </div>
+    {/* Hero text */}
+    <div className="relative z-20 max-w-3xl px-8 md:px-16">
+      <h1 className="text-8xl md:text-9xl font-racing">
+        {home("title")}
+      </h1>
 
-  {/* Dark overlay */}
-  <div className="absolute inset-0 bg-black/45"></div>
+      <h1 className="text-7xl md:text-7xl font-racing">
+        {home("subtitle")}
+      </h1>
 
-  {/* Text content */}
-  <div className="relative z-20 max-w-3xl px-8 md:px-16">
-        <h1 className="text-8xl md:text-9xl font-racing">
-  {home("title")}
-</h1>
+      <p className="text-5xl md:text-3xl font-racing">
+        {home("description")}
+      </p>
+    </div>
 
-<h1 className="text-7xl md:text-7xl font-racing">
-  {home("subtitle")}
-</h1>
+  </section>
 
-<p className="text-5xl md:text-3xl font-racing">
-  {home("description")}
-</p>  
+<div className="relative z-[2] h-[2px] bg-white" />
+  {/* ABOUT */}
+<section
+  id="About"
+  className="relative text-white py-30 border-t border-white overflow-hidden"
+>
+  {/* Background picture */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{
+      backgroundImage: "url('/images/2025-2026 Gallery/IMG_0471.JPG')",
+      backgroundPosition: "center 60%",
+    }}
+  />
+
+  {/* Dark tint */}
+  <div className="absolute inset-0 z-[5] bg-black/50 pointer-events-none" />
+
+  {/* About content */}
+  <div className="relative z-20 max-w-2xl mx-auto px-6 text-center">
+    <h2 className="text-6xl font-bold mb-6">
+      {about("title")}
+    </h2>
+
+    <h2 className="text-2xl mb-6">
+      {about("description")}
+    </h2>
+
+    <a
+      href="/team"
+      className="inline-block mt-8 bg-indigo-200 hover:bg-indigo-400 text-black font-semibold py-4 px-10 rounded-lg shadow-md text-lg transition duration-300"
+    >
+      {about("button")}
+    </a>
   </div>
 </section>
 
-<section id="team-updates" className="py-16">
-  <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="bg-sky-50 rounded-2xl shadow-sm px-6 py-8 md:px-10 md:py-10">
-      
-      {/* Heading */}
-      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
-        <div>
-          <p className="text-sm font-semibold tracking-wide text-sky-600 uppercase">
-            {t("label")}
-          </p>
+  {/* VISION */}
+  <section
+    id="vision"
+    className="relative z-[1] bg-gradient-to-b from-white to-sky-200 text-white py-12"
+  >
+    
+    {/* Extra local tint */}
+    <div className="absolute inset-0 z-[5] bg-black/40 pointer-events-none" />
 
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
-            {t("title")}
-          </h2>
 
-          <p className="mt-2 text-slate-600 max-w-2xl">
-            {t("description")}
-          </p>
-        </div>
+    <div className="relative z-20 max-w-2xl mx-auto px-6 text-center">
+      <h2 className="text-6xl font-bold mb-6">
+        {vision("title")}
+      </h2>
 
-        <p className="text-xs text-slate-500 md:text-right">
-          {t("scrollNote")}
-        </p>
-      </div>
-
-      {/* Timeline + Active Update */}
-      <div className="grid md:grid-cols-2 gap-8 items-stretch">
-        
-        {/* Left: Timeline */}
-        <div className="bg-white rounded-2xl shadow-md border border-slate-100 p-4 sm:p-5">
-          <h3 className="text-sm font-semibold text-slate-700 mb-3">
-            Timeline
-          </h3>
-
-          <div className="max-h-96 overflow-y-auto pr-2 space-y-4">
-            {TEAM_UPDATES.map((update, index) => (
-              <button
-                key={update.date + update.title}
-                onClick={() => setActiveIndex(index)}
-                className={`w-full text-left rounded-xl border p-3 sm:p-4 transition ${
-                  index === activeIndex
-                    ? "border-sky-500 bg-sky-50"
-                    : "border-slate-200 hover:border-sky-300 hover:bg-sky-50/60"
-                }`}
-              >
-                <div className="flex items-center justify-between gap-2 mb-1">
-                  <span className="text-xs font-medium uppercase tracking-wide text-sky-700">
-                    {update.date}
-                  </span>
-
-                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-sky-100 text-sky-700">
-                    {index + 1 < 10 ? `0${index + 1}` : index + 1}
-                  </span>
-                </div>
-
-                <p className="text-sm font-semibold text-slate-900">
-                  {update.title}
-                </p>
-
-                <p className="mt-1 text-xs text-slate-600 line-clamp-2">
-                  {update.description}
-                </p>
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Right: Active Update */}
-        <div className="bg-white rounded-2xl shadow-md border border-slate-100 p-4 sm:p-6 flex flex-col overflow-y-auto max-h-[32rem]">
-          <div className="mb-4">
-            <p className="text-xs font-semibold tracking-wide text-sky-600 uppercase">
-              {activeUpdate.date}
-            </p>
-
-            <h3 className="mt-1 text-2xl font-bold text-slate-900">
-              {activeUpdate.title}
-            </h3>
-          </div>
-
-          {activeUpdate.image && (
-            <div className="relative w-full h-56 sm:h-64 rounded-2xl overflow-hidden mb-4">
-              <Image
-                src={activeUpdate.image}
-                alt={activeUpdate.title}
-                fill
-                className="object-cover"
-                sizes="(min-width: 768px) 50vw, 100vw"
-              />
-            </div>
-          )}
-
-          <p className="whitespace-pre-line text-sm md:text-base text-slate-700 leading-relaxed">
-            {activeUpdate.description}
-          </p>
-        </div>
-      </div>
+      <p className="text-2xl italic leading-relaxed">
+        &quot;{vision("description")}&quot;
+      </p>
     </div>
-  </div>
-</section>
+  </section>
 
-    {/* about */}
-      <section id="About" className="bg-blue-500 text-white py-20" data-aos="fade-up">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-6xl font-bold mb-6">{about("title")}</h2>
-          <h2 className="text-2xl mb-6">
-              {about("description")}
-        
-          </h2>
-          <a
-            href="/team"
-            className="inline-block mt-8 bg-indigo-200 hover:bg-indigo-400 text-black font-semibold py-4 px-10 rounded-lg shadow-md text-lg transition duration-300"
-          >
-            {about("button")}
-          </a>
-        </div>
-      </section>
-
-      {/* vision */}
-      <section id="vision" className="bg-white text-gray-800 py-20" data-aos="fade-up">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-6xl font-bold mb-6">{vision("title")}</h2>
-          <p className="text-2xl italic leading-relaxed">
-            &quot;{vision("description")}&quot;
-          </p>
-        </div>
-      </section>
+</div>
     <section
       id="contact"
       className="scroll-mt-24"

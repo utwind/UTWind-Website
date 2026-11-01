@@ -1,375 +1,296 @@
-import fs from "fs";
-import dotenv from "dotenv";
 import * as deepl from "deepl-node";
-import readline from "readline";
+import dotenv from "dotenv";
+import fs from "fs";
+import path from "path";
 
 dotenv.config({ path: ".env.local" });
 
-const translator = new deepl.Translator(
-  process.env.DEEPL_API_KEY
-);
+const apiKey = process.env.DEEPL_API_KEY;
 
-const ENGLISH_FILE = "./messages/en.json";
-const CACHE_FILE = "./translation-cache.json";
+if (!apiKey) {
+  console.error("❌ DEEPL_API_KEY was not found in .env.local");
+  process.exit(1);
+}
 
+const translator = new deepl.Translator(apiKey);
+
+const messagesDir = path.join(process.cwd(), "messages");
+const englishPath = path.join(messagesDir, "en.json");
+const cachePath = path.join(process.cwd(), "translation-cache.json");
+
+// English is the master file
+const english = JSON.parse(fs.readFileSync(englishPath, "utf8"));
+
+// Every language will now update automatically
 const languages = [
-  { code: "fr", file: "fr.json", name: "French" },
-  { code: "nl", file: "nl.json", name: "Dutch" },
-  { code: "de", file: "de.json", name: "German" },
-  { code: "pl", file: "pl.json", name: "Polish" },
-  { code: "el", file: "el.json", name: "Greek" },
-  { code: "es", file: "es.json", name: "Spanish" },
+  {
+    code: "fr",
+    deepl: "fr",
+    name: "French",
+  },
+  {
+    code: "nl",
+    deepl: "nl",
+    name: "Dutch",
+  },
+  {
+    code: "de",
+    deepl: "de",
+    name: "German",
+  },
+  {
+    code: "pl",
+    deepl: "pl",
+    name: "Polish",
+  },
+  {
+    code: "el",
+    deepl: "el",
+    name: "Greek",
+  },
+  {
+    code: "es",
+    deepl: "es",
+    name: "Spanish",
+  },
 ];
 
-if (!process.env.DEEPL_API_KEY) {
-  throw new Error(
-    "DEEPL_API_KEY is missing from .env.local"
-  );
-}
-
-if (!fs.existsSync(ENGLISH_FILE)) {
-  throw new Error(
-    `Could not find ${ENGLISH_FILE}`
-  );
-}
-
-const english = JSON.parse(
-  fs.readFileSync(ENGLISH_FILE, "utf8")
-);
-
+// Load translation cache
 let cache = {};
 
-if (fs.existsSync(CACHE_FILE)) {
+if (fs.existsSync(cachePath)) {
   try {
-    cache = JSON.parse(
-      fs.readFileSync(CACHE_FILE, "utf8")
-    );
+    cache = JSON.parse(fs.readFileSync(cachePath, "utf8"));
   } catch {
-    console.log(
-      "⚠️ Could not read translation cache. Starting with a new cache."
-    );
-
+    console.warn("⚠️ Could not read translation-cache.json. Starting fresh.");
     cache = {};
   }
 }
 
-const sleep = (ms) =>
-  new Promise((resolve) => setTimeout(resolve, ms));
-
-function askQuestion(question) {
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
-
-  return new Promise((resolve) => {
-    rl.question(question, (answer) => {
-      rl.close();
-
-      resolve(
-        answer.trim().toLowerCase()
-      );
-    });
-  });
-}
-
-async function translateWithRetry(
-  text,
-  targetLanguage,
-  retries = 5
-) {
-  for (
-    let attempt = 0;
-    attempt < retries;
-    attempt++
-  ) {
+/**
+ * Translate with retries for temporary DeepL/API errors.
+ */
+async function translateWithRetry(text, targetLanguage, retries = 5) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
     try {
-      const result =
-        await translator.translateText(
-          text,
-          "en",
-          targetLanguage
-        );
-
-      await sleep(250);
+      const result = await translator.translateText(
+        text,
+        "en",
+        targetLanguage
+      );
 
       return result.text;
     } catch (error) {
-      const isRateLimit =
-        error?.name === "TooManyRequestsError" ||
-        String(error).includes(
-          "Too many requests"
-        );
-
-      if (isRateLimit) {
-        const waitTime =
-          2000 * (attempt + 1);
-
-        console.log(
-          `⏳ Rate limit reached. Waiting ${
-            waitTime / 1000
-          } seconds...`
-        );
-
-        await sleep(waitTime);
-      } else {
+      if (attempt === retries) {
         throw error;
       }
-    }
-  }
 
-  throw new Error(
-    `Translation failed after ${retries} attempts for ${targetLanguage}`
-  );
-}
-
-async function syncObject(
-  englishObject,
-  existingObject,
-  languageCode,
-  currentPath = ""
-) {
-  const result = {};
-
-  cache[languageCode] ??= {};
-
-  for (const [key, englishValue] of Object.entries(
-    englishObject
-  )) {
-    const existingValue =
-      existingObject?.[key];
-
-    const fullPath = currentPath
-      ? `${currentPath}.${key}`
-      : key;
-
-    // STRING
-    if (
-      typeof englishValue === "string"
-    ) {
-      const cachedEntry =
-        cache[languageCode][fullPath];
-
-      /*
-        Reuse translation ONLY when:
-        - exact same key/path
-        - exact same English text
-        - translation already exists
-      */
-      if (
-        cachedEntry &&
-        cachedEntry.source ===
-          englishValue &&
-        cachedEntry.translation
-      ) {
-        result[key] =
-          cachedEntry.translation;
-
-        console.log(
-          `✅ Unchanged: ${languageCode} → ${fullPath}`
-        );
-
-        continue;
-      }
-
-      /*
-        If there is no cache yet but an existing
-        translated value exists, translate it again
-        because we cannot safely confirm the English
-        source hasn't changed.
-      */
+      const delay = attempt * 2000;
 
       console.log(
-        `🌍 Translating: ${languageCode} → ${fullPath}`
+        `   ⚠️ Translation failed. Retrying in ${delay / 1000}s...`
       );
 
-      const translated =
-        await translateWithRetry(
-          englishValue,
-          languageCode
-        );
-
-      result[key] = translated;
-
-      cache[languageCode][fullPath] = {
-        source: englishValue,
-        translation: translated,
-      };
-
-      continue;
+      await new Promise((resolve) => setTimeout(resolve, delay));
     }
-
-    // NESTED OBJECT
-    if (
-      typeof englishValue ===
-        "object" &&
-      englishValue !== null &&
-      !Array.isArray(englishValue)
-    ) {
-      result[key] =
-        await syncObject(
-          englishValue,
-          existingValue ?? {},
-          languageCode,
-          fullPath
-        );
-
-      continue;
-    }
-
-    // ARRAY / NUMBER / BOOLEAN / ETC.
-    result[key] = englishValue;
   }
-
-  return result;
 }
 
-function cleanCacheForLanguage(
+/**
+ * Recursively create the translated object.
+ *
+ * Rules:
+ *
+ * Same path + same English text
+ * → use cached translation
+ *
+ * Same path + changed English text
+ * → translate again
+ *
+ * New path
+ * → translate
+ *
+ * Renamed key
+ * → treated as new path and translated
+ *
+ * Deleted English key
+ * → disappears from translated JSON
+ */
+async function syncTranslations(
   englishObject,
   languageCode,
-  currentPath = "",
-  validPaths = new Set()
+  deeplLanguage,
+  currentPath = ""
 ) {
-  for (const [key, value] of Object.entries(
-    englishObject
-  )) {
-    const fullPath = currentPath
+  const output = {};
+
+  if (!cache[languageCode]) {
+    cache[languageCode] = {};
+  }
+
+  for (const [key, value] of Object.entries(englishObject)) {
+    const keyPath = currentPath
       ? `${currentPath}.${key}`
       : key;
 
-    if (typeof value === "string") {
-      validPaths.add(fullPath);
-    } else if (
-      typeof value === "object" &&
+    // Nested object
+    if (
       value !== null &&
+      typeof value === "object" &&
       !Array.isArray(value)
     ) {
-      cleanCacheForLanguage(
+      output[key] = await syncTranslations(
         value,
         languageCode,
-        fullPath,
-        validPaths
+        deeplLanguage,
+        keyPath
       );
+
+      continue;
+    }
+
+    // Arrays are copied as-is
+    if (Array.isArray(value)) {
+      output[key] = value;
+      continue;
+    }
+
+    // Non-string values are copied as-is
+    if (typeof value !== "string") {
+      output[key] = value;
+      continue;
+    }
+
+    const cachedEntry = cache[languageCode][keyPath];
+
+    // Nothing changed → reuse existing translation
+    if (
+      cachedEntry &&
+      cachedEntry.source === value &&
+      cachedEntry.translation
+    ) {
+      output[key] = cachedEntry.translation;
+
+      console.log(`   ✓ Cached: ${keyPath}`);
+
+      continue;
+    }
+
+    // English changed OR key is new
+    console.log(`   🌐 Translating: ${keyPath}`);
+
+    const translatedText = await translateWithRetry(
+      value,
+      deeplLanguage
+    );
+
+    output[key] = translatedText;
+
+    cache[languageCode][keyPath] = {
+      source: value,
+      translation: translatedText,
+    };
+
+    // Save cache continuously in case script is interrupted
+    fs.writeFileSync(
+      cachePath,
+      JSON.stringify(cache, null, 2),
+      "utf8"
+    );
+  }
+
+  return output;
+}
+
+/**
+ * Remove cache entries whose paths no longer exist
+ * in en.json.
+ */
+function collectEnglishPaths(object, currentPath = "", paths = new Set()) {
+  for (const [key, value] of Object.entries(object)) {
+    const keyPath = currentPath
+      ? `${currentPath}.${key}`
+      : key;
+
+    if (
+      value !== null &&
+      typeof value === "object" &&
+      !Array.isArray(value)
+    ) {
+      collectEnglishPaths(value, keyPath, paths);
+    } else {
+      paths.add(keyPath);
     }
   }
 
-  if (currentPath === "") {
-    const languageCache =
-      cache[languageCode] ?? {};
+  return paths;
+}
 
-    for (const cachedPath of Object.keys(
-      languageCache
-    )) {
-      if (!validPaths.has(cachedPath)) {
-        delete languageCache[cachedPath];
+function cleanCache(languageCode, validPaths) {
+  if (!cache[languageCode]) return;
 
-        console.log(
-          `🗑️ Removed old cache key: ${languageCode} → ${cachedPath}`
-        );
-      }
+  for (const cachedPath of Object.keys(cache[languageCode])) {
+    if (!validPaths.has(cachedPath)) {
+      console.log(`   🗑 Removed old key: ${cachedPath}`);
+      delete cache[languageCode][cachedPath];
     }
-
-    cache[languageCode] =
-      languageCache;
   }
 }
 
 async function main() {
-  console.log(
-    "\n🌐 UTWind Translation Updater\n"
-  );
+  console.log("\n🌍 UTWind Translation Updater");
+  console.log("================================\n");
 
+  const validEnglishPaths = collectEnglishPaths(english);
+
+  // Automatically run EVERY language
   for (const language of languages) {
-    const answer =
-      await askQuestion(
-        `Translate/update ${language.name}? (y/n): `
-      );
+    console.log(`\n🔵 Updating ${language.name} (${language.code})...`);
 
-    if (
-      answer !== "y" &&
-      answer !== "yes"
-    ) {
-      console.log(
-        `⏭️ Skipping ${language.name}\n`
-      );
+    try {
+      cleanCache(language.code, validEnglishPaths);
 
-      continue;
-    }
-
-    const filePath =
-      `./messages/${language.file}`;
-
-    let existing = {};
-
-    if (fs.existsSync(filePath)) {
-      try {
-        existing = JSON.parse(
-          fs.readFileSync(
-            filePath,
-            "utf8"
-          )
-        );
-      } catch {
-        console.log(
-          `⚠️ ${language.file} could not be read. Rebuilding it from scratch.`
-        );
-
-        existing = {};
-      }
-    }
-
-    console.log(
-      `\n🌍 Updating ${language.name}...\n`
-    );
-
-    const translated =
-      await syncObject(
+      const translated = await syncTranslations(
         english,
-        existing,
-        language.code
+        language.code,
+        language.deepl
       );
 
-    cleanCacheForLanguage(
-      english,
-      language.code
-    );
+      const outputPath = path.join(
+        messagesDir,
+        `${language.code}.json`
+      );
 
-    fs.writeFileSync(
-      filePath,
-      JSON.stringify(
-        translated,
-        null,
-        2
-      ),
-      "utf8"
-    );
+      fs.writeFileSync(
+        outputPath,
+        JSON.stringify(translated, null, 2) + "\n",
+        "utf8"
+      );
 
-    console.log(
-      `\n✅ ${language.name} updated!\n`
-    );
+      console.log(
+        `✅ ${language.name} updated → messages/${language.code}.json`
+      );
+    } catch (error) {
+      console.error(
+        `❌ Failed to update ${language.name}:`,
+        error.message
+      );
+    }
   }
 
+  // Final cache save
   fs.writeFileSync(
-    CACHE_FILE,
-    JSON.stringify(
-      cache,
-      null,
-      2
-    ),
+    cachePath,
+    JSON.stringify(cache, null, 2) + "\n",
     "utf8"
   );
 
-  console.log(
-    "🎉 Translation update finished!"
-  );
+  console.log("\n================================");
+  console.log("✅ All languages updated!");
+  console.log("================================\n");
 }
 
 main().catch((error) => {
-  console.error(
-    "\n❌ Translation script failed:"
-  );
-
-  console.error(error);
-
+  console.error("❌ Translation script failed:", error);
   process.exit(1);
 });

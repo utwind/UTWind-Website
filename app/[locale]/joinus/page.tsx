@@ -64,7 +64,7 @@ export default function JoinUsPage() {
                       className="h-10 w-auto"
                       priority
                     />
-                    <span className="text-2xl font-bold text-blue-600">UTWind</span>
+                    <span className="text-2xl font-bold text-blue-600 font-racing">UTWind</span>
                   </Link>
         
                   {/* desktop links */}
@@ -125,100 +125,117 @@ export default function JoinUsPage() {
                 </div>
             </nav>
 
-        {/* Meetings Section */}
         <section
-            id="meetings"
-            className="bg-indigo-50 py-20"
-            data-aos="fade-up"
-          >
-            <div className="max-w-5xl mx-auto px-6 text-center">
-              <h2 className="text-4xl font-bold text-gray-800 mb-10">
-                {joinUs("meetings.title")}
-              </h2>
+  id="meetings"
+  className="relative py-20 overflow-hidden"
+  data-aos="fade-up"
+>
+  {/* Background picture */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{
+      backgroundImage: "url('/images/2026-2027 Gallery/IMG_0904.jpg')",
+    }}
+  />
 
-              <p className="text-xl font-bold text-gray-800 mb-8">
-                {joinUs("meetings.description")}
-              </p>
-            </div>
+  {/* Dark tint */}
+  <div className="absolute inset-0 bg-black/50" />
 
-            {/* Meeting Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 max-w-4xl mx-auto">
-              {/* Aerodynamics */}
-              <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-              <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                {joinUs("meetings.aero.name")}
-              </h3>
+  {/* Everything stays inside this one section */}
+  <div className="relative z-10 max-w-5xl mx-auto px-6">
 
-              <p className="text-gray-700">
-                {joinUs("meetings.aero.time")}
-              </p>
+    {/* Title + description */}
+    <div className="text-center mb-10">
+      <h2 className="text-4xl font-bold text-white mb-6">
+        {joinUs("meetings.title")}
+      </h2>
 
-              <p className="text-gray-500 italic">
-                {joinUs("meetings.aero.location")}
-              </p>
-              </div>
+      <p className="text-xl font-bold text-white">
+        {joinUs("meetings.description")}
+      </p>
+    </div>
 
-              {/* Mechanical & Manufacturing */}
-              <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                  {joinUs("meetings.mechanical.name")}
-                </h3>
+    {/* Meeting grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-3xl mx-auto">
 
-                <p className="text-gray-700">
-                  {joinUs("meetings.mechanical.time")}
-                </p>
+      {/* Aerodynamics */}
+      <div className="bg-white/100 backdrop-blur-sm rounded-xl shadow-md p-5 text-center">
+        <h3 className="text-xl font-bold text-blue-900 mb-2">
+          {joinUs("meetings.aero.name")}
+        </h3>
 
-                <p className="text-gray-500 italic">
-                  {joinUs("meetings.mechanical.location")}
-                </p>
-              </div>
+        <p className="text-gray-800">
+          {joinUs("meetings.aero.time")}
+        </p>
 
-              {/* Control Systems */}
-              <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                  {joinUs("meetings.control.name")}
-                </h3>
+        <p className="text-gray-600">
+          {joinUs("meetings.aero.location")}
+        </p>
+      </div>
 
-                <p className="text-gray-700">
-                  {joinUs("meetings.control.time")}
-                </p>
+      {/* Mechanical */}
+      <div className="bg-white/100 backdrop-blur-sm rounded-xl shadow-md p-5 text-center">
+        <h3 className="text-xl font-bold text-blue-900 mb-2">
+          {joinUs("meetings.mechanical.name")}
+        </h3>
 
-                <p className="text-gray-500 italic">
-                  {joinUs("meetings.control.location")}
-                </p>
-              </div>
+        <p className="text-gray-800">
+          {joinUs("meetings.mechanical.time")}
+        </p>
 
-              {/* Power Systems */}
-              <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                  {joinUs("meetings.power.name")}
-                </h3>
+        <p className="text-gray-600">
+          {joinUs("meetings.mechanical.location")}
+        </p>
+      </div>
 
-                <p className="text-gray-700">
-                  {joinUs("meetings.power.time")}
-                </p>
+      {/* Control Systems */}
+      <div className="bg-white/100 backdrop-blur-sm rounded-xl shadow-md p-5 text-center">
+        <h3 className="text-xl font-bold text-blue-900 mb-2">
+          {joinUs("meetings.control.name")}
+        </h3>
 
-                <p className="text-gray-500 italic">
-                  {joinUs("meetings.power.location")}
-                </p>
-              </div>
+        <p className="text-gray-800">
+          {joinUs("meetings.control.time")}
+        </p>
 
-              {/* Sustainability */}
-              <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                  {joinUs("meetings.sustainability.name")}
-                </h3>
+        <p className="text-gray-600">
+          {joinUs("meetings.control.location")}
+        </p>
+      </div>
 
-                <p className="text-gray-700">
-                  {joinUs("meetings.sustainability.time")}
-                </p>
+      {/* Power Systems */}
+      <div className="bg-white/100 backdrop-blur-sm rounded-xl shadow-md p-5 text-center">
+        <h3 className="text-xl font-bold text-blue-900 mb-2">
+          {joinUs("meetings.power.name")}
+        </h3>
 
-                <p className="text-gray-500 italic">
-                  {joinUs("meetings.sustainability.location")}
-                </p>
-            </div>
-          </div>
-        </section>
+        <p className="text-gray-800">
+          {joinUs("meetings.power.time")}
+        </p>
+
+        <p className="text-gray-600">
+          {joinUs("meetings.power.location")}
+        </p>
+      </div>
+
+      {/* Sustainability */}
+      <div className="bg-white/100 backdrop-blur-sm rounded-xl shadow-md p-5 text-center">
+        <h3 className="text-xl font-bold text-blue-900 mb-2">
+          {joinUs("meetings.sustainability.name")}
+        </h3>
+
+        <p className="text-gray-800">
+          {joinUs("meetings.sustainability.time")}
+        </p>
+
+        <p className="text-gray-600">
+          {joinUs("meetings.sustainability.location")}
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
     {/* Forms  Section */}
     <section className="py-15 bg-gradient-to-b from-blue-100 to-blue-200  flex items-center">
 <div className="max-w-6xl mx-auto px-6 w-full">

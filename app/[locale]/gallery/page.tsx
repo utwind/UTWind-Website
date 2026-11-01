@@ -141,12 +141,24 @@ const galleryYears: GalleryYear[] = [
 
 export default function GalleryPage() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
+  const [isZoomed, setIsZoomed] = useState(false);
     const navbarRef = useRef<HTMLDivElement | null>(null);
     const lastScrollY = useRef(0);
     const nav = useTranslations("Navbar");
     const gallery = useTranslations("Gallery");
     const footer = useTranslations("Footer");
-    
+    useEffect(() => {
+      if (selectedImage) {
+        setIsZoomed(false);
+
+        const timer = setTimeout(() => {
+          setIsZoomed(true);
+        }, 20);
+
+        return () => clearTimeout(timer);
+      }
+    }, [selectedImage]);
     useEffect(() => {
       AOS.init({ duration: 400, once: true });
     }, []);
@@ -187,7 +199,7 @@ export default function GalleryPage() {
                       className="h-10 w-auto"
                       priority
                     />
-                    <span className="text-2xl font-bold text-blue-600">UTWind</span>
+                    <span className="text-2xl font-bold text-blue-600 font-racing">UTWind</span>
                   </Link>
         
                   {/* desktop links */}
@@ -284,7 +296,8 @@ export default function GalleryPage() {
                             key={image.src}
                             data-aos="fade-up"
                             data-aos-delay={index * 75}
-                            className="group relative mb-6 break-inside-avoid overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-xl transition"
+                            onClick={() => setSelectedImage(image)}
+                            className="group relative mb-6 break-inside-avoid overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-xl transition cursor-pointer"
                           >
                             <Image
                               src={image.src}
@@ -292,9 +305,13 @@ export default function GalleryPage() {
                               width={1200}
                               height={800}
                               quality={100}
-                              className="block w-full h-auto"
+                              className="block w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
                             />
 
+                            {/* Hover darkening */}
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+
+                            {/* Photo credit */}
                             {image.credit && (
                               <div className="absolute bottom-0 left-0 right-0 bg-black/60 px-4 py-2 text-left text-sm text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                                 {gallery("photoBy")} {image.credit}
@@ -310,7 +327,56 @@ export default function GalleryPage() {
             ))}
         </div>
       </section>
+{/* Expanded Image Lightbox */}
+{selectedImage && (
+  <div
+    className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 md:p-10"
+    onClick={() => setSelectedImage(null)}
+  >
+    {/* X button */}
+    <button
+      onClick={() => setSelectedImage(null)}
+      className="fixed top-6 right-6 z-[120] flex h-12 w-12 items-center justify-center rounded-full bg-black/60 text-white hover:bg-white hover:text-black transition"
+      aria-label="Close image"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        className="h-7 w-7"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M6 18 18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
 
+    {/* Expanded image */}
+    <div
+      className="relative flex max-h-[90vh] max-w-[95vw] flex-col items-center lightbox-zoom"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <Image
+        src={selectedImage.src}
+        alt={selectedImage.alt}
+        width={1800}
+        height={1200}
+        quality={100}
+        className="max-h-[85vh] max-w-[95vw] w-auto h-auto object-contain rounded-lg shadow-2xl"
+      />
+
+      {selectedImage.credit && (
+        <p className="mt-3 text-sm text-white/80">
+          {gallery("photoBy")} {selectedImage.credit}
+        </p>
+      )}
+    </div>
+  </div>
+)}
 
 {/* Footer */}
 <footer className="bg-blue-100 py-10 mt-20">

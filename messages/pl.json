@@ -17,7 +17,7 @@
   "TeamUpdates": {
     "label": "Aktualności dotyczące drużyny",
     "title": "Co się dzieje w UTWind",
-    "description": "Bądź na bieżąco z najnowszymi informacjami o postępach w naszych konkursach, kamieniach milowych w recyklingu PET oraz wydarzeniach organizowanych przez nasz zespół.",
+    "description": "Bądź na bieżąco z najnowszymi informacjami o postępach w naszych konkursach, kamieniach milowych w recyklingu PET oraz wydarzeniach dotyczących naszego zespołu.",
     "scrollNote": "Przejrzyj nasze aktualności i ogłoszenia z naszego kanału na Slacku • Kliknij, aby wyświetlić szczegóły",
     "timeline": "Oś czasu",
     "updates": {
@@ -29,12 +29,12 @@
       "semesterKickoffUpdate": {
         "date": "9 września 2026 r.",
         "title": "Aktualizacja dotycząca inauguracji semestru",
-        "description": "Cześć @wszyscy, dziękujemy wszystkim, którzy mogli dziś pojawić się na naszym wydarzeniu inauguracyjnym!\n\nJeśli któryś z waszych znajomych chce dołączyć do UTWind, poproście go, aby wypełnił formularz rekrutacyjny dostępny w opisie naszego profilu na Instagramie, a my wyślemy mu zaproszenie do tego obszaru roboczego na Slacku!\n\nJeśli macie jakieś pytania, śmiało kontaktujcie się ze mną lub którymkolwiek z pozostałych liderów. Zapoznajcie się też z naszym głównym harmonogramem wydarzeń organizowanych w ramach UTWind. Ten arkusz kalkulacyjny zawsze będzie zawierał najbardziej aktualne informacje o terminach i miejscach wydarzeń!\n\nBardziej szczegółowe informacje na temat poszczególnych podzespołów będą dostępne w ich własnych kanałach, więc dołączcie do tych, które Was interesują!\n\nNie mogę się doczekać współpracy z wami wszystkimi w tym cyklu projektowym!"
+        "description": "Cześć @wszyscy, dziękujemy wszystkim, którzy mogli dziś pojawić się na naszym wydarzeniu inauguracyjnym!\n\nJeśli któryś z waszych znajomych chce dołączyć do UTWind, poproście go, aby wypełnił formularz rekrutacyjny dostępny w opisie naszego profilu na Instagramie, a my wyślemy mu zaproszenie do tej przestrzeni roboczej na Slacku!\n\nJeśli macie jakieś pytania, śmiało kontaktujcie się ze mną lub którymkolwiek z pozostałych liderów. Zapoznajcie się też z naszym głównym harmonogramem wydarzeń organizowanych w ramach UTWind. Ten arkusz kalkulacyjny zawsze będzie zawierał najbardziej aktualne informacje o terminach i miejscach wydarzeń!\n\nBardziej szczegółowe informacje na temat poszczególnych podzespołów będą dostępne w ich własnych kanałach, więc dołączcie do tych, które Was interesują!\n\nNie mogę się doczekać współpracy z wami wszystkimi w tym cyklu projektowym!"
       },
       "designCycleWelcome": {
         "date": "6 września 2026 r.",
         "title": "Witamy w cyklu projektowym UTWind na lata 2026–2027!",
-        "description": "Witajcie @wszyscy! Witamy w cyklu projektowym UTWind na lata 2026–2027!\n\nRozpoczynamy od spotkania inauguracyjnego w środę, 9 września, w godz. 18:15–20:00 w Myhal Arena. Dla nowych członków jest to najlepsza okazja, aby dowiedzieć się więcej o naszych podzespołach i zdecydować, do których z nich dołączyć. Dla powracających członków jest to okazja do ponownego nawiązania kontaktów i zapoznania się z planami na ten cykl.\n\nAby dołączyć do podzespołu, wystarczy kliknąć kanał(y) odpowiadające podzespołom, które was interesują:\n\n• #aerodynamics (Liderzy: @Alex Kim, @Glenn)\n\n• #controls (liderzy: @Wanning He, @Jacob Duplessis)\n\n• #powersystems (liderzy: @Alec MacGregor, @Deniz Kantar)\n\n• #mechanical (liderzy: @Teagan McKenzie, @Shafwat)\n\n• #zrównoważony rozwój (liderzy: @Stella Cook, @Pakhi)\n\n• #biznes (dyrektor ds. biznesowych: @Dhara Patel)\n\nPodzespoły odbędą swoje pierwsze spotkania po spotkaniu inauguracyjnym. Sprawdźcie odpowiednie kanały, aby uzyskać szczegółowe informacje dotyczące terminów i miejsc cotygodniowych spotkań.\n\nJeśli macie jakieś pytania, nie wahajcie się skontaktować z dowolnym członkiem zespołu kierowniczego w dowolnym momencie! Dziękujemy wszystkim i liczymy na udany cykl projektowy!"
+        "description": "Witajcie @wszyscy! Witamy w cyklu projektowym UTWind na lata 2026–2027!\n\nRozpoczynamy od spotkania inauguracyjnego w środę, 9 września, w godz. 18:15–20:00 w Myhal Arena. Dla nowych członków jest to najlepsza okazja, aby dowiedzieć się więcej o naszych podzespołach i zdecydować, do których z nich dołączyć. Dla powracających członków jest to okazja do ponownego nawiązania kontaktów i zapoznania się z planami na ten cykl.\n\nAby dołączyć do podzespołu, wystarczy kliknąć kanał(y) odpowiadające podzespołom, które was interesują:\n\n• #aerodynamics (kierownicy: @Alex Kim, @Glenn)\n\n• #controls (liderzy: @Wanning He, @Jacob Duplessis)\n\n• #powersystems (liderzy: @Alec MacGregor, @Deniz Kantar)\n\n• #mechanical (liderzy: @Teagan McKenzie, @Shafwat)\n\n• #zrównoważony rozwój (Liderzy: @Stella Cook, @Pakhi)\n\n• #biznes (Dyrektor ds. biznesowych: @Dhara Patel)\n\nPodzespoły odbędą swoje pierwsze spotkania po spotkaniu inauguracyjnym. Sprawdźcie odpowiednie kanały, aby uzyskać szczegółowe informacje dotyczące terminów i miejsc cotygodniowych spotkań.\n\nJeśli macie jakieś pytania, nie wahajcie się skontaktować z dowolnym członkiem zespołu kierowniczego w dowolnym momencie! Dziękujemy wszystkim i liczymy na udany cykl projektowy!"
       }
     }
   },
@@ -45,7 +45,7 @@
   },
   "Vision": {
     "title": "Wizja",
-    "description": "Naszą wizją jest przybliżenie studentom Uniwersytetu w Toronto tematyki energii wiatrowej, tak aby byli przygotowani i zainspirowani do tego, by w zrównoważony sposób oświecać świat. Mamy nadzieję, że dzięki wspólnej pracy rozwinie się nasze umiejętności w ramach projektu, który nas pasjonuje. Nasz zespół to miejsce, w którym dzielimy się wiedzą i przekazujemy ją dalej. Projekt ten ma na celu skupienie się nie tylko na tym, czego uczymy się dzisiaj, ale także na tym, co możemy osiągnąć, kształtując bardziej zrównoważoną przyszłość!"
+    "description": "Naszą wizją jest przybliżenie studentom Uniwersytetu w Toronto tematyki energii wiatrowej, tak aby byli przygotowani i zainspirowani do tego, by oświecać świat w sposób zrównoważony. Poprzez wspólną pracę mamy nadzieję rozwijać nasze umiejętności w ramach projektu, który nas pasjonuje. Nasz zespół to miejsce, w którym dzielimy się wiedzą i przekazujemy ją dalej. Projekt ten ma na celu skupienie się nie tylko na tym, czego uczymy się dzisiaj, ale także na tym, co możemy osiągnąć, kształtując bardziej zrównoważoną przyszłość!"
   },
   "Contact": {
     "title": "Skontaktuj się z nami",
@@ -57,7 +57,7 @@
     "address": "Adres:",
     "addressLine1": "Centrum Innowacji Inżynieryjnych i Przedsiębiorczości im. Myhala",
     "addressLine2": "55 St George St, Toronto, ON M5S 0C9",
-    "closing": "Jeśli masz pytania dotyczące przystąpienia do programu, możliwości sponsoringu lub współpracy, skontaktuj się z nami — nasz zespół odpowie tak szybko, jak to możliwe."
+    "closing": "Jeśli masz pytania dotyczące przystąpienia do programu, możliwości sponsoringu lub współpracy partnerskiej, skontaktuj się z nami — nasz zespół odpowie tak szybko, jak to możliwe."
   },
   "Footer": {
     "emails": "E-maile",
@@ -83,7 +83,7 @@
     "historyTitle": "Historia zawodów",
     "history": {
       "2022": {
-        "description": "Były to pierwsze zawody ISWTC, w których drużyna UTWind wzięła udział po prawie dwóch latach przygotowań w czasie pandemii. UTWind zdobyła nagrodę za najlepszy projekt ogólny <strong>(1. miejsce)</strong> podczas swojego debiutu na ISWTC.",
+        "description": "Były to pierwsze zawody ISWTC, w których drużyna UTWind wzięła udział po prawie dwóch latach przygotowań w czasie pandemii. W swoim debiucie na ISWTC drużyna UTWind zdobyła nagrodę za najlepszy projekt ogólny <strong>(1. miejsce)</strong>.",
         "caption": "Turbina firmy UTWind, która zdobyła pierwsze miejsce w konkursie – 2022 r."
       },
       "2023": {
@@ -92,10 +92,10 @@
       },
       "2024": {
         "description": "W trzecim roku udziału w zawodach wprowadzono kilka nowości: recykling butelek PET w celu uzyskania filamentu, zastosowanie jednego silnika do sterowania skokiem oraz wykonanie łopat z włókna lnianego. Biorąc pod uwagę dużą liczbę nowych drużyn, ogromnym zaskoczeniem było przyznanie przez jury nagrody za najlepszy projekt ogólny <strong>(1. miejsce)</strong> drużynie „The Team from Toronto”.",
-        "caption": "Turbina firmy UTWind, która zdobyła pierwsze miejsce w konkursie – 2024 r."
+        "caption": "Turbina firmy UTWind, która zdobyła pierwsze miejsce w konkursie – 2024"
       },
       "2025": {
-        "description": "Najbardziej ambitną turbiną w historii firmy UTWind była nasza pierwsza w historii turbina wiatrowa o osi pionowej (VAWT). Pomimo napiętego harmonogramu i braku doświadczenia zbudowaliśmy turbinę VAWT z wirnikiem typu H w zaledwie cztery miesiące i byliśmy zachwyceni, widząc, jak się kręci, wytwarza energię i działa z działającym systemem sterowania. Chociaż nie przywieźliśmy do domu trofeum, wiele się nauczyliśmy i nie możemy się doczekać, aby ulepszyć nasz projekt w kolejnej iteracji.",
+        "description": "Najbardziej ambitną turbiną w historii firmy UTWind była nasza pierwsza w historii turbina wiatrowa o osi pionowej (VAWT). Pomimo napiętego harmonogramu i braku doświadczenia zbudowaliśmy turbinę VAWT z wirnikiem typu H w zaledwie cztery miesiące i byliśmy zachwyceni, widząc, jak się obraca, wytwarza energię i działa z działającym systemem sterowania. Chociaż nie przywieźliśmy do domu trofeum, wiele się nauczyliśmy i nie możemy się doczekać, aby ulepszyć nasz projekt w kolejnej wersji.",
         "caption": "Pierwsza wersja pionowej turbiny wiatrowej (VAWT) firmy UTWind – 2025 r."
       },
       "2026": {
@@ -115,7 +115,7 @@
     "title": "Poznaj nasz zespół",
     "description": "Poznajcie studentów stojących za projektem UTWind.",
     "sections": {
-      "president": "Prezydent",
+      "teamcaptain": "Kapitan drużyny",
       "business": "Biznes",
       "mechanical": "Mechanika",
       "control": "Systemy sterowania",
@@ -125,13 +125,14 @@
       "web": "Webmaster"
     },
     "positions": {
-      "president": "Prezydent",
+      "teamcaptain": "Kapitan drużyny",
       "businessDirector": "Dyrektor ds. biznesowych",
       "marketingLead": "Kierownik ds. marketingu",
       "financeLead": "Kierownik ds. finansów",
       "sponsorshipsLead": "Kierownik ds. sponsoringu",
       "operationsCoLead": "Współkierownik ds. operacyjnych",
       "mechanicalCoLead": "Współkierownik ds. mechaniki",
+      "systemsintegrationLead": "Kierownik ds. integracji systemów",
       "controlCoLead": "Współkierownik ds. systemów sterowania",
       "powerCoLead": "Współkierownik ds. systemów zasilania",
       "aeroCoLead": "Współkierownik ds. aerodynamiki",
@@ -160,7 +161,7 @@
     },
     "tiers": {
       "title": "Poziomy sponsorowania",
-      "description": "Oferujemy elastyczne formy współpracy oparte na wiedzy technicznej, wsparciu finansowym oraz wsparciu rzeczowym. Środki te przeznaczane są na sfinansowanie kluczowych komponentów, materiałów, badań, kosztów udziału w zawodach oraz działalności zespołów. W zamian sponsorzy zyskują bezpośredni dostęp do utalentowanych studentów kierunków inżynierskich, jednocześnie realizując swoje priorytety w zakresie ESG. Dzięki temu wsparciu UTWind może projektować, budować, testować i brać udział w zawodach z wykorzystaniem innowacyjnych technologii w zakresie czystej energii.",
+      "description": "Oferujemy elastyczne formy współpracy oparte na wiedzy technicznej, wsparciu finansowym oraz wsparciu rzeczowym. Środki te przeznaczane są na sfinansowanie kluczowych komponentów, materiałów, badań, kosztów udziału w zawodach oraz działalności zespołów. W zamian sponsorzy zyskują bezpośredni dostęp do utalentowanych studentów kierunków inżynierskich, jednocześnie realizując swoje priorytety w zakresie ESG. Dzięki temu wsparciu UTWind może projektować, budować, testować i rywalizować w zawodach, wykorzystując innowacyjne technologie w zakresie czystej energii.",
       "diamond": "Diament",
       "platinum": "Platyna",
       "gold": "Złoto",
@@ -169,35 +170,66 @@
       "technicalPartner": "Partner techniczny",
       "technicalDescription": "Produkty, usługi lub wsparcie techniczne"
     },
+    "allSponsorsReceive": "Wszyscy sponsorzy otrzymują:",
+    "allSponsors": {
+      "showcases": "Zaproszenie na prezentacje zespołów",
+      "networking": "Coroczna impreza networkingowa i rekrutacyjna",
+      "jobPostings": "Odpowiednie ogłoszenia o pracy udostępnione członkom",
+      "impactReport": "Roczny raport dotyczący wpływu",
+      "iswtcAcknowledgement": "Podziękowania zawarte w raporcie ISWTC"
+    },
+    "table": {
+      "chooseLevel": "Wybierz poziom swojego zaangażowania",
+      "sponsorBenefit": "Korzyści dla sponsora"
+    },
     "benefits": {
-      "teamEvents": "Zaproszenie na imprezy drużynowe i pokazy",
-      "networking": "Zaproszenie na coroczne spotkanie networkingowe i rekrutacyjne dla sponsorów",
-      "jobPostings": "Ogłoszenia o pracy sponsorowane udostępniane członkom",
-      "teamApparel": "Logo na strojach drużyny",
-      "resumeBook": "Dostęp do zbioru CV członków zespołu",
-      "sponsorEvent": "Obecność członków zespołu na imprezie sponsorowanej¹",
-      "website": "Logo na stronie internetowej (link do wszystkich)",
-      "banners": "Logo na banerach i ekspozytorach konkursowych",
-      "turbine": "Logo na turbinie"
+      "website": "Rozpoznawalność strony internetowej",
+      "banners": "Banery i ekspozycje konkursowe",
+      "turbine": "Logo na turbinie",
+      "socialMedia": "Uznanie w mediach społecznościowych",
+      "teamApparel": "Logo na odzieży drużynowej",
+      "resumeBook": "Zgoda na dostęp do bazy CV",
+      "projectSponsor": "Uznanie dla sponsora projektu",
+      "workshop": "Coroczne warsztaty, wykład techniczny lub wydarzenie sponsorowane",
+      "speakingSlot": "Wystąpienie podczas inauguracji / prezentacji",
+      "namingRights": "Prawa do nazwy turbiny"
     },
     "values": {
-      "byAgreement": "Na mocy porozumienia",
       "featuredProfile": "Wyróżniony profil",
       "secondaryFeature": "Funkcja dodatkowa",
       "logoOnly": "Tylko logo",
+      "xlLogo": "Logo XL",
+      "largeLogo": "Duże logo",
+      "mediumLogo": "Średnie logo",
+      "smallLogo": "Małe logo",
+      "nameListing": "Lista nazwisk",
+      "xl": "XL",
       "large": "Duży",
       "medium": "Średni",
       "small": "Mały",
-      "nameListing": "Lista nazwisk"
+      "byAgreement": "Na mocy umowy",
+      "featuredVideo": "Polecane wideo",
+      "dedicatedPost": "Wpis tematyczny",
+      "groupRecognition": "Uznanie dla grupy",
+      "oneAvailable": "1 sztuka w magazynie!"
+    },
+    "technical": {
+      "title": "Partnerzy techniczni",
+      "subtitle": "Twój wkład. Odpowiednie uznanie",
+      "description": "Produkty, usługi i wsparcie techniczne są wyceniane zgodnie z odpowiednim poziomem gotówkowym według wzajemnie uzgodnionej, godziwej wartości rynkowej.",
+      "recognitionBefore": "Partnerzy otrzymują również",
+      "recognition": "Obsługiwane przez [Firma]",
+      "recognitionAfter": "umieszczenie informacji o autorstwie na dostarczonym elemencie lub w powiązanych materiałach projektowych, o ile jest to możliwe."
     },
     "notes": {
       "currency": "Wszystkie kwoty sponsoringu oraz równowartości wkładów podane są w dolarach kanadyjskich (CAD).",
-      "flexibility": "Zawsze jesteśmy otwarci na rozmowy dotyczące możliwości sponsoringu wykraczających poza powyższe ramy.",
-      "availability": "¹ Z zastrzeżeniem dostępności członków oraz wspólnie uzgodnionych warunków podróży."
+      "report": "Potwierdzenie przyjęcia zgłoszenia podlega wymogom dotyczącym zgłoszeń konkursowych.",
+      "naming": "Nazwa oraz patronat nad projektem zależą od dostępności oraz treści uzgodnionej przez obie strony.",
+      "events": "Organizacja wydarzeń i warsztatów wymaga uzgodnienia harmonogramu, uzyskania zgody na korzystanie z obiektu oraz zapewnienia zgodności z przepisami bezpieczeństwa."
     },
     "Footer": {
       "emails": "E-maile",
-      "generalInquiries": "Ogólne zapytania:",
+      "generalInquiries": "Ogólne pytania:",
       "sponsorships": "Sponsorzy:",
       "operations": "Działalność operacyjna:",
       "copyright": "© 2026 UTWind | Uniwersytet w Toronto"
@@ -212,7 +244,7 @@
     },
     "pet": {
       "title": "Inicjatywa na rzecz recyklingu butelek PET",
-      "description": "Od wiosny 2024 roku UTWind zbiera butelki plastikowe PET1 z kampusów Uniwersytetu w Toronto i przetwarza je na filament do druku 3D, z którego wytwarzamy elementy naszej turbinie wiatrowej przeznaczonej do zawodów. Każdego roku pracujemy nad udoskonaleniem tego procesu i zwiększeniem liczby elementów, które możemy wydrukować z wykorzystaniem tworzywa sztucznego pochodzącego z recyklingu.",
+      "description": "Od wiosny 2024 roku UTWind zbiera butelki plastikowe PET1 z kampusów Uniwersytetu w Toronto i przetwarza je na filament do druku 3D, z którego wytwarzamy części naszej turbinie wiatrowej przeznaczonej do zawodów. Każdego roku pracujemy nad udoskonaleniem tego procesu i zwiększeniem liczby elementów, które możemy wydrukować z wykorzystaniem tworzywa sztucznego pochodzącego z recyklingu.",
       "thanksBeforeUtern": "Chcielibyśmy podziękować",
       "thanksMiddle": "za nieustające wsparcie finansowe oraz za",
       "thanksAfter": "za to, że są Państwo naszym największym źródłem darowizn w postaci butelek.",
@@ -224,7 +256,7 @@
         },
         "step2": {
           "title": "Krok 2: Wytłaczanie",
-          "description": "Zebrane butelki są cięte i przetwarzane na filament nadający się do ponownego wykorzystania!"
+          "description": "Zebrane butelki są cięte i przetwarzane na włókno nadające się do ponownego wykorzystania!"
         },
         "step3": {
           "title": "Krok 3: Druk 3D",
@@ -245,7 +277,7 @@
         "description": "Aby przynieść butelki lub skorzystać z naszej drukarki 3D wykorzystującej filament z recyklingu, prosimy o wysłanie wiadomości e-mail na adres",
         "guidelinesTitle": "Wytyczne dotyczące oddawania butelek",
         "guideline1": "Muszą to być plastikowe butelki z tworzywa PET1 (np. 4-litrowe butelki na wodę, 2-litrowe butelki po wodzie gazowanej lub wodzie mineralnej). Zdjęcia w załączniku poniżej.",
-        "guideline2": "Butelki nie mogą być po użyciu do przechowywania płynów o dużej lepkości ani oleju.",
+        "guideline2": "Butelki nie mogą być po użyciu do przechowywania lepkich płynów ani oleju.",
         "guideline3": "Butelki powinny być nieściśnięte i czyste (wolne od zanieczyszczeń z zewnątrz)."
       },
       "recycleWhy": {
@@ -261,7 +293,7 @@
     },
     "turbine": {
       "title": "Projekt „Turbina na kampusie”",
-      "description": "Projekt turbiny na terenie kampusu UTWind to nasza flagowa inicjatywa w zakresie energii odnawialnej oparta na praktycznych działaniach.",
+      "description": "Projekt turbiny na terenie kampusu UTWind to nasza flagowa inicjatywa w zakresie energii odnawialnej oparta na praktycznym podejściu.",
       "comingSoon": "Szczegółowe informacje dotyczące tej sekcji zostaną dodane wkrótce!"
     },
     "Footer": {
@@ -282,7 +314,7 @@
     "photoBy": "Zdjęcie:",
     "Footer": {
       "emails": "E-maile",
-      "generalInquiries": "Ogólne pytania:",
+      "generalInquiries": "Ogólne zapytania:",
       "sponsorships": "Sponsorzy:",
       "operations": "Działalność operacyjna:",
       "copyright": "© 2026 UTWind | Uniwersytet w Toronto"

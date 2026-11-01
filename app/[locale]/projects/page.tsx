@@ -12,7 +12,7 @@ type Project = "pet" | "turbine" | null;
 
 export default function ProjectsPage() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeProject, setActiveProject] = useState<Project>(null);
+  const [activeProject, setActiveProject] = useState<Project>("pet");
   const [slide1Index, setSlide1Index] = useState(0);
   const [slide4Index, setSlide4Index] = useState(0);
 
@@ -80,7 +80,7 @@ export default function ProjectsPage() {
                       className="h-10 w-auto"
                       priority
                     />
-                    <span className="text-2xl font-bold text-blue-600">UTWind</span>
+                    <span className="text-2xl font-bold text-blue-600 font-racing">UTWind</span>
                   </Link>
         
                   {/* desktop links */}

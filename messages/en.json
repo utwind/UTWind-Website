@@ -136,7 +136,7 @@
   "description": "Meet the students behind UTWind.",
 
   "sections": {
-    "president": "President",
+    "teamcaptain": "Team Captain",
     "business": "Business",
     "mechanical": "Mechanical",
     "control": "Control Systems",
@@ -147,13 +147,14 @@
   },
 
   "positions": {
-    "president": "President",
+    "teamcaptain": "Team Captain",
     "businessDirector": "Business Director",
     "marketingLead": "Marketing Lead",
     "financeLead": "Finance Lead",
     "sponsorshipsLead": "Sponsorships Lead",
     "operationsCoLead": "Operations Co-Lead",
     "mechanicalCoLead": "Mechanical Co-Lead",
+    "systemsintegrationLead": "Systems Integration Lead",
     "controlCoLead": "Control Systems Co-Lead",
     "powerCoLead": "Power Systems Co-Lead",
     "aeroCoLead": "Aerodynamics Co-Lead",
@@ -195,35 +196,73 @@
     "technicalPartner": "Technical Partner",
     "technicalDescription": "Products, services, or technical support"
   },
+"allSponsorsReceive": "All Sponsors Receive:",
 
-  "benefits": {
-    "teamEvents": "Invitation to team events & showcases",
-    "networking": "Invitation to annual sponsor networking and recruitment event",
-    "jobPostings": "Sponsor job postings shared with members",
-    "teamApparel": "Logo on team apparel",
-    "resumeBook": "Access to team résumé book",
-    "sponsorEvent": "Team attendance at sponsor event¹",
-    "website": "Logo on website (linked for all)",
-    "banners": "Logo on banners & competition displays",
-    "turbine": "Logo on turbine"
-  },
+"allSponsors": {
+  "showcases": "Invitation to team showcases",
+  "networking": "Annual networking & recruitment event",
+  "jobPostings": "Relevant job postings shared with members",
+  "impactReport": "Annual impact report",
+  "iswtcAcknowledgement": "ISWTC report acknowledgement"
+},
 
-  "values": {
-    "byAgreement": "By agreement",
-    "featuredProfile": "Featured profile",
-    "secondaryFeature": "Secondary feature",
-    "logoOnly": "Logo only",
-    "large": "Large",
-    "medium": "Medium",
-    "small": "Small",
-    "nameListing": "Name listing"
-  },
+"table": {
+  "chooseLevel": "Choose Your Level of Involvement",
+  "sponsorBenefit": "Sponsor Benefit"
+},
 
-  "notes": {
-    "currency": "All sponsorship amounts and equivalent contribution values are stated in Canadian dollars (CAD).",
-    "flexibility": "We are always open to discussing sponsorship opportunities outside the above ranges.",
-    "availability": "¹ Subject to member availability and mutually agreed travel arrangements."
-  },
+"benefits": {
+  "website": "Website Recognition",
+  "banners": "Banners & Competition Displays",
+  "turbine": "Logo on Turbine",
+  "socialMedia": "Social Media Recognition",
+  "teamApparel": "Logo on Team Apparel",
+  "resumeBook": "Opt-in Résumé Book Access",
+  "projectSponsor": "Project Sponsor Recognition",
+  "workshop": "Annual Workshop, Tech Talk, or Sponsor Event",
+  "speakingSlot": "Kickoff / Unveiling Speaking Slot",
+  "namingRights": "Turbine Naming Rights"
+},
+
+"values": {
+  "featuredProfile": "Featured Profile",
+  "secondaryFeature": "Secondary Feature",
+  "logoOnly": "Logo Only",
+
+  "xlLogo": "XL Logo",
+  "largeLogo": "Large Logo",
+  "mediumLogo": "Medium Logo",
+  "smallLogo": "Small Logo",
+  "nameListing": "Name Listing",
+
+  "xl": "XL",
+  "large": "Large",
+  "medium": "Medium",
+  "small": "Small",
+  "byAgreement": "By Agreement",
+
+  "featuredVideo": "Featured Video",
+  "dedicatedPost": "Dedicated Post",
+  "groupRecognition": "Group Recognition",
+
+  "oneAvailable": "1 Available!"
+},
+
+"technical": {
+  "title": "Technical Partners",
+  "subtitle": "Your contribution. Equivalent recognition",
+  "description": "Products, services, and technical support are matched to the equivalent cash tier at a mutually agreed fair market value.",
+  "recognitionBefore": "Partners also receive",
+  "recognition": "Powered by [Company]",
+  "recognitionAfter": "recognition on the supplied component or associated project materials, where practical."
+},
+
+"notes": {
+  "currency": "All sponsorship amounts and equivalent contribution values are stated in Canadian dollars (CAD).",
+  "report": "Report acknowledgement is subject to competition submission requirements.",
+  "naming": "Naming and project sponsorship are subject to availability and mutually agreed wording.",
+  "events": "Events and workshops require agreed scheduling, facility approval, and safety compliance."
+},
   
   "Footer": {
     "emails": "Emails",

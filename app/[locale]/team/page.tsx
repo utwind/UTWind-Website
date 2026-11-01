@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 
 type TeamKey =
-  | "president"
+  | "teamcaptain"
   | "mechanical"
   | "control"
   | "power"
@@ -27,11 +27,11 @@ type TeamMember = {
 };
 
 const teamData: Record<TeamKey, TeamMember[]> = {
-  president: [
+  teamcaptain: [
     {
       name: "Chenyu Li",
       year: "MECH 2T9 + PEY",
-      positionKey: "president",
+      positionKey: "teamcaptain",
       img: "/images/2026-2027 team picture folder/Chenyu_Li_MECH2T9+PEY_President.jpg",
       linkedin: "https://ca.linkedin.com/in/li-chenyu"
     },
@@ -50,6 +50,13 @@ const teamData: Record<TeamKey, TeamMember[]> = {
       positionKey: "marketingLead",
       img: "/images/2026-2027 team picture folder/Diane_Qin_Mech_2T9+PEY_Marketing.png",
       linkedin: "https://www.linkedin.com/in/dianecqin/"
+    },
+    {
+      name: "Haydenne Cabuco",
+      year: "IRHR&Soc 2T8",
+      positionKey: "marketingLead",
+      img: "/images/2026-2027 team picture folder/Haydenne_Cabuco_IRHR&Soc_2T8_Media.png",
+      linkedin: "https://www.linkedin.com/in/haydenne-cabuco-06b137270/"
     },
     {
       name: "Thomas Dong",
@@ -94,6 +101,13 @@ const teamData: Record<TeamKey, TeamMember[]> = {
       positionKey: "mechanicalCoLead",
       img: "/images/2026-2027 team picture folder/Shafwat_Khan_MECH2T8+PEY_MechanicalCoLead.jpg",
       linkedin: "https://ca.linkedin.com/in/shafwat-khan-b8b664339"
+    },
+        {
+      name: 'Hassan Tahir',
+      year: "ENGSCI 2T6 + PEY",
+      positionKey: "systemsintegrationLead",
+      img: "/images/2026-2027 team picture folder/Hassan_Tahir_ENGSCI(AERO)2T6+PEY_SystemsIntegrationLead.jpg",
+      linkedin: "https://www.linkedin.com/in/aereht/"
     },
   ],
   control: [
@@ -273,7 +287,7 @@ export default function TeamPage() {
                       className="h-10 w-auto"
                       priority
                     />
-                    <span className="text-2xl font-bold text-blue-600">UTWind</span>
+                    <span className="text-2xl font-bold text-blue-600 font-racing">UTWind</span>
                   </Link>
         
                   {/* desktop links */}
@@ -349,16 +363,16 @@ export default function TeamPage() {
       </p>
     </div>
 
-    {/* President */}
+    {/* Team Captain */}
     <div className="mb-20">
       <div className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg mb-10 text-center">
         <h2 className="text-3xl font-bold">
-          {teamT("sections.president")}
+          {teamT("sections.teamcaptain")}
         </h2>
       </div>
 
       <div className="flex flex-wrap justify-center gap-10">
-        {renderTeam("president")}
+        {renderTeam("teamcaptain")}
       </div>
     </div>
 

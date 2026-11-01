@@ -24,11 +24,11 @@
       "solidworksWorkshop": {
         "date": "16. September 2026",
         "title": "SolidWorks-Workshop für Anfänger!",
-        "description": "Hey @channel, hier eine kurze Vorankündigung zu einer bevorstehenden Veranstaltung!\n\nUnser nächstes Treffen des Mechanik-Subteams ist ein technischer Einführungsworkshop zu SolidWorks im Galbraith ECF (GB144) am Freitag, den 18. September, von 18:00 bis 20:00 Uhr.\n\nDieser Workshop richtet sich an Personen mit wenig bis gar keiner SolidWorks-Erfahrung, und ihr müsst nicht im Fachbereich Maschinenbau oder MechE eingeschrieben sein, um daran teilzunehmen. Egal, ob ihr im Fachbereich Wirtschaft, Elektrotechnik, Luft- und Raumfahrt oder einem anderen Unterteam seid und welchen Studiengang ihr belegt – ihr seid herzlich willkommen. CAD gehört zu den übertragbarsten Fähigkeiten, die man in einem Designteam erwerben kann, und dies ist der einfachste Einstieg, um eine neue Kompetenz für dein Portfolio, deinen Lebenslauf oder persönliche Projekte zu erlernen, die du vielleicht umsetzen möchtest!\n\nDie Plätze sind durch die Kapazität des Labors begrenzt und schnell ausgebucht. Melde dich daher bitte hier an, um dir einen garantierten Platz zu sichern: https://forms.gle/iAPLw3bPE3ahbGCu7 Die Anmeldung erfolgt vor Ort, und falls Teilnehmer nicht erscheinen, stehen möglicherweise noch Plätze auf der Basis „Wer zuerst kommt, mahlt zuerst“ (FCFS) zur Verfügung.\n\nDer Workshop beginnt pünktlich um 18:15 Uhr, bitte seid also pünktlich!\n\nEin paar praktische Hinweise:\n\nIm ECF stehen Computer zur Verfügung, auf denen SolidWorks läuft, ihr könnt also einfach vorbeikommen.\n\nWenn ihr lieber euren eigenen Laptop mitbringen möchtet, installiert bitte vorher Remote ECF (kein VPN erforderlich im WLAN der UofT) oder SolidWorks direkt.\n\nIhr kennt euch bereits gut mit SolidWorks aus? Schaut euch die Herausforderung an, die @Shafwat im Kanal #mechanical gepostet hat.\n\nBringt gerne einen Freund oder eine Freundin mit, der oder die darüber nachdenkt, bei UTWind mitzumachen, denn die Veranstaltung steht allen Studierenden der UofT offen!\n\nFragen? Schreibt eine Nachricht an @Shafwat oder @Teagan McKenzie!"
+        "description": "Hey @channel, kurze Vorankündigung zu einer bevorstehenden Veranstaltung!\n\nUnser nächstes Treffen des Mechanik-Unterteams ist ein technischer Einführungsworkshop zu SolidWorks im Galbraith ECF (GB144) am Freitag, den 18. September, von 18:00 bis 20:00 Uhr.\n\nDieser Workshop richtet sich an Personen mit wenig bis gar keiner SolidWorks-Erfahrung, und ihr müsst nicht im Fachbereich Maschinenbau oder MechE eingeschrieben sein, um daran teilzunehmen. Egal, ob ihr im Fachbereich Wirtschaft, Elektrotechnik, Luft- und Raumfahrt oder einem anderen Unterteam seid und welches Hauptfach ihr studiert – ihr seid herzlich willkommen. CAD gehört zu den übertragbarsten Fähigkeiten, die man in einem Designteam erwerben kann, und dies ist der einfachste Einstieg, um eine neue Kompetenz für dein Portfolio, deinen Lebenslauf oder persönliche Projekte zu erlernen, die du vielleicht umsetzen möchtest!\n\nDie Plätze sind durch die Kapazität des Labors begrenzt und füllen sich schnell, also melde dich bitte hier an, um dir einen garantierten Platz zu sichern: https://forms.gle/iAPLw3bPE3ahbGCu7 Die Anmeldung erfolgt vor Ort, und es können möglicherweise noch Plätze für Spätanmelder nach dem Prinzip „Wer zuerst kommt, mahlt zuerst“ frei werden, falls Teilnehmer nicht erscheinen.\n\nDer Workshop beginnt pünktlich um 18:15 Uhr, bitte seid also pünktlich!\n\nEin paar praktische Hinweise:\n\nIm ECF stehen Computer zur Verfügung, auf denen SolidWorks läuft, ihr könnt also einfach vorbeikommen.\n\nWenn ihr lieber euren eigenen Laptop mitbringen möchtet, installiert bitte vorher Remote ECF (kein VPN erforderlich im WLAN der UofT) oder installiert SolidWorks direkt.\n\nIhr kennt euch bereits gut mit SolidWorks aus? Schaut euch die Herausforderung an, die @Shafwat im Kanal #mechanical gepostet hat.\n\nBringt gerne einen Freund oder eine Freundin mit, der oder die darüber nachdenkt, bei UTWind mitzumachen, denn die Veranstaltung steht allen Studierenden der UofT offen!\n\nFragen? Schreibt eine Nachricht an @Shafwat oder @Teagan McKenzie!"
       },
       "semesterKickoffUpdate": {
         "date": "9. September 2026",
-        "title": "Aktuelles zum Start des Semesters",
+        "title": "Aktuelles zum Semesterauftakt",
         "description": "Hallo @alle, vielen Dank an alle, die heute bei unserer Auftaktveranstaltung dabei sein konnten!\n\nFalls Freunde von euch bei UTWind mitmachen möchten, bittet sie, das Anmeldeformular in unserer Instagram-BIO auszufüllen – dann schicken wir ihnen eine Slack-Einladung zu diesem Workspace!\n\nWenn ihr Fragen habt, könnt ihr euch gerne an mich oder einen der anderen Leiter wenden. Schaut auch in unseren Gesamtplan für Veranstaltungen bei UTWind rein. Diese Tabelle enthält immer die aktuellsten Informationen zu Veranstaltungszeiten und -orten!\n\nIn den jeweiligen Kanälen der einzelnen Unterteams gibt es genauere Informationen – tretet also gerne den Kanälen bei, die euch interessieren!\n\nIch freue mich darauf, in diesem Designzyklus mit euch allen zusammenzuarbeiten!"
       },
       "designCycleWelcome": {
@@ -45,7 +45,7 @@
   },
   "Vision": {
     "title": "Vision",
-    "description": "Unsere Vision ist es, den Studierenden der University of Toronto die Windenergie näherzubringen, damit sie darauf vorbereitet und inspiriert sind, die Welt auf nachhaltige Weise zu erhellen. Durch die Zusammenarbeit hoffen wir, unsere Fähigkeiten im Rahmen eines Projekts weiterzuentwickeln, das uns am Herzen liegt. Das Team ist ein Ort, an dem Wissen geteilt und weitergegeben wird. Das Projekt ist so konzipiert, dass es sich nicht nur auf das konzentriert, was wir heute lernen, sondern auch darauf, was wir bei der Gestaltung einer nachhaltigeren Zukunft erreichen können!"
+    "description": "Unsere Vision ist es, den Studierenden der University of Toronto die Windenergie näherzubringen, damit sie darauf vorbereitet und inspiriert sind, die Welt auf nachhaltige Weise zu erhellen. Durch die Zusammenarbeit hoffen wir, unsere Fähigkeiten im Rahmen eines Projekts weiterzuentwickeln, für das wir uns begeistern. Das Team ist ein Ort, an dem Wissen geteilt und weitergegeben wird. Das Projekt ist so konzipiert, dass es sich nicht nur auf das konzentriert, was wir heute lernen, sondern auch darauf, was wir bei der Gestaltung einer nachhaltigeren Zukunft erreichen können!"
   },
   "Contact": {
     "title": "Kontakt",
@@ -78,7 +78,7 @@
     "title": "Internationaler Wettbewerb für Kleinwindkraftanlagen (ISWTC)",
     "intro": {
       "beforeLink": "Jeden Sommer nimmt UTWind an der",
-      "afterLink": "in den Niederlanden gegen andere internationale Universitäten. UTWind hat seit unserem Debüt jedes Mal einen Pokal mit nach Hause gebracht und ist sehr stolz darauf, die University of Toronto zu vertreten. Lesen Sie weiter unten mehr über die einzelnen Wettbewerbe."
+      "afterLink": "in den Niederlanden gegen andere internationale Universitäten. UTWind hat seit unserem Debüt jedes Mal einen Pokal mit nach Hause gebracht und ist überaus stolz darauf, die University of Toronto zu vertreten. Lesen Sie weiter unten mehr über die einzelnen Wettbewerbe."
     },
     "historyTitle": "Wettkampfgeschichte",
     "history": {
@@ -87,19 +87,19 @@
         "caption": "Die mit dem 1. Platz ausgezeichnete Turbine von UTWind – 2022"
       },
       "2023": {
-        "description": "Das zweite Jahr der Teilnahme von UTWind am ISWTC war nicht weniger herausfordernd, da wir den vorherigen Wettbewerb gewonnen hatten; dennoch konnte UTWind den <strong>Preis für die nachhaltigste Windkraftanlage</strong> mit nach Hause nehmen.",
+        "description": "Das zweite Jahr der Teilnahme von UTWind am ISWTC war nicht weniger herausfordernd, obwohl wir den vorherigen Wettbewerb gewonnen hatten; dennoch konnte UTWind den <strong>Preis für die nachhaltigste Windkraftanlage</strong> mit nach Hause nehmen.",
         "caption": "Die nachhaltigste, preisgekrönte Windkraftanlage von UTWind – 2023"
       },
       "2024": {
-        "description": "Im dritten Wettbewerbsjahr wurden mehrere Neuerungen getestet: das Recycling von PET-Flaschen zu Filament, die Verwendung eines einzigen Motors zur Steigungsregelung und die Herstellung von Rotorblättern aus Flachsfasern. Angesichts der vielen neuen Teams war es eine große Überraschung, als die Jury den Preis für das beste Gesamtdesign <strong>(1. Platz)</strong> an „The Team from Toronto“ vergab.",
+        "description": "Im dritten Wettbewerbsjahr wurden mehrere Neuerungen getestet: das Recycling von PET-Flaschen zu Filament, die Verwendung eines einzigen Motors zur Steigungssteuerung und die Herstellung von Rotorblättern aus Flachsfasern. Angesichts der vielen neuen Teams war es eine große Überraschung, als die Jury den Preis für das beste Gesamtdesign <strong>(1. Platz)</strong> an „The Team from Toronto“ vergab.",
         "caption": "Die mit dem 1. Platz ausgezeichnete Turbine von UTWind – 2024"
       },
       "2025": {
-        "description": "Die bislang ehrgeizigste Windkraftanlage von UTWind war unsere allererste Windkraftanlage mit vertikaler Achse (VAWT). Trotz des engen Zeitplans und der Unerfahrenheit bauten wir in nur vier Monaten eine VAWT mit H-Rotor und waren begeistert, als wir sahen, wie sie sich drehte, Strom erzeugte und mit einem funktionierenden Steuerungssystem lief. Auch wenn wir keinen Pokal mit nach Hause nehmen konnten, haben wir viel gelernt und können es kaum erwarten, uns bei unserer nächsten Version zu verbessern.",
+        "description": "Die bislang ehrgeizigste Windkraftanlage von UTWind war unsere allererste Windkraftanlage mit vertikaler Achse (VAWT). Trotz des engen Zeitplans und der Unerfahrenheit bauten wir in nur vier Monaten eine VAWT mit H-Rotor und waren begeistert, als wir sahen, wie sie sich drehte, Strom erzeugte und mit einem funktionierenden Steuerungssystem lief. Auch wenn wir keinen Pokal mit nach Hause nehmen konnten, haben wir viel gelernt und können es kaum erwarten, uns bei unserer nächsten Version weiter zu verbessern.",
         "caption": "UTWinds erste Version der VAWT – 2025"
       },
       "2026": {
-        "description": "Zurück in den Niederlanden für unsere fünfte ISWTC in Folge trat UTWind mit der zweiten Version unserer Vertikalachsen-Windkraftanlage (VAWT) an. In diesem Jahr konnten wir große Fortschritte verzeichnen: Wir entsandten unsere bislang größte Wettbewerbsdelegation, reisten mit funktionsfähigen Mechanik-, Energieversorgungs- und Steuerungssystemen an, führten leichtere Rotorblätter und Sensoren zur Fledermausüberwachung ein und erreichten eine unserer bislang niedrigsten Einschaltwindgeschwindigkeiten. Auch wenn es noch viel zu verbessern gibt, lieferte uns der Wettbewerb wertvolle Erkenntnisse, die wir in unsere nächste Version einfließen lassen werden.",
+        "description": "Zurück in den Niederlanden für unseren fünften ISWTC in Folge trat UTWind mit der zweiten Version unserer Windkraftanlage mit vertikaler Achse (VAWT) an. In diesem Jahr konnten wir große Fortschritte verzeichnen: Wir entsandten unsere bislang größte Wettbewerbsdelegation, reisten mit funktionsfähigen Mechanik-, Energieversorgungs- und Steuerungssystemen an, führten leichtere Rotorblätter und Sensoren zur Fledermausüberwachung ein und erreichten eine unserer bislang niedrigsten Einschaltwindgeschwindigkeiten. Auch wenn es noch viel zu verbessern gibt, lieferte uns der Wettbewerb wertvolle Erkenntnisse, die wir in unsere nächste Version einfließen lassen werden.",
         "caption": "Die Turbine von UTWind mit der niedrigsten Einschaltdrehzahl – 2026"
       },
       "Footer": {
@@ -115,23 +115,24 @@
     "title": "Lernen Sie unser Team kennen",
     "description": "Lernen Sie die Studierenden hinter UTWind kennen.",
     "sections": {
-      "president": "Präsident",
+      "teamcaptain": "Mannschaftskapitän",
       "business": "Wirtschaft",
       "mechanical": "Mechanik",
       "control": "Steuerungssysteme",
-      "power": "Energieversorgungssysteme",
+      "power": "Energiesysteme",
       "aero": "Aerodynamik",
       "sustainability": "Nachhaltigkeit",
       "web": "Webmaster"
     },
     "positions": {
-      "president": "Präsident",
+      "teamcaptain": "Mannschaftskapitän",
       "businessDirector": "Geschäftsführer",
       "marketingLead": "Marketingleiter",
       "financeLead": "Leiter Finanzen",
       "sponsorshipsLead": "Leiter Sponsoring",
-      "operationsCoLead": "Mitverantwortlicher für den operativen Bereich",
+      "operationsCoLead": "Co-Leiter des operativen Bereichs",
       "mechanicalCoLead": "Co-Leiter (Mechanik)",
+      "systemsintegrationLead": "Leiter Systemintegration",
       "controlCoLead": "Mitverantwortlicher für Steuerungssysteme",
       "powerCoLead": "Mitverantwortlicher für den Bereich Energiesysteme",
       "aeroCoLead": "Mitverantwortlicher für Aerodynamik",
@@ -169,31 +170,62 @@
       "technicalPartner": "Technischer Partner",
       "technicalDescription": "Produkte, Dienstleistungen oder technischer Support"
     },
+    "allSponsorsReceive": "Alle Sponsoren erhalten:",
+    "allSponsors": {
+      "showcases": "Einladung zu den Team-Präsentationen",
+      "networking": "Jährliche Networking- und Rekrutierungsveranstaltung",
+      "jobPostings": "Relevante Stellenanzeigen, die den Mitgliedern zur Verfügung gestellt wurden",
+      "impactReport": "Jährlicher Wirkungsbericht",
+      "iswtcAcknowledgement": "Danksagung zum ISWTC-Bericht"
+    },
+    "table": {
+      "chooseLevel": "Wählen Sie Ihren Grad der Beteiligung",
+      "sponsorBenefit": "Vorteile für Sponsoren"
+    },
     "benefits": {
-      "teamEvents": "Einladung zu Teamveranstaltungen und Vorführungen",
-      "networking": "Einladung zur jährlichen Networking- und Rekrutierungsveranstaltung für Sponsoren",
-      "jobPostings": "Von Sponsoren bereitgestellte Stellenanzeigen, die an die Mitglieder weitergeleitet werden",
+      "website": "Anerkennung der Website",
+      "banners": "Banner und Wettbewerbsauslagen",
+      "turbine": "Logo auf der Turbine",
+      "socialMedia": "Anerkennung in den sozialen Medien",
       "teamApparel": "Logo auf der Teamkleidung",
-      "resumeBook": "Zugriff auf das Lebenslaufbuch des Teams",
-      "sponsorEvent": "Teilnahme des Teams an einer Sponsorenveranstaltung¹",
-      "website": "Logo auf der Website (für alle verlinkt)",
-      "banners": "Logo auf Bannern und Wettbewerbsdisplays",
-      "turbine": "Logo auf der Turbine"
+      "resumeBook": "Zugang zum Lebenslauf-Buch (Opt-in)",
+      "projectSponsor": "Anerkennung des Projektsponsors",
+      "workshop": "Jährlicher Workshop, Tech-Talk oder Sponsorenveranstaltung",
+      "speakingSlot": "Eröffnungsrede / Rede anlässlich der Enthüllung",
+      "namingRights": "Namensrechte für Windkraftanlagen"
     },
     "values": {
-      "byAgreement": "Nach Vereinbarung",
       "featuredProfile": "Profil im Fokus",
-      "secondaryFeature": "Nebenfunktion",
+      "secondaryFeature": "Zusatzfunktion",
       "logoOnly": "Nur Logo",
+      "xlLogo": "XL-Logo",
+      "largeLogo": "Großes Logo",
+      "mediumLogo": "Mittleres Logo",
+      "smallLogo": "Kleines Logo",
+      "nameListing": "Namensverzeichnis",
+      "xl": "XL",
       "large": "Groß",
       "medium": "Mittel",
       "small": "Klein",
-      "nameListing": "Namensliste"
+      "byAgreement": "Nach Vereinbarung",
+      "featuredVideo": "Empfohlenes Video",
+      "dedicatedPost": "Spezieller Beitrag",
+      "groupRecognition": "Gruppenanerkennung",
+      "oneAvailable": "1 verfügbar!"
+    },
+    "technical": {
+      "title": "Technische Partner",
+      "subtitle": "Ihr Beitrag. Angemessene Anerkennung",
+      "description": "Produkte, Dienstleistungen und technischer Support werden zu einem einvernehmlich festgelegten fairen Marktwert der entsprechenden Barwertstufe zugeordnet.",
+      "recognitionBefore": "Partner erhalten außerdem",
+      "recognition": "Unterstützt von [Unternehmen]",
+      "recognitionAfter": "Nennung auf dem gelieferten Bauteil oder in den zugehörigen Projektunterlagen, soweit dies praktikabel ist."
     },
     "notes": {
       "currency": "Alle Sponsoringbeträge und entsprechenden Beitragswerte sind in kanadischen Dollar (CAD) angegeben.",
-      "flexibility": "Wir sind jederzeit bereit, Sponsoringmöglichkeiten außerhalb der oben genannten Rahmenbedingungen zu besprechen.",
-      "availability": "¹ Vorbehaltlich der Verfügbarkeit der Mitglieder und der einvernehmlich vereinbarten Reisemodalitäten."
+      "report": "Die Bestätigung des Berichts unterliegt den Anforderungen für die Einreichung von Wettbewerbsbeiträgen.",
+      "naming": "Die Namensgebung und das Projekt-Sponsoring unterliegen der Verfügbarkeit und einem einvernehmlich vereinbarten Wortlaut.",
+      "events": "Veranstaltungen und Workshops erfordern eine abgestimmte Terminplanung, die Genehmigung der Räumlichkeiten und die Einhaltung der Sicherheitsvorschriften."
     },
     "Footer": {
       "emails": "E-Mails",
@@ -212,7 +244,7 @@
     },
     "pet": {
       "title": "Initiative zum Recycling von PET-Flaschen",
-      "description": "Seit dem Frühjahr 2024 sammelt UTWind PET1-Plastikflaschen auf den Campusgeländen der Universität Toronto und recycelt sie zu 3D-Druckfilament, aus dem Teile unserer Wettbewerbs-Windkraftanlage hergestellt werden. Jedes Jahr arbeiten wir daran, den Prozess zu verbessern und die Anzahl der Bauteile zu erhöhen, die wir aus recyceltem Kunststoff drucken können.",
+      "description": "Seit dem Frühjahr 2024 sammelt UTWind PET1-Plastikflaschen auf den Campusgeländen der Universität Toronto und recycelt diese zu 3D-Druckfilament, aus dem Teile unserer Wettbewerbs-Windkraftanlage hergestellt werden. Jedes Jahr arbeiten wir daran, den Prozess zu verbessern und die Anzahl der Bauteile zu erhöhen, die wir aus recyceltem Kunststoff drucken können.",
       "thanksBeforeUtern": "Wir möchten uns bedanken bei",
       "thanksMiddle": "für ihre anhaltende finanzielle Unterstützung und die",
       "thanksAfter": "dafür, dass Sie unser größter Spender von Flaschen sind.",
@@ -337,15 +369,15 @@
       },
       "mechanical": {
         "title": "Mechanik",
-        "description": "Das Unterteam „Mechanik und Fertigung“ ist für die konstruktive und physikalische Auslegung der Turbine zuständig. Es führt CAD-Modellierung, Materialauswahl, Zerspanung und 3D-Druck durch, um jeden Entwurf in die Realität umzusetzen."
+        "description": "Das Unterteam „Mechanik und Fertigung“ ist für die konstruktive und physikalische Auslegung der Turbine zuständig. Es führt CAD-Modellierung, Materialauswahl, Zerspanung und 3D-Druck durch, um jeden Entwurf in die Tat umzusetzen."
       },
       "control": {
         "title": "Steuerungssysteme",
-        "description": "Das Unterteam „Steuerungssysteme“ entwickelt die Hardware und Software, die die Leistung der Turbine überwacht und regelt. Es integriert Sensoren, Mikrocontroller und Regelalgorithmen, um einen stabilen und effizienten Betrieb der Turbine zu gewährleisten."
+        "description": "Das Unterteam „Steuerungssysteme“ entwickelt die Hardware und Software, die die Leistung der Turbine überwacht und regelt. Es integriert Sensoren, Mikrocontroller und Rückkopplungsalgorithmen, um einen stabilen und effizienten Betrieb der Turbine zu gewährleisten."
       },
       "power": {
         "title": "Energiesysteme",
-        "description": "Das Unterteam „Power Systems“ entwickelt die elektrische Auslegung der Turbine, einschließlich Generatoren, Umrichter und Schaltkreise. Sein Ziel ist es, mechanische Energie effizient in zuverlässigen, nutzbaren Strom umzuwandeln."
+        "description": "Das Unterteam „Power Systems“ entwickelt die elektrische Seite der Turbine, einschließlich Generatoren, Umrichter und Schaltkreise. Sein Ziel ist es, mechanische Energie effizient in zuverlässigen, nutzbaren Strom umzuwandeln."
       },
       "sustainability": {
         "title": "Nachhaltigkeit",

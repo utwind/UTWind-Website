@@ -57,7 +57,7 @@ export default function CompetitionPage() {
                       className="h-10 w-auto"
                       priority
                     />
-                    <span className="text-2xl font-bold text-blue-600">UTWind</span>
+                    <span className="text-2xl font-bold text-blue-600 font-racing">UTWind</span>
                   </Link>
         
                   {/* desktop links */}
@@ -118,47 +118,66 @@ export default function CompetitionPage() {
                 </div>
             </nav>
 
-          {/* Competition intro */}
-      <section
-        id="competitions"
-        className="bg-blue-200 py-20"
-      >
-        <div className="max-w-5xl mx-auto text-center px-6">
+          {/* Competition history */}
+{/* Competition title section */}
+<section
+  id="competitions"
+  className="relative py-60 overflow-hidden"
+>
+  {/* Background image */}
+  <div
+    className="absolute inset-0 bg-cover bg-bottom"
+    style={{
+      backgroundImage:
+        "url('/images/2025-2026 Gallery/20260709_143112(0).jpg')",
+      backgroundPosition: "center 85%",
+    }}
+  />
 
-          <h2 className="text-6xl font-bold text-gray-800 mb-8">
-            {competition("title")}
-          </h2>
+  {/* Dark tint */}
+  <div className="absolute inset-0 bg-black/60" />
 
-          <p className="text-2xl text-gray-700 leading-relaxed">
-            {competition("intro.beforeLink")}{" "}
+  {/* Title */}
+  <div className="relative z-10 max-w-5xl mx-auto text-center px-6">
+    <h2 className="text-6xl font-bold text-white">
+      {competition("title")}
+    </h2>
+  </div>
+</section>
 
-            <a
-              href="https://www.hanze.nl/en/research/centres/entrance-centre-of-expertise-energy/projects/international-small-wind-turbine-contest-iswtc"
-              target="_blank"
-              rel="noreferrer"
-              className="text-indigo-700 font-semibold hover:underline"
-            >
-              International Small Wind Turbine Contest (ISWTC)
-            </a>{" "}
 
-            {competition("intro.afterLink")}
-          </p>
-        </div>
-      </section>
+{/* Competition history */}
+<section
+  id="competition-history"
+  className="bg-indigo-50 py-20 relative"
+>
+  <div className="max-w-6xl mx-auto px-6 relative">
 
-      {/* Competition history */}
-      <section
-        id="competition-history"
-        className="bg-indigo-50 py-20 relative"
-      >
-        <div className="max-w-6xl mx-auto px-6 relative">
+    {/* Intro */}
+    <div className="max-w-5xl mx-auto text-center mb-20">
+      <p className="text-2xl text-gray-700 leading-relaxed">
+        {competition("intro.beforeLink")}{" "}
 
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-            {competition("historyTitle")}
-          </h2>
+        <a
+          href="https://www.hanze.nl/en/research/centres/entrance-centre-of-expertise-energy/projects/international-small-wind-turbine-contest-iswtc"
+          target="_blank"
+          rel="noreferrer"
+          className="text-indigo-700 font-semibold hover:underline"
+        >
+          International Small Wind Turbine Contest (ISWTC)
+        </a>{" "}
+
+        {competition("intro.afterLink")}
+      </p>
+    </div>
+
+    {/* History title */}
+    <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
+      {competition("historyTitle")}
+    </h2>
 
           {/* Timeline line */}
-          <div className="absolute left-1/2 -translate-x-1/2 top-[140px] bottom-[140px] w-1 bg-indigo-300 hidden lg:block" />
+          <div className="absolute left-1/2 -translate-x-1/2 top-[400px] bottom-[140px] w-1 bg-indigo-300 hidden lg:block" />
 
           {/* 2026 */}
           <div

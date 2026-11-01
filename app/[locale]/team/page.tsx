@@ -54,7 +54,7 @@ const teamData: Record<TeamKey, TeamMember[]> = {
     {
       name: "Haydenne Cabuco",
       year: "IRHR&Soc 2T8",
-      positionKey: "marketingLead",
+      positionKey: "visualmedia",
       img: "/images/2026-2027 team picture folder/Haydenne_Cabuco_IRHR&Soc_2T8_Media.png",
       linkedin: "https://www.linkedin.com/in/haydenne-cabuco-06b137270/"
     },

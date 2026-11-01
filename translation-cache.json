@@ -1027,6 +1027,10 @@
     "Team.positions.systemsintegrationLead": {
       "source": "Systems Integration Lead",
       "translation": "Responsable de l'intégration des systèmes"
+    },
+    "Team.positions.visualmedia": {
+      "source": "Visual Media Coordinator",
+      "translation": "Coordinateur des médias visuels"
     }
   },
   "nl": {
@@ -2057,6 +2061,10 @@
     "Team.positions.systemsintegrationLead": {
       "source": "Systems Integration Lead",
       "translation": "Hoofd Systeemintegratie"
+    },
+    "Team.positions.visualmedia": {
+      "source": "Visual Media Coordinator",
+      "translation": "Coördinator visuele media"
     }
   },
   "de": {
@@ -3087,6 +3095,10 @@
     "Team.positions.systemsintegrationLead": {
       "source": "Systems Integration Lead",
       "translation": "Leiter Systemintegration"
+    },
+    "Team.positions.visualmedia": {
+      "source": "Visual Media Coordinator",
+      "translation": "Koordinator für visuelle Medien"
     }
   },
   "pl": {
@@ -4117,6 +4129,10 @@
     "Team.positions.systemsintegrationLead": {
       "source": "Systems Integration Lead",
       "translation": "Kierownik ds. integracji systemów"
+    },
+    "Team.positions.visualmedia": {
+      "source": "Visual Media Coordinator",
+      "translation": "Koordynator ds. mediów wizualnych"
     }
   },
   "el": {
@@ -5147,6 +5163,10 @@
     "Team.positions.systemsintegrationLead": {
       "source": "Systems Integration Lead",
       "translation": "Υπεύθυνος Ενσωμάτωσης Συστημάτων"
+    },
+    "Team.positions.visualmedia": {
+      "source": "Visual Media Coordinator",
+      "translation": "Συντονιστής οπτικών μέσων"
     }
   },
   "es": {
@@ -6177,6 +6197,10 @@
     "Team.positions.systemsintegrationLead": {
       "source": "Systems Integration Lead",
       "translation": "Responsable de integración de sistemas"
+    },
+    "Team.positions.visualmedia": {
+      "source": "Visual Media Coordinator",
+      "translation": "Coordinador de medios audiovisuales"
     }
   }
 }

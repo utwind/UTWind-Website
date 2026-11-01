@@ -253,6 +253,21 @@ export default function SponsorsPage() {
                 className="h-32 w-auto object-contain mx-auto"
               />
             </a>
+            <a
+              href="https://www.hka.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="block transform hover:scale-105 transition"
+              data-aos="zoom-in"
+            >
+              <Image
+                src="/images/sponsors/HKA logo RGB.png"
+                alt="HKA"
+                width={220}
+                height={120}
+                className="h-32 w-auto object-contain mx-auto"
+              />
+            </a>
           </div>
         </div>
 
